@@ -1,0 +1,10 @@
+*DS_Store
+.idea
+node_modules
+lib
+components
+tmp
+font_src
+static/css/app.css
+static/css/bootstrap.min.css
+
