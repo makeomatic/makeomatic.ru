@@ -6,4 +6,120 @@ body {
   height: auto !important;
   min-height: 100%;
   height: 100%;
+  background: url("/img/subtle_grunge.png") repeat center center;
+  font-family: 'Amasis', 'Helvetica Neue', Helvetica, Arial;
+  > .container {
+    .box-sizing(border-box);
+    min-height: 100%;
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    section {
+      margin: 50px auto;
+    }
+  }
+  > header {
+    z-index: 3;
+  }
+  .angeled-stripe {
+    z-index: 0;
+    .rotate(-30deg);
+    height: 200px;
+    background: white;
+    position: fixed;
+    width: 5000px;
+    top: 0;
+    left: 70%;
+    margin-left: -2500px;
+  }
+}
+
+.section-team {
+  .background-flag {
+    background: url("/img/background-flag.png") no-repeat top center;
+    color: white;
+    text-align: center;
+    height: 57px;
+    width: 285px;
+    line-height: 50px;
+    margin: 40px auto 20px;
+    font-weight: normal;
+  }
+
+  .employee {
+    margin-bottom: 20px;
+    .name {
+      margin: 15px 0 10px;
+    }
+    .occupation {
+      background: url("/img/background-poly.png") no-repeat center center;
+      width: 140px;
+      height: 28px;
+      line-height: 32px;
+      text-align: center;
+      margin: 0 auto;
+      color: white;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  }
+}
+
+.section-cv {
+
+  .cv-data {
+    min-width: 45%;
+    vertical-align: top;
+    display: inline-block;
+    margin: 30px 0 0 20px;
+    h5 {
+      margin: 0;
+      text-align: left;
+      line-height: 18px;
+    }
+    h3 {
+      color: #bf1c1c;
+      margin: 0 0 20px;
+      text-align: left;
+      line-height: 24px;
+    }
+    .skills {
+      h5 {
+        white-space: nowrap;
+        padding-right: 30px;
+      }
+      ul {
+        text-align: left;
+        list-style: none;
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+.section-about {
+  .outlined-caption {
+    position: relative;
+    display: inline-block;
+    &:before, &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 0;
+      border-bottom: 3px solid black;
+      top: 14px;
+    }
+    &:after{
+      right: -50px;
+    }
+    &:before {
+      left: -50px;
+    }
+  }
+}
+
+.list-header {
+  margin-bottom: 0;
 }

@@ -1,28 +1,28 @@
 @font-face {
   font-family: "Amasis";
-  src: url("static/font/font.eot");
-  src: url("static/font/font.eot?#iefix") format("embedded-opentype"), url("static/font/font.woff") format("woff"), url("static/font/font.ttf") format("truetype"), url("static/font/font.svg#Amasis") format("svg");
+  src: url("/font/font.eot");
+  src: url("/font/font.eot?#iefix") format("embedded-opentype"), url("/font/font.woff") format("woff"), url("/font/font.ttf") format("truetype"), url("/font/font.svg#Amasis") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Amasis";
-  src: url("static/font/font-bold.eot");
-  src: url("static/font/font-bold.eot?#iefix") format("embedded-opentype"), url("static/font/font-bold.woff") format("woff"), url("static/font/font-bold.ttf") format("truetype"), url("static/font/font-bold.svg#Amasis") format("svg");
+  src: url("/font/font-bold.eot");
+  src: url("/font/font-bold.eot?#iefix") format("embedded-opentype"), url("/font/font-bold.woff") format("woff"), url("/font/font-bold.ttf") format("truetype"), url("/font/font-bold.svg#Amasis") format("svg");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Amasis";
-  src: url("static/font/font-italic.eot");
-  src: url("static/font/font-italic.eot?#iefix") format("embedded-opentype"), url("static/font/font-italic.woff") format("woff"), url("static/font/font-italic.ttf") format("truetype"), url("static/font/font-italic.svg#Amasis") format("svg");
+  src: url("/font/font-italic.eot");
+  src: url("/font/font-italic.eot?#iefix") format("embedded-opentype"), url("/font/font-italic.woff") format("woff"), url("/font/font-italic.ttf") format("truetype"), url("/font/font-italic.svg#Amasis") format("svg");
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: "Amasis";
-  src: url("static/font/font-bolditalic.eot");
-  src: url("static/font/font-bolditalic.eot?#iefix") format("embedded-opentype"), url("static/font/font-bolditalic.woff") format("woff"), url("static/font/font-bolditalic.ttf") format("truetype"), url("static/font/font-bolditalic.svg#Amasis") format("svg");
+  src: url("/font/font-bolditalic.eot");
+  src: url("/font/font-bolditalic.eot?#iefix") format("embedded-opentype"), url("/font/font-bolditalic.woff") format("woff"), url("/font/font-bolditalic.ttf") format("truetype"), url("/font/font-bolditalic.svg#Amasis") format("svg");
   font-weight: bold;
   font-style: italic;
 }
@@ -33,4 +33,112 @@ body {
   height: auto !important;
   min-height: 100%;
   height: 100%;
+  background: url("/img/subtle_grunge.png") repeat center center;
+  font-family: 'Amasis', 'Helvetica Neue', Helvetica, Arial;
+}
+body > .container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 100%;
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+}
+body > .container section {
+  margin: 50px auto;
+}
+body > header {
+  z-index: 3;
+}
+body .angeled-stripe {
+  z-index: 0;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  height: 200px;
+  background: white;
+  position: fixed;
+  width: 5000px;
+  top: 0;
+  left: 70%;
+  margin-left: -2500px;
+}
+.section-team .background-flag {
+  background: url("/img/background-flag.png") no-repeat top center;
+  color: white;
+  text-align: center;
+  height: 57px;
+  width: 285px;
+  line-height: 50px;
+  margin: 40px auto 20px;
+  font-weight: normal;
+}
+.section-team .employee {
+  margin-bottom: 20px;
+}
+.section-team .employee .name {
+  margin: 15px 0 10px;
+}
+.section-team .employee .occupation {
+  background: url("/img/background-poly.png") no-repeat center center;
+  width: 140px;
+  height: 28px;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.section-cv .cv-data {
+  min-width: 45%;
+  vertical-align: top;
+  display: inline-block;
+  margin: 30px 0 0 20px;
+}
+.section-cv .cv-data h5 {
+  margin: 0;
+  text-align: left;
+  line-height: 18px;
+}
+.section-cv .cv-data h3 {
+  color: #bf1c1c;
+  margin: 0 0 20px;
+  text-align: left;
+  line-height: 24px;
+}
+.section-cv .cv-data .skills h5 {
+  white-space: nowrap;
+  padding-right: 30px;
+}
+.section-cv .cv-data .skills ul {
+  text-align: left;
+  list-style: none;
+  margin: 0;
+}
+.section-about .outlined-caption {
+  position: relative;
+  display: inline-block;
+}
+.section-about .outlined-caption:before,
+.section-about .outlined-caption:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 0;
+  border-bottom: 3px solid black;
+  top: 14px;
+}
+.section-about .outlined-caption:after {
+  right: -50px;
+}
+.section-about .outlined-caption:before {
+  left: -50px;
+}
+.list-header {
+  margin-bottom: 0;
 }
