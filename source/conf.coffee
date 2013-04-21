@@ -1,7 +1,48 @@
+fs = require 'fs'
+
+###
+  Config
+###
+
+## technology ##
+exports.tech = tech = []
+
+path = "#{__dirname}/../static/img/technology"
+fs.readdirSync(path).forEach (technology)->
+  if fs.statSync("#{path}/#{technology}").isFile()
+    tech.push "/img/technology/#{technology}"
+
+
+## Links ##
+exports.links = [
+  {name: "Команда",     href: "#team",    isActive: true}
+  {name: "О нас",       href: "#about"}
+  {name: "Портфолио",   href: "#portfolio"}
+  {name: "Технологии",  href: "#tech"}
+  {name: "Контакты",    href: "#contacts"}
+]
+
+## phone ##
+exports.phone = "+7 (495) 774-46-49"
+
+## email ##
+exports.email = "getstarted@avvs.co"
+
+## copyright ##
+exports.copyright = "AVVS Development, (c) 2012-2013<br/>Разработка сайтов и мобильных приложений"
+
+## address ##
+exports.address = "Россия, Москва, Ленинский пр-т, д 1, офис 314<br/>индекс: 111555"
+
+
 ###
   Config -- homepage
 ###
+
+## Title ##
 exports.main_page_title = "Главная страница"
+
+## Team ##
 exports.employees = [
   {
   photo: "/img/employee/005.png"
@@ -29,4 +70,14 @@ exports.employees = [
   occupation: "Дизайнер"
   }
 ]
+## Portfolio ##
+exports.portfolio = portfolio = []
+
+## Рекорды рынка недвижимости ##
+portfolio.push require('./fixtures/recordi')
+
+## ФитКафе ##
+portfolio.push require('./fixtures/fitcafe')
+
+
 

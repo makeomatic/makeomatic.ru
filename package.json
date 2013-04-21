@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "~3.2.0",
     "dot": "~1.0.1",
-    "express-dot": "~0.1.0",
+    "express-dot": "git://github.com/david-driscoll/express-dot.git",
     "async": "~0.2.7",
     "underscore": "~1.4.4",
     "less-middleware": "~0.1.11"

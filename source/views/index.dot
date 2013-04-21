@@ -74,6 +74,10 @@
         <section class='section-portfolio text-center' id='portfolio'>
             <h2>Убедитесь сами,</h2>
             <p>взглянув на наше портфолио или познакомьтесь с командой, самостоятельно оценив наши преимущества. </p>
+            {{~ it.portfolio: portfolio}}
+                {{# def.load('/views/partials/portfolio.dot') }}
+            {{~}}
         </section>
+        {{# def.load("/views/partials/technology.dot") }}
     </div>
 </div>

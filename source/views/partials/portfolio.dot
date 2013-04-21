@@ -1,0 +1,30 @@
+<article class='portfolio'>
+    {{# def.load('/views/partials/carousel.dot') }}
+    <div class='clearfix infobox'>
+        <div class='quick-info'>
+            <a class='logo' href='#'>
+                <img src='{{= portfolio.logo.src }}' alt="{{= portfolio.logo.alt }}" />
+                <h4 class='title'>{{= portfolio.brand }}</h4>
+            </a>
+            <small>{{= portfolio.type }}</small>
+            <ul class='unstyled'>
+                <li class='caption'>Что делали:</li>
+                {{~ portfolio.activity: activity }}
+                    <li>{{= activity }}</li>
+                {{~}}
+            </ul>
+        </div>
+        <div class="overview">
+            <h2>{{= portfolio.title }}</h2>
+            {{? portfolio.quote }}
+            <blockquote>
+                {{= portfolio.quote }}
+                <div class='quote-corner'></div>
+            </blockquote>
+            {{?}}
+            {{~ portfolio.text: paragraph }}
+                <p>{{= paragraph }}</p>
+            {{~}}
+        </div>
+    </div>
+</article>

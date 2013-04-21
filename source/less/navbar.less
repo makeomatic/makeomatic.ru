@@ -1,0 +1,30 @@
+.navbar-inverse {
+  .navbar-inner {
+    background: url("/img/illusion.png") repeat top center;
+  }
+  a {
+    vertical-align: bottom;
+  }
+  .nav {
+    .active {
+      > a {
+        position: relative;
+        &:after {
+          @direction: up;
+          @width: 6px;
+
+          content:"";
+          display: block;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+
+          margin: -(@width - 1) 0 0 -@width;
+          .arrow(@width, #ddd);
+          -moz-border-top-image: url("/img/subtle_grunge.png") @width;
+          -webkit-border-top-image: url("/img/subtle_grunge.png") @width;
+        }
+      }
+    }
+  }
+}
