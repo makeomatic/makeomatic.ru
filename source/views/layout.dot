@@ -10,8 +10,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
+    {{? this.env != 'production' }}
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/app.css">
+    {{??}}
+    <link rel="stylesheet" href="/css/app.min.css">
+    {{?}}
 
     <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
@@ -32,8 +36,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="/js/vendor/bootstrap.min.js"></script>
-<script src="/js/app.js"></script>
 
+<!--<script src="/js/app.js"></script>-->
 <!--
 <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

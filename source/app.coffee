@@ -5,7 +5,6 @@ express        = require 'express'
 dot            = require 'express-dot'
 async          = require 'async'
 _              = require 'underscore'
-lessMiddleware = require 'less-middleware'
 conf           = require './conf'
 util           = require 'util'
 
@@ -16,7 +15,6 @@ root = __dirname
 ###
   start the app
 ###
-
 
 startApp = ->
 
@@ -31,7 +29,7 @@ startApp = ->
     app.use express.static "#{root}/../static"
 
     app.use express.methodOverride()
-    app.use express.bodyParser {uploadDir: "#{root}/../tmp"}
+    #app.use express.bodyParser {uploadDir: "#{root}/../tmp"} ## не разрешаем загрузки ##
     app.use app.router
 
 
@@ -39,13 +37,14 @@ startApp = ->
     app.set 'port', 80
     app.set 'host', '127.0.0.1'
 
+    ## 404 page ##
+    app.use (req, res, next) ->
+      res.render '404', {layout: false}, 404
+    ## error handler ##
     app.use express.errorHandler
       dumpExceptions: false
       showStack: false
-
-    app.use (req, res, next) ->
-      res.render '404', {layout: false}, 404
-
+    ## all uncaught errors are processed here ##
     app.use (err,req,res,next) ->
       # custom error page
       console.error err
@@ -60,17 +59,19 @@ startApp = ->
       dumpExceptions: true
       showStack: true
 
+  app.configure ->
+    dot.setGlobals env: app.get('env')
 
   ###
     Enable routes
   ###
   require('./router')(app)
 
-
-
+  ###
+    Start the app
+  ###
   app.listen app.get('port'), app.get('host')
-  util.log(util.format('ENV: %s, listening on http://%s:%s', app.get('env'), app.get('host'), app.get('port')));
-
+  util.log util.format('ENV: %s, listening on http://%s:%s', app.get('env'), app.get('host'), app.get('port'))
 
 ###
   Export app for some further use
