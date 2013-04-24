@@ -1,6 +1,6 @@
 module.exports =
   carousel: [
-    {src: "http://dummyimages.com/886x617", alt: "Сплеш картинка"}
+    {src: "/img/projects/fitcafe/01.png", alt: "Сплеш картинка Фит Кафе"}
   ]
   title: "Хорошему магазину, хороший дизайн!"
   logo:

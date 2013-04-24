@@ -1,11 +1,10 @@
 module.exports =
   carousel: [
-    {src: "/img/projects/recordi/01.png", alt: "Сплеш картинка премии Рекорды Рынка Недвижимости"}
-    {src: "/img/projects/recordi/02.png", alt: "Сайт премии рекорды рынка недвижимости"}
+    {src: "/img/projects/openinclude/01.png", alt: "Сплеш картинка openInclude.com"}
   ]
   title: "Престижной премии – достойный сайт!"
   logo:
-    src: "/img/projects/recordi/logo.png"
+    src: "/img/projects/openinclude/logo.png"
     alt: "Прототип логотипа сайта Рекорды Рынка Недвижимости"
   brand: "Recordi"
   type:  "промо-сайт"

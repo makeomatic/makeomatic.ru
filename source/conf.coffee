@@ -79,5 +79,11 @@ portfolio.push require('./fixtures/recordi')
 ## ФитКафе ##
 portfolio.push require('./fixtures/fitcafe')
 
+## openInclude ##
+portfolio.push require('./fixtures/openinclude')
 
+## openInclude ##
+portfolio.push require('./fixtures/speakgeo')
 
+## openInclude ##
+portfolio.push require('./fixtures/liveone')
