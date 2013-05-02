@@ -40,14 +40,14 @@ exports.address = "Россия, Москва, Ленинский пр-т, д 1,
 ###
 
 ## Title ##
-exports.main_page_title = "Главная страница"
+exports.main_page_title = "Создание сайтов в Москве, разработка мобильных приложений, дизайнерские услуги"
 
 ## Team ##
 exports.employees = [
   {
-  photo: "/img/employee/005.png"
-  name:  "Арман Манукян"
-  occupation: "Креативный Арма"
+    photo: "/img/employee/001.png"
+    name:  "Виталий Аминев"
+    occupation: "CEO"
   }
   {
   photo: "/img/employee/004.png"
@@ -60,14 +60,9 @@ exports.employees = [
   occupation: "iOS Мастер"
   }
   {
-    photo: "/img/employee/001.png"
-    name:  "Виталий Аминев"
-    occupation: "CEO"
-  }
-  {
   photo: "/img/employee/002.png"
   name:  "Вячеслав Гусев"
-  occupation: "Дизайнер"
+  occupation: "Граф дизайнер"
   }
   {
   photo: "/img/employee/006.png"
@@ -83,6 +78,11 @@ exports.employees = [
   photo: "/img/employee/008.png"
   name:  "Алексей Князев"
   occupation: "Python Мастер"
+  }
+  {
+  photo: "/img/employee/005.png"
+  name:  "Арман Манукян"
+  occupation: "Креативный Арма"
   }
 ]
 ## Portfolio ##
