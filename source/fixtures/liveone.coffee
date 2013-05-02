@@ -6,7 +6,7 @@ module.exports =
   logo:
     src: "/img/projects/liveone/logo.png"
     alt: "Прототип логотипа сайта Рекорды Рынка Недвижимости"
-  brand: "Recordi"
+  brand: "LiveOne"
   type:  "промо-сайт"
   activity: [
     "Дизайн сайта", "Верстка", "Программирование"
