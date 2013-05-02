@@ -57,7 +57,7 @@ exports.employees = [
   {
   photo: "/img/employee/003.png"
   name:  "Борис Повод"
-  occupation: "Программист"
+  occupation: "iOS Мастер"
   }
   {
     photo: "/img/employee/001.png"
@@ -68,6 +68,21 @@ exports.employees = [
   photo: "/img/employee/002.png"
   name:  "Вячеслав Гусев"
   occupation: "Дизайнер"
+  }
+  {
+  photo: "/img/employee/006.png"
+  name:  "Никита Львов"
+  occupation: "Секретное Оружие"
+  }
+  {
+  photo: "/img/employee/007.png"
+  name:  "Дмитрий Горбунов"
+  occupation: "JavaScript Guru"
+  }
+  {
+  photo: "/img/employee/008.png"
+  name:  "Алексей Князев"
+  occupation: "Python Мастер"
   }
 ]
 ## Portfolio ##
