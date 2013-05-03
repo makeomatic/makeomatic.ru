@@ -27,9 +27,8 @@ startApp = ->
     app.set 'view engine' , 'dot'
 
     app.use express.static "#{root}/../static"
-
     app.use express.methodOverride()
-    #app.use express.bodyParser {uploadDir: "#{root}/../tmp"} ## не разрешаем загрузки ##
+    app.use require('./middleware/ieEdgeChromeFrameHeader')
     app.use app.router
 
 
