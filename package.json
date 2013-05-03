@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git://github.com/AVVSDevelopment/avvs.co.git"
   },
+  "scripts": {
+    "start" : "sudo NODE_ENV=production HOST=127.0.0.1 PORT=5555 forever start lib/app.js"
+  },
   "author": "Vitaly Aminev",
   "readmeFilename": "README.md",
   "dependencies": {
