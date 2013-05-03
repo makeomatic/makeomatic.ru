@@ -21,7 +21,7 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="150">
 <!--[if lt IE 8]>
-<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируйте Google Chrome Frame</a>, чтобы улучшить ваши впечатления от посещения сайта.</p>
 <![endif]-->
 
 {{# def.load("/views/partials/header.dot") }}
