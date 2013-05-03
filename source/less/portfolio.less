@@ -1,10 +1,15 @@
 .portfolio {
   margin: 100px auto;
+  @media (max-width:767px){
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .infobox {
     .quick-info {
       width: 150px;
       text-align: center;
       float: left;
+
       .logo {
         display: block;
         .title {
@@ -22,8 +27,26 @@
           font-size: 16px;
         }
       }
+
+      @media (max-width: 767px){
+        float: none;
+        width: auto;
+        .logo {
+          display: inline-block;
+          + small {
+            display: none;
+          }
+        }
+        > ul {
+          display: none;
+        }
+      }
     }
     .overview {
+      @media (max-width: 767px){
+        margin-left: auto;
+      }
+
       margin-left: 200px;
       text-align: left;
     }
@@ -62,6 +85,7 @@
     }
   }
   .carousel-indicators {
+    cursor: pointer;
     margin-top: 3px;
     position: relative;
     top: auto;
