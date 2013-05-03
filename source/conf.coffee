@@ -45,6 +45,16 @@ exports.main_page_title = "Создание сайтов в Москве, раз
 ## Team ##
 exports.employees = [
   {
+  photo: "/img/employee/002.png"
+  name:  "Вячеслав Гусев"
+  occupation: "Граф дизайнер"
+  }
+  {
+  photo: "/img/employee/003.png"
+  name:  "Борис Повод"
+  occupation: "iOS Мастер"
+  }
+  {
     photo: "/img/employee/001.png"
     name:  "Виталий Аминев"
     occupation: "CEO"
@@ -55,19 +65,14 @@ exports.employees = [
   occupation: "Дир. по развитию"
   }
   {
-  photo: "/img/employee/003.png"
-  name:  "Борис Повод"
-  occupation: "iOS Мастер"
-  }
-  {
-  photo: "/img/employee/002.png"
-  name:  "Вячеслав Гусев"
-  occupation: "Граф дизайнер"
-  }
-  {
   photo: "/img/employee/006.png"
   name:  "Никита Львов"
   occupation: "Секретное Оружие"
+  }
+  {
+  photo: "/img/employee/005.png"
+  name:  "Арман Манукян"
+  occupation: "Креативный Арма"
   }
   {
   photo: "/img/employee/007.png"
@@ -78,11 +83,6 @@ exports.employees = [
   photo: "/img/employee/008.png"
   name:  "Алексей Князев"
   occupation: "Python Мастер"
-  }
-  {
-  photo: "/img/employee/005.png"
-  name:  "Арман Манукян"
-  occupation: "Креативный Арма"
   }
 ]
 ## Portfolio ##
