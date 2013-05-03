@@ -36,15 +36,25 @@ body {
     z-index: 3;
   }
   .angeled-stripe {
-    z-index: 0;
-    .rotate(-30deg);
-    height: 200px;
-    background: white;
-    position: fixed;
-    width: 5000px;
+    position: absolute;
     top: 0;
-    left: 70%;
-    margin-left: -2500px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 0;
+    &:after {
+      content: "";
+      .rotate(-22deg);
+      height: 200px;
+      background: white;
+      position: absolute;
+      width: 5000px;
+      top: 0;
+      left: 70%;
+      margin-left: -2500px;
+      display: block;
+    }
   }
 }
 

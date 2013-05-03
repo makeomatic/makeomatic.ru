@@ -66,19 +66,29 @@ body > header {
   z-index: 3;
 }
 body .angeled-stripe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
   z-index: 0;
-  -webkit-transform: rotate(-30deg);
-  -moz-transform: rotate(-30deg);
-  -o-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg);
+}
+body .angeled-stripe:after {
+  content: "";
+  -webkit-transform: rotate(-22deg);
+  -moz-transform: rotate(-22deg);
+  -o-transform: rotate(-22deg);
+  -ms-transform: rotate(-22deg);
+  transform: rotate(-22deg);
   height: 200px;
   background: white;
-  position: fixed;
+  position: absolute;
   width: 5000px;
   top: 0;
   left: 70%;
   margin-left: -2500px;
+  display: block;
 }
 .section-team .background-flag {
   background: url("/img/background-flag.png") no-repeat top center;
