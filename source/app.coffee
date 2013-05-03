@@ -28,7 +28,7 @@ startApp = ->
 
     app.use express.static "#{root}/../static"
     app.use express.methodOverride()
-    app.use require('./middleware/ieEdgeChromeFrameHeader')
+    app.use require('./middleware/ieEdgeChromeFrameHeader')()
     app.use app.router
 
 

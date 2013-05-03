@@ -1,5 +1,4 @@
-module.exports = ieEdgeChromeFrameHeader = ->
-  return (req, res, next)->
+module.exports = (req, res, next)->
     url   = req.url
     ua    = req.headers['user-agent']
 
