@@ -8,7 +8,7 @@
             </a>
             <small>{{= portfolio.type }}</small>
             <ul class='unstyled'>
-                <li class='caption'>Что делали:</li>
+                <li class='caption'></li>
                 {{~ portfolio.activity: activity }}
                     <li>{{= activity }}</li>
                 {{~}}

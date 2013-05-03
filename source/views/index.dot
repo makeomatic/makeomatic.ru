@@ -34,17 +34,23 @@
                 <div class='skills'>
                     <div class='row-fluid'>
                         <div class='span6'>
-                            <h5>Необходимые навыки:</h5>
+                            <h5>Профессиональные навыки:</h5>
                             <ul>
-                                <li>Node.JS</li>
-                                <li>Coffee-script</li>
+                                <li>Javascript</li>
+				<li>Node.JS</li>
+                                <li>Coffeescript</li>
                                 <li>Angular.JS</li>
                             </ul>
                         </div>
                         <div class='span6'>
                             <h5>Личностные качества:</h5>
                             <ul>
-                                <li>Хочу обучаться</li>
+                                <li>обучаемость;</li>
+				<li>аналитический склад ума;</li>
+				<li>ответственность;</li>
+				<li>инициативность;</li>
+				<li>умение работать в команде;</li>
+				<li>чувство юмора;</li>
                             </ul>
                         </div>
                     </div>
