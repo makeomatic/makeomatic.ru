@@ -27,7 +27,7 @@
             </ul>
         </section>
         <section id='opportunity' class='section-cv text-center'>
-            <img src='/img/vacancy.png' />
+            <img src='/img/vacancy.png' alt="Мы можем вас нанять" />
             <div class='cv-data'>
                 <h5>Вакансия для</h5>
                 <h3>Программиста</h3>
