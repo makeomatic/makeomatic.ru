@@ -35,10 +35,6 @@ startApp = ->
   app.configure "production", ->
     app.set 'port', process.env.PORT || 80
     app.set 'host', process.env.HOST || '0.0.0.0'
-
-    ## 404 page ##
-    app.use (req, res, next) ->
-      res.render '404', {layout: false}, 404
     ## error handler ##
     app.use express.errorHandler
       dumpExceptions: false
@@ -52,8 +48,6 @@ startApp = ->
   app.configure "development", ->
     app.set 'port', process.env.PORT || 9100
     app.set 'host', '0.0.0.0'
-    app.use (req, res, next) ->
-      res.render '404', {layout: false}, 404
     app.use express.errorHandler
       dumpExceptions: true
       showStack: true
