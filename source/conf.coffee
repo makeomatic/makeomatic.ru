@@ -23,13 +23,13 @@ exports.links = [
 ]
 
 ## phone ##
-exports.phone = "+7 (495) 774-46-49"
+exports.phone = "+7 (495) 79-222-44"
 
 ## email ##
-exports.email = "getstarted@avvs.co"
+exports.email = "getstarted@makeomatic.ru"
 
 ## copyright ##
-exports.copyright = "AVVS Development, (c) 2012-2013<br/>Разработка сайтов и мобильных приложений"
+exports.copyright = "Make-o-Matic, (c) 2012-2013<br/>Разработка сайтов и мобильных приложений"
 
 ## address ##
 exports.address = "Россия, Москва, Ленинский пр-т, д 1, офис 314<br/>индекс: 111555"
@@ -40,7 +40,7 @@ exports.address = "Россия, Москва, Ленинский пр-т, д 1,
 ###
 
 ## Title ##
-exports.main_page_title = "AVVS: создание сайтов в Москве, разработка мобильных приложений, дизайн"
+exports.main_page_title = "Make-o-Matic: создание сайтов в Москве, разработка мобильных приложений, дизайн"
 
 ## Team ##
 exports.employees = [
