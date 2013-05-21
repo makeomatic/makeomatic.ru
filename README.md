@@ -1,4 +1,4 @@
-# AVVS.co marketing website
+# Makeomatic.ru marketing website
 
 ## Tech stack
 1. Node.js
