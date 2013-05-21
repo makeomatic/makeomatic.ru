@@ -8,6 +8,7 @@ module.exports =
     src: "/img/projects/recordi/logo.png"
     alt: "Прототип логотипа сайта Рекорды Рынка Недвижимости"
   brand: "Recordi"
+  link: "http://recordi.ru"
   type:  "промо-сайт"
   activity: [
     "Дизайн сайта", "Верстка", "Программирование"

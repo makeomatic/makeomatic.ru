@@ -7,6 +7,7 @@ module.exports =
     src: "/img/projects/speakgeo/logo.png"
     alt: "Логотип портала SpeakGeo"
   brand: "SpeakGeo"
+  link: "http://speakgeo.com"
   type:  "геолокационный сервис"
   activity: [
     "Дизайн сайта", "Верстка", "Программирование", "Архитектура системы"

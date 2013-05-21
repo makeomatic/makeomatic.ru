@@ -7,6 +7,7 @@ module.exports =
     src: "/img/projects/fitcafe/logo.png"
     alt: "Логотип интернет-магазина ФитКафе"
   brand: "FitCafe"
+  link: "http://fitcafe.ru"
   type:  "интернет-магазин"
   activity: [
     "Дизайн сайта"

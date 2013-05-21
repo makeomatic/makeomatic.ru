@@ -7,6 +7,7 @@ module.exports =
     src: "/img/projects/openinclude/logo.png"
     alt: "Логотип OpenInclude"
   brand: "OpenInclude"
+  link: "https://openinclude.com"
   type:  "Комплексный портал"
   activity: [
     "Дизайн сайта", "Верстка", "Программирование"
