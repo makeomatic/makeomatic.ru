@@ -7,6 +7,7 @@
                     {{~ it.links: link }}
                     <li><a href="{{= link.href }}">{{= link.name }}</a></li>
                     {{~}}
+                    <li><a href='https://github.com/AVVSDevelopment/avvs.co'>Проект на GitHub</a></li>
                 </ul>
                 <p class='copyright'>{{= it.copyright }}</p>
             </div>
