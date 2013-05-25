@@ -4,7 +4,7 @@
 express        = require 'express'
 dot            = require 'express-dot'
 async          = require 'async'
-_              = require 'underscore'
+_              = require 'lodash'
 conf           = require './conf'
 util           = require 'util'
 

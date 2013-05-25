@@ -1,6 +1,6 @@
 <div class='row'>
     <div class='span12'>
-        <section id='team' class='text-center section-team'>
+        <section id='about' class='text-center section-team'>
             <h1 class='outlined-caption'>Разработаем, создадим, продвинем!</h1>
             <p>
                 Агентство Make-o-Matic без труда воплотит в жизнь любые Ваши идеи! Создание сайтов в городе Москва, а также мобильных приложений, разработка игр и программ является нашей основной специализацией.
@@ -14,7 +14,7 @@
             <h3 class='background-flag'>Будем знакомы</h3>
             <ul class='employees unstyled inline'>
                 {{~ it.employees: employee}}
-                <li class='employee'>
+                <li class='employee' id='{{= employee.id }}'>
                    <img src='{{= employee.photo }}' alt='{{= employee.name }}' />
                    <p class='name'>
                        {{var name = employee.name.split(" "); }}
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-about text-center" id='about'>
+        <section class="section-about text-center">
             <div class='text-left'>
             <h2 class='list-header'>Мы работаем просто, как и все гениальное.</h2>
             <ul>

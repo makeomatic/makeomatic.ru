@@ -1,10 +1,12 @@
-ieEdge = require('./middleware/ieEdgeChromeFrameHeader')
+ieEdge             = require('./middleware/ieEdgeChromeFrameHeader')
+homepageController = require('./controllers/homepage')
 
 setRoutes = (app)->
   ###
     Index routes
   ###
-  app.get '/', ieEdge, require('./controllers/homepage').homepage
+  app.get '/'    , ieEdge, homepageController.homepage
+  app.get '/team', ieEdge, homepageController.team
 
   ###
     404 page

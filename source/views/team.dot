@@ -1,0 +1,21 @@
+<div class='section-team detailed'>
+    <nav>
+        {{#def.load('/views/partials/team.carousel.dot')}}
+    </nav>
+    {{~ it.employees :employee }}
+    <article class='employee bio' id='{{= employee.id }}' >
+        {{
+            var name = employee.name.split(" ");
+        }}
+        <img src='{{= employee.photo }}' alt='{{= employee.name }}' class='bio-portrait' />
+        <h2>
+            {{= name[0] }} <span class='muted'>{{= name[1] }}</span>
+        </h2>
+        <p class='occupation'>{{= employee.occupation }}</p>
+        <em class='summary'>{{= employee.brief_description }}</em>
+        <p class='lead'>
+            {{= employee.description }}
+        </p>
+    </article>
+    {{~}}
+</div>

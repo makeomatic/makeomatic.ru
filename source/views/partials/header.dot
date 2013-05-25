@@ -6,11 +6,39 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="#">Make-o-Matic</a>
+            <a class="brand" href="{{? it.isMain }}#{{??}}/{{?}}">makeomatic</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     {{~ it.links: link }}
-                        <li {{? link.isActive }}class='active'{{?}}><a href="{{= link.href }}">{{= link.name }}</a></li>
+                        {{
+                            var className = [];
+                                className.push(link.isActive ? "active" : "");
+                                className.push(link.children ? "dropdown" : "");
+                                className = className.join(" ");
+
+                            var href = !it.isMain && !link.always ? "/"+link.href : link.href,
+                                attributes = link.children ? 'data-target="#" class="dropdown-toggle" data-toggle="dropdown"' : "";
+                        }}
+                        <li class='{{= className }}'>
+                            <a href="{{= href }}" {{= attributes }}>
+                                {{= link.name }}
+                                {{? link.children }}
+                                    <b class='caret'></b>
+                                {{?}}
+                            </a>
+                            {{? link.children }}
+                            <ul class='dropdown-menu'>
+                                {{~ link.children : child_link }}
+                                    {{
+                                        var href = !it.isTeam && link.isTeam ? "/team"+child_link.href : child_link.href;
+                                    }}
+                                    <li>
+                                        <a href="{{= href }}">{{= child_link.name }}</a>
+                                    </li>
+                                {{~}}
+                            </ul>
+                            {{?}}
+                        </li>
                     {{~}}
                 </ul>
             </div><!--/.nav-collapse -->

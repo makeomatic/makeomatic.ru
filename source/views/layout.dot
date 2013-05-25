@@ -24,8 +24,9 @@
 <![endif]-->
 
 {{# def.load("/views/partials/header.dot") }}
-
-<div class='angeled-stripe'></div>
+{{? it.isMain }}
+    <div class='angeled-stripe'></div>
+{{?}}
 <section class="container">
     {{= it.body }}
 </section> <!-- /container -->
@@ -52,7 +53,6 @@
     ga('send', 'pageview');
 </script>
 <!-- google analytics -->
-
 
 </body>
 </html>
