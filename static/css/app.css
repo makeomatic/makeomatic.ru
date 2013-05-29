@@ -486,3 +486,9 @@ footer .nav li > a:hover {
 .section-team.detailed {
   margin-bottom: 100px;
 }
+.nav .dropdown.open.active .dropdown-toggle:after {
+  display: none;
+}
+.nav .dropdown.open.active .dropdown-menu .active a:after {
+  display: none;
+}

@@ -67,3 +67,22 @@
     margin-bottom: 100px;
   }
 }
+
+.nav {
+  .dropdown {
+    &.open.active {
+      .dropdown-toggle {
+        &:after {
+          display: none;
+        }
+      }
+      .dropdown-menu {
+        .active {
+          a:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
