@@ -15,7 +15,9 @@
             <ul class='employees unstyled inline'>
                 {{~ it.employees: employee}}
                 <li class='employee' id='{{= employee.id }}'>
-                   <img src='{{= employee.photo }}' alt='{{= employee.name }}' />
+                   <a href="/team#{{= employee.id }}">
+                        <img src='{{= employee.photo }}' alt='{{= employee.name }}' />
+                   </a>
                    <p class='name'>
                        {{var name = employee.name.split(" "); }}
                        {{= name[0] }}
