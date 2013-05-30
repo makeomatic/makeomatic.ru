@@ -2,7 +2,7 @@ module.exports =
   carousel: [
     {src: "/img/projects/openinclude/01.png", alt: "Сплеш картинка openInclude.com"}
   ]
-  title: "Сайт под ключ может быть доступными!"
+  title: "Сайт под ключ может быть доступным!"
   logo:
     src: "/img/projects/openinclude/logo.png"
     alt: "Логотип OpenInclude"
