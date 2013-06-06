@@ -16,12 +16,12 @@
                 {{~ it.employees: employee}}
                 <li class='employee' id='{{= employee.id }}'>
                    <a href="/team#{{= employee.id }}">
-                        <img src='{{= employee.photo }}' alt='{{= employee.name }}' />
+                     <img src='{{= employee.photo }}' alt='{{= employee.name }}' />
                    </a>
                    <p class='name'>
-                       {{var name = employee.name.split(" "); }}
-                       {{= name[0] }}
-                       <span class='muted'>{{= name[1] }}</span>
+                     {{var name = employee.name.split(" "); }}
+                     {{= name[0] }}
+                     <span class='muted'>{{= name[1] }}</span>
                    </p>
                    <p class='occupation'>{{= employee.occupation }}</p>
                 </li>
