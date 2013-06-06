@@ -1,36 +1,46 @@
-.section-team {
-  .team-carousel {
-    position: fixed;
-    top: 41px;
-    z-index: 10;
-    .box-sizing(border-box);
-    .carousel {
-      height: 150px;
-      padding: 30px 80px 30px;
-      margin-bottom: 0;
-      background: white;
+.section-team.detailed {
+  .team-nav {
+    height: 150px;
+    .team-carousel {
+      position: fixed;
+      top: 41px;
+      z-index: 10;
       .box-sizing(border-box);
-      img {
-        display: inline-block;
-        max-width: 23.5%;
-        max-height: 100%;
-      }
-      .carousel-control {
-        top: 50%;
-        .opacity(0.7);
-        &.left {
-          background: transparent url("/img/arrow-left.png") no-repeat center center;
+      .carousel {
+        height: 150px;
+        padding: 30px 80px 30px;
+        margin-bottom: 0;
+        background: white;
+        .box-sizing(border-box);
+        .team-member {
+          display: inline-block;
+          width: 14%;
+          img {
+            display: inline-block;
+            max-height: 100%;
+            max-width: 100%;
+          }
         }
-        &.right {
-          background: transparent url("/img/arrow-right.png") no-repeat center center;
-        }
-        &:hover {
-          .opacity(1);
+        .carousel-control {
+          top: 50%;
+          .opacity(0.7);
+          &.left {
+            background: transparent url("/img/arrow-left.png") no-repeat center center;
+          }
+          &.right {
+            background: transparent url("/img/arrow-right.png") no-repeat center center;
+          }
+          &:hover {
+            .opacity(1);
+          }
         }
       }
     }
   }
 
+  > h1 {
+    margin: 200px 0;
+  }
 
   .bio {
     padding-top: 250px;

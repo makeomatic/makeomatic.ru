@@ -18,7 +18,7 @@
                                 {{
                                     var item = carousel[box*box_length+image];
                                 }}
-                                <a href='#{{= item.id }}'><img src='{{= item.photo }}' alt='{{= item.name }}' /></a>
+                                <a href='#{{= item.id }}' class='team-member'><img src='{{= item.photo }}' alt='{{= item.name }}' /></a>
                             {{ } }}
                         </div>
                     {{ } }}
