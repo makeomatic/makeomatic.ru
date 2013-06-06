@@ -1,6 +1,7 @@
 module.exports =
   carousel: [
-    {src: "/img/projects/openinclude/01.png", alt: "Сплеш картинка openInclude.com"}
+    {src: "/img/projects/openinclude/01.png", alt: "Сплеш картинка OpenInclude.com"}
+    {src: "/img/projects/openinclude/02.png", alt: "Макет главной страницы OpenInclude.com"}
   ]
   title: "Сайт под ключ может быть доступным!"
   logo:

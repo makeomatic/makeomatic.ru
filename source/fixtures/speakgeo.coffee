@@ -1,6 +1,7 @@
 module.exports =
   carousel: [
     {src: "/img/projects/speakgeo/01.png", alt: "Сплеш картинка SpeakGeo.com"}
+    {src: "/img/projects/speakgeo/02.png", alt: "Макет приглашения в beta-test SpeakGeo.com"}
   ]
   title: "Говорите открыто, вместе со SpeakGeo!"
   logo:

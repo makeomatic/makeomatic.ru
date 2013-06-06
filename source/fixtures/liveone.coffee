@@ -1,6 +1,7 @@
 module.exports =
   carousel: [
     {src: "/img/projects/liveone/01.png", alt: "Сплеш картинка LiveOne Group - Streaming Video"}
+    {src: "/img/projects/liveone/02.png", alt: "LiveOne Group - макет сайта"}
   ]
   title: "Привлечение клиентов – дело инноваций. Заказ сайта LiveOne Group позволила это доказать!"
   logo:
