@@ -35,6 +35,11 @@ module.exports = function (grunt) {
         },
         clean: {
             production: ["lib"]
+        },
+        release: {
+            options: {
+                npm : false
+            }
         }
     });
 
@@ -43,6 +48,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-release');
 
 
 
