@@ -25,7 +25,7 @@
 
 {{# def.load("/views/partials/header.dot") }}
 
-<div class="icon-up" id="up" title="наверх"></div>
+<div class="icon-up visible-desktop" id="up" title="наверх"></div>
 
 {{? it.isMain }}
     <div class='angeled-stripe'></div>
