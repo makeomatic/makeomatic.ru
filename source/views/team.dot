@@ -1,5 +1,5 @@
 <div class='section-team detailed'>
-    <nav class='team-nav'>
+    <nav class='team-nav visible-desktop'>
         {{#def.load('/views/partials/team.carousel.dot')}}
     </nav>
     <h1 class='text-center'>Исключительная команда для исключительных проектов</h1>

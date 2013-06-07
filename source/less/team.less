@@ -40,14 +40,19 @@
 
   > h1 {
     margin: 200px 0;
+    @media (max-width: 979px){
+      margin: 15px 0;
+    }
   }
 
   .bio {
     padding-top: 250px;
     margin-top: -50px;
     text-align: center;
-    .bio-portrait {
-
+    @media (max-width: 979px){
+      margin: 50px 0;
+      padding-top: 0;
+      width: auto;
     }
     .occupation {
       position: relative;
