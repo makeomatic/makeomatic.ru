@@ -31,7 +31,7 @@ startApp = ->
     app.set 'view engine' , 'dot'
 
     app.use express.compress()
-    app.use express.static "#{root}/../static", { maxAge: oneDay }
+    app.use express.static "#{root}/../static", { maxAge: 14*oneDay }
     app.use express.methodOverride()
     app.use app.router
 
