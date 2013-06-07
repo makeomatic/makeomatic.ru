@@ -53,6 +53,20 @@ module.exports = function (grunt) {
         clean: {
             production: ["lib"]
         },
+        imagemin: {
+          production: {
+              options: {
+                optimizationLevel: 3
+              },
+              files: [{
+                  expand: true,
+                  cwd: 'img_source/',
+                  src: ['**/*.png'],
+                  dest: 'static/img',
+                  ext: '.png'
+              }]
+          }
+        },
         release: {
             options: {
                 npm : false
@@ -67,6 +81,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-release');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 
 
