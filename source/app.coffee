@@ -26,6 +26,7 @@ startApp = ->
     app.set 'views'       , "#{root}/views"
     app.set 'view engine' , 'dot'
 
+    app.use express.compress()
     app.use express.static "#{root}/../static"
     app.use express.methodOverride()
     app.use app.router
