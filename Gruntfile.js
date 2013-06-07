@@ -42,7 +42,6 @@ module.exports = function (grunt) {
               },
               files: {
                   'static/js/app.min.js' : ['static/js/vendor/jquery-1.10.1.min.js',
-                                            'static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js',
                                             'static/js/vendor/bootstrap.min.js',
                                             'static/js/vendor/jquery.transit.min.js',
                                             'static/js/app.js'
