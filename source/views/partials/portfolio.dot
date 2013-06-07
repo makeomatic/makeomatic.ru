@@ -1,4 +1,4 @@
-<article class='portfolio'>
+<article class='portfolio' id='{{= portfolio.brand }}'>
     {{# def.load('/views/partials/carousel.dot') }}
     <div class='clearfix infobox'>
         <div class='quick-info'>

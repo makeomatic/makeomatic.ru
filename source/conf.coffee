@@ -101,19 +101,6 @@ exports.employees = employees = [
 employees.forEach (employee)->
   employee.id = transliterate(employee.name.replace(/\s/g, "").toLowerCase())
 
-## Links ##
-
-push_empoyee_link = (employees) -> _.map employees, (employee) -> return {href: "##{employee.id}", name: employee.name}
-
-exports.links = [
-  {name: "Команда",     href: "/team", children : push_empoyee_link(employees), isTeam: true, always: true }
-  {name: "О нас",       href: "#about" }
-  {name: "Портфолио",   href: "#portfolio"}
-  {name: "Технологии",  href: "#tech"}
-  {name: "Контакты",    href: "#contacts", always: true}
-]
-
-
 ## Portfolio ##
 exports.portfolio = portfolio = []
 
@@ -131,3 +118,17 @@ portfolio.push require('./fixtures/speakgeo')
 
 ## openInclude ##
 portfolio.push require('./fixtures/liveone')
+
+## Links ##
+push_empoyee_link = (employees) -> _.map employees, (employee) -> return {href: "##{employee.id}", name: employee.name}
+push_portfolio_link = (portfolio) -> _.map portfolio, (project) -> return {href: "##{project.brand}", name: project.brand}
+
+exports.links = [
+  {name: "Команда",     href: "/team", children : push_empoyee_link(employees), isTeam: true, always: true }
+  {name: "О нас",       href: "#about" }
+  {name: "Портфолио",   href: "#portfolio", children: push_portfolio_link(portfolio), isMain: true }
+  {name: "Технологии",  href: "#tech"}
+  {name: "Контакты",    href: "#contacts", always: true}
+]
+
+

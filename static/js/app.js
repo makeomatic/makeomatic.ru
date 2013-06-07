@@ -14,11 +14,8 @@ $(function(){
             $(window).on("scroll", function () {
                 var t;
                 t = $(window).scrollTop();
-                if (!self.is_animated){
-                    console.log(t);
+                if (!self.is_animated)
                     t > 50 ? self.show_up_button() : self.hide_up_button();
-                }
-
             });
 
             this.up.on("click", function () {

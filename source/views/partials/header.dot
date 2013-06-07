@@ -30,7 +30,12 @@
                             <ul class='dropdown-menu'>
                                 {{~ link.children : child_link }}
                                     {{
-                                        var href = !it.isTeam && link.isTeam ? "/team"+child_link.href : child_link.href;
+                                        var href;
+                                        if ( link.isTeam ){
+                                            href = !it.isTeam ? "/team"+child_link.href : child_link.href;
+                                        } else if ( link.isMain ) {
+                                            href = !it.isMain ? "/"+child_link.href : child_link.href;
+                                        }
                                     }}
                                     <li>
                                         <a href="{{= href }}">{{= child_link.name }}</a>
