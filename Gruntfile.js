@@ -33,6 +33,23 @@ module.exports = function (grunt) {
                 }
             }
         },
+        uglify: {
+          production: {
+              options: {
+                  mangle: {
+                      except: ["jQuery"]
+                  }
+              },
+              files: {
+                  'static/js/app.min.js' : ['static/js/vendor/jquery-1.10.1.min.js',
+                                            'static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js',
+                                            'static/js/vendor/bootstrap.min.js',
+                                            'static/js/vendor/jquery.transit.min.js',
+                                            'static/js/app.js'
+                                            ]
+              }
+          }
+        },
         clean: {
             production: ["lib"]
         },
@@ -47,6 +64,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-release');
 
@@ -54,6 +72,6 @@ module.exports = function (grunt) {
 
     // Default task.
     grunt.registerTask('default', ['less']);
-    grunt.registerTask('production', ['clean', 'copy', 'coffee', 'less', 'cssmin']);
+    grunt.registerTask('production', ['clean', 'copy', 'coffee', 'less', 'cssmin', 'uglify']);
 
 };
