@@ -6,3 +6,4 @@ components
 tmp
 font_src
 static/css/*.css
+reverse-engineering.js
