@@ -218,6 +218,7 @@ body .angeled-stripe:after {
   cursor: pointer;
   margin-top: 50px;
   z-index: 10;
+  -webkit-backface-visibility: hidden;
 }
 .icon-up:hover {
   background-position: -59px 0;
@@ -485,7 +486,15 @@ footer .nav li > a:hover {
     margin: 15px 0;
   }
 }
+.section-team.detailed .path {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
 .section-team.detailed .bio {
+  position: relative;
+  z-index: 2;
   padding-top: 250px;
   margin-top: -50px;
   text-align: center;
