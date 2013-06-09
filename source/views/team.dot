@@ -3,6 +3,11 @@
         {{#def.load('/views/partials/team.carousel.dot')}}
     </nav>
     <h1 class='text-center'>Узнайте о нашей удивительной команде</h1>
+    <p class='lead text-center'>
+        Команда Make-o-Matic включает в себя только лучших специалистов в своих областях. Мы работаем слаженно, знаем свои плюсы и минусы,
+        работаем так, чтобы было приятно и клиентам, и нам.
+        Прочтите о каждом сотруднике компании - поймите почему Make-o-Matic подходит именно вам.
+    </p>
     {{~ it.employees :employee }}
     <article class='employee bio' id='{{= employee.id }}' >
         {{

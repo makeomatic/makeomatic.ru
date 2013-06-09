@@ -355,7 +355,7 @@ body .angeled-stripe:after {
   background: black;
 }
 .navbar-inverse .navbar-inner {
-  background: url("/img/illusion.png") repeat top center;
+  background: #202020;
 }
 .navbar-inverse a {
   vertical-align: bottom;
@@ -492,12 +492,20 @@ footer .nav li > a:hover {
 .section-team.detailed > h1 {
   position: relative;
   z-index: 3;
-  margin: 200px 0;
+  margin: 200px 0 20px;
 }
 @media (max-width: 979px) {
   .section-team.detailed > h1 {
     margin: 15px 0;
   }
+  .section-team.detailed > h1 + .lead {
+    margin-bttom: 15px;
+  }
+}
+.section-team.detailed > h1 + .lead {
+  position: relative;
+  z-index: 3;
+  margin-bottom: 180px;
 }
 .section-team.detailed .path {
   position: absolute;
