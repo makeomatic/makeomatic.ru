@@ -78,7 +78,7 @@
             </div>
         </section>
         <section class='section-portfolio text-center' id='portfolio'>
-            <h2 class='low-margin'>Порфтолио студии:</h2>
+            <h2 class='low-margin'>Портфолио студии:</h2>
             {{~ it.portfolio: portfolio}}
                 {{# def.load('/views/partials/portfolio.dot') }}
             {{~}}

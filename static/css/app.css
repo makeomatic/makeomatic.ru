@@ -299,17 +299,28 @@ body .angeled-stripe:after {
   top: 0;
 }
 .portfolio .carousel-control {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
   height: 60px;
   width: 60px;
-  line-height: 60px;
-  border-radius: 60px;
   border: 0;
+  background: transparent;
+  background-image: url("/img/carousel-control.png");
 }
 .portfolio .carousel-control.left {
   left: 65px;
+  background-position: 0 -64px;
+}
+.portfolio .carousel-control.left:hover {
+  background-position: -64px -64px;
 }
 .portfolio .carousel-control.right {
   right: 65px;
+  background-position: 0px 0;
+}
+.portfolio .carousel-control.right:hover {
+  background-position: -64px 0;
 }
 .portfolio .carousel-indicators {
   cursor: pointer;

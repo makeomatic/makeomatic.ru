@@ -12,8 +12,10 @@
         {{ } }}
     </div>
     <!-- Carousel nav -->
-    <a class="carousel-control left" href="#carousel-{{= portfolio.brand }}" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#carousel-{{= portfolio.brand }}" data-slide="next">&rsaquo;</a>
+    {{? carousel.length > 1 }}
+    <a class="carousel-control left" href="#carousel-{{= portfolio.brand }}" data-slide="prev">&nbsp;</a>
+    <a class="carousel-control right" href="#carousel-{{= portfolio.brand }}" data-slide="next">&nbsp;</a>
+    {{?}}
     <!-- carousel indicators -->
     <ol class="carousel-indicators">
         {{ for (var item = 0; item < carousel.length; item++){ }}

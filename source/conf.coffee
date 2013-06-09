@@ -119,6 +119,9 @@ portfolio.push require('./fixtures/speakgeo')
 ## openInclude ##
 portfolio.push require('./fixtures/liveone')
 
+## Фабрика тепла ##
+portfolio.push require('./fixtures/fabrika')
+
 ## Links ##
 push_empoyee_link = (employees) -> _.map employees, (employee) -> return {href: "##{employee.id}", name: employee.name}
 push_portfolio_link = (portfolio) -> _.map portfolio, (project) -> return {href: "##{project.brand}", name: project.brand}

@@ -2,7 +2,7 @@
     {{# def.load('/views/partials/carousel.dot') }}
     <div class='clearfix infobox'>
         <div class='quick-info'>
-            <a class='logo' href='{{= portfolio.link }}' target='_blank'>
+            <a class='logo' href='{{= portfolio.link }}' {{? !portfolio.noBlank }}target='_blank'{{?}}>
                 <img src='{{= portfolio.logo.src }}' alt="{{= portfolio.logo.alt }}" />
                 <h4 class='title'>{{= portfolio.brand }}</h4>
             </a>
