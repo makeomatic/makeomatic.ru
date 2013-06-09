@@ -1,6 +1,9 @@
 .navbar-inverse {
   .navbar-inner {
     background: #202020;
+    .container {
+      position: relative;
+    }
   }
   a {
     vertical-align: bottom;
@@ -38,6 +41,72 @@
           display: none;
         }
       }
+    }
+  }
+}
+
+.send-brief {
+  @media (max-width: 979px) and (min-width: 481px) {
+    left: 50%;
+    margin-left: -70px;
+    top: 0;
+  }
+  @media (max-width: 480px) {
+    position: relative;
+    width: 100%;
+    background: #202020;
+    height: 33px;
+  }
+
+
+  position: absolute;
+  width: 170px;
+  text-align: center;
+  right: 0px;
+
+  .user-select(none);
+
+  > a {
+    -webkit-backface-visibility: hidden;
+    display: inline-block;
+    width: 170px;
+    height: 52px;
+    line-height: 56px;
+    color: white;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.32);
+    > span {
+      position: relative;
+      z-index: 1;
+    }
+    .background {
+      display: block;
+      background-image: url("/img/brief.png");
+      background-position: 0 0;
+      width: 170px;
+      height: 52px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -85px;
+      z-index: 0;
+    }
+
+    &:hover {
+      @media (min-width:980px){
+        .background {
+          background-position: 0 -54px;
+        }
+      }
+      color: white;
+      text-decoration: none;
+    }
+
+    &:active {
+      .background {
+        background-position: 0 -108px;
+      }
+      color: white;
+      line-height: 58px;
     }
   }
 }

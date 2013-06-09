@@ -6,6 +6,59 @@ $(function(){
     window.App = {
         initialize: function() {
           this.addScrollTop();
+          this.addMaskedInput();
+        },
+        addMaskedInput: function(){
+          $("[name=phone]").mask("+9 (999) 999-99-99");
+          $("#callback").on('submit', this.requestCallback);
+        },
+        requestCallback: function(e){
+          e.preventDefault();
+          var _this = window.App,
+              $this = $(this),
+              $submit = $("[type=submit]", $this);
+          // не даем спамить сабмитить
+          if ( _this.callbackWasSubmitted ||  $submit.hasClass("disabled") ) return;
+
+          var data  = $this.serializeArray(),
+              name  = data[0].value,
+              phone = data[1].value;
+
+          // делаем простые проверки на наличие имени, фамилии и телефона
+          var errors = [];
+
+          if (name.length < 4){
+              errors.push("Укажите Ваше имя и фамилию");
+          }
+
+          if (phone.replace(/\D/g, "").length < 11){
+              errors.push("Укажите ваш номер полностью");
+          }
+
+          var $container = $("ul.error");
+          if ( errors.length === 0 ){
+              $container.addClass("hidden");
+              // отправляем форму
+              $submit.addClass("disabled");
+              $.post($this.attr("action"), $.param(data), function(response, textStatus){
+                  if (response.success === true){
+                      _this.callbackWasSubmitted = true;
+                      $submit.toggleClass("disabled success").text("Спасибо за Ваш запрос, скоро мы с вами свяжемся!");
+                      $("input, textarea", $this).slideUp(200);
+                  } else {
+                      // здесь возникла ошибка -- TODO: обработать
+                  }
+              }, 'json');
+          } else {
+             // контейнер для ошибок
+             $container.empty().removeClass("hidden");
+
+             $.each(errors, function(k,v){
+                $container.append("<li>"+this+"</li>");
+             });
+          }
+
+          return false;
         },
         addScrollTop: function () {
             var self = this;

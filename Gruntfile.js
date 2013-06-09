@@ -44,6 +44,7 @@ module.exports = function (grunt) {
                   'static/js/app.min.js' : ['static/js/vendor/jquery-1.10.1.min.js',
                                             'static/js/vendor/bootstrap.min.js',
                                             'static/js/vendor/jquery.transit.min.js',
+                                            'static/js/vendor/jquery.maskedinput.min.js',
                                             'static/js/app.js'
                                             ]
               }

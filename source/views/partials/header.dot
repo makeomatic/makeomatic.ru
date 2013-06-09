@@ -47,6 +47,14 @@
                     {{~}}
                 </ul>
             </div><!--/.nav-collapse -->
+
+            <div class='send-brief' >
+                <a href='#brief'>
+                    <i class='background'></i>
+                    <span>Заполнить бриф</span>
+                </a>
+            </div>
+
         </div>
     </div>
 </header>

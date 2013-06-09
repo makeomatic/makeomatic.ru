@@ -1,4 +1,22 @@
 <footer id='contacts'>
+    <div class='callback'>
+        <div class='container'>
+            <div class='row'>
+                <div class='span12'>
+                    <h2 class='xlarge'>Есть вопросы или предложения?</h3>
+                    <p class='outlined-caption'>закажите обратный звонок и наш менеджер перезвонит вам</p>
+                    <form method='POST' action='/callback' id='callback'>
+                        <ul class='hidden error'></ul>
+                        <input type="text" name='name' placeholder="Как к вам обратиться?" class='span12' required />
+                        <input type="text" name='phone' placeholder="По какому номеру звонить?" class='span6' />
+                        <input type="email" name='email' placeholder="E-mail (опционально)" class='span6 pull-right' />
+                        <textarea name='question' placeholder="Ваш вопрос (опционально)" class='span12'></textarea>
+                        <button type="submit" class='blue-plank'>Заказать звонок</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class='container'>
         <div class='row'>
             <div class='span6'>
@@ -11,7 +29,7 @@
                 </ul>
                 <p class='copyright'>{{= it.copyright }}</p>
             </div>
-            <div class='span6'>
+            <div class='span6 blue-line'>
                 <h4 class='footer-caption'>Контакты</h4>
                 <p>
                     тел: {{= it.phone }}

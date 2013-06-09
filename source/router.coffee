@@ -1,5 +1,6 @@
 ieEdge             = require('./middleware/ieEdgeChromeFrameHeader')
 homepageController = require('./controllers/homepage')
+callbackController = require('./controllers/feedback')
 
 setRoutes = (app)->
   ###
@@ -7,6 +8,12 @@ setRoutes = (app)->
   ###
   app.get '/'    , ieEdge, homepageController.homepage
   app.get '/team', ieEdge, homepageController.team
+
+  ###
+    Feedback routes
+  ###
+  app.post '/callback', callbackController.callback
+  app.post '/brief',    callbackController.brief
 
   ###
     404 page

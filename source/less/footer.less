@@ -1,16 +1,111 @@
 footer {
+  .blue-line {
+    border-bottom: 4px solid #2ccaf3;
+    margin-bottom: -4px;
+  }
+
   @media (max-width: 767px) {
     margin-left: -10px;
     margin-right: -10px;
     padding-left: 10px;
     padding-right: 10px;
     width: 100%;
+    .blue-line {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
   }
+
+  div.span6 {
+    height: 200px;
+  }
+
+  .callback {
+    border-bottom: 5px solid #414141;
+    padding-bottom: 30px;
+    .placeholder(#7c7c7c);
+
+    .error {
+      color: red;
+    }
+
+    input, textarea {
+      background: transparent;
+      border: 1px solid #434343;
+      text-indent: 10px;
+      height: 30px;
+      color: white;
+    }
+
+    textarea {
+      height: 60px;
+    }
+
+    .xlarge {
+      color: white;
+      text-shadow: 0 4px 2px rgba(0,0,0,0.8);
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 2px;
+      font-size: 38px;
+      line-height: 45px;
+      margin: 40px 0 5px;
+    }
+    .outlined-caption {
+      display: block;
+      width: auto;
+      text-align: center;
+      color: white;
+      text-shadow: 0 2px 0 rgba(0,0,0,0.8);
+      letter-spacing: 1px;
+      font-size: 17px;
+      margin-bottom: 40px;
+      &:before, &:after {
+        border-color: white;
+        .box-shadow(0 5px 0 rgb(0,0,0));
+        width: 100px;
+        top: 7px;
+      }
+      &:before {
+        left: 10px;
+      }
+      &:after {
+        right: 10px;
+      }
+    }
+    .blue-plank {
+      font-family: 'Amasis', 'Helvetica Neue', Helvetica, Arial;
+      display: block;
+      background: #2ccaf3;
+      padding: 10px 40px 5px;
+      text-align: center;
+      color: white;
+      font-size: 18px;
+      border: 0;
+      margin: 20px auto;
+      text-transform: uppercase;
+      text-shadow: 0 2px 0 rgba(0,0,0,.32);
+      line-height: 30px;
+      height: 45px;
+      &:hover {
+        background: #efbb00;
+      }
+      &:active {
+        line-height: 35px;
+      }
+      &.success {
+        background: green !important;
+        line-height: 30px !important;
+        cursor: default;
+      }
+    }
+  }
+
   background: url("/img/illusion.png") repeat top center;
   position: relative;
   z-index: 3;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
+  border-top: 5px solid #000;
+  border-bottom: 10px solid #000;
   p, address {
     color: #ccc;
     > a {
