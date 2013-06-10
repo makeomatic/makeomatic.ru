@@ -18,7 +18,8 @@
     "express-dot": "git://github.com/david-driscoll/express-dot.git",
     "async": "~0.2.7",
     "lodash": "~1.2.1",
-    "transliterate": "0.0.2"
+    "transliterate": "0.0.2",
+    "nodemailer": "~0.4.4"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
