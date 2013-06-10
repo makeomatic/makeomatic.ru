@@ -20,10 +20,12 @@ setInterval (-> cache.phones = {}), oneDay/4
 exports.callback = (req, res)->
   ## Здесь обрабатываем заявки на поступающие запросы
   {name, phone, email, question} = req.body
+  # если в кеше уже присутствует телефон - не шлем еще раз
+  return res.json {success: true} if cache.phones[cachedPhone]?
   # делаем аналогичные клиенту проверки
   errors = []
   errors.push "Укажите Ваше имя и фамилию" if name.length < 4
-  errors.push "Укажите ваш номер полностью" if phone.replace(/\D/g, "").length < 11
+  errors.push "Укажите ваш номер полностью" if (cachedPhone = phone.replace(/\D/g, "")).length < 11
   return res.json {success:false, errors} if errors.length > 0
 
   subject = "Запрос звонка от #{name}"
@@ -39,6 +41,9 @@ exports.callback = (req, res)->
     if err?
       console.error err
       return res.json {success: false, err: "Непредвиденная ошибка сервера"}
+
+    # добавляем телефон в кеш
+    cache.phones[cachedPhone] = true
 
     # отдаем ответ что все ок
     res.json {success: true}
