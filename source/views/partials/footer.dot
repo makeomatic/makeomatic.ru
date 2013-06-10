@@ -5,7 +5,7 @@
                 <div class='span12'>
                     <h2 class='xlarge'>Есть вопросы или предложения?</h3>
                     <p class='outlined-caption'>закажите обратный звонок и наш менеджер перезвонит вам</p>
-                    <form method='POST' action='/callback' id='callback'>
+                    <form method='POST' action='/brief' id='callback'>
                         <ul class='hidden error'></ul>
                         <input type="text" name='name' placeholder="Как к вам обратиться?" class='span12' required />
                         <input type="text" name='phone' placeholder="По какому номеру звонить?" class='span6' />

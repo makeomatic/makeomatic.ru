@@ -1,0 +1,21 @@
+<div class="modal hide fade brief" id='brief'>
+    <div class="modal-body">
+        <div class='text-center'>
+            <h2 class='brief-header outlined-caption'>Расскажите нам о вашем проекте</h2>
+            <p class='small'>
+                Коротко опишите ваши идеи или просто прикрепите файл с готовым ТЗ.<br/>
+                Мы свяжемся с вами в течение 1 дня и подробно расскажем о том, как мы можем вам помочь.
+            </p>
+        </div>
+        <form method='POST' action='/brief' class='callback'>
+            <input type="text" name='name' placeholder="Как к вам обратиться?" class='span10' required />
+            <input type="text" name='phone' placeholder="По какому номеру звонить?" class='span5' />
+            <input type="email" name='email' placeholder="E-mail (опционально)" class='span5 pull-right' />
+            <textarea name='question' placeholder="Краткое описание вашего проекта" class='span7'></textarea>
+            <div class='dropbox pull-right' id='dropbox' ></div>
+
+            <button class="blue-plank pull-right" type='submit'>Отправить</button>
+        </form>
+
+    </div>
+</div>

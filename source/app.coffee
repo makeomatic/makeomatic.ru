@@ -31,6 +31,7 @@ startApp = ->
     app.set 'view engine' , 'dot'
 
     app.use express.compress()
+    app.use express.limit('10mb')
     app.use express.bodyParser()
     app.use express.static "#{root}/../static", { maxAge: 14*oneDay }
     app.use express.methodOverride()

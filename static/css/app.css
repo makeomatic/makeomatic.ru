@@ -483,98 +483,6 @@ footer .blue-line {
 footer div.span6 {
   height: 200px;
 }
-footer .callback {
-  border-bottom: 5px solid #414141;
-  padding-bottom: 30px;
-}
-footer .callback input::-webkit-input-placeholder {
-  color: #7c7c7c;
-}
-footer .callback input:-moz-placeholder {
-  color: #7c7c7c;
-}
-footer .callback textarea::-webkit-input-placeholder {
-  color: #7c7c7c;
-}
-footer .callback textarea:-moz-placeholder {
-  color: #7c7c7c;
-}
-footer .callback .error {
-  color: red;
-}
-footer .callback input,
-footer .callback textarea {
-  background: transparent;
-  border: 1px solid #434343;
-  text-indent: 10px;
-  height: 30px;
-  color: white;
-}
-footer .callback textarea {
-  height: 60px;
-}
-footer .callback .xlarge {
-  color: white;
-  text-shadow: 0 4px 2px rgba(0, 0, 0, 0.8);
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 2px;
-  font-size: 38px;
-  line-height: 45px;
-  margin: 40px 0 5px;
-}
-footer .callback .outlined-caption {
-  display: block;
-  width: auto;
-  text-align: center;
-  color: white;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.8);
-  letter-spacing: 1px;
-  font-size: 17px;
-  margin-bottom: 40px;
-}
-footer .callback .outlined-caption:before,
-footer .callback .outlined-caption:after {
-  border-color: white;
-  -webkit-box-shadow: 0 5px 0 #000000;
-  -moz-box-shadow: 0 5px 0 #000000;
-  box-shadow: 0 5px 0 #000000;
-  color: 0 5px 0 #000000;
-  width: 100px;
-  top: 7px;
-}
-footer .callback .outlined-caption:before {
-  left: 10px;
-}
-footer .callback .outlined-caption:after {
-  right: 10px;
-}
-footer .callback .blue-plank {
-  font-family: 'Amasis', 'Helvetica Neue', Helvetica, Arial;
-  display: block;
-  background: #2ccaf3;
-  padding: 10px 40px 5px;
-  text-align: center;
-  color: white;
-  font-size: 18px;
-  border: 0;
-  margin: 20px auto;
-  text-transform: uppercase;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.32);
-  line-height: 30px;
-  height: 45px;
-}
-footer .callback .blue-plank:hover {
-  background: #efbb00;
-}
-footer .callback .blue-plank:active {
-  line-height: 35px;
-}
-footer .callback .blue-plank.success {
-  background: green !important;
-  line-height: 30px !important;
-  cursor: default;
-}
 footer p,
 footer address {
   color: #ccc;
@@ -613,6 +521,98 @@ footer .nav li > a:hover {
   background: inherit;
   text-decoration: underline;
   color: #fff;
+}
+.callback {
+  border-bottom: 5px solid #414141;
+  padding-bottom: 30px;
+}
+.callback input::-webkit-input-placeholder {
+  color: #7c7c7c;
+}
+.callback input:-moz-placeholder {
+  color: #7c7c7c;
+}
+.callback textarea::-webkit-input-placeholder {
+  color: #7c7c7c;
+}
+.callback textarea:-moz-placeholder {
+  color: #7c7c7c;
+}
+.callback .error {
+  color: red;
+}
+.callback input,
+.callback textarea {
+  background: transparent;
+  border: 1px solid #434343;
+  text-indent: 10px;
+  height: 30px;
+  color: white;
+}
+.callback textarea {
+  height: 60px;
+}
+.callback .xlarge {
+  color: white;
+  text-shadow: 0 4px 2px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 38px;
+  line-height: 45px;
+  margin: 40px 0 5px;
+}
+.callback .outlined-caption {
+  display: block;
+  width: auto;
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.8);
+  letter-spacing: 1px;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+.callback .outlined-caption:before,
+.callback .outlined-caption:after {
+  border-color: white;
+  -webkit-box-shadow: 0 5px 0 #000000;
+  -moz-box-shadow: 0 5px 0 #000000;
+  box-shadow: 0 5px 0 #000000;
+  color: 0 5px 0 #000000;
+  width: 100px;
+  top: 7px;
+}
+.callback .outlined-caption:before {
+  left: 10px;
+}
+.callback .outlined-caption:after {
+  right: 10px;
+}
+.blue-plank {
+  font-family: 'Amasis', 'Helvetica Neue', Helvetica, Arial;
+  display: block;
+  background: #2ccaf3;
+  padding: 10px 40px 5px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  border: 0;
+  margin: 20px auto;
+  text-transform: uppercase;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.32);
+  line-height: 30px;
+  height: 45px;
+}
+.blue-plank:hover {
+  background: #efbb00;
+}
+.blue-plank:active {
+  line-height: 35px;
+}
+.blue-plank.success {
+  background: green !important;
+  line-height: 30px !important;
+  cursor: default;
 }
 .section-team.detailed .team-nav {
   height: 150px;
@@ -729,4 +729,116 @@ footer .nav li > a:hover {
 }
 .nav .dropdown.open.active .dropdown-menu .active a:after {
   display: none;
+}
+.modal.brief {
+  width: 720px;
+  background: url(" /img/illusion.png") repeat top left;
+  margin-left: -360px;
+}
+.modal.brief .brief-header {
+  color: white;
+  font-weight: normal;
+  text-shadow: none;
+}
+.modal.brief .brief-header + .small {
+  color: #ddd;
+}
+.modal.brief .brief-header:after,
+.modal.brief .brief-header:before {
+  border-color: white;
+}
+.modal.brief .modal-body {
+  max-height: 430px;
+  overflow: hidden;
+}
+.modal.brief .callback {
+  border-bottom: 0;
+}
+.modal.brief .callback textarea {
+  height: 120px;
+}
+.modal.brief .callback input,
+.modal.brief .callback textarea,
+.modal.brief .callback .dropbox {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+.modal.brief .callback input.span10 {
+  padding-right: 10px;
+}
+.modal.brief .callback input::-webkit-input-placeholder {
+  color: #f4f4f4;
+}
+.modal.brief .callback input:-moz-placeholder {
+  color: #f4f4f4;
+}
+.modal.brief .callback textarea::-webkit-input-placeholder {
+  color: #f4f4f4;
+}
+.modal.brief .callback textarea:-moz-placeholder {
+  color: #f4f4f4;
+}
+.modal.brief .callback .dropbox {
+  height: 128px;
+  background-image: url("/img/upload.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #434343;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+  width: 200px;
+}
+.modal.brief .callback .dropbox .qq-uploader {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+.modal.brief .callback .dropbox .qq-uploader .qq-upload-button {
+  font-size: 10px;
+  line-height: 38px;
+  border-bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: transparent;
+}
+.modal.brief .callback .dropbox .qq-uploader .qq-upload-button > input {
+  height: 128px;
+}
+.modal.brief .callback .dropbox .qq-uploader .qq-upload-list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+}
+.modal.brief .callback .dropbox .qq-uploader .qq-upload-list .qq-upload-file {
+  color: #2ccaf3;
+}
+.modal.brief .callback .dropbox .qq-uploader .qq-upload-list li {
+  background: white;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 15px;
+  height: 128px;
+  margin-top: -128px;
+}
+.modal.brief .callback .dropbox .qq-uploader .qq-upload-list li .qq-upload-size {
+  color: black;
+}
+.modal.brief .callback .dropbox .qq-uploader .qq-upload-list li .qq-upload-cancel {
+  display: block;
+  text-align: center;
 }

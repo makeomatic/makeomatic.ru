@@ -1,5 +1,24 @@
 $(function(){
     'use strict';
+
+    //сериализация данных формы в объект
+    $.fn.serializeObject = function()
+    {
+        var o = {};
+        var a = this.serializeArray();
+        $.each(a, function() {
+            if (o[this.name] !== undefined) {
+                if (!o[this.name].push) {
+                    o[this.name] = [o[this.name]];
+                }
+                o[this.name].push(this.value || '');
+            } else {
+                o[this.name] = this.value || '';
+            }
+        });
+        return o;
+    };
+
     // инициализирую приложение
     window.up_button_animate_speed = 600;
     // кнопочка scroll to top
@@ -7,6 +26,74 @@ $(function(){
         initialize: function() {
           this.addScrollTop();
           this.addMaskedInput();
+          this.addFileUploader();
+        },
+        addFileUploader: function(){
+            var $submit;
+
+            var uploader = $("#dropbox").fineUploader({
+                multiple: false,
+                autoUpload: false,
+                disableCancelForFormUploads: true,
+                validation: {
+                    sizeLimit: 1024*1024*10 // 10 мегабайт
+                },
+                text: {
+                    uploadButton: "Нажмите или перетащите ваш файл",
+                    cancelButton: "Отменить",
+                    retry: "Повторить",
+                    failUpload: "Неудачная загрузка",
+                    dragZone: "Перетащите файл сюда",
+                    dropProcessing: "Обрабатываю файл",
+                    formatProgress: "{percent}% из {total_size}",
+                    waitingForResponse: ""
+                },
+                messages: {
+                    sizeError: "{file} слишком большой, максимальный размер - {sizeLimit}.",
+                    emptyError: "{file} пустой, пожалуйста выберите другой файл"
+                }
+                /*,
+                formatFileName: function(fileOrBlobName){
+                    var maxSize = 10,
+                        breakPoint = Math.floor(maxSize/2);
+                    if (fileOrBlobName.length > maxSize) {
+                        fileOrBlobName = fileOrBlobName.slice(0, breakPoint) + '...' + fileOrBlobName.slice(-(maxSize-breakPoint));
+                    }
+                    return fileOrBlobName;
+                }
+                */
+            });
+
+            uploader
+                .on('error', function(event, id, name, reason) {
+                    $submit.addClass("error").text("Ошибка :( пожалуйста позвоните нам");
+                })
+                .on('complete', function(event, id, name, responseJSON){
+                    $submit.addClass("success").text("Спасибо за Ваш вопрос, скоро мы с вами свяжемся!");
+                    setTimeout(function(){
+                        // скрываем модалку через 150мс
+                        $("#brief").modal("hide");
+                        $(".brief form").trigger("reset");
+                        uploader.fineUploader('reset');
+                        $submit.removeClass("success").text("Отправить");
+                    }, 500);
+                });
+
+            $(".brief form").on('submit', function(e){
+                e.preventDefault();
+                var $this = $(this);
+
+                $submit = $("[type=submit]", $this);
+                // добавляем данные
+                uploader.fineUploader('setParams', $this.serializeObject());
+                uploader.fineUploader('setEndpoint', $this.attr('action'));
+                // загружаем файлы
+                uploader.fineUploader('uploadStoredFiles');
+
+                $submit.text("Загружаю...");
+
+                return false;
+            });
         },
         addMaskedInput: function(){
           $("[name=phone]").mask("+9 (999) 999-99-99");
@@ -43,7 +130,7 @@ $(function(){
               $.post($this.attr("action"), $.param(data), function(response, textStatus){
                   if (response.success === true){
                       _this.callbackWasSubmitted = true;
-                      $submit.toggleClass("disabled success").text("Спасибо за Ваш запрос, скоро мы с вами свяжемся!");
+                      $submit.toggleClass("disabled success").text("Спасибо за Ваш вопрос, скоро мы с вами свяжемся!");
                       $("input, textarea", $this).slideUp(200);
                   } else {
                       // здесь возникла ошибка -- TODO: обработать

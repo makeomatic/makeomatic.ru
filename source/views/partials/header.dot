@@ -49,7 +49,7 @@
             </div><!--/.nav-collapse -->
 
             <div class='send-brief' >
-                <a href='#brief'>
+                <a href='#brief' role='button' data-toggle='modal'>
                     <i class='background'></i>
                     <span>Заполнить бриф</span>
                 </a>

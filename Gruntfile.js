@@ -29,7 +29,7 @@ module.exports = function (grunt) {
         cssmin: {
             compress: {
                 files: {
-                    'static/css/app.min.css': ['static/css/bootstrap.css', 'static/css/app.css']
+                    'static/css/app.min.css': ['static/css/bootstrap.css', 'static/css/fineuploader-3.6.3.css', 'static/css/app.css']
                 }
             }
         },
@@ -37,7 +37,7 @@ module.exports = function (grunt) {
           production: {
               options: {
                   mangle: {
-                      except: ["jQuery"]
+                      except: ["jQuery","qq"]
                   }
               },
               files: {
@@ -45,6 +45,7 @@ module.exports = function (grunt) {
                                             'static/js/vendor/bootstrap.min.js',
                                             'static/js/vendor/jquery.transit.min.js',
                                             'static/js/vendor/jquery.maskedinput.min.js',
+                                            'static/js/vendor/jquery.fineuploader-3.6.3.min.js',
                                             'static/js/app.js'
                                             ]
               }

@@ -61,6 +61,6 @@
     ga('send', 'pageview');
 </script>
 <!-- google analytics -->
-
+{{# def.load("/views/partials/brief.dot") }}
 </body>
 </html>

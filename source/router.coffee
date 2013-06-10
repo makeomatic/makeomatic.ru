@@ -12,7 +12,6 @@ setRoutes = (app)->
   ###
     Feedback routes
   ###
-  app.post '/callback', callbackController.callback
   app.post '/brief',    callbackController.brief
 
   ###

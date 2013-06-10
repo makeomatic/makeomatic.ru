@@ -1,7 +1,8 @@
 ## Зависимости
 nodemailer       = require "nodemailer"
 _                = require 'lodash'
-credentials      = require("../../smtp.json")
+credentials      = require "../../smtp.json"
+fs               = require 'fs'
 
 config  =
   service: 'yandex'
@@ -22,9 +23,11 @@ cache =
 oneDay = 86400000
 setInterval (-> cache.phones = {}), oneDay/4
 
-exports.callback = (req, res)->
+exports.brief = (req, res)->
   ## Здесь обрабатываем заявки на поступающие запросы
   {name, phone, email, question} = req.body
+  {qqfile} = req.files
+
   # если в кеше уже присутствует телефон - не шлем еще раз
   return res.json {success: true} if cache.phones[cachedPhone]?
   # делаем аналогичные клиенту проверки
@@ -42,20 +45,21 @@ exports.callback = (req, res)->
             """
 
   data = _.extend {subject, text}, mailOptions
+  # обрабатываем атачмент
+  if qqfile?
+    data.attachments = [{
+      fileName: qqfile.name
+      streamSource: fs.createReadStream(qqfile.path)
+      contentType: qqfile.type
+    }]
+
   # заставлять клиента ждать ответ мы не будем
   transport.sendMail data, (err, response)->
     if err?
       console.error err
       return res.json {success: false, err: "Непредвиденная ошибка сервера"}
-
     # добавляем телефон в кеш
     cache.phones[cachedPhone] = true
 
     # отдаем ответ что все ок
     res.json {success: true}
-
-
-exports.brief = (req, res)->
-  ## здесь обрабатываем бриф
-
-  res.json {success: true}
