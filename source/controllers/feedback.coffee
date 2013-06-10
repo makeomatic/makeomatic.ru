@@ -1,12 +1,17 @@
 ## Зависимости
-nodemailer = require "nodemailer"
-transport  = nodemailer.createTransport "sendmail"
-_          = require 'lodash'
+nodemailer       = require "nodemailer"
+_                = require 'lodash'
+credentials      = require("../../smtp.json")
+
+config  =
+  service: 'yandex'
+  auth: credentials
+
+transport = nodemailer.createTransport "SMTP", config
 
 mailOptions =
-  from: "Feedback robot <noreply+callback@makeomatic.ru>"
+  from: "Feedback robot <#{credentials.user}>"
   to: "getstarted@makeomatic.ru"
-
 
 # кеш внутри памяти -- мы не хотим получать много спама, но и мучаться писать защиты тоже не хотим
 # просто сохраняем все запросы внутри памяти и периодически чистим
@@ -35,14 +40,13 @@ exports.callback = (req, res)->
             E-mail: #{email}\n
             Вопрос: #{question}
             """
+
   data = _.extend {subject, text}, mailOptions
   # заставлять клиента ждать ответ мы не будем
   transport.sendMail data, (err, response)->
     if err?
       console.error err
       return res.json {success: false, err: "Непредвиденная ошибка сервера"}
-
-    console.log response
 
     # добавляем телефон в кеш
     cache.phones[cachedPhone] = true
