@@ -42,6 +42,8 @@ exports.callback = (req, res)->
       console.error err
       return res.json {success: false, err: "Непредвиденная ошибка сервера"}
 
+    console.log response
+
     # добавляем телефон в кеш
     cache.phones[cachedPhone] = true
 
