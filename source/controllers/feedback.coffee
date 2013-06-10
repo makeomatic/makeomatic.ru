@@ -35,9 +35,9 @@ exports.callback = (req, res)->
             E-mail: #{email}\n
             Вопрос: #{question}
             """
-
+  data = _.extend {subject, text}, mailOptions
   # заставлять клиента ждать ответ мы не будем
-  transport.sendMail _.extend {subject, text}, mailOptions, (err, response)->
+  transport.sendMail data, (err, response)->
     if err?
       console.error err
       return res.json {success: false, err: "Непредвиденная ошибка сервера"}
