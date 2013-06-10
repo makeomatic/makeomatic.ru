@@ -30,8 +30,8 @@ startApp = ->
     app.set 'views'       , "#{root}/views"
     app.set 'view engine' , 'dot'
 
-    app.use express.bodyParser()
     app.use express.compress()
+    app.use express.bodyParser()
     app.use express.static "#{root}/../static", { maxAge: 14*oneDay }
     app.use express.methodOverride()
     app.use app.router
