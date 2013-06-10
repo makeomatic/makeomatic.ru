@@ -29,7 +29,7 @@ module.exports = function (grunt) {
         cssmin: {
             compress: {
                 files: {
-                    'static/css/app.min.css': ['static/css/bootstrap.css', 'static/css/fineuploader-3.6.3.css', 'static/css/app.css']
+                    'static/css/app.min.css': ['static/css/vendor/bootstrap.css', 'static/css/vendor/fineuploader-3.6.3.css', 'static/css/app.css']
                 }
             }
         },
