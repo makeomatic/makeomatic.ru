@@ -3,7 +3,7 @@
         <div class='container'>
             <div class='row'>
                 <div class='span12'>
-                    <h2 class='xlarge'>Есть вопросы или предложения?</h3>
+                    <h2 class='xlarge'>Есть вопросы или предложения?</h2>
                     <p class='outlined-caption'>закажите обратный звонок и наш менеджер перезвонит вам</p>
                     <form method='POST' action='/brief' id='callback'>
                         <ul class='hidden error'></ul>
