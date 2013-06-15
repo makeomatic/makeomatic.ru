@@ -43,7 +43,7 @@
 <script src="/js/vendor/bootstrap.min.js"></script>
 <script src="/js/app.js"></script>
 {{??}}
-<script src="/js/app.min.js" charset="UTF-8" language="javascript"></script>
+<script src="/js/app.min.js" charset="UTF-8" ></script>
 {{?}}
 <!-- end scripts -->
 
