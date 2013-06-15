@@ -7,7 +7,7 @@ async          = require 'async'
 _              = require 'lodash'
 conf           = require './conf'
 util           = require 'util'
-
+pkg            = require './package.json'
 
 app  = express()
 root = __dirname
@@ -18,6 +18,7 @@ root = __dirname
 
 # один день
 oneDay = 86400000
+doT.setGlobals {pkgVer: pkg.version}
 
 # функция старта приложения
 startApp = ->

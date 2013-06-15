@@ -2,6 +2,7 @@ module.exports = function (grunt) {
 
     // Project configuration.
     grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
         less: {
             development: {
                 files: {
@@ -29,7 +30,7 @@ module.exports = function (grunt) {
         cssmin: {
             compress: {
                 files: {
-                    'static/css/app.min.css': ['static/css/vendor/bootstrap.css', 'static/css/vendor/fineuploader-3.6.3.css', 'static/css/app.css']
+                    'static/css/app.min.<%= pkg.version %>.css': ['static/css/vendor/bootstrap.css', 'static/css/vendor/fineuploader-3.6.3.css', 'static/css/app.css']
                 }
             }
         },
@@ -41,7 +42,7 @@ module.exports = function (grunt) {
                   }
               },
               files: {
-                  'static/js/app.min.js' : ['static/js/vendor/jquery-1.10.1.min.js',
+                  'static/js/app.min.<%= pkg.version %>.js' : ['static/js/vendor/jquery-1.10.1.min.js',
                                             'static/js/vendor/bootstrap.min.js',
                                             'static/js/vendor/jquery.transit.min.js',
                                             'static/js/vendor/jquery.maskedinput.min.js',
