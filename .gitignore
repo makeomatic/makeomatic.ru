@@ -8,3 +8,4 @@ font_src
 static/css/*.css
 reverse-engineering.js
 smtp.json
+static/js/app.min*
