@@ -9,7 +9,8 @@ module.exports =
     alt: "Логотип OpenInclude"
   brand: "OpenInclude"
   link: "https://openinclude.com"
-  type:  "Комплексный портал"
+  noBlank: true
+  type:  "Комплексный портал<br/><span class='label label-important'>в разработке</span>"
   activity: [
     "Дизайн сайта", "Верстка", "Программирование"
   ]
