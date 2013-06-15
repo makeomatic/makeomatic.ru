@@ -7,7 +7,7 @@ async          = require 'async'
 _              = require 'lodash'
 conf           = require './conf'
 util           = require 'util'
-pkg            = require './package.json'
+pkg            = require '../package.json'
 
 app  = express()
 root = __dirname
