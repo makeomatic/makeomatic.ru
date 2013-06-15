@@ -18,7 +18,7 @@ root = __dirname
 
 # один день
 oneDay = 86400000
-doT.setGlobals {pkgVer: pkg.version}
+dot.setGlobals {pkgVer: pkg.version}
 
 # функция старта приложения
 startApp = ->
