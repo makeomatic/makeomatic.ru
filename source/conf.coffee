@@ -21,7 +21,7 @@ exports.phone = "+7 (495) 79-222-44"
 exports.email = "getstarted@makeomatic.ru"
 
 ## copyright ##
-exports.copyright = "Make-o-Matic, (c) 2012-2013<br/>Разработка сайтов и мобильных приложений"
+exports.copyright = "Makeomatic, (c) 2012-2013<br/>Разработка сайтов и мобильных приложений"
 
 ## address ##
 exports.address = "Россия, Москва, Ленинский пр-т, д 1, офис 314<br/>индекс: 111555"
@@ -32,8 +32,8 @@ exports.address = "Россия, Москва, Ленинский пр-т, д 1,
 ###
 
 ## Title ##
-exports.main_page_title = "Make-o-Matic: создание сайтов в Москве, разработка мобильных приложений, дизайн"
-exports.team_page_title = "Make-o-Matic: слаженная команда, передовые технологии, лучшие решения"
+exports.main_page_title = "Makeomatic: создание сайтов в Москве, разработка мобильных приложений, дизайн"
+exports.team_page_title = "Makeomatic: слаженная команда, передовые технологии, лучшие решения"
 
 
 ## Team ##
@@ -134,5 +134,5 @@ exports.links = [
   {name: "Контакты",    href: "#contacts", always: true}
 ]
 
-exports.description = "Агентство Make-o-Matic с радостью воплотит в жизнь Ваши идеи! Создание сайтов в Москве, разработка мобильных приложений, дизайна, UX и игр являются нашей основной специализацией."
+exports.description = "Агентство Makeomatic с радостью воплотит в жизнь Ваши идеи! Создание сайтов в Москве, разработка мобильных приложений, дизайна, UX и игр являются нашей основной специализацией."
 
