@@ -27,6 +27,22 @@ $(function(){
           this.addScrollTop();
           this.addMaskedInput();
           this.addFileUploader();
+          this.addBriefHandler();
+        },
+        addBriefHandler: function(){
+            var isMobile = this.isMobile;
+            if ( isMobile ) {
+                $("a[href=#brief][data-toggle=modal]").on('click', function(e){
+                    e.preventDefault();
+                    // скроллим вниз к контактам -- есть форма для отправки брифа
+                    $("html, body").animate({
+                        scrollTop: $("#contacts").offset().top - 75
+                    }, self.up_button_animate_speed);
+
+                    return false;
+                });
+            }
+
         },
         addFileUploader: function(){
             var $submit;
@@ -52,16 +68,6 @@ $(function(){
                     sizeError: "{file} слишком большой, максимальный размер - {sizeLimit}.",
                     emptyError: "{file} пустой, пожалуйста выберите другой файл"
                 }
-                /*,
-                formatFileName: function(fileOrBlobName){
-                    var maxSize = 10,
-                        breakPoint = Math.floor(maxSize/2);
-                    if (fileOrBlobName.length > maxSize) {
-                        fileOrBlobName = fileOrBlobName.slice(0, breakPoint) + '...' + fileOrBlobName.slice(-(maxSize-breakPoint));
-                    }
-                    return fileOrBlobName;
-                }
-                */
             });
 
             uploader

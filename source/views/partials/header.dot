@@ -55,6 +55,13 @@
                 </a>
             </div>
 
+            <h4 class='phone-desktop'>
+                Звоните: {{= it.phone }}
+            </h4>
+
         </div>
+
+
+
     </div>
 </header>

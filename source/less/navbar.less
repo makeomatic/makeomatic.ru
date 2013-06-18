@@ -1,4 +1,22 @@
 .navbar-inverse {
+
+  .phone-desktop {
+    position: absolute;
+    color: white;
+    line-height: 45px;
+    top: 0;
+    left: 100%;
+    margin: 0;
+    font-weight: normal;
+    white-space: nowrap;
+    padding: 0 0 0 30px;
+    display: none;
+    @media (min-width:1350px){
+      display: block;
+    }
+  }
+
+
   .navbar-inner {
     background: #202020;
     .container {
@@ -67,6 +85,7 @@
   .user-select(none);
 
   > a {
+    outline: 0;
     -webkit-backface-visibility: hidden;
     display: inline-block;
     width: 170px;
