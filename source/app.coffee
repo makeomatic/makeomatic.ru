@@ -18,7 +18,10 @@ root = __dirname
 
 # один день
 oneDay = 86400000
-dot.setGlobals {pkgVer: pkg.version}
+dot.setGlobals {
+  pkgVer: pkg.version
+  description: conf.description
+}
 
 # функция старта приложения
 startApp = ->
@@ -34,7 +37,8 @@ startApp = ->
     app.use express.compress()
     app.use express.limit('10mb')
     app.use express.bodyParser()
-    app.use express.static "#{root}/../static", { maxAge: 14*oneDay }
+    app.use express.static "#{root}/../static/icons", {maxAge: 14*oneDay }
+    app.use express.static "#{root}/../static", { maxAge: 365*oneDay }
     app.use express.methodOverride()
     app.use app.router
 

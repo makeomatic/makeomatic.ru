@@ -38,7 +38,7 @@ exports.team_page_title = "Make-o-Matic: слаженная команда, пе
 
 ## Team ##
 exports.employees = employees = [
-{
+  {
     photo: "/img/employee/003.png"
     name:  "Борис Повод"
     occupation: "iOS Мастер"
@@ -134,4 +134,5 @@ exports.links = [
   {name: "Контакты",    href: "#contacts", always: true}
 ]
 
+exports.description = "Агентство Make-o-Matic с радостью воплотит в жизнь Ваши идеи! Создание сайтов в Москве, разработка мобильных приложений, дизайна, UX и игр являются нашей основной специализацией."
 

@@ -2,9 +2,7 @@
     <div class='span12'>
         <section id='about' class='text-center section-team'>
             <h1 class='outlined-caption'>Разработаем, создадим, продвинем!</h1>
-            <p class='lead'>
-                Агентство Make-o-Matic с радостью воплотит в жизнь Ваши идеи! Создание сайтов в Москве, разработка мобильных приложений, дизайна, UX и игр являются нашей основной специализацией.
-            </p>
+            <p class='lead'>{{= this.description }}</p>
             <h3 class='background-flag'>Будем знакомы</h3>
             <ul class='employees unstyled inline'>
                 {{~ it.employees: employee}}
