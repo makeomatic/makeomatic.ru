@@ -30,7 +30,7 @@ $(function(){
           this.addBriefHandler();
         },
         addBriefHandler: function(){
-            var isMobile = this.isMobile.any;
+            var isMobile = window.isMobile.any;
             if ( isMobile ) {
                 $("a[href=#brief][data-toggle=modal]").on('click', function(e){
                     e.preventDefault();

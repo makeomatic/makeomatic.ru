@@ -47,7 +47,7 @@ module.exports = function (grunt) {
                                             'static/js/vendor/jquery.transit.min.js',
                                             'static/js/vendor/jquery.maskedinput.min.js',
                                             'static/js/vendor/jquery.fineuploader-3.6.3.min.js',
-                                            'static/js/vender/isMobile.js',
+                                            'static/js/vendor/isMobile.js',
                                             'static/js/app.js'
                                             ]
               }
