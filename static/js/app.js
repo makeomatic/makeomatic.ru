@@ -36,7 +36,7 @@ $(function(){
                     e.preventDefault();
                     // скроллим вниз к контактам -- есть форма для отправки брифа
                     $("html, body").animate({
-                        scrollTop: $("#contacts").offset().top - 75
+                        scrollTop: $("#contacts").offset().top
                     }, self.up_button_animate_speed);
 
                     return false;
