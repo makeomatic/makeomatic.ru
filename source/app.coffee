@@ -20,7 +20,6 @@ root = __dirname
 oneDay = 86400000
 dot.setGlobals {
   pkgVer: pkg.version
-  description: conf.description
 }
 
 # функция старта приложения
