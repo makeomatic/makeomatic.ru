@@ -19,7 +19,10 @@
     "async": "~0.2.7",
     "lodash": "~1.2.1",
     "transliterate": "0.0.2",
-    "nodemailer": "~0.4.4"
+    "nodemailer": "~0.4.4",
+    "hexo": "~1.2.4",
+    "hexo-renderer-dotjs": "~0.1.0",
+    "hexo-renderer-less": "0.0.2"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

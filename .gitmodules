@@ -1,0 +1,3 @@
+[submodule "hexo-theme-makeomatic"]
+        path = hexo-theme-makeomatic
+        url = git://github.com/AVVSDevelopment/hexo-theme-makeomatic.git
