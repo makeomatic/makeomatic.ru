@@ -38,6 +38,10 @@ startApp = ->
     app.use express.bodyParser()
     app.use express.static "#{root}/../static/icons", {maxAge: 14*oneDay }
     app.use express.static "#{root}/../static", { maxAge: 365*oneDay }
+
+    # сервим статичные файлы для блога
+    app.use '/blog/', express.static "#{root}/../blog/public"
+
     app.use express.methodOverride()
     app.use app.router
 
@@ -73,8 +77,8 @@ startApp = ->
   ###
     Start the app
   ###
-  app.listen app.get('port'), app.get('host')
-  util.log util.format('ENV: %s, listening on http://%s:%s', app.get('env'), app.get('host'), app.get('port'))
+  app.listen app.get('port'), app.get('host'), ->
+    util.log util.format('ENV: %s, listening on http://%s:%s', app.get('env'), app.get('host'), app.get('port'))
 
 ###
   Export app for some further use

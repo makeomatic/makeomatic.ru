@@ -1,0 +1,8 @@
+<section id="tech" class='tech'>
+    <h2 class='text-center'>Любимые технологии, которые мы используем в повседневной работе</h2>
+    <ul class='unstyled inline text-center'>
+        {{~ it.tech: tech }}
+        <li><img src='{{= tech }}' alt="" /></li>
+        {{~}}
+    </ul>
+</section>

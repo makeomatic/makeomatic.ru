@@ -13,7 +13,7 @@ language: Ru
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://makeomatic.ru/blog
-root: /blog
+root: /blog/
 permalink: :year/:month/:day/:title/
 tag_dir: tags
 archive_dir: archives
@@ -70,8 +70,11 @@ disqus_shortname:
 
 # Extensions
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
+plugins:
+- hexo-renderer-dotjs
+
 ## Themes: https://github.com/tommy351/hexo/wiki/Themes
-theme: light
+theme: makeomatic
 exclude_generator:
 
 # Deployment
