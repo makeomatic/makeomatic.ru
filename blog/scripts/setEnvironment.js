@@ -5,8 +5,15 @@ hexo.on('ready', function(){
     // package.json settings
     var pkg = require('../../package.json');
 
+    // load main site config file
+    var config = require('../../lib/conf.js');
+    // ставим линк блога как активный
+    config.links[0].isActive = true;
+
+
     dotJSRenderer.setGlobals({
        pkgVer: pkg.version,
-       env: process.env.NODE_ENV || "production"
+       env: process.env.NODE_ENV || "production",
+       makeomatic_config: config
     });
 });

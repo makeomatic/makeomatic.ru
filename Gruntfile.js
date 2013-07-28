@@ -39,7 +39,8 @@ module.exports = function (grunt) {
               options: {
                   mangle: {
                       except: ["jQuery","qq"]
-                  }
+                  },
+                  beautify: true
               },
               files: {
                   'static/js/app.min.<%= pkg.version %>.js' : ['static/js/vendor/jquery-1.10.1.min.js',
@@ -47,6 +48,7 @@ module.exports = function (grunt) {
                                             'static/js/vendor/jquery.transit.min.js',
                                             'static/js/vendor/jquery.maskedinput.min.js',
                                             'static/js/vendor/jquery.fineuploader-3.6.3.min.js',
+                                            'static/js/vendor/gallery.js',
                                             'static/js/vendor/isMobile.js',
                                             'static/js/app.js'
                                             ]
@@ -54,7 +56,8 @@ module.exports = function (grunt) {
           }
         },
         clean: {
-            production: ["lib"]
+            production: ["lib"],
+            blog: ["blog/public", "blog/db.json"]
         },
         imagemin: {
           production: {
@@ -74,10 +77,37 @@ module.exports = function (grunt) {
             options: {
                 npm : false
             }
+        },
+        shell: {
+            hexo: {
+                command: "cd blog && ../node_modules/.bin/hexo generate",
+                options: {
+                    stdout: true,
+                    stderr: true
+                }
+            }
+        },
+        watch: {
+            blog: {
+                files: ['blog/themes/**','blog/scaffolds/**','blog/scripts/**', 'blog/**/*.yml', "blog/source/_posts/**"],
+                tasks: ['clean:blog', 'shell:hexo'],
+                options: {
+                    livereload: true
+                }
+            },
+            less: {
+                files: ['source/less/**'],
+                tasks: ['less', 'cssmin'],
+                options: {
+                    livereload: true
+                }
+            }
         }
     });
 
+    grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -89,7 +119,7 @@ module.exports = function (grunt) {
 
 
     // Default task.
-    grunt.registerTask('default', ['less']);
-    grunt.registerTask('production', ['clean', 'copy', 'coffee', 'less', 'cssmin', 'uglify']);
+    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('production', ['clean:production', 'copy', 'coffee', 'less', 'cssmin', 'uglify', 'shell']);
 
 };

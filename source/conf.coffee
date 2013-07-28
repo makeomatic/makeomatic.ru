@@ -127,6 +127,7 @@ push_empoyee_link = (employees) -> _.map employees, (employee) -> return {href: 
 push_portfolio_link = (portfolio) -> _.map portfolio, (project) -> return {href: "##{project.brand}", name: project.brand}
 
 exports.links = [
+  {name: "Блог",        href: "/blog", always: true }
   {name: "Команда",     href: "/team", children : push_empoyee_link(employees), isTeam: true, always: true }
   {name: "О нас",       href: "#about" }
   {name: "Портфолио",   href: "#portfolio", children: push_portfolio_link(portfolio), isMain: true }
