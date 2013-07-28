@@ -7,3 +7,4 @@ static/css/*.css
 reverse-engineering.js
 smtp.json
 static/js/app.min*
+blog/public
