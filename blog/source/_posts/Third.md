@@ -1,40 +1,32 @@
 title: Блог джуниора. 3 статья subtitle: Deleting author: Горшунов Владимир tags: [Блог джуниора] 
 Сделал кнопку delete, сразу прикладываю код:<!-- more -->
 
-{% blockquote %}
-$( document ).ready(function() {
-  $(".delete").click(function(event){
-	  var that = this;
-	  $.post("/delete", { id: $(this).attr("data-id") }, function(data){
-	  	console.log(data.success);
-	  	if (data.success){
-	  		console.log(that);
-	  		$(that).parent().remove();
-	  	}
-	  });
-	});
-});
-{% endblockquote %}
+    $( document ).ready(function() {
+      $(".delete").click(function(event){
+    	  var that = this;
+    	  $.post("/delete", { id: $(this).attr("data-id") }, function(data){
+    	  	console.log(data.success);
+    	  	if (data.success){
+    	  		console.log(that);
+    	  		$(that).parent().remove();
+    	  	}
+    	  });
+    	});
+    });
 
 #### Post-запрос по клику на кнопку delete
 
-{% blockquote %}
-<button class="delete" data-id="{{=user.id}}" >delete</button>
-{% endblockquote %}
+    <button class="delete" data-id="{{=user.id}}" >delete</button>
 
 #### Обрабатываем путь:
 
-{% blockquote %}
-app.post('/delete', secretController.del);
-{% endblockquote %}
+    app.post('/delete', secretController.del);
 
 #### Контроллер:
 
-{% blockquote %}
-exports.del = function(req, res) {
-	User.findById(req.body.id, function (err, user) {
-		user.remove();
-	  return res.send ({success: true});
-	});
-};
-{% endblockquote %}
+    exports.del = function(req, res) {
+    	User.findById(req.body.id, function (err, user) {
+    		user.remove();
+    	  return res.send ({success: true});
+    	});
+    };
