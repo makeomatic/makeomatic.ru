@@ -7,7 +7,7 @@ jQuery — библиотека Javascript, фокусирующаяся на в
 Удобно работать с DOM'ом(Document Object Model). Подключается одной строчкой:
 
 {% blockquote %}
-<script type="text/javascript" src="/js/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="Путь к jQuery"></script>
 {% endblockquote %}
 
 Вся работа с jQuery ведётся с помощью функции $. Если в проекте используются другие JavaScript библиотеки, где используется $, то можно заменять её синонимом jQuery.
