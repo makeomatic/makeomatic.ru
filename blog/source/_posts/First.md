@@ -6,8 +6,8 @@ tags: [Блог джуниора]
 Обнаружил, что регистрация не работает после вчерашних “переделок”<!-- more -->:
 Решилось всё простыми:
 
-var User   = require('./../models/schema')
-  , bcrypt = require('bcrypt');
+    var User   = require('./../models/schema')
+      , bcrypt = require('bcrypt');
 
 Первая строчка подключает для дальнейшего использования модель User
 Вторая - отвечает за шифрование паролей, т.к. в базе данных они хранятся зашифрованными.
@@ -18,11 +18,9 @@ var User   = require('./../models/schema')
 
 #### Так я обрабатываю переход на “секретную” страничку:
 
-{% blockquote %}
-exports.secretPage = function (req, res) {
-  var User = require('./../models/schema');
-  User.find({}, function(err, users){
-    res.render('closed', {users:users}); //передаем users в шаблонизатор
-  });
-};
-{% endblockquote %}
+    exports.secretPage = function (req, res) {
+      var User = require('./../models/schema');
+      User.find({}, function(err, users){
+        res.render('closed', {users:users}); //передаем users в шаблонизатор
+      });
+    };
