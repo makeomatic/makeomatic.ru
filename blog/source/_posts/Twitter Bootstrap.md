@@ -1,4 +1,4 @@
-title: Блог джуниора. Twitter Bootstrap subtitle: Bootstrap author: Горшунов Владимир tags: [Блог джуниора] 
+title: Блог джуниора. Twitter Bootstrap subtitle: Bootstrap author: Горшунов Владимир tags: [Блог джуниора]<br>
 На днях была выпущена новая версия twitter bootstrap 3 RC1. 
 А т.к. никаких стилей для предыдущего проекта я не делал, решил чуть приукрасить страницу<!-- more -->
 
