@@ -10,11 +10,11 @@ Angular.js представляет собой фреймворк для пос�
 
 Простейшее приложение можно создать лишь добавив в html файл:
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
 
 И добавить ng-app к body или html тегам(по крайней мере, обычно так делают) так:
 
-<html ng-app>
+    <html ng-app>
 
 Некоторые могут подумать, зачем к html прикручивать, объясню:
 Cоздавая приложения на ангуляре мы создаём $scope – область видимости и за пределами области видимости ангуляр не работает. Соответственно, добавляя ng-app в html мы можем также обновлять, например, title тег.
@@ -26,57 +26,55 @@ Cоздавая приложения на ангуляре мы создаём $
 
 index.html:
 
-<!DOCTYPE html>
-<html ng-app>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
-    <script type="text/javascript" src="client.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-  </head>
-  <body ng-controller="List">
-    <div class="container">
-      <header class="page-header">
-        <h1>NEWS</h1>
-      </header>
-      <div ng-controller="List">
-        <ul class="list-unstyled list-group">
-          <li ng-repeat="item in news" class="list-group-item">
-            <h3>{{item.subject}}</h3>
-            <article>{{item.content}}</article>
-          </li>
-        </ul>
-        <form name='addForm' class="form-inline" ng-submit="add($event)">
-          <input type="text" class="form-control" ng-model="article.subject" placeholder="Enter article's name"/>
-          <input type="text" class="form-control" ng-model="article.content" placeholder="Enter article's preview"/>
-          <input type="text" class="form-control" ng-model="article.fullContent" placeholder="Enter article" />
-          <button type="submit" class="btn btn-default">Add</button>
-        </form>
-      </div>
-      <footer class="modal-footer">
-        <p>
-          &copy; Copyright  by vladimir
-        </p>
-      </footer>
-    </div>
-  </div>
-</body>
-</html>
-
+    <!DOCTYPE html>
+    <html ng-app> // директива, указывающая на приложение
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>test</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+        <script type="text/javascript" src="client.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+      </head>
+      <body ng-controller="List"> // создаем контроллер с именем List
+        <div class="container">
+          <header class="page-header">
+            <h1>NEWS</h1>
+          </header>
+          <div>
+            <ul class="list-unstyled list-group">
+              <li ng-repeat="item in news" class="list-group-item"> // директива ng-repeat создает экземпляры по шаблону для каждого элемента коллекции.
+                <h3>{{item.subject}}</h3> 
+                <article>{{item.content}}</article>
+              </li>
+            </ul>
+            <form name='addForm' class="form-inline" ng-submit="add($event)"> // ng-submit привязывает angular-выражение к событию отправки формы
+              <input type="text" class="form-control" ng-model="article.subject" placeholder="Enter article's name"/> // данные из модели передаются
+              <input type="text" class="form-control" ng-model="article.content" placeholder="Enter article's preview"/> // по клику на кнопку Add
+              <input type="text" class="form-control" ng-model="article.fullContent" placeholder="Enter article" /> // в функцию add()
+              <button type="submit" class="btn btn-default">Add</button> // обработка которой написана ниже
+            </form>
+          </div>
+          <footer class="modal-footer">
+            <p>
+              &copy; Copyright  by vladimir
+            </p>
+          </footer>
+        </div>
+      </body>
+    </html>
 
 client.js:
 
-var List = function($scope){
-  $scope.news = [
-    {subject: "111", content: "111!", fullContent: "111!!!"},
-    {subject: "222", content: "222!", fullContent: "222!!!"},
-    {subject: "333", content: "333!", fullContent: "333!!!"}
-  ];
-  $scope.add = function ($event){
-    $scope.news.push(angular.copy($scope.article));
-    $scope.article = {}
-    return false;    
-  };
-};
+    var List = function($scope){
+      $scope.news = [ // создаем массив с данными
+        {subject: "111", content: "111!", fullContent: "111!!!"},
+        {subject: "222", content: "222!", fullContent: "222!!!"},
+        {subject: "333", content: "333!", fullContent: "333!!!"}
+      ];
+      $scope.add = function ($event){ // обработка нажатия кнопки add
+        $scope.news.push(angular.copy($scope.article)); добавляем к массиву новый объект
+        $scope.article = {}; // очищаем содержимое input в форме
+        return false;    
+      };
+    };
