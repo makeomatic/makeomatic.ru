@@ -27,7 +27,7 @@ Cоздавая приложения на ангуляре мы создаём `
 index.html:
 
     <!DOCTYPE html>
-    <html ng-app> // директива, указывающая на приложение
+    <html ng-app> <!-- директива, указывающая на приложение -->
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>test</title>
@@ -36,23 +36,23 @@ index.html:
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="/css/main.css">
       </head>
-      <body ng-controller="List"> // создаем контроллер с именем List
+      <body ng-controller="List"> <!-- создаем контроллер с именем List -->
         <div class="container">
           <header class="page-header">
             <h1>NEWS</h1>
           </header>
           <div>
             <ul class="list-unstyled list-group">
-              <li ng-repeat="item in news" class="list-group-item"> // директива ng-repeat создает экземпляры по шаблону для каждого элемента коллекции.
+              <li ng-repeat="item in news" class="list-group-item"> <!-- директива ng-repeat создает экземпляры по шаблону для каждого элемента коллекции.-->
                 <h3>{{item.subject}}</h3> 
                 <article>{{item.content}}</article>
               </li>
             </ul>
-            <form name='addForm' class="form-inline" ng-submit="add($event)"> // ng-submit привязывает angular-выражение к событию отправки формы
-              <input type="text" class="form-control" ng-model="article.subject" placeholder="Enter article's name"/> // данные из модели передаются
-              <input type="text" class="form-control" ng-model="article.content" placeholder="Enter article's preview"/> // по клику на кнопку Add
-              <input type="text" class="form-control" ng-model="article.fullContent" placeholder="Enter article" /> // в функцию add()
-              <button type="submit" class="btn btn-default">Add</button> // обработка которой написана ниже
+            <form name='addForm' class="form-inline" ng-submit="add($event)"> <!-- ng-submit привязывает angular-выражение к событию отправки формы -->
+              <input type="text" class="form-control" ng-model="article.subject" placeholder="Enter article's name"/> <!-- данные из модели передаются -->
+              <input type="text" class="form-control" ng-model="article.content" placeholder="Enter article's preview"/> <!-- по клику на кнопку Add -->
+              <input type="text" class="form-control" ng-model="article.fullContent" placeholder="Enter article" /> <!-- в функцию add() -->
+              <button type="submit" class="btn btn-default">Add</button> <!-- обработка которой написана ниже -->
             </form>
           </div>
           <footer class="modal-footer">
