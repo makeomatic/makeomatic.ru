@@ -7,7 +7,7 @@ module.exports =
     src: "/img/projects/fabrika/logo.png"
     alt: "Логотип интернет-магазина Фабрика Тепла"
   brand: "FabrikaTepla"
-  link: "#FabrikaTepla"
+  link: "http://www.fabrikatepla.ru"
   noBlank: true
   type:  "интернет-магазин<br/><span class='label label-important'>в разработке</span>"
   activity: [
