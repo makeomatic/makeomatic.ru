@@ -107,20 +107,28 @@ exports.portfolio = portfolio = []
 ## Рекорды рынка недвижимости ##
 portfolio.push require('./fixtures/recordi')
 
-## ФитКафе ##
-portfolio.push require('./fixtures/fitcafe')
+## Фотобот ##
+portfolio.push require('./fixtures/photobot')
+
+## Фабрика тепла ##
+portfolio.push require('./fixtures/fabrika')
 
 ## openInclude ##
 portfolio.push require('./fixtures/openinclude')
 
-## openInclude ##
-portfolio.push require('./fixtures/speakgeo')
-
-## openInclude ##
+## LiveOne ##
 portfolio.push require('./fixtures/liveone')
 
-## Фабрика тепла ##
-portfolio.push require('./fixtures/fabrika')
+## speakgeo ##
+portfolio.push require('./fixtures/speakgeo')
+
+
+
+## ФитКафе ##
+portfolio.push require('./fixtures/fitcafe')
+
+
+
 
 ## Links ##
 push_empoyee_link = (employees) -> _.map employees, (employee) -> return {href: "##{employee.id}", name: employee.name}
