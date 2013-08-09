@@ -10,26 +10,26 @@ title: Блог джуниора. Angular.js + Сервер subtitle: Angular.js
 
 У нас есть функция обработки статьи
 
-		$scope.add = function ($event){
-		  $scope.news.push(angular.copy($scope.article));
-		  $scope.article = {}
-		  return false;	
-		};
+	$scope.add = function ($event){
+	  $scope.news.push(angular.copy($scope.article));
+	  $scope.article = {}
+	  return false;	
+	};
 
 Добавим Post-запрос:
 
-		$http({method: 'POST', url: '/add', data: $scope.article})
-		  .success(function(data, status, headers, config) {})
-		  .error(function(data, status, headers, config) {});
+	$http({method: 'POST', url: '/add', data: $scope.article})
+	  .success(function(data, status, headers, config) {})
+	  .error(function(data, status, headers, config) {});
 
 Добавим в код обновление страницы сайта
         
-		$scope.news.push(angular.copy($scope.article));
-		$scope.article = {}
+	$scope.news.push(angular.copy($scope.article));
+	$scope.article = {}
 
 И в конце, как и раньше возвращаем false-значение
 
-		return false;
+	return false;
 
 Так же если у нас ошибка на сервере или сервер передает ошибку, мы можем её вывести или как-то обработать.<br>
 
@@ -39,7 +39,7 @@ title: Блог джуниора. Angular.js + Сервер subtitle: Angular.js
 Обрабатываем Post-запрос:<br>
 при переходе по пути ```/add``` выполняется функция<br>
 
-		.post('/add', function(req,res){});
+	.post('/add', function(req,res){});
 
 Поместим в функцию обработку запроса.<br>
 Сначала, создадим переменную item и присвоим ей объект, который получаем
@@ -49,7 +49,7 @@ title: Блог джуниора. Angular.js + Сервер subtitle: Angular.js
 После сохраняем в базу данных, если ошибка, то выводим в консоль<br>
 Впоследствии, возвращаем item клиенту
 
-		item.save(function (err, item) {
-		  if (err) { console.log(err)}
-		  return res.json(item);
-		});
+	item.save(function (err, item) {
+	  if (err) { console.log(err)}
+	  return res.json(item);
+	});
