@@ -1,4 +1,4 @@
-title: Блог джуниора. Angular.js subtitle: Bootstrap author: Горшунов Владимир tags: [Блог джуниора]<br>
+title: Блог джуниора. Angular.js subtitle: Angular.js author: Горшунов Владимир tags: [Блог джуниора]<br>
 В данной мини-статье хочу написать немного об ```Angular.js```.<!-- more -->
 ```Angular.js``` представляет собой фреймворк для построения веб-приложений.
 
