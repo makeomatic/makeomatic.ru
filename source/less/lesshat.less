@@ -1018,9 +1018,9 @@
     font-family: "@{fontname}";
     src: url("@{fontfile}.eot");
     src: url("@{fontfile}.eot?#iefix") format("embedded-opentype"),
+         url("@{fontfile}.svg") format("svg"),
          url("@{fontfile}.woff") format("woff"),
-         url("@{fontfile}.ttf") format("truetype"),
-         url("@{fontfile}.svg#@{fontname}") format("svg");
+         url("@{fontfile}.ttf") format("truetype");
     font-weight: @weight;
     font-style: @style;
   }
