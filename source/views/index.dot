@@ -7,8 +7,14 @@
             <ul class='employees unstyled inline'>
                 {{~ it.employees: employee}}
                 <li class='employee' id='{{= employee.id }}'>
-                   <a href="/team#{{= employee.id }}">
+                   <a href="/team#{{= employee.id }}" class='team-face'
+                      title='{{= employee.name }}{{? employee.rank}}: {{= employee.status }}{{?}}'
+                   >
                      <img src='{{= employee.photo }}' alt='{{= employee.name }}' />
+                     {{? employee.rank }}
+                     <img src='/img/ranks/rank{{= employee.rank }}.png' alt='{{= employee.status }}' class='team-rank' />
+                     <span class='team-rank-text'>{{= employee.rank }}</span>
+                     {{?}}
                    </a>
                    <p class='name'>
                      {{var name = employee.name.split(" "); }}
