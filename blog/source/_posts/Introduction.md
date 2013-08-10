@@ -1,6 +1,7 @@
 title: Блог джуниора. Веб-программированию с нуля
 subtitle:  Идея курса и первый шаг
 author: Горшунов Владимир
+gravatarMail: gorshunov.vladimir@gmail.com
 tags: [Блог джуниора, Node.js, MVC архитектура]
 ---
 
