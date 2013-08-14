@@ -135,19 +135,20 @@ portfolio.push require('./fixtures/recordi')
 ## Фотобот ##
 portfolio.push require('./fixtures/photobot')
 
+## Brains App ##
+portfolio.push require('./fixtures/brainsapp')
+
 ## Фабрика тепла ##
 portfolio.push require('./fixtures/fabrika')
+
+## speakgeo ##
+portfolio.push require('./fixtures/speakgeo')
 
 ## openInclude ##
 portfolio.push require('./fixtures/openinclude')
 
 ## LiveOne ##
 portfolio.push require('./fixtures/liveone')
-
-## speakgeo ##
-portfolio.push require('./fixtures/speakgeo')
-
-
 
 ## ФитКафе ##
 portfolio.push require('./fixtures/fitcafe')

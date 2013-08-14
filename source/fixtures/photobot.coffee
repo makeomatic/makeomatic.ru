@@ -4,7 +4,7 @@ module.exports =
   ]
   title: "Мобильное приложение должно быть понятным, полезным и красивым!"
   logo:
-    src: "/img/projects/photobot/logo.png"
+    src: "/img/projects/photobot/logo_refactored.png"
     alt: "Логотип Photobot"
   brand: "Photobot"
   link: "#Photobot"
