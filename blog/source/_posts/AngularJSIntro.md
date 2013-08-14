@@ -2,7 +2,7 @@ title: Angular.JS: введение и основные концепции
 subtitle:  разбираем Angular.JS на пальцах
 date: 2013-08-14
 author: Дмитрий Горбунов
-gravatarMail: v@aminev.me
+gravatarMail: atskiisotona@gmail.com
 tags: [Angular.JS, Для новичков]
 ---
 
