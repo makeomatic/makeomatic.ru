@@ -2,7 +2,7 @@ module.exports =
   carousel: [
     {src: "/img/projects/brainsapp/01.png", alt: "Сплеш картинка BrainsApp"}
   ]
-  title: "Красивый маркетинговый сайт под ключ и веб-приложение для серьезного заказчика"
+  title: "Продающий сайт и веб-приложение для анализа данных в реальном времени"
   logo:
     src: "/img/projects/brainsapp/logo.png"
     alt: "Логотип BrainsApp"
