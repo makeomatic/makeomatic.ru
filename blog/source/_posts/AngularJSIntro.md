@@ -6,8 +6,6 @@ gravatarMail: atskiisotona@gmail.com
 tags: [Angular.JS, Для новичков]
 ---
 
-# AngularJS введение
-
 ## Подготовка
 
 ### Различия версий
