@@ -21,7 +21,7 @@ tags: [Angular.JS]
 Это позволяет держать код в разных файлах и не заботиться о последовательности их подключения/склейки. Достаточно лишь в начале каждого файла написать
 
 ```javascript
-	var myModule = angular.module("MyModule")
+var myModule = angular.module("MyModule")
 ```
 
 <!-- more -->
@@ -33,17 +33,17 @@ tags: [Angular.JS]
 Каждый модуль ведёт себя как полноценный элемент приложения и сам может являться приложением (об этом говорилось ранее). Разумеется, что модули можно настраивать, меняя их поведение в зависимости от ситуации. Для этого предназначено две функции:
 
 ```javascript
-	myModule.run(function () {
-		// код, находящийся здесь, будет выполнен на этапе создания модуля
-		// сразу после того, как будут подгружены все зависимости
+myModule.run(function () {
+    // код, находящийся здесь, будет выполнен на этапе создания модуля
+    // сразу после того, как будут подгружены все зависимости
 
-		// например, здесь можно запросить с сервера данные, важные для всего модуля
-	})
+    // например, здесь можно запросить с сервера данные, важные для всего модуля
+})
 
-	myModule.config(function() {
-		// в этой функции можно настроить поведение провайдеров
-		// крайне важная функция, к ней мы ещё вернёмся
-	})
+myModule.config(function() {
+    // в этой функции можно настроить поведение провайдеров
+    // крайне важная функция, к ней мы ещё вернёмся
+})
 ```
 
 ## Провайдер
@@ -51,11 +51,11 @@ tags: [Angular.JS]
 Провайдеры являются фабриками классов. Они создают готовые объекты, которые можно внедрять с помощью DI. Провайдеры являются основным способом расширения функциональности AngularJS. По своей сути, провайдер представляет собой объект, в котором находится единственная обязательная функция с строго регламентированным именем: `$get`.
 
 ```javascript
-	function someProvider() {
-		this.$get = function() {
-			return 42
-		}
-	}
+function someProvider() {
+    this.$get = function() {
+        return 42
+    }
+}
 ```
 
 Помимо того, провайдер может включать любые методы, с помощью которых можно настроить создание объектов. Объекты, создаваемые провайдером, обычно называются *сервисы*.
@@ -69,19 +69,19 @@ tags: [Angular.JS]
 Константа — это сервис, представляющий собой некую константу. Пример такого сервиса можно увидеть выше. Однако в AngularJS существуют функции для более удобного создания объектов, не имеющих отдельного провайдера, который не нужно настраивать. Для создания сервиса, отдающего некую константу, можно воспользоваться функцией `module.value`, выглядит это так:
 
 ```javascript
-	myModule.value("TheAnswer", 42)
+myModule.value("TheAnswer", 42)
 ```
 
 Эта запись эквивалентна следующей:
 
 ```javascript
-	function someProvider() {
-		this.$get = function() {
-			return 42
-		}
-	}
+function someProvider() {
+    this.$get = function() {
+        return 42
+    }
+}
 
-	myModule.provide("TheAnswer", someProvider)
+myModule.provide("TheAnswer", someProvider)
 ```
 
 С той лишь разницей, что сокращённая запись не позволяет обращаться к `TheAnswerProvider` за ненадобностью. В качестве константы выступать может что угодно, главное не забывать, что это всегда будет одно и то же значение. Попробуйте проверить, что будет, если в качестве константы задать объект и менять его свойства из разных частей приложения.
@@ -91,17 +91,17 @@ tags: [Angular.JS]
 Фабрика это усложнённый вариант константы. Фабрика позволяет не только вернуть некоторое значение, но ещё и предварительно выполнить некоторые действия.
 
 ```javascript
-	myModule.factory("TheObject", function (TheAsnwer) {
-		var obj = {
-			property1: 1,
-			property2: 2,
-			answer: TheAnswer
-		}
+myModule.factory("TheObject", function (TheAsnwer) {
+    var obj = {
+        property1: 1,
+        property2: 2,
+        answer: TheAnswer
+    }
 
-		obj.property3 = obj.property1 + obj.property2
+    obj.property3 = obj.property1 + obj.property2
 
-		return obj
-	})
+    return obj
+})
 ```
 
 Обратите внимание, что я внедрил TheAsnwer в фабрику. Так же можно подключать любые зависимости. Сервисы могут и должны зависеть друг от друга.
@@ -113,23 +113,23 @@ tags: [Angular.JS]
 Сервис это фабрика, которая всякий раз возвращает новый объект. Иными словами, запись
 
 ```javascript
-	myModule.factory("TheService", function(TheObject) {
-		var service = function(obj) {
-			this.obj = obj
-		}
+myModule.factory("TheService", function(TheObject) {
+    var service = function(obj) {
+        this.obj = obj
+    }
 
-		return new service(TheObject)
-	})
+    return new service(TheObject)
+})
 ```
 
 Можно сократить до
 
 ```javascript
-	function service (TheObject) {
-		this.obj = TheObject
-	}
+function service (TheObject) {
+    this.obj = TheObject
+}
 
-	myModule.service("TheService", service)
+myModule.service("TheService", service)
 ```
 
 Но что если в этом случае мы хотим менять передаваемый в процессе создания сервиса параметр? В этом случае нам и нужен полноценный провайдер.
@@ -139,37 +139,37 @@ tags: [Angular.JS]
 В сущности, AngularJS все вышеописанные методы реализует через вызов `module.provider`, они нужны лишь для удобства и сокращения записи. Полноценный сервис с провайдером же выглядит так:
 
 ```javascript
-	myModule.provider("TheService", function(TheObject) {
-		var o = TheObject
+myModule.provider("TheService", function(TheObject) {
+    var o = TheObject
 
-		function service (obj) {
-			this.obj = obj
-		}
+    function service (obj) {
+        this.obj = obj
+    }
 
-		this.setInitiator = function (initiator) {
-			o = initiator
-		}
+    this.setInitiator = function (initiator) {
+        o = initiator
+    }
 
-		this.$get = function () {
-			return new service(o)
-		}
-	})
+    this.$get = function () {
+        return new service(o)
+    }
+})
 ```
 
 ```javascript
-	var anotherModule = angular("AnotherModule", ["MyModule"])
+var anotherModule = angular("AnotherModule", ["MyModule"])
 
-	anotherModule.configure(["TheServiceProvider", function(TheServiceProvider) {
-		TheServiceProvider.setInitiator({
-			name: "another value"
-		})
-	}])
+anotherModule.configure(["TheServiceProvider", function(TheServiceProvider) {
+    TheServiceProvider.setInitiator({
+        name: "another value"
+    })
+}])
 
-	anotherModule.run(function(TheService) {
-		console.log(TheService.obj)
+anotherModule.run(function(TheService) {
+    console.log(TheService.obj)
 
-		// выведет { name: "another value" }
-	})
+    // выведет { name: "another value" }
+})
 ```
 
 ## Директивы
@@ -188,9 +188,9 @@ tags: [Angular.JS]
 Эта функция превращает любое допустимое выражение AngularJS в *функцию*. Эту функцию затем можно вызвать, передав в неё 1 или 2 параметра:
 
 ```javascript
-	var expr = $parse("user.data")
-	console.log(expr($scope))
-	// если $scope.user.data имеет значение, то оно будет выведено в консоль
+var expr = $parse("user.data")
+console.log(expr($scope))
+// если $scope.user.data имеет значение, то оно будет выведено в консоль
 ```
 
 Вторым параметром можно передать локальные переменные, с помощью которых можно временно переопределить переменные внутри контекста — первого параметра.
@@ -204,9 +204,9 @@ tags: [Angular.JS]
 $compile делает то же самое, что и $parse, но для HTML. Например
 
 ```javascript
-	var template = $compile("<p>{{ name }}</p>")
-	console.log(template({name: "Ivan"}))
-	// выведет <p>Ivan</p>
+var template = $compile("<p>{{ name }}</p>")
+console.log(template({name: "Ivan"}))
+// выведет <p>Ivan</p>
 ```
 
 То есть это часть шаблонизатора AngularJS, осуществляющая привязку области видимости к шаблону.
@@ -218,19 +218,19 @@ $compile делает то же самое, что и $parse, но для HTML. 
 Теперь, когда мы знаем, как AngularJS обрабатывает выражения и HTML, можно попробовать написать первую директиву. Я не буду описывать все возможные параметры, опишу лишь те, что обычно используются.
 
 ```javascript
-	myModule.directive("greet", function () {
-		return {
-			template: "<p>Привет, {{ name }}</p>",
-			replace: true,
-			scope: {},
+myModule.directive("greet", function () {
+    return {
+        template: "<p>Привет, {{ name }}</p>",
+        replace: true,
+        scope: {},
 
-			link: function(scope, element, attributes) {
-				scope.name = "Иван"
-			}
-		}
-	})
+        link: function(scope, element, attributes) {
+            scope.name = "Иван"
+        }
+    }
+})
 
-	<div greet></div>
+<div greet></div>
 ```
 
 В результате работы этой директивы вместо `<div>` будет выведено `<p>Привет, Иван</p>`. Параметр `replace` позволяет определить, будет ли директива целиком замещать DOM, которому применена, или же встраиваться внутрь него. Параметр `template` можно заменить на `templateUrl` и подключать шаблон из файла.
@@ -253,46 +253,46 @@ $compile делает то же самое, что и $parse, но для HTML. 
 Хотя для простоты вы можете вообще возвращать в `angular.directive` функцию `link`:
 
 ```javascript
-	myModule.directive("simple", function() {
-		return function(scope, element, attributes) {}
-	})
+myModule.directive("simple", function() {
+    return function(scope, element, attributes) {}
+})
 ```
 
 Это используется довольно редко. Чаще всего используется вариант из раздела «Первая директива». Однако есть и максимально полный вариант.
 
 ```javascript
-	myModule.directive('directiveName', function factory(injectables) {
-		var directiveDefinitionObject = {
-			// приоритет директивы (см. выше)
-			priority: 0,
-			// шаблон, заданный явно
-			template: '<div></div>',
-			// шаблон, заданный в виде ссылки или выражения
-			templateUrl: 'directive.html',
-			// заменять ли исходный DOM на шаблон
-			replace: false,
-			// включить ли некоторые части исходного DOM в шаблон
-			transclude: false,
-			// ограничить применение директивы
-			restrict: 'A',
-			// создавать/не создавать замыкание области видимости
-			scope: false,
-			// контроллер для директивы
-			controller: function($scope, $element, $attrs, $transclude, otherInjectables) {
-			},
-			// здесь можно изменять исходный DOM
-			compile: function compile(tElement, tAttrs, transclude) {
-				return {
-					pre: function preLink(scope, iElement, iAttrs, controller) {},
-					post: function postLink(scope, iElement, iAttrs, controller) {}
-				}
-			},
-			// здесь находится основная функциональность директивы
-			link: function postLink(scope, iElement, iAttrs) {
-			}
-		}
-		return directiveDefinitionObject
-	});
+myModule.directive('directiveName', function factory(injectables) {
+    var directiveDefinitionObject = {
+        // приоритет директивы (см. выше)
+        priority: 0,
+        // шаблон, заданный явно
+        template: '<div></div>',
+        // шаблон, заданный в виде ссылки или выражения
+        templateUrl: 'directive.html',
+        // заменять ли исходный DOM на шаблон
+        replace: false,
+        // включить ли некоторые части исходного DOM в шаблон
+        transclude: false,
+        // ограничить применение директивы
+        restrict: 'A',
+        // создавать/не создавать замыкание области видимости
+        scope: false,
+        // контроллер для директивы
+        controller: function($scope, $element, $attrs, $transclude, otherInjectables) {
+        },
+        // здесь можно изменять исходный DOM
+        compile: function compile(tElement, tAttrs, transclude) {
+            return {
+                pre: function preLink(scope, iElement, iAttrs, controller) {},
+                post: function postLink(scope, iElement, iAttrs, controller) {}
+            }
+        },
+        // здесь находится основная функциональность директивы
+        link: function postLink(scope, iElement, iAttrs) {
+        }
+    }
+    return directiveDefinitionObject
+});
 ```
 
 #### Ограничение применимости
@@ -311,35 +311,35 @@ $compile делает то же самое, что и $parse, но для HTML. 
 Изоляция области видимости обладает ещё одним крайне важным свойством: сокращение кода при получении параметров директивы. Рассмотрим уже известную директиву `greet`.
 
 ```javascript
-	myModule.directive("greet", function ($parse) {
-		return {
-			template: "<p>Привет, {{ name }}</p>",
-			replace: true,
-			scope: {},
+myModule.directive("greet", function ($parse) {
+    return {
+        template: "<p>Привет, {{ name }}</p>",
+        replace: true,
+        scope: {},
 
-			link: function(scope, element, attributes) {
-				scope.name = $parse(attributes["greet"])(scope)
-			}
-		}
-	})
+        link: function(scope, element, attributes) {
+            scope.name = $parse(attributes["greet"])(scope)
+        }
+    }
+})
 
-	<div greet="Иван"></div>
+<div greet="Иван"></div>
 ```
 
 Как видно, для извлечения нужного значения требуется проделать довольно некрасивую операцию. К счастью, в AngularJS это можно сделать намного проще.
 
 ```javascript
-	myModule.directive("greet", function ($parse) {
-		return {
-			template: "<p>Привет, {{ greet }}</p>",
-			replace: true,
-			scope: {
-				greet: "@"
-			}
-		}
-	})
+myModule.directive("greet", function ($parse) {
+    return {
+        template: "<p>Привет, {{ greet }}</p>",
+        replace: true,
+        scope: {
+            greet: "@"
+        }
+    }
+})
 
-	<div greet="Иван"></div>
+<div greet="Иван"></div>
 ```
 
 Добавив к замыканию области видимости свойство, имя которого совпадает с именем атрибута (а директива это тоже атрибут), а значением является `@`, можно автоматически передать значение атрибута в замыкание. Только обратите внимание, что в шаблоне имя переменной тоже поменялось. В таком простом случае функцию `link` вообще можно удалить, что и было сделано.
@@ -347,17 +347,17 @@ $compile делает то же самое, что и $parse, но для HTML. 
 Следует заметить, что если написать
 
 ```javascript
-	<div greet="{{ someName }}"></div>
+<div greet="{{ someName }}"></div>
 ```
 
 И определить `someName` где-то ещё, то директива заработает как и ожидается, но только в одну сторону. Можно поступить несколько иначе:
 
 ```javascript
-	scope: {
-		greet: "="
-	}
+scope: {
+    greet: "="
+}
 
-	<div greet="someName"></div>
+<div greet="someName"></div>
 ```
 
 Такая запись позволяет осуществлять полноценное двойное связывание между директивой и внешним миром. Например, вы можете добавить `<input ng-model='greet'>` в шаблон директивы и наблюдать, как `someName` вне её будет успешно меняться при изменении значения в поле ввода.
@@ -365,38 +365,38 @@ $compile делает то же самое, что и $parse, но для HTML. 
 Существует и ещё более продвинутый вариант изоляции области видимости, позволяющий не только связывать данные, но и передавать функциональность из внешнего контроллера в директиву.
 
 ```javascript
-	template: "<button ng-click='greet()'>Greet!</button>"
-	scope: {
-		greet: "&"
-	}
+template: "<button ng-click='greet()'>Greet!</button>"
+scope: {
+    greet: "&"
+}
 
-	<div greet="sayHello()"></div>
+<div greet="sayHello()"></div>
 
-	>> Где-то в контроллере
+>> Где-то в контроллере
 
-	$scope.sayHello = function() { alert("Привет!") }
+$scope.sayHello = function() { alert("Привет!") }
 ```
 
 Однако и это ещё не всё. Мы можем передавать параметры методу, который вызывается из контроллера. Делается это довольно необычно:
 
 ```javascript
-	template: "<input ng-model='name'><button ng-click='greet({name: name})'>Greet!</button>"
-	scope: {
-		greet: "&"
-	}
+template: "<input ng-model='name'><button ng-click='greet({name: name})'>Greet!</button>"
+scope: {
+    greet: "&"
+}
 
-	<div greet="sayHello(name)"></div>
+<div greet="sayHello(name)"></div>
 
-	>> Где-то в контроллере
+>> Где-то в контроллере
 
-	$scope.sayHello = function(name) { alert("Привет, " + name + "!") }
+$scope.sayHello = function(name) { alert("Привет, " + name + "!") }
 ```
 
 Обратите внимание как передаются параметры в шаблоне директивы. Попробуйте создать две директивы и понаблюдать, как они будут работать независимо друг от друга:
 
 ```javascript
-	<div greet="sayHello(name)"></div>
-	<div greet="sayHello(name)"></div>
+<div greet="sayHello(name)"></div>
+<div greet="sayHello(name)"></div>
 ```
 
 Вводимые в поле ввода имена будут уникальными для каждой директивы и не помешают друг другу, несмотря на несколько смущающую запись. `sayHello(name)` — параметр здесь это *имя свойства* объекта, передаваемого из директивы.
@@ -416,19 +416,19 @@ $compile делает то же самое, что и $parse, но для HTML. 
 Предположим, что мы хотим создать директиву, показывающую диалоговое окно, внутри которого расположен произвольный HTML. В этом случае изоляции области видимости из атрибутов будет недостаточно. К счастью, AngularJS предлагает простую механику transclusion.
 
 ```javascript
-	<div dialog>
-		<h1>Диалог</h1>
-		<p>Это диалог</p>
-	</div>
+<div dialog>
+    <h1>Диалог</h1>
+    <p>Это диалог</p>
+</div>
 
-	angular.directive("dialog", function () {
-		return {
-			template: "<div class='dialog' ng-transclude></div>",
-			replace: true,
-			transclude: true,
-			scope: {}
-		}
-	})
+angular.directive("dialog", function () {
+    return {
+        template: "<div class='dialog' ng-transclude></div>",
+        replace: true,
+        transclude: true,
+        scope: {}
+    }
+})
 ```
 
 Я намеренно опустил логику создания диалога и сильно упростил итоговый HTML в `template`. Для настоящей директивы понадобится добавить правильную разметку с кнопкой закрытия, кнопками действия (которые могут настраиваться через дополнительные атрибуты), повешать обработчики событий в функции `link` и т.д. Однако этот пример позволяет быстро понять, как пользоваться функцией подмены разметки.
@@ -440,32 +440,32 @@ $compile делает то же самое, что и $parse, но для HTML. 
 Директивы могут взаимодействовать друг с другом с помощью контроллеров. Одна директива может зависеть от другой и вызывать методы и свойства её контроллера.
 
 ```javascript
-	myModule.directive("capital", function () {
-		return {
-			scope: {
-				capital: "@"
-			},
-			controller: function($scope) {
-				$scope.tell = function() {
-					console.log($scope.capital)
-				}
-			}
-		}
-	})
+myModule.directive("capital", function () {
+    return {
+        scope: {
+            capital: "@"
+        },
+        controller: function($scope) {
+            $scope.tell = function() {
+                console.log($scope.capital)
+            }
+        }
+    }
+})
 
-	myModule.directive("country", function () {
-		return {
-			require: "capital",
-			scope: {
-				country: "@"
-			},
-			// имя capitalController не важно, внедрение происходит
-			// через require
-			link: (scope, element, attributes, capitalController) {
-				console.log(scope.country + " — " + capitalController.tell())
-			}
-		}
-	})
+myModule.directive("country", function () {
+    return {
+        require: "capital",
+        scope: {
+            country: "@"
+        },
+        // имя capitalController не важно, внедрение происходит
+        // через require
+        link: (scope, element, attributes, capitalController) {
+            console.log(scope.country + " — " + capitalController.tell())
+        }
+    }
+})
 
-	<div country="Россия" capital="Москва"></div>
+<div country="Россия" capital="Москва"></div>
 ```
