@@ -22,6 +22,8 @@ tags: [Angular.JS]
 
 	var myModule = angular.module("MyModule")
 
+<!-- more -->
+
 Разумеется, можно подключать и зависимости, их наличие не влияет на работу функции `angular.module`.
 
 ### Настройка модуля
