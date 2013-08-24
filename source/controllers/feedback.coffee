@@ -20,21 +20,24 @@ cache =
   phones: {}
 
 # чистим каждые 6 часов
-oneDay = 86400000
-setInterval (-> cache.phones = {}), oneDay/4
+# oneDay = 86400000
+# setInterval (-> cache.phones = {}), oneDay/4
 
 exports.brief = (req, res)->
   ## Здесь обрабатываем заявки на поступающие запросы
   {name, phone, email, question} = req.body
-  {qqfile} = req.files
+
+  if req.files?
+    {qqfile} = req.files
 
   # если в кеше уже присутствует телефон - не шлем еще раз
-  return res.json {success: true} if cache.phones[cachedPhone]?
+  # return res.json {success: true} if cache.phones[cachedPhone]?
+
   # делаем аналогичные клиенту проверки
   errors = []
   errors.push "Укажите Ваше имя и фамилию" if name.length < 4
   errors.push "Укажите ваш номер полностью" if (cachedPhone = phone.replace(/\D/g, "")).length < 11
-  return res.json {success:false, errors} if errors.length > 0
+  return res.json {success:false, errors}, 400 if errors.length > 0
 
   subject = "Запрос звонка от #{name}"
   text    = """
@@ -57,9 +60,9 @@ exports.brief = (req, res)->
   transport.sendMail data, (err, response)->
     if err?
       console.error err
-      return res.json {success: false, err: "Непредвиденная ошибка сервера"}
+      return res.json {success: false, err: "Непредвиденная ошибка сервера"}, 500
     # добавляем телефон в кеш
-    cache.phones[cachedPhone] = true
+    # cache.phones[cachedPhone] = true
 
     # отдаем ответ что все ок
     res.json {success: true}

@@ -70,33 +70,49 @@ $(function(){
                 }
             });
 
+            function uploadComplete() {
+                $submit.addClass("success").text("Спасибо за Ваш вопрос, скоро мы с вами свяжемся!");
+
+                setTimeout(function(){
+                    // скрываем модалку через 150мс
+                    $("#brief").modal("hide");
+                    $(".brief form").trigger("reset");
+                    uploader.fineUploader('reset');
+                    $submit.removeClass("success").text("Отправить");
+                }, 1500);
+            }
+
+            function uploadFailed(jqXHR, textStatus, errorThrown) {
+                var response = JSON.parse(jqXHR.responseText),
+                    errors = response.errors;
+
+                $submit.addClass("error").text(errors.join("; "));
+            }
+
             uploader
                 .on('error', function(event, id, name, reason) {
                     $submit.addClass("error").text("Ошибка :( пожалуйста позвоните нам");
                 })
-                .on('complete', function(event, id, name, responseJSON){
-                    $submit.addClass("success").text("Спасибо за Ваш вопрос, скоро мы с вами свяжемся!");
-                    setTimeout(function(){
-                        // скрываем модалку через 150мс
-                        $("#brief").modal("hide");
-                        $(".brief form").trigger("reset");
-                        uploader.fineUploader('reset');
-                        $submit.removeClass("success").text("Отправить");
-                    }, 500);
-                });
+                .on('complete', uploadComplete);
 
             $(".brief form").on('submit', function(e){
                 e.preventDefault();
                 var $this = $(this);
 
                 $submit = $("[type=submit]", $this);
-                // добавляем данные
-                uploader.fineUploader('setParams', $this.serializeObject());
-                uploader.fineUploader('setEndpoint', $this.attr('action'));
-                // загружаем файлы
-                uploader.fineUploader('uploadStoredFiles');
+                $submit.text("Загружаю...").removeClass("error");
 
-                $submit.text("Загружаю...");
+                if ( uploader.fineUploader('getUploads').length > 0 ){
+                    // добавляем данные
+                    uploader.fineUploader('setParams', $this.serializeObject());
+                    uploader.fineUploader('setEndpoint', $this.attr('action'));
+                    // загружаем файлы
+                    uploader.fineUploader('uploadStoredFiles');
+                } else {
+                    var xhr = $.post($this.attr("action"), $this.serializeObject());
+                    xhr.done(uploadComplete);
+                    xhr.fail(uploadFailed);
+                }
 
                 return false;
             });
