@@ -21,7 +21,7 @@
                         }}
                         <li class='{{= className }}'>
                             <a href="{{= href }}" {{= attributes }}>
-                                {{= link.name }}
+                                {{= it.__(link.name) }}
                                 {{? link.children }}
                                     <b class='caret'></b>
                                 {{?}}
@@ -38,7 +38,7 @@
                                         }
                                     }}
                                     <li>
-                                        <a href="{{= href }}">{{= child_link.name }}</a>
+                                        <a href="{{= href }}">{{= it.__(child_link.name) }}</a>
                                     </li>
                                 {{~}}
                             </ul>
@@ -51,12 +51,12 @@
             <div class='send-brief' >
                 <a href='#brief' role='button' data-toggle='modal'>
                     <i class='background'></i>
-                    <span>Заполнить бриф</span>
+                    <span>{{= it.__('Заполнить бриф') }}</span>
                 </a>
             </div>
 
             <h4 class='phone-desktop'>
-                Звоните: {{= it.phone }}
+                {{= it.__('Звоните') }}: {{= it.phone }}
             </h4>
 
         </div>

@@ -3,15 +3,15 @@
         <div class='container'>
             <div class='row'>
                 <div class='span12'>
-                    <h2 class='xlarge'>Есть вопросы или предложения?</h2>
-                    <p class='outlined-caption'>закажите обратный звонок и наш менеджер перезвонит вам</p>
+                    <h2 class='xlarge'>{{= it.__('Есть вопросы или предложения?') }}</h2>
+                    <p class='outlined-caption'>{{= it.__('закажите обратный звонок и наш менеджер перезвонит вам') }}</p>
                     <form method='POST' action='/brief' id='callback'>
                         <ul class='hidden error'></ul>
-                        <input type="text" name='name' placeholder="Как к вам обратиться?" class='span12' required />
-                        <input type="text" name='phone' placeholder="По какому номеру звонить?" class='span6' />
-                        <input type="email" name='email' placeholder="E-mail (опционально)" class='span6 pull-right' />
-                        <textarea name='question' placeholder="Ваш вопрос (опционально)" class='span12'></textarea>
-                        <button type="submit" class='blue-plank'>Заказать звонок</button>
+                        <input type="text" name='name' placeholder="{{= it.__('Как к вам обратиться?') }}" class='span12' required />
+                        <input type="text" name='phone' placeholder="{{= it.__('По какому номеру звонить?') }}" class='span6' />
+                        <input type="email" name='email' placeholder="{{= it.__('E-mail (опционально)') }}" class='span6 pull-right' />
+                        <textarea name='question' placeholder="{{= it.__('Ваш вопрос (опционально)') }}" class='span12'></textarea>
+                        <button type="submit" class='blue-plank'>{{= it.__('Заказать звонок') }}</button>
                     </form>
                 </div>
             </div>
@@ -20,25 +20,25 @@
     <div class='container'>
         <div class='row'>
             <div class='span6'>
-                <h4 class='footer-caption'>Разделы сайта</h4>
+                <h4 class='footer-caption'>{{= it.__('Разделы сайта') }}</h4>
                 <ul class="nav inline">
                     {{~ it.links: link }}
-                    <li><a href="{{= link.href }}">{{= link.name }}</a></li>
+                    <li><a href="{{= link.href }}">{{= it.__(link.name) }}</a></li>
                     {{~}}
-                    <li><a href='https://github.com/AVVSDevelopment/avvs.co'>Проект на GitHub</a></li>
+                    <li><a href='https://github.com/AVVSDevelopment/avvs.co'>{{= it.__('Проект на GitHub') }}</a></li>
                 </ul>
-                <p class='copyright'>{{= it.copyright }}</p>
+                <p class='copyright'>{{= it.__(it.copyright) }}</p>
             </div>
             <div class='span6 blue-line'>
-                <h4 class='footer-caption'>Контакты</h4>
+                <h4 class='footer-caption'>{{= it.__('Контакты') }}</h4>
                 <p>
-                    тел: {{= it.phone }}
+                    {{= it.__('тел') }}: {{= it.phone }}
                 </p>
                 <p>
                     e-mail: <a href="mailto:{{= it.email}}">{{= it.email }}</a>
                 </p>
                 <address>
-                    {{= it.address }}
+                    {{= it.__(it.address) }}
                 </address>
             </div>
         </div>

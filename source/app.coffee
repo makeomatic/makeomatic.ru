@@ -8,6 +8,7 @@ _              = require 'lodash'
 conf           = require './conf'
 util           = require 'util'
 pkg            = require '../package.json'
+i18n           = require "i18n"
 
 app  = express()
 root = __dirname
@@ -25,6 +26,12 @@ dot.setGlobals {
 # функция старта приложения
 startApp = ->
 
+  i18n.configure {
+    locales: ["ru", "en"]
+    directory: "#{__dirname}/../locales"
+  }
+
+
   app.configure ->
     #shared settings
     app.set 'env', process.env.NODE_ENV || 'development'
@@ -34,10 +41,19 @@ startApp = ->
     app.set 'view engine' , 'dot'
 
     app.use express.compress()
-    app.use express.limit('10mb')
-    app.use express.bodyParser()
     app.use express.static "#{root}/../static/icons", {maxAge: 14*oneDay }
     app.use express.static "#{root}/../static", { maxAge: 365*oneDay }
+
+    app.use express.limit('10mb')
+    app.use express.bodyParser()
+
+    # understand which locale we are using
+    app.use i18n.init
+    app.use (req, res, next)->
+      [locale] = req.subdomains
+      locale = 'ru' unless locale == 'en'
+      i18n.setLocale req, locale
+      next()
 
     # сервим статичные файлы для блога
     app.use '/blog/', express.static "#{root}/../blog/public"

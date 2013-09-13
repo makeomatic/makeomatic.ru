@@ -3,27 +3,27 @@
     <div class='clearfix infobox'>
         <div class='quick-info'>
             <a class='logo' href='{{= portfolio.link }}' {{? !portfolio.noBlank }}target='_blank'{{?}}>
-                <img src='{{= portfolio.logo.src }}' alt="{{= portfolio.logo.alt }}" />
-                <h4 class='title'>{{= portfolio.brand }}</h4>
+                <img src='{{= portfolio.logo.src }}' alt="{{= it.__(portfolio.logo.alt) }}" />
+                <h4 class='title'>{{= it.__(portfolio.brand) }}</h4>
             </a>
-            <small>{{= portfolio.type }}</small>
+            <small>{{= it.__(portfolio.type) }}</small>
             <ul class='unstyled'>
                 <li class='caption'></li>
                 {{~ portfolio.activity: activity }}
-                    <li>{{= activity }}</li>
+                    <li>{{= it.__(activity) }}</li>
                 {{~}}
             </ul>
         </div>
         <div class="overview">
-            <h2>{{= portfolio.title }}</h2>
+            <h2>{{= it.__(portfolio.title) }}</h2>
             {{? portfolio.quote }}
             <blockquote>
-                {{= portfolio.quote }}
+                {{= it.__(portfolio.quote) }}
                 <div class='quote-corner'></div>
             </blockquote>
             {{?}}
             {{~ portfolio.text: paragraph }}
-                <p>{{= paragraph }}</p>
+                <p>{{= it.__(paragraph) }}</p>
             {{~}}
         </div>
     </div>

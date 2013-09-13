@@ -18,7 +18,6 @@ setRoutes = (app)->
     404 page
   ###
   app.get "/*", (req, res) ->
-    res.status 404
-    res.render '404', {layout: false}
+    res.status(404).render '404', {layout: false}
 
 module.exports = setRoutes

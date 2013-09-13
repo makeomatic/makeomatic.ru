@@ -35,8 +35,8 @@ exports.brief = (req, res)->
 
   # делаем аналогичные клиенту проверки
   errors = []
-  errors.push "Укажите Ваше имя и фамилию" if name.length < 4
-  errors.push "Укажите ваш номер полностью" if (cachedPhone = phone.replace(/\D/g, "")).length < 11
+  errors.push res.__("Укажите Ваше имя и фамилию") if name.length < 4
+  errors.push res.__("Укажите ваш номер полностью") if (cachedPhone = phone.replace(/\D/g, "")).length < 11
   return res.json {success:false, errors}, 400 if errors.length > 0
 
   subject = "Запрос звонка от #{name}"
@@ -48,6 +48,7 @@ exports.brief = (req, res)->
             """
 
   data = _.extend {subject, text}, mailOptions
+
   # обрабатываем атачмент
   if qqfile?
     data.attachments = [{
@@ -61,8 +62,5 @@ exports.brief = (req, res)->
     if err?
       console.error err
       return res.json {success: false, err: "Непредвиденная ошибка сервера"}, 500
-    # добавляем телефон в кеш
-    # cache.phones[cachedPhone] = true
 
-    # отдаем ответ что все ок
     res.json {success: true}

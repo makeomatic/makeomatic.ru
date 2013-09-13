@@ -2,24 +2,24 @@
     <nav class='team-nav visible-desktop'>
         {{#def.load('/views/partials/team.carousel.dot')}}
     </nav>
-    <h1 class='text-center'>{{= it.title }}</h1>
+    <h1 class='text-center'>{{= it.__(it.title) }}</h1>
     <p class='lead text-center'>
-        {{= it.description }}
-        Прочтите о каждом сотруднике компании - поймите почему Makeomatic подходит именно вам.
+        {{= it.__(it.description) }}
+        {{= it.__("Прочтите о каждом сотруднике компании - поймите почему Makeomatic подходит именно вам.") }}
     </p>
     {{~ it.employees :employee }}
     <article class='employee bio' id='{{= employee.id }}' >
         {{
-            var name = employee.name.split(" ");
+            var name = it.__(employee.name).split(" ");
         }}
-        <img src='{{= employee.photo }}' alt='{{= employee.name }}' class='bio-portrait' />
+        <img src='{{= employee.photo }}' alt='{{= it.__(employee.name) }}' class='bio-portrait' />
         <h2>
             {{= name[0] }} <span class='muted'>{{= name[1] }}</span>
         </h2>
-        <p class='occupation'>{{= employee.occupation }}</p>
-        <em class='summary'>{{= employee.brief_description }}</em>
+        <p class='occupation'>{{= it.__(employee.occupation) }}</p>
+        <em class='summary'>{{= it.__(employee.brief_description) }}</em>
         <p class='lead'>
-            {{= employee.description }}
+            {{= it.__(employee.description) }}
         </p>
     </article>
     {{~}}
