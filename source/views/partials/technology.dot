@@ -1,5 +1,5 @@
 <section id="tech" class='tech'>
-    <h2 class='text-center'>{{= it.__('Любимые технологии, которые мы используем в повседневной работе')</h2>
+    <h2 class='text-center'>{{= it.__('Любимые технологии, которые мы используем в повседневной работе') }}</h2>
     <ul class='unstyled inline text-center'>
         {{~ it.tech: tech }}
         <li><img src='{{= tech }}' alt="" /></li>
