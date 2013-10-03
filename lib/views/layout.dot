@@ -40,6 +40,11 @@
 
 <div class="icon-up visible-desktop" id="up" title="наверх"></div>
 
+<div class="switch-language">
+	<a href="http://makeomatic.ru{{= it.originalUrl }}" class="language-icon language-ru"></a>
+	<a href="http://en.makeomatic.ru{{= it.originalUrl }}" class="language-icon language-en"></a>
+</div>
+
 {{? it.isMain }}
     <div class='angeled-stripe'></div>
 {{?}}

@@ -51,7 +51,8 @@ startApp = ->
     app.use i18n.init
     app.use (req, res, next)->
       [locale] = req.subdomains
-      locale = 'ru' unless locale == 'en'
+      unless locale == 'en'
+        locale = 'en'
       i18n.setLocale req, locale
       next()
 

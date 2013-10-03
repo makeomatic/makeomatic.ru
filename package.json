@@ -13,14 +13,13 @@
   "author": "Vitaly Aminev",
   "readmeFilename": "README.md",
   "dependencies": {
-    "express": "~3.2.5",
-    "dot": "~1.0.1",
+    "express": "~3.2.6",
+    "dot": "~1.0.2",
     "express-dot": "git://github.com/david-driscoll/express-dot.git",
-    "async": "~0.2.7",
+    "async": "~0.2.9",
     "lodash": "~1.2.1",
     "transliterate": "0.0.2",
     "nodemailer": "~0.4.4",
-    "hexo": "~1.2.4",
     "i18n": "~0.4.1"
   },
   "devDependencies": {

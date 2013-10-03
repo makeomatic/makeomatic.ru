@@ -58,6 +58,32 @@ body {
   }
 }
 
+.switch-language {
+		position: fixed;
+		left: 0;
+		top: 115px;
+		padding: 2px 3px;
+		z-index: 10;
+		a + a {
+			margin-top: 5px;
+		}
+}
+
+.language-icon {
+		background: url("/img/language_icons.png") no-repeat;
+		width: 24px;
+		height: 24px;
+		display: block;
+		margin: 0 auto;
+		&.language-ru {
+				background-position: 0 0;
+		}
+		&.language-en {
+				background-position: 0 -24px;
+		}
+}
+
+
 .section-team {
   .background-flag {
     background: url("/img/background-flag.png") no-repeat top center;

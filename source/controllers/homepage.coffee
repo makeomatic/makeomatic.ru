@@ -16,8 +16,9 @@ module.exports =
     homepage_links = _.clone links, true
     homepage_links[1].isActive = true
     # set data
-    data           = _.extend {isMain: true, links: homepage_links, description}, basic_data, {title: main_page_title, employees, portfolio, tech}
+    data = _.extend {isMain: true, links: homepage_links, description}, basic_data, {title: main_page_title, employees, portfolio, tech}
     data.__ = res.__
+    data.originalUrl = req.originalUrl
 
     # send response
     res.render 'index', data
@@ -32,6 +33,7 @@ module.exports =
     # set data
     data = _.extend {isTeam: true, links: team_links, description: team_description}, basic_data, {title: team_page_title, employees}
     data.__ = res.__
+    data.originalUrl = req.originalUrl
 
     # send response
     res.render 'team', data
