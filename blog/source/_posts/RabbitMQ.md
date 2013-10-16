@@ -1,6 +1,6 @@
 title: RabbitMQ: Простая и эффективная очередь сообщений.
 subtitle: что такое RabbitMQ и его применение
-date: 2013-08-17
+date: 2013-10-16
 author: Дмитрий Горбунов
 gravatarMail: atskiisotona@gmail.com
 tags: [RabbitMQ, очередь сообщений, Node.js]
