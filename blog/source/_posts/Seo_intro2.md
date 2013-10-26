@@ -4,7 +4,7 @@ date: 2013-25-10
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
 tags: [SEO, SEM, optimisation, promotion, marketing]
-------------------
+---
 
 ## Прошлое и настоящее Seo
 
