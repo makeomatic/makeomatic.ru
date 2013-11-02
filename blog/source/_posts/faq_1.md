@@ -1,9 +1,9 @@
 title: Ежедневные открытия
-subtitle: концепции и практическое применение
-date: 2013-08-17
+subtitle: часто задаваемые вопросы, приводящие к фейлам
+date: 2013-11-03
 author: Виталий Аминев
 gravatarMail: v@aminev.me
-tags: [Angular.JS, Scope]
+tags: [Angular.JS]
 ---
 
 ## Что такое области видимости в Angular.js?
