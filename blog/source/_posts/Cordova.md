@@ -1,5 +1,5 @@
 title: Быстрое тестирование приложений на Cordova/PhoneGap
-date: 2013-10-07
+date: 2013-11-07
 author: Vladimir Kratyk
 gravatarMail: kvofreelance@gmail.com
 tags: [Cordova, PhoneGap]
