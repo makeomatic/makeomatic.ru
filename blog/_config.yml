@@ -72,6 +72,7 @@ disqus_shortname: makeomatic
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
 plugins:
 - hexo-renderer-dotjs
+- hexo-generator-feed
 
 ## Themes: https://github.com/tommy351/hexo/wiki/Themes
 theme: makeomatic
