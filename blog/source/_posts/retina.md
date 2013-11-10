@@ -31,7 +31,7 @@ tags: [Retina, CSS, Sprites]
 ```
 
 Сопутствующие стили, которые потребуется добавить. Мы используем `less`, о нем много информации в гугле ;)
-```less
+```css
 .icon {
 		background-image: url(icons.png); // спрайт с картинками
 		width: 28px; // ширина блока
@@ -51,7 +51,7 @@ tags: [Retina, CSS, Sprites]
 ```
 
 Позиционируем иконки
-```less
+```css
 .icon-youtube {
     background-position: 0 0;
 }
@@ -71,7 +71,7 @@ tags: [Retina, CSS, Sprites]
 половина ширины спрайта для ретины. Именно на этом этапе очень важно, что спрайт с ретиной ровно в 2 раза больше, чем
 обычный спрайт. Иначе, картинки не будут отображаться правильно.
 
-```less
+```css
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
 		.icon {
 				background-image: url('icons@2x.png');
