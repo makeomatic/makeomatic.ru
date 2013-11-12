@@ -3,7 +3,7 @@ module.exports =
     {src: "/img/projects/speakgeo/01.png", alt: "Сплеш картинка SpeakGeo.com"}
     {src: "/img/projects/speakgeo/02.png", alt: "Макет приглашения в beta-test SpeakGeo.com"}
   ]
-  title: "Говорите открыто: вместе со speakGeo!"
+  title: "Говорите открыто вместе со speakGeo!"
   logo:
     src: "/img/projects/speakgeo/logo.png"
     alt: "Логотип портала SpeakGeo"
