@@ -6,6 +6,8 @@ gravatarMail: v@aminev.me
 tags: [Javascript]
 ---
 
+![Фанатизм](/blog/images/riot.jpg)
+
 ## Типы переменных в Javascript
 
 ```javascript
