@@ -6,6 +6,8 @@ gravatarMail: v@aminev.me
 tags: [Retina, CSS, Sprites]
 ---
 
+![Макбук про с дисплеем ретина](images/serf.jpg)
+
 Ни для кого не секрет, что количество устройств, поддерживающих высокое разрешение, aka `retina` постоянно растет. 
 Планшеты, макбуки с ретиной, телефоны - у всех сверхчеткое разрешение, а ваш сайт все еще покрыт огромным количеством
 пикселей. Не грустим, все что нам нужно сделать - создать новые картинки. И их размер должен быть ровно в ***2*** раза больше.
@@ -24,6 +26,7 @@ tags: [Retina, CSS, Sprites]
 <!-- more -->
 
 Пример верстки иконок.
+
 ```html
 <a href="#" class="icon icon-youtube">youtube</a>
 <a href="#" class="icon icon-facebook">facebook</a>
@@ -31,6 +34,7 @@ tags: [Retina, CSS, Sprites]
 ```
 
 Сопутствующие стили, которые потребуется добавить. Мы используем `less`, о нем много информации в гугле ;)
+
 ```css
 .icon {
 		background-image: url(icons.png); // спрайт с картинками
@@ -51,6 +55,7 @@ tags: [Retina, CSS, Sprites]
 ```
 
 Позиционируем иконки
+
 ```css
 .icon-youtube {
     background-position: 0 0;
