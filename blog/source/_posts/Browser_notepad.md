@@ -4,6 +4,9 @@ date: 2013-11-17
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
 tags: [Javascript, HTML5]
+---
+
+![Иллюстрация блокнота](/blog/images/notepad.jpg)
 
 ### Вступление
 
@@ -19,8 +22,7 @@ tags: [Javascript, HTML5]
 
 ### Почему это работает?
 
-Не надо это запоминать. Это вам не ракеты в космос запускать. Используем формат [Data URl](http://www.nczonline.net/blog/2009/10/27/data-uris-explained/)  
-и говорим браузеру отрисовать html тег (пробуем `javascript:alert('Bazinga');`) 
+Не надо это запоминать. Это вам не ракеты в космос запускать. Используем формат [Data URl](http://www.nczonline.net/blog/2009/10/27/data-uris-explained/) и говорим браузеру отрисовать html тег (можете попробовать `javascript:alert('Bazinga');`) 
 
 Содержимое вышеописанного html файла- это простая строка с `html5` атрибутом `contenteditable`. 
 
