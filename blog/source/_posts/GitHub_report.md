@@ -16,6 +16,8 @@ tags: [GitHub]
 
 Генерируем следующий вывод данных:
 
+<!-- more -->
+
 ```ruby
 commit ad5140bca518c676cd4a6e9b268f66d3ff89f992
 Author: Vitaly Aminev <v@aminev.me>
@@ -61,9 +63,10 @@ Date:   Tue Nov 13 15:23:41 2013 +0400
 На самом деле это не особо читаемый формат, но я предпочитаю создавать компактный отчет, используя  `formatoption`. Помимо этого используется строгая последовательность для установки формата и показа информации в журнале событий. Предпочтительный формат:
 `%Cred%h%Creset %s %Cgreen(%ci) %Cblue<%an>%Creset`
 
-*демонстрируя commit hash `%h`, красный цвет `%Cred`, сообщение в коммите `%s` в стандартном цвете `%Creset`, 
+
+демонстрируя commit hash `%h`, красный цвет `%Cred`, сообщение в коммите `%s` в стандартном цвете `%Creset`, 
 время в коммите `%ci`, в зеленом цвете `%Cgreen` и имя автора `%an`, в голубом `%Cblue` и переключение цвета. 
-Большее кол-во вариантов форматирования вы пожете посмотреть на [официальном сайте](https://www.kernel.org/pub/software/scm/git/docs/git-log.html#_pretty_format)*
+Большее кол-во вариантов форматирования вы можете посмотреть на [официальном сайте](https://www.kernel.org/pub/software/scm/git/docs/git-log.html#_pretty_format)
 
 **Итак создаем:**
 
@@ -121,7 +124,9 @@ git log --author=Vitaly --since='2 sunday ago' --until='1 sunday ago' --format='
 `git report`
 
 создать больше отчетов;
-`report-csv = "log --author=Vitaly --since='2 sunday ago' --until='1 sunday ago' --format='\"%ci\",\"%s\"' --no-merges"`
+```
+report-csv = "log --author=Vitaly --since='2 sunday ago' --until='1 sunday ago' --format='\"%ci\",\"%s\"' --no-merges"
+```
 
 *(Внимание: экранируйте " в format используя \ )*
 
