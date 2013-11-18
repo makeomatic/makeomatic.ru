@@ -10,11 +10,11 @@ tags: [GitHub]
 ## Первый способ создания git log 
 
 Результат можно достичь, в случае использования индивидуальных настроек:
-`git log --author=Vitaly # Change with your name
+`git log --author=Vitaly # Поставьте свое имя`
 
 Генерируем следующий вывод данных:
 
-```
+```ruby
 commit ad5140bca518c676cd4a6e9b268f66d3ff89f992
 Author: Vitaly Aminev <v@aminev.me>
 Date:   Tue Nov 19 10:01:41 2013 +0400
@@ -26,7 +26,7 @@ Merge: 76c97d3 b7850f9
 Author: Vitaly Aminev <v@aminev.me>
 Date:   Tue Nov 19 10:01:41 2013 +0400
 
-    Merge branch 'master' of git.agavee.com:your-project/your-branch
+    Merge branch 'master' of git.example.com:your-project/your-branch
 
 commit 7e6e36eb78f3b07bcb12c0fa3c1e240e6634ellr
 Author: Vitaly Aminev <v@aminev.me>
@@ -68,7 +68,7 @@ Date:   Tue Nov 13 15:23:41 2013 +0400
 
 ```
 ad5140b refs #101: Lorem Ipsum commit message (2013-08-23 12:50:41 2013 +0400) <Vitaly Aminev>
-5d3d687 Merge branch 'master' of git.agavee.com:your-project/your-branch (2013-08-23 12:39:35 2013 +0400) <Vitaly Aminev>
+5d3d687 Merge branch 'master' of git.example.com:your-project/your-branch (2013-08-23 12:39:35 2013 +0400) <Vitaly Aminev>
 7e6e36e Lorem Ipsum commit message (2013-08-23 10:35:41 2013 +0400) <Vitaly Aminev>
 f862213 refs #101: Lorem Ipsum commit message (2013-08-23 10:35:23 2013 +0400) <Vitaly Aminev>
 31dc49c refs #100: Lorem Ipsum commit message (2013-08-22 09:26:40 2013 +0400) <Vitaly Aminev>
@@ -80,7 +80,8 @@ f862213 refs #101: Lorem Ipsum commit message (2013-08-23 10:35:23 2013 +0400) <
 
 генерируем:
 
-```git log --author=Vitaly --since='2 sunday ago' --until='1 sunday ago' --format='%Cgreen%ci%Creset %s%Creset'
+```ruby
+git log --author=Vitaly --since='2 sunday ago' --until='1 sunday ago' --format='%Cgreen%ci%Creset %s%Creset
 
 2013-08-23 12:50:41 2013 +0400 refs #101: Lorem Ipsum commit message 
 2003-08-23 12:39:35 2013 +0400 Merge branch 'master' of git.example.com:your-project/your-branch
@@ -91,7 +92,7 @@ f862213 refs #101: Lorem Ipsum commit message (2013-08-23 10:35:23 2013 +0400) <
 
 У нас появился базовый отчет. Клиент не должен знать что это за соединение. На самом деле я предпочитаю удалять это сообщение, используя флаг `no-merges`:
 
-```
+```ruby
 git log --author=Vitaly --since='2 sunday ago' --until='1 sunday ago' --format='%Cgreen%ci%Creset %s%Creset' --no-merges
 
 2013-08-23 12:50:41 2013 +0400 refs #101: Lorem Ipsum commit message 
@@ -110,7 +111,8 @@ git log --author=Vitaly --since='2 sunday ago' --until='1 sunday ago' --format='
 ```
  [alias]
   report = "log --author=Vitaly --since='2 sunday ago' --until='1 sunday ago' --format='%Cgreen%ci%Creset %s%Creset' --no-merges"
-  ```
+
+```
 
 **Теперь Вы можете:**
 
@@ -128,7 +130,7 @@ CSV report  создается:
 
 *Ура*, отчет по выполненной работе теперь выглядит намного проще.
 
-(конечно, иногда приходится редактировать текст выведенных данных, чтобы они были понятны самому клиенту)
+*(конечно, иногда приходится редактировать текст выведенных данных, чтобы они были понятны самому клиенту)*
 
 Отправляйте репорты с удовольствием! =)
 
