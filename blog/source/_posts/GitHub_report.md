@@ -133,5 +133,7 @@ git log --author=Vitaly --since='2 sunday ago' --until='1 sunday ago' --format='
 
 
 
+
+
 Отправляйте репорты с удовольствием! =)
 
