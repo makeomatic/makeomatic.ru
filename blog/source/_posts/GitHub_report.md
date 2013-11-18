@@ -121,9 +121,9 @@ git log --author=Vitaly --since='2 sunday ago' --until='1 sunday ago' --format='
 создать больше отчетов;
 `report-csv = "log --author=Vitaly --since='2 sunday ago' --until='1 sunday ago' --format='\"%ci\",\"%s\"' --no-merges"`
 
-*(Внимание: избегайте " in format using \ )*
+*(Внимание: экранируйте " в format используя \ )*
 
-**CSV report  создается:**
+**CSV report создается:**
 
 `git report-csv > report.csv`
 
