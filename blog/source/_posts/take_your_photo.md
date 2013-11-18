@@ -5,6 +5,8 @@ gravatarMail: annafedotovaa@gmail.com
 tags: [GitHub]
 ---
 
+![Самофото](/blog/images/selfie.jpg)
+
 Начнем со скачивания `imagesnap` из `https://github.com/alexwilliamsca/imagesnap` или установим его с помощью `homebrew` 
 `brew install imagesnap`
 
