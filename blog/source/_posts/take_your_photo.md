@@ -1,4 +1,4 @@
-title: Фотографируй себя когда cоздаешь коммит
+title: Фотографируй себя когда создаешь коммит
 date: 2013-11-18
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
