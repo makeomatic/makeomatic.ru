@@ -107,7 +107,7 @@ git log --author=Vitaly --since='2 sunday ago' --until='1 sunday ago' --format='
 Чтобы каждый раз не вписывать настройки, достаточно один раз их сохранить в `git command`. 
 Отредактируйте `.git/config` в своем репозитории и добавьте: 
 
-```
+```ruby
  [alias]
   report = "log --author=Vitaly --since='2 sunday ago' --until='1 sunday ago' --format='%Cgreen%ci%Creset %s%Creset' --no-merges"
 
