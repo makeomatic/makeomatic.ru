@@ -20,6 +20,7 @@ function alertOnClick(message)
  
 alertOnClick('You have clicked the button!');
 ```
+<!-- more -->
 
 ## alertOnClick
 
