@@ -7,7 +7,7 @@ tags: [Javascript]
 
 ![Иллюстрация блокнота](/blog/images/cub.jpg)
 
-Одна вещь, которую я люблю в JavaScript- это поддержка замыканий 'closure in action'.
+Одна вещь, которую я люблю в JavaScript- это поддержка замыканий 'closure'.
 
 ```javascript
 function alertOnClick(message)
