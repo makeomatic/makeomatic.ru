@@ -5,6 +5,8 @@ gravatarMail: annafedotovaa@gmail.com
 tags: [Javascript]
 ---
 
+![Иллюстрация блокнота](/blog/images/cub.jpg)
+
 Одна вещь, которую я люблю в JavaScript- это поддержка замыканий 'closure in action'.
 
 ```javascript
