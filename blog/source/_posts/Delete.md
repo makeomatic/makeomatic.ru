@@ -7,7 +7,7 @@ tags: [Javascript]
 
 Одна вещь, которую я люблю в JavaScript- это поддержка замыканий 'closure in action'.
 
-```
+```ruby
 1	function alertOnClick(message)
 2	{
 3	    var btn = document.getElementById('btnAlert');
@@ -26,7 +26,7 @@ tags: [Javascript]
 
 Часто мне хочется удалить обработчик событий сразу после того, как случилось это событие. Гораздо проще когда обработчик событий не анонимный, но определить его следует вместо глобальной функции как:
 
-```
+```ruby
 01	var message = null;
 02	 
 03	function clickHandler()
@@ -55,7 +55,7 @@ tags: [Javascript]
 
 Здесь первый пример кода с одной дополнительной строкой для удаления ананимного слушателя событий.
 
-```
+```ruby
 01	function alertOnClick(message)
 02	{
 03	    var btn = document.getElementById('btnAlert');
