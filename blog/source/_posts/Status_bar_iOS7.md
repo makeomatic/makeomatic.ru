@@ -1,5 +1,4 @@
 title: Как починить статус бар в iOS7
-subtitle: Как починить статус бар в iOS 7
 date: 2013-11-21
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
