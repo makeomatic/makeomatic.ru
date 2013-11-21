@@ -1,6 +1,7 @@
 module.exports =
   carousel: [
     {src: "/img/projects/fabrika/01.png", alt: "Сплеш картинка Фабрика Тепла"}
+    {src: "/img/projects/fabrika/02.png", alt: "Mac версия Фабрики Тепла"}
   ]
   title: "Интернет-магазин: переводим бизнес в виртуальность"
   logo:
