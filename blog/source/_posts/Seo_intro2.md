@@ -1,6 +1,6 @@
 title: Тренды поисковой оптимизации
 subtitle: в разрезе эволюции алгоритомов поисковых машин
-date: 2013-25-10
+date: 2013-10-25
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
 tags: [SEO, SEM, optimisation, promotion, marketing]
