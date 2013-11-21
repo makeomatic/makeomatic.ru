@@ -12,7 +12,9 @@ tags: [iOS7, status bar]
 ## Методы исправления статус бара
 
 Вот и уже известные методы:
+
 1. Добавляем 
+
 `self.edgesForExtendedLayout = UIRectEdgeNone; in viewDidLoad`
 
 2. Если контроллеры видов встроены внутри `UINaivigationController` и navigation bar не спрятан, в этом случае дайте бару фоновое изображение.
