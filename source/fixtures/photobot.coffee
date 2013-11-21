@@ -3,7 +3,6 @@ module.exports =
     {src: "/img/projects/photobot/01.png", alt: "Photobot - приложеие для автоматического создания графического контента"}
     {src: "/img/projects/photobot/02.png", alt: "Mac версия Photobot"}
   ]
-  ]
   title: "Мобильное приложение должно быть понятным, полезным и красивым!"
   logo:
     src: "/img/projects/photobot/logo_refactored.png"
