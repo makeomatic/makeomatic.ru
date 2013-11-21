@@ -6,7 +6,7 @@ gravatarMail: annafedotovaa@gmail.com
 tags: [iOS7, status bar]
 ---
 
-![Статус Бар](/blog/images/status_bar.jpg) 
+![Статус Бар](/blog/images/status_bar.png) 
 
 Как и многие из вас я тщательно работаю над переходом на iOS7 в течении долгого времени. С момента разработки старых приложений в Xcode5 для iOS7, статус бара, накладывающегося на контроллеры видов (views/view controllers), добавилось много головной боли. 
 
