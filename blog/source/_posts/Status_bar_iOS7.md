@@ -13,12 +13,12 @@ tags: [iOS7, status bar]
 
 Вот и уже известные методы:
 
-1. Добавляем 
+1.Добавляем 
 
 `self.edgesForExtendedLayout = UIRectEdgeNone; in viewDidLoad`
 
-2. Если контроллеры видов встроены внутри `UINaivigationController` и navigation bar не спрятан, в этом случае дайте бару фоновое изображение.
-3. Если контроллеры видов встроены внутри `UINaivigationController` и navigation bar не спрятан, в таком случае, вы должны двигать вручную каждые 20 пикселей UIView ниже по оси *y*.
+2.Если контроллеры видов встроены внутри `UINaivigationController` и navigation bar не спрятан, в этом случае дайте бару фоновое изображение.
+3.Если контроллеры видов встроены внутри `UINaivigationController` и navigation bar не спрятан, в таком случае, вы должны двигать вручную каждые 20 пикселей UIView ниже по оси *y*.
 
 ## Важный трюк
 
