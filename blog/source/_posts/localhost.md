@@ -6,7 +6,7 @@ tags: [localhost]
 ---
 
 
-Вам когда либо хотелось быстро поделиться  вашим **localhost** с кем-нибудь еще,  которые есть на вашем локальном компьютере localhost, 
+Вам когда либо хотелось быстро поделиться  вашим *localhost* с кем-нибудь еще,  которые есть на вашем локальном компьютере localhost, 
 Я с радостью расскажу как на самом деле это просто делается.
 
 Для начала установим `localtunnel`:
@@ -33,9 +33,9 @@ tags: [localhost]
 ➜  project_name git:(develop) localtunnel 8000
    This localtunnel service is brought to you by Twilio.
    Port 8000 is now publicly accessible from http://xxxx.localtunnel.com ...
-   ```
-
-Затем просто поделитесь ссылкой (http://xxxx.localtunnel.com) с тем, кому нужно показать ваш результат.
+```
+   
+Затем просто поделитесь ссылкой http://xxxx.localtunnel.com с тем, кому нужно показать ваш результат.
 В дальнейшем вы можете использовать только `localtunnel <port>`, чтобы создавать публичный URL:
 
 `$ localtunnel 8000`
