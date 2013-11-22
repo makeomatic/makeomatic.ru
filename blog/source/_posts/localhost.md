@@ -24,9 +24,12 @@ tags: [localhost]
 `$ python - m SimpleHTTPServer 8000`
 
 Когда в первый раз вы запускаете localtunnel, вам нужно будет использовать один из ваших публичных SSH ключей:
-```
-$ localtunnel -k ~/.ssh/id_rsa.pub 8000
+
+`$ localtunnel -k ~/.ssh/id_rsa.pub 8000`
+
+
 Вы найдете что-то подобное в конце:
+```
 ➜  project_name git:(develop) localtunnel 8000
    This localtunnel service is brought to you by Twilio.
    Port 8000 is now publicly accessible from http://xxxx.localtunnel.com ...
