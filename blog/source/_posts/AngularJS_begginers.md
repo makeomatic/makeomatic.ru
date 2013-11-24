@@ -1,8 +1,8 @@
 title: Учим AngularJS с нуля
-subtitle: AngularJS великолепен… и чертовски сожен.
+subtitle: AngularJS великолепен… и чертовски сложен.
 date: 2013-11-24
-author: Анна Аминева
-gravatarMail: annafedotovaa@gmail.com
+author: Виталий Аминев
+gravatarMail: v@aminev.me
 tags: [Angular.JS, Для новичков]
 ---
 
@@ -23,7 +23,7 @@ tags: [Angular.JS, Для новичков]
 
 ### Мудро подбирайте источники информации по ангуляру. 
 
-Вот мои любымые:
+Вот мои любимые:
 
 * [Egghead.io Videos](http://egghead.io/) Я относился достаточно скептически к этой странице, но после просмотра некоторых видео, я осознал что видео Джона на самом деле адекватны и стоят просмотра. Они предназначены специально для начинающих. 
 * [The Mastering Web Application Development with AngularJS book](http://www.packtpub.com/angularjs-web-application-development/book) Я только, что закончил читать книгу, которая написана специально для angular.js разработчика. Книга прекрасно написана, включает практические примеры и основные трюки в его использовании. Вот она отсутствующая документация, которую теперь можно просто купить.
