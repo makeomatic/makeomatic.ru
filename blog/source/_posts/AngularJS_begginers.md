@@ -1,4 +1,4 @@
-title: Учим AngularJS с нуля
+title: Почему каждый обязан знать AngularJS
 subtitle: AngularJS великолепен… и чертовски сложен.
 date: 2013-11-24
 author: Виталий Аминев
