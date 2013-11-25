@@ -1,4 +1,4 @@
-fs            = require 'fs'
+  fs            = require 'fs'
 _             = require 'lodash'
 transliterate = require 'transliterate'
 
@@ -120,6 +120,9 @@ employees.forEach (employee)->
 ## Portfolio ##
 exports.portfolio = portfolio = []
 
+## ArkAPI ##
+portfolio.push require('./fixtures/arkapi')
+
 ## Рекорды рынка недвижимости ##
 portfolio.push require('./fixtures/recordi')
 
@@ -143,7 +146,6 @@ portfolio.push require('./fixtures/liveone')
 
 ## ФитКафе ##
 portfolio.push require('./fixtures/fitcafe')
-
 
 
 
