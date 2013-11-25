@@ -1,4 +1,4 @@
-  fs            = require 'fs'
+fs            = require 'fs'
 _             = require 'lodash'
 transliterate = require 'transliterate'
 
