@@ -5,6 +5,7 @@ gravatarMail: annafedotovaa@gmail.com
 tags: [bash]
 ---
 
+![Иллюстрация блокнота](/blog/images/bash.jpg)
 
 Время от времени мне нравится анализировать использование *nix команд в консоле. Чтобы сделать это, мне нужна всего-лишь небольшая команда `awk`:
 `history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head`
