@@ -1,5 +1,4 @@
 title: Pagination. Вы все делаете неправильно!
-Pagination? Без проблем! SELECT ... LIMIT X, Y  Ведь так?
 date: 2013-11-28
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
