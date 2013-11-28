@@ -6,6 +6,9 @@ gravatarMail: annafedotovaa@gmail.com
 tags: [FAQ]
 ---
 
+
+![Иллюстрация блокнота](/blog/images/pagination.jpg)
+
 ##Pagination? Без проблем! SELECT ... LIMIT X, Y  Ведь так?
 
 Аха!  Не совсем!
