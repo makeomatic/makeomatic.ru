@@ -113,8 +113,10 @@ lift-node = (f) -> (...args) ->
                                                 | _   => promise.fulfill data
   return promise
 ```
-###Ссылки и дополнительный материал
+
+### Ссылки и дополнительный материал
 
 Несомненно обратите внимание на спецификацию (https://github.com/promises-aplus/promises-spec) и на библиотеки, которые ее реализуют (https://github.com/promises-aplus/promises-spec/blob/master/implementations.md)
+
 Отличные статьи по теме включают пост James Coglan (http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/) и пост Irkali (http://jeditoolkit.com/2012/04/26/code-logic-not-mechanics.html#post)
 
