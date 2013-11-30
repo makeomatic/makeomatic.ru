@@ -3,7 +3,7 @@ subtitle:  небольшие инсайты и техники для SPA
 author: Горшунов Владимир
 date: 2013-08-16
 gravatarMail: gorshunov.vladimir@gmail.com
-tags: [Блог джуниора, SPA, jQuery, Mongoose]
+tags: [Для новичков, jQuery, Mongoose]
 ---
 
 #### Задачи
