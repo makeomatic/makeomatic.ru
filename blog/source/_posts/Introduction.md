@@ -3,7 +3,7 @@ subtitle:  Идея курса и первый шаг
 author: Горшунов Владимир
 date: 2013-08-11
 gravatarMail: gorshunov.vladimir@gmail.com
-tags: [Блог джуниора, Node.js, MVC архитектура]
+tags: [Для новичков, Node.js]
 ---
 
 #### Что такое блог джуниора?
