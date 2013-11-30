@@ -3,7 +3,7 @@ subtitle: что такое RabbitMQ и его применение
 date: 2013-10-16
 author: Дмитрий Горбунов
 gravatarMail: atskiisotona@gmail.com
-tags: [RabbitMQ, очередь сообщений, Node.js]
+tags: [RabbitMQ, Node.js]
 ---
 
 В этой статье рассмотрим, как работает RabbitMQ, а также как и для чего её можно использовать в проектах на Node.js
