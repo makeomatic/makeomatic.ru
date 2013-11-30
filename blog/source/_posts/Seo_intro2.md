@@ -3,7 +3,7 @@ subtitle: в разрезе эволюции алгоритомов поиско
 date: 2013-10-25
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [SEO, SEM, optimisation, promotion, marketing]
+tags: [SEO]
 ---
 
 ## Прошлое и настоящее Seo
