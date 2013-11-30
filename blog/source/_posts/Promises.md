@@ -35,7 +35,7 @@ function read(filename) {
 — Потому что они являются реальными значениями, точно так же как String или Array:
 
 
-```
+``` javascript
 function decode(encoding, buffer) {
     // We put things into a Promise, so we can
     // accept both real buffers *and* eventual ones :D
@@ -48,7 +48,7 @@ var data = decode('utf-8', read('foo.txt'))
 
 ## Промисы можно использовать где угодно, ведь они - это значения
 
-```
+``` javascript
 // This means we can make any function
 // accept a promise without changing any
 // of its code :
@@ -68,7 +68,7 @@ var fooBar = lift2(data, fs.readFileSync('bar.txt', 'utf-8'), concat)
 
 - Все вышеперечисленные свойства облегчают задачу. **Бонус**: весь ваш запутанный код разделяется!
 
-```
+``` javascript
 function pipeline(fns) {
     return fns.reduce(function(promise, f){
         return promise.then(f)
@@ -104,7 +104,7 @@ parallel( read('foo.txt')
 
 Если вы используете Node.js, то вы можете создать комбинатор,  который позволит отказаться от колбэков всего с помощью 5 строчек кода, но мы уже сделали это за вас: 
 
-```
+``` javascript
 #### λ lift-node
 # Lifts a Node-style function into a function yielding a Promise.
 #
