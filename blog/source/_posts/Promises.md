@@ -35,7 +35,8 @@ function read(filename) {
 —Потому что они являются реальными значениями, точно так же как String или Array:
 
 
-```function decode(encoding, buffer) {
+```
+function decode(encoding, buffer) {
     // We put things into a Promise, so we can
     // accept both real buffers *and* eventual ones :D
     return pinky(buffer).then(function(buffer){
@@ -45,9 +46,10 @@ function read(filename) {
 var data = decode('utf-8', read('foo.txt'))
 ```
 
-##Промисы можно использовать где угодно, ведь они - это значения
+## Промисы можно использовать где угодно, ведь они - это значения
 
-```// This means we can make any function
+```
+// This means we can make any function
 // accept a promise without changing any
 // of its code :
 D
@@ -63,7 +65,7 @@ var fooBar = lift2(data, fs.readFileSync('bar.txt', 'utf-8'), concat)
 ```
 ## Просто создать новые комбинаторы, так как вышеперечисленные свойства облегчают эту задачу. Бонус: структурирует ваш запутанный код.
 
-- Все вышеперечисленные свойства облегчают задачу. **Бонус**: весь ваш запутанный код разделяется!
+-Все вышеперечисленные свойства облегчают задачу. **Бонус**: весь ваш запутанный код разделяется!
 
 ```
 function pipeline(fns) {
@@ -97,7 +99,7 @@ parallel( read('foo.txt')
 
 Выберите любую библиотеку реализующую промисы и вы сможете работать с асинхронным кодом. В добавок, если вы пишите комбинатор для promises, он будет работать везде, а не только в вашей библиотеке: https://github.com/killdream/pinky-combinators
 
-##Работа без колбэков в Node.js без запар
+## Работа без колбэков в Node.js без запар
 
 Если вы используете Node.js, то вы можете создать комбинатор,  который позволит отказаться от колбэков всего с помощью 5 строчек кода, но мы уже сделали это за вас: 
 
