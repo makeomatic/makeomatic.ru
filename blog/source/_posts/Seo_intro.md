@@ -3,7 +3,7 @@ subtitle: Нужно понимать и соблюдать
 date: 2013-14-10
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [SEO, optimisation, promotion]
+tags: [SEO]
 ---
 
 ### О чем подумать перед оптимизацией ресурса
