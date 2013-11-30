@@ -13,7 +13,7 @@ tags: [JavaScript]
 
 ## Промисы представляют «обещание» будущего значения
 
-``` javascipt
+``` javascript
 var pinky = require('pinky')
 var fs = require('fs')
 
