@@ -1,4 +1,4 @@
-title: Промисы- упрощаем использование параллельных потоков в Javascript
+title: Промисы. Упрощаем использование параллельных потоков в Javascript
 date: 2013-11-30
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
@@ -105,7 +105,7 @@ parallel( read('foo.txt')
 
 Если вы используете Node.js, то вы можете создать комбинатор,  который позволит отказаться от колбэков всего с помощью 5 строчек кода, но мы уже сделали это за вас: 
 
-``` javascript
+```js
 #### λ lift-node
 # Lifts a Node-style function into a function yielding a Promise.
 #
