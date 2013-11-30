@@ -3,7 +3,7 @@ subtitle: пишите поддерживаемый код
 date: 2013-10-03
 author: Дмитрий Горбунов
 gravatarMail: atskiisotona@gmail.com
-tags: [Javascript, Coffee-script, Style Guide]
+tags: [Javascript, Coffee-script, FAQ]
 ---
 
 Ни для кого нет секрета в том, что поддерживать крупные проекты достаточно сложно.
