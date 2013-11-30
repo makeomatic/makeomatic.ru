@@ -2,7 +2,7 @@ title: Делитесь своим localhost с кем угодно
 date: 2013-11-22
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [localhost]
+tags: [FAQ]
 ---
 
 ![Иллюстрация локального сайта](/blog/images/localhost.jpg)
