@@ -3,7 +3,7 @@ subtitle: особенности компоновки спрайтов (sprites)
 date: 2013-11-10
 author: Виталий Аминев
 gravatarMail: v@aminev.me
-tags: [Retina, CSS, Sprites]
+tags: [FAQ]
 ---
 
 ![Макбук про с дисплеем ретина](/blog/images/serf.jpg)
