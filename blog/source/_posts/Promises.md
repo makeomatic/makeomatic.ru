@@ -5,13 +5,16 @@ gravatarMail: annafedotovaa@gmail.com
 tags: [JavaScript]
 ---
 
-<!-- more -->
 
 Промисы - представление некоего значения в будущем. Они отличаются от типичного для Node.js стиля с огромным количеством колбэков (Callback hell), потому что они дают вам реальные значения, которые вы можете продолжать использовать.
 Несколько примеров: 
+
+<!-- more -->
+
 ## Промисы представляют «обещание» будущего значения
 
-```var pinky = require('pinky')
+```
+var pinky = require('pinky')
 var fs = require('fs')
 
 // You just return a placeholder for your value,
@@ -26,9 +29,10 @@ function read(filename) {
     return promise
 }
 ```
-##Промисы можно комбинировать
 
-—	Потому что они являются реальными значениями, точно так же как String или Array:
+## Промисы можно комбинировать
+
+—Потому что они являются реальными значениями, точно так же как String или Array:
 
 
 ```function decode(encoding, buffer) {
