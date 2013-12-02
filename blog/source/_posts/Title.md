@@ -23,9 +23,10 @@ $routeProvider
       .when('/about', {templateUrl: '/partials/about.html', controller: 'AboutCtrl', title: 'About US'});
 ```
 В вашем вызове функции `app.module(..).run` добавьте  `$rootScope.$on`
-`angular.module("...").run(function(){`
 
 ```javascript
+angular.module("...").run(function(){
+
 $rootScope.$on("$routeChangeSuccess", function(currentRoute, previousRoute){
     //Change page title, based on Route information
     		$rootScope.title = $route.current.title;
