@@ -14,24 +14,27 @@ AngularJS используется для написания одностран�
 Мы покажем вам одно из возможных решений данной проблемы:
 
 В вашем `html` шаблоне, поменяйте тэг `title` и добавьте в него атрибут `ng-bind`:
-`<title ng-bind="'MyApp - ' + $root.title">MyApp - Welcome</title>`
+
+```
+<title ng-bind="'MyApp - ' + $root.title">Мое приложение - Привет!</title>
+```
 
 В вашем app.js:
+
 ```javascript
 $routeProvider
-      .when('/product', {templateUrl: '/partials/product.html',  controller: 'ProductCtrl', title: 'Discover our Product'})
-      .when('/about', {templateUrl: '/partials/about.html', controller: 'AboutCtrl', title: 'About US'});
+      .when('/product', {templateUrl: '/partials/product.html',  controller: 'ProductCtrl', title: 'Наши продукт'})
+      .when('/about', {templateUrl: '/partials/about.html', controller: 'AboutCtrl', title: 'О нас'});
 ```
+
 В вашем вызове функции `app.module(..).run` добавьте  `$rootScope.$on`
 
-```javascript
+```js
 angular.module("...").run(function(){
-
-$rootScope.$on("$routeChangeSuccess", function(currentRoute, previousRoute){
-    //Change page title, based on Route information
-    		$rootScope.title = $route.current.title;
-});
-
+      $rootScope.$on("$routeChangeSuccess", function(currentRoute, previousRoute){
+            //Change page title, based on Route information
+            $rootScope.title = $route.current.title;
+      });
 });
 ```
 
