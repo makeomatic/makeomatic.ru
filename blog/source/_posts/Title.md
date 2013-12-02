@@ -3,7 +3,7 @@ subtitle: Меняем заголовок, основанный на пути б
 date: 2013-12-2
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [Angular.JS]
+tags: [Angular.JS, Javascript]
 ---
 
 ![Иллюстрация блокнота](/blog/images/title.png)
