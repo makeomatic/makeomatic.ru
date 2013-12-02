@@ -1,4 +1,4 @@
-title: AngularJS: а нужен ли заголовок?
+title: AngularJS: а вам нужен заголовок?
 subtitle: Меняем заголовок, основанный на пути браузерной строчки. 
 date: 2013-12-2
 author: Анна Аминева
@@ -18,7 +18,6 @@ $routeProvider
       .when('/product', {templateUrl: '/partials/product.html',  controller: 'ProductCtrl', title: 'Discover our Product'})
       .when('/about', {templateUrl: '/partials/about.html', controller: 'AboutCtrl', title: 'About US'});
 ```
-on your run(), add a $rootScope.$on:
 в вашем вызове функции `app.module(..).run` добавьте  `$rootScope.$on`
 `angular.module("...").run(function(){
 
