@@ -23,7 +23,7 @@ $routeProvider
       .when('/about', {templateUrl: '/partials/about.html', controller: 'AboutCtrl', title: 'About US'});
 ```
 в вашем вызове функции `app.module(..).run` добавьте  `$rootScope.$on`
-`angular.module("...").run(function(){
+`angular.module("...").run(function(){`
 
 ```javascript
 $rootScope.$on("$routeChangeSuccess", function(currentRoute, previousRoute){
@@ -34,6 +34,6 @@ $rootScope.$on("$routeChangeSuccess", function(currentRoute, previousRoute){
 });
 ```
 
-**На заметку**: причина, по которой я использую `ng-bind` вместо прямого привязывания к шаблону с помощью `{{ expression }}` описано в документации:
+**На заметку**: причина, по которой я использую `ng-bind` вместо прямого привязывания к шаблону с помощью `{ { expression } }` описано в документации:
 
-Предпочтительно использовать `ngBind` вместо `{{ expression }}`, потому что шаблон на мгновение показывается не компилированным в браузере.
+Предпочтительно использовать `ngBind` вместо `{ { expression } }`, потому что шаблон на мгновение показывается не компилированным в браузере.
