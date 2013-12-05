@@ -17,8 +17,7 @@ tags: [Javascript]
 Для начала,  вам нужно установить ваш **«addthis»** скрипт, который вставляется в ваши страницы блога или настройки плагина, если вы используете платформы типа Wordpress. Блог, который был сделан нами на заказ со вставленным скриптами **“AddThis”** выглядит следующим образом:
 
 ```javascript
-<script type="text/javascript"
-src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f3e33c72b9a4e40">
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f3e33c72b9a4e40">
 ```
 
 ##Дополнительные параметры
@@ -28,8 +27,7 @@ src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f3e33c72b9a4e40">
 Код должен быть добавлен в скрипт сразу после части с `pubid=XXXXX`, в итоге все выглядит так:
 
 ```javascript
-<script type="text/javascript"
-src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa- 4f3e33c72b9a4e40&async=1&domready=1">
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f3e33c72b9a4e40&async=1&domready=1">
 ```
 
 Если бы вы обновили вашу станицу на данном этапе, вы не увидели бы кнопки **«AddThis»** - это потому, что была дана команда подождать, чтобы контент был полностью загружен и, что еще важнее, сейчас скрипт addThis должен быть инициализирован вручную. Добавьте следующий код перед закрывающимся тегом на вашей главной странице. 
