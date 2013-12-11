@@ -1,5 +1,5 @@
 title: Angular VS jQuery
-date: 2013-11-17
+date: 2013-12-11
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
 tags: [Angular.JS, jQuery]
