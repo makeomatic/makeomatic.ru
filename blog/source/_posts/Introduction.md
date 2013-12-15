@@ -6,7 +6,7 @@ gravatarMail: gorshunov.vladimir@gmail.com
 tags: [Для новичков, Node.js]
 ---
 
-#### Что такое блог джуниора?
+## Что такое блог джуниора?
 {% blockquote Виталий Аминев %}
 Острая нехватка специалистов на рынке сподвигла компанию Makeomatic создать свой собственный корпоративный университет.
 Первый поток обучающихся будет пробным, на нем мы будем формировать материал для дальнейшего изучения.
@@ -15,7 +15,7 @@ tags: [Для новичков, Node.js]
 а также плавно перейдем к разработке мобильных приложений, используя PhoneGap.
 {% endblockquote %}
 
-#### Практика обучения
+## Практика обучения
 Все обучение будет строиться на наборе сквозных проектов, которые имеют применение в реальной жизни. Смею заметить, что все проекты
 достаточно простые, и можно найти множество аналогов в опен сорсе.
 
@@ -24,9 +24,9 @@ tags: [Для новичков, Node.js]
 хранение пароля в зашифрованном виде, используя `blowfish` как метод шифрования.
 <!-- more -->
 
-#### Express.js, MongoDB, Mongoose ODM
+### Express.js, MongoDB, Mongoose ODM
 
-##### Краткий экскурс в `Model-View-Controller`
+#### Краткий экскурс в `Model-View-Controller`
 
 * Модель - используется для работы с данными. Получает их, преобразовывает и отдает в контроллеры
 * Контроллер - связующее звено между моделями и видами, агрегирует данные, виды и отдает все это пользователю
@@ -34,20 +34,21 @@ tags: [Для новичков, Node.js]
 
 Зачем и почему используют эту концепцию вы благополучно можете загуглить или захабрить.
 
-##### Express.js - базовый фреймворк для вашего приложения на все времена
+#### Express.js - базовый фреймворк для вашего приложения на все времена
 
+```
 {% codeblock app.js lang:js %}
 var express = require('express'),
     app = express();
+```
+    
+Здесь конфигурируем приложение, добавляем Middleware - это различные функции, которые выполняются в процессе жизненного цикла запроса
 
-/*
-    здесь конфигурируем приложение, добавляем Middleware -- это различные функции, которые выполняются в
-    процессе жизненного цикла запроса
-*/
-var secret = "somesecretforcookie";
+`var secret = "somesecretforcookie";`
 
-app.configure(function(){
+`app.configure(function(){`
 
+```
         app.set('views', __dirname + "/views");
 
         app.use(express.compress()); //gzip-сжатие
@@ -66,15 +67,15 @@ app.configure(function(){
         });
 
 });
+```
 
-require("./routes"); // здесь подключим руты
+`require("./routes");` здесь подключим руты
 
-app.listen(8080);
-{% endcodeblock %}
-<br/>
+`app.listen(8080); {% endcodeblock %} <br/>`
+
 Так мы поднимаем веб-сервер на порту 8080, и на все запросы он будет выводить **Hello World!**
 
-Базовая структура проекта:
+### Базовая структура проекта:
 ```
 |- models/..
 |- views/..
@@ -87,16 +88,16 @@ app.listen(8080);
 |- routes.js // для формирования рутов
 ```
 
-##### Работа с БД, моделями
+### Работа с БД, моделями
 
-``` javascript config.js
-var mongoose = require('mongoose');
+`javascript config.js  var mongoose = require('mongoose');`
 
-// инициализируем подключение к БД
-exports.db = mongoose.connect(process.ENV.MongoURI || "mongodb://localhost/junior");
+Инициализируем подключение к БД
+`exports.db = mongoose.connect(process.ENV.MongoURI || "mongodb://localhost/junior");`
+
+
 ```
-
-``` javascript models/User.js
+javascript models/User.js
 var mongoose = require("mongoose"),
     Schema = mongoose.Schema,
     ObjectId = Schema.Types.ObjectId;
@@ -112,20 +113,20 @@ var User = new Schema({
         required: true
        }
     });
-
-/*
- здесь отдаем модель для дальнейшего использования, альтернативно возможно
- получить эту модель после инициализации через mongoose.model("User");
-*/
-module.exports = mongoose.model("User", User);
 ```
+Здесь отдаем модель для дальнейшего использования, альтернативно возможно получить эту модель после инициализации через: 
+ `mongoose.model("User"); module.exports = mongoose.model("User", User);`
 <br/>
-Далее мы создадим страницу для регистрации - там будет два инпута - username и password. Они будут передавать данные
-по руту `POST /register`
-Как создать саму страницу - гугл в помощь.
-1. Добавим обработчик
 
-``` javascript routes.js
+Далее мы создадим страницу для регистрации. Там будет два инпута - username и password. Они будут передавать данные
+по руту `POST /register`
+
+### Как создать саму страницу - гугл в помощь.
+
+#### 1. Добавим обработчик
+
+```
+javascript routes.js
 
 module.exports = function(app){
 
@@ -138,7 +139,8 @@ module.exports = function(app){
 }
 ```
 
-``` javascript controllers/auth.js
+``` 
+javascript controllers/auth.js
 var User = require("../models/User.js");
 
 
@@ -161,26 +163,26 @@ exports.post = function(req,res,next){
    });
 
 }
-```
 <br/>
-Добавляем генерацию пароля
-``` javascript models/User.js
-...
-var bcrypt = require('bcrypt'); // отвечает за шифрование паролей, т.к. в базе данных они хранятся зашифрованными. Дополнительно: https://github.com/ncb000gt/node.bcrypt.js/
-...
+```
 
+#### 2. Добавляем генерацию пароля
+
+`javascript models/User.js`
+
+`var bcrypt = require('bcrypt');` отвечает за шифрование паролей, т.к. в базе данных они хранятся зашифрованными. Дополнительно: https://github.com/ncb000gt/node.bcrypt.js/
+
+```
 User.statics.genPassword = function(password, callback){
-    if (!password) return callback("Не указан пароль");
+    if (!password) return callback ("Не указан пароль");`
 
     bcrypt.hash(password, 10, callback);
 };
-
-...
 ```
-
 На текущий момент мы можем создавать пользователей. Добавим страничку, доступ к которой будет только у зарегистрированного пользователя:
 
-``` javascript middleware/session.js
+``` 
+javascript middleware/session.js
 
 exports.userOnly = function(req,res,next){
   // если есть юзер в сессии - все хорошо
@@ -192,20 +194,21 @@ exports.userOnly = function(req,res,next){
 
 ```
 
-``` javascript routes.js
+``` 
+javascript routes.js
 var sessionMiddleware = require("./middleware/session");
 ...
 
 app.get('/secretPage', sessionMiddleware.userOnly, require("./controllers/secretPage").get);
 
 ...
-```
 
-``` javascript controllers/secretPage.js
+javascript controllers/secretPage.js
 exports.get = function (req, res, next) { //для возможности вызова  из другого файла
     res.send("Some secret page");
 }
-```
 <br/>
+```
+
 На сегодня рабочий день подходит к концу, поэтому продолжение следует...
 Спасибо за внимание, задавайте вопросы и спрашивайте о топиках, которые интересны.
