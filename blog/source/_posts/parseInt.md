@@ -4,6 +4,9 @@ author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
 tags: [Javascript]
 ---
+
+![Иллюстрация блокнота](/blog/images/parseInt.jpg)
+
 ## Строчной тип данных
 Чтобы преобразовать строчный тип данных в целое число вы, очевидно, можете использовать функцию `parseInt`.
 
