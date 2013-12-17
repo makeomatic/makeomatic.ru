@@ -17,7 +17,9 @@ tags: [Javascript]
 Учтите, что результаты такой операции не будут совпадать с выходом функции parseInt. Чтобы понять разницу, вы должны преобразовать строку, которая, в принципе, не выглядит как число, например: преобразование строки, которая начинается с букв.
 
 ```javascript
-parseInt('a', 10); // returns NaN parseInt({}, 10); // returns NaN parseInt('123abc', 10); // returns 123 parseInt('abc123', 10); // returns NaN   ~~'a'; // returns 0 ~~{}; // returns 0 ~~'123abc'; // returns 0 ~~'abc123'; // returns 0 
+parseInt('a', 10); // returns NaN parseInt({}, 10); // returns NaN parseInt('123abc', 10); 
+// returns 123 parseInt('abc123', 10); // returns NaN   ~~'a'; // returns 0 ~~{}; // returns 0 ~~'123abc'; 
+// returns 0 ~~'abc123'; // returns 0 
 ```
 
 ### Битовое целое число
