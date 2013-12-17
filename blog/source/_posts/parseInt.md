@@ -1,4 +1,4 @@
-title: Преобразование строчный тип данных в целое число JavaScript
+title: Преобразование строчного типа данных в целое число JavaScript
 date: 2013-12-17
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
