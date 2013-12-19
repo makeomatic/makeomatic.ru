@@ -4,6 +4,8 @@ author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
 tags: [Chef]
 ---
+
+![Иллюстрация блокнота](/blog/images/chef.png)
 ## Рецепты для шефа
 Вы когда- либо случайно устанавливали `node.normal[:foo][:bar] = 'something bad'` в вашем рецепте для `chef`? 
 
