@@ -8,6 +8,7 @@ tags: [Chef]
 Вы когда- либо случайно устанавливали `node.normal[:foo][:bar] = 'something bad'` в вашем рецепте для `chef`? 
 
 <!-- more -->
+
 Потом вы заметили, что сервер сохранил атрибуты с приоритетом `normal` между запусками chef, а на самом деле вы хотели использовать атрибуты с их [стандартным приоритетом] (http://docs.opscode.com/essentials_cookbook_attribute_files.html#attribute-precedence) в файле вашего кукбука `attributes/default.rb`.
 
 ### Команда "knife exec"
