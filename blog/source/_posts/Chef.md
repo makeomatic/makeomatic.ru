@@ -26,4 +26,4 @@ knife exec -E "nodes.transform(:all) {|n| n.override_attrs['authorization']['sud
 knife exec -E "nodes.transform('name:dfw-mynode-01') {|n| n.default_attrs['authorization']['sudo'].delete('groups') rescue nil }"
 ```
 
-**На заметку**: команда `knife exec` сильна… с большой силой приходит большая ответственность
+**На заметку**: команда `knife exec` сильна… С большой силой приходит большая ответственность!
