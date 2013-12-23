@@ -2,7 +2,7 @@ title: Параллакс эффект в CSS
 date: 2013-12-05
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [Javascript]
+tags: [HTML5]
 ---
 
 ## Параллакс эффект прокрутки страницы
