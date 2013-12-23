@@ -43,7 +43,10 @@ tags: [Javascript]
 
 После того как вы примените верную глубину для ваших элементов, просто добавьте  эту строчку для обработки изменения точки обзора:
 ```html5
-<script>     window.onscroll = function(){        document.body.style.webkitPerspectiveOrigin =        window.scrollX + "px " +         window.scrollY + "px";      } </script>
+<script>    
+window.onscroll = function(){     
+document.body.style.webkitPerspectiveOrigin =  window.scrollX + "px " + window.scrollY + "px";     
+} </script>
 ```
 
 **Удачи в работе с гипнотическими эффектами!**
