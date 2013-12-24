@@ -39,8 +39,7 @@ module.exports = function (grunt) {
               options: {
                   mangle: {
                       except: ["jQuery","qq"]
-                  },
-                  beautify: true
+                  }
               },
               files: {
                   'static/js/app.min.<%= pkg.version %>.js' : ['static/js/vendor/jquery-1.10.1.min.js',
