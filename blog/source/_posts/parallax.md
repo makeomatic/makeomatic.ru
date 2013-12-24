@@ -1,5 +1,5 @@
 title: Параллакс эффект в CSS
-date: 2013-12-05
+date: 2013-12-24
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
 tags: [HTML5]
