@@ -1,4 +1,5 @@
-title: Промисы. Упрощаем использование параллельных потоков в Javascript
+title: Промисы
+subtitle: Упрощаем использование параллельных потоков в Javascript
 date: 2013-11-30
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
