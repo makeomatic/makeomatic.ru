@@ -1,4 +1,4 @@
-title: Сервис «AddThis” замедляет вас?
+title: Сервис "AddThis" замедляет вас?
 date: 2013-12-05
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
