@@ -1,4 +1,4 @@
-title: Pagination. Вы все делаете неправильно!
+title: Pagination: вы все делаете неправильно!
 date: 2013-11-28
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
