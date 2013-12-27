@@ -5,7 +5,7 @@ gravatarMail: annafedotovaa@gmail.com
 tags: [AngularJS]
 ---
 
-##$rootScope.$apply()
+## Расширение колбэков функции
 
 В этом примере мне хочется показать вам как я реализовываю `$rootScope.$apply()` для каждого вызова REST api. Это всего лишь пример того, как вы можете расширить колбэки функции если мы предполагаем, что колбэк при обращении к REST api всегда находится в функции на последнем месте.
 
@@ -90,6 +90,7 @@ patchObjects.forEach(function (value) {
 ```
 
 У сервиса будет метод схожий с тем, который вы вызываете в контроллере.
+
 ```javascript
 myApiService.assets.one(id, function (data, error) {
        $scope.list = data;
