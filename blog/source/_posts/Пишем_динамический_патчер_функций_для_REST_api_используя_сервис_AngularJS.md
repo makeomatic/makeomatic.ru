@@ -1,11 +1,11 @@
-title: Пишем динамический патчер функций для REST api используя сервис AngularJS
+title: Используя сервис AngularJS, пишем динамический патчер функций для REST api
 date: 2013-12-27
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
 tags: [AngularJS]
 ---
 
-В этом примере я покажу вам как я реализовываю $rootScope.$apply() для каждого  вызова REST api. Это всего лишь пример того, как вы можете расширить колбеки функции если мы предполагаем, что колбэк при обращении к REST api всегда находится в функции на последнем месте.
+В этом примере я покажу вам как реализовываю $rootScope.$apply() для каждого вызова REST api. Это всего лишь пример того, как вы можете расширить колбэки функции если мы предполагаем, что колбэк при обращении к REST api всегда находится в функции на последнем месте.
 
 ```javascript
 /*** this is just example of some javascript api api ***/
@@ -35,7 +35,7 @@ var that = this,
     patchObjects = [ 'assets', 'user'];
 ```
 
-Api patcher расширяет колбек и помещает `$rootScope.$apply()` в каждую колбэк функцию.
+Api patcher расширяет колбэк и помещает `$rootScope.$apply()` в каждую колбэк функцию.
 
 ```javascript
 /**
@@ -85,7 +85,7 @@ patchObjects.forEach(function (value) {
 });
 ```
 
-У сервиса будет метод, схожий с тем, который вы вызываете в контроллере.
+У сервиса будет метод схожий с тем, который вы вызываете в контроллере.
 ```javascript
 myApiService.assets.one(id, function (data, error) {
        $scope.list = data;
