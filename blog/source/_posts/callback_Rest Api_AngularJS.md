@@ -2,7 +2,7 @@ title: Используя сервис AngularJS, пишем динамичес�
 date: 2013-12-27
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [AngularJS]
+tags: [Angular.JS]
 ---
 
 
