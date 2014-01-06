@@ -2,7 +2,7 @@ title: Улучшение логирования в AngularJS с помощью 
 date: 2014-01-06
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [Javascript]
+tags: [Angular.JS, Javascript]
 ---
 
 ![Иллюстрация блокнота](/blog/images/logging.jpg)
