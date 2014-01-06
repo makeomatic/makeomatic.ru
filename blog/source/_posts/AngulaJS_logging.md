@@ -589,8 +589,8 @@ var user = { who:"Thomas Burleson", email:"ThomasBurleson@gmail.com" };
 10:22:15:250 – Authenticator::login_onFault( `Bad credentials. Please use a username of ‘admin’ for mock logins !` )
 10:22:15:274 – LoginController::login_onFault( `Bad credentials. Please use a username of ‘admin’ for mock logins !` )
 ```
-**Выводы**
 
+**Выводы**
 Это  только один пример того, как Декораторы могут быть использованы для добавления или преобразования поведения в AngularJS приложениях. А LogEnhancer может быть также расширен с возможностями:
 * Вывод  в кастомную консоль приложения… например, для генерации удаленных отчетов для клиентов
 * Цветовое кодировние и группирование сообщений в логе по категориям; @see Chrome Dev Tools
@@ -598,7 +598,7 @@ var user = { who:"Thomas Burleson", email:"ThomasBurleson@gmail.com" };
 
 Я уверен, что с помощью данной техники можно создать еще множество элегантных решений. Если у вас есть классный декоратор, не забудьте поделиться им с AngularJS сообществом!
 
-##Материалы
+**Материалы**
 Я создал публичный GitHub репозиторий с исходным кодом и примерами, использованными в данном материале.
 По мотивам [Burleson Thomas] (http://solutionoptimist.com/2013/10/07/enhance-angularjs-logging-using-decorators/)
 
