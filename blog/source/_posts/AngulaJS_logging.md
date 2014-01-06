@@ -334,7 +334,7 @@ login_onFault( ‘Bad credentials. Please use a username of ‘admin’ for mock
 })();
 ```
 
-Контейнерное структурирование, использованное выше, соответствует [Закону Деметры] (http://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%94%D0%B5%D0%BC%D0%B5%D1%82%D1%80%D1%8B). При таком подходе весь функционал, которым сервис `$log` был улучшен, инкапсулируется в модуле `LogEnhancer`. 
+Контейнерное структурирование, использованное выше, соответствует [Закону Деметры](http://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%94%D0%B5%D0%BC%D0%B5%D1%82%D1%80%D1%8B). При таком подходе весь функционал, которым сервис `$log` был улучшен, инкапсулируется в модуле `LogEnhancer`. 
 
 Вот теперь мы готовы продолжить добавление функционала в `LogEnhancer`… Мы будет внедрять имена классов и добавлять их в сообщения к выводу.
 
@@ -604,5 +604,5 @@ var user = { who:"Thomas Burleson", email:"ThomasBurleson@gmail.com" };
 
 **Материалы**
 Я создал публичный GitHub репозиторий с исходным кодом и примерами, использованными в данном материале.
-По мотивам [Burleson Thomas] (http://solutionoptimist.com/2013/10/07/enhance-angularjs-logging-using-decorators/)
+По мотивам [Burleson Thomas](http://solutionoptimist.com/2013/10/07/enhance-angularjs-logging-using-decorators/)
 
