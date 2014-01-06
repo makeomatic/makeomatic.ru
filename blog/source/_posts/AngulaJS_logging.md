@@ -169,11 +169,12 @@ login_onFault( ‘Bad credentials. Please use a username of ‘admin’ for mock
 Для решения этой проблемы мы можем модифицировать каждый вызов `$log.debug()`, чтобы вручную добавлять название класса и даже временной штамп к каждому из них; также временные марки позволят нам периодически проверять процесс исполнения кода.
 
 Но ***НЕ*** делайте этого… Это решение для начинающих и оно чертовски убого. Вот пример вывода, который мы хотели бы увидеть:
-
+```
 10:22:15:143 – LoginController::login( `Thomas Burleson` )
 10:22:15:167 – Authenticator::login( `Thomas Burleson` )
 10:22:15:250 – Authenticator::login_onFault( `Bad credentials. Please use a username of ‘admin’ for mock logins !` )
 10:22:15:274 – LoginController::login_onFault( `Bad credentials. Please use a username of ‘admin’ for mock logins !` )
+```
 
 Перед тем как начать изменение ***ВСЕХ*** классов (так бы сделал начинающий разработчик), давайте остановимся и предположим, что `$provide.decorator()` позволит нам сделать это централизованно, и, более того, изменить или убрать любую функциональность. 
 
