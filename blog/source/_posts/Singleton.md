@@ -1,4 +1,4 @@
-title: СШаблон проектирования Одиночка (Singleton) в Objective-C  (с ARC)
+title: Шаблон проектирования Одиночка (Singleton) в Objective-C  (с ARC)
 date: 2014-13-01
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
