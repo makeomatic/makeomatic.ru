@@ -6,7 +6,7 @@ tags: [Angular.JS, Javascript]
 ---
 
 Если вы частенько натыкаетесь на `$apply already in progress`, пока работаете с ангуляром (я замечаю, что чаще всего с этим сталкиваюсь, когда внедряю сторонние плагины, которые вызывают большое количество DOM событий), то вы можете использовать  сервис `safeApply` для проверки текущей фазы обрабоки в ангуляре, непосредственно перед выполнением вашей функции. Я обычно патчу `$scope` объект основного контроллера, а Angular распространяет мои изменения в остальные части приложения за меня:
-```
+```js
 $scope.safeApply = function(fn) {
   var phase = this.$root.$$phase;
   if(phase == '$apply' || phase == '$digest') {
@@ -20,7 +20,7 @@ $scope.safeApply = function(fn) {
 ```
 А затем просто заменяйте  `$apply` на `safeApply` везде, где вам это необходимо:
 
-```
+```js
 $scope.safeApply(function() {
   alert('Now I'm wrapped for protection!');
 });
@@ -29,7 +29,8 @@ $scope.safeApply(function() {
 В следующем примере, вы можете увидеть как присоединять `safeApply` в виде Angular.JS сервиса к вашему модулю. В добавок, эта версия учитывает вызовы к `$apply()`, которые не передают функцию в первом аргументе. 
 
 Чтобы им воспользоваться, присоедините следующее к вашему модулю:
-```
+
+```js
 .factory('safeApply', [function($rootScope) {
 		    return function($scope, fn) {
 		        var phase = $scope.$root.$$phase;
@@ -50,7 +51,7 @@ $scope.safeApply(function() {
 
 и используйте его c помощью внедрения зависимостей:
 
-```
+```js
 .controller('MyCtrl', ['$scope,' 'safeApply', function($scope, safeApply) {
 		    safeApply($scope);                     // no function passed in
 		    safeApply($scope, function() {   // passing a function in
