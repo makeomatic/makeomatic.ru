@@ -1,4 +1,4 @@
-title: “Безопасный” `$apply`в Angular.JS
+title: “Безопасный” $apply в Angular.JS
 date: 2014-01-30
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
