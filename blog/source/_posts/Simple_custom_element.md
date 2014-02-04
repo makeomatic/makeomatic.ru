@@ -12,16 +12,18 @@ tags: [Javascript, Angular.JS]
 .control-container= state_selector form, :"#{type}state", {}, :validate => validate, :class => %w(control--full-line) 
 ```
 Эти штаты появляются косвенно из yaml файла не напрямую.
-  ```javascript
+
+```javascript
 def state_selector(form, field_name, options={ }, html_options={ })     states = [['', '']]     states += Countries.us_states.sort.map { |us_state_code, _| [us_state_code, us_state_code] }     form.select field_name, states, options, html_options   end 
 ```
 Я преобразовал yaml в json и встроил его в Angular контроллер для этой формы. Вот первая попытка переделать мое приложение в Angular из Rails хелпера.
+
 ```javascript
  <label class="above-field" for="state">State</label> <select class="field" name="state" ng-model="payment.state" ng-options="state.abbreviation as state.name for state in states" required>  
     $scope.states = function(rawStates) {        return _.map(rawStates, function(abbreviation, name) {         return {abbreviation: abbreviation, name: name};       });     }({       "CA": "CALIFORNIA",        // the rest of the states       "NY": "NEW YORK"     }); 
 ``` 
 
-## Решим проблему
+## Решаем проблему
 
 Процесс внедрения этого кода на каждой странице, где мне понадобится список штатов, утомителен.  Самый быстрый способ решить эту проблему - вынести штаты в провайдер значений.
 ```javascript
