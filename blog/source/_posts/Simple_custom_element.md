@@ -8,6 +8,9 @@ tags: [Javascript, Angular.JS]
 ## Трансформируем приложение
 
 Переделывая Rails приложение на Angular, я столкнулся с селектом, который грузил некоторые названия штатов США из yaml файла.
+
+<!-- more -->
+
 ```javascript
 .control-container= state_selector form, :"#{type}state", {}, :validate => validate, :class => %w(control--full-line) 
 ```
