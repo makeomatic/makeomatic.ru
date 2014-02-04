@@ -5,6 +5,8 @@ gravatarMail: annafedotovaa@gmail.com
 tags: [Javascript, Angular.JS]
 ---
 
+![Иллюстрация блокнота](/blog/images/transformation.jpg)
+
 ## Трансформируем приложение
 
 Переделывая Rails приложение на Angular, я столкнулся с селектом, который грузил некоторые названия штатов США из yaml файла.
