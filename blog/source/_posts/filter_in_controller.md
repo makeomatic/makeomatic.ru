@@ -1,4 +1,4 @@
-title: Angular JS: внедрение фильтра в контроллер
+title: Angular.JS: внедрение фильтра в контроллер
 date: 2014-27-02
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
