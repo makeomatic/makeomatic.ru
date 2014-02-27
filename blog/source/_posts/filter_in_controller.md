@@ -5,9 +5,8 @@ gravatarMail: annafedotovaa@gmail.com
 tags: [Angular.JS]
 ---
 ![Иллюстрация блокнота](/blog/images/filter.jpg)
-Предположим вы переработали функцию, находящуюся в `$scope` в фильтр:
 
-<!-- more -->
+Предположим вы переработали функцию, находящуюся в `$scope` в фильтр:
 
 ```javascript
 /// Counts char number excluding spaces. Three dots count as one.
@@ -20,16 +19,18 @@ editor.filter("numChar", function() {
             .length; 
     };
 });
-
 ```
+
+<!-- more -->
+
 И теперь вы можете использовать ее в своем приложении для обработки текста:
-```javascript
-<span class="char-num" id="numChar">
-    {{data.myText | numChar}}
-</span>
+
+```html
+<span class="char-num" id="numChar" ng-bind="data.myText | numChar"></span>
 ```
 
 Но, как ни странно, другая функция стала выполняться с ошибкой:
+
 ```javascript
 function ReportController($scope, Data) {
 
@@ -41,11 +42,12 @@ function ReportController($scope, Data) {
 
 }; 
 ``` 
-Этот метод полагается на функцию `numChar()`, которая сейчас вне области видимости. 
 
+Этот метод полагается на функцию `numChar()`, которая сейчас вне области видимости. 
 Как же исправить ошибку? 
 
 Способ первый: внедряем фильтр обратно в контроллер, где находятся выполняющийся с ошибками метод:
+
 ```javascript
 /// Inject numChar Filter into Report Controller
 function ReportController($scope, Data, numCharFilter) {
@@ -61,6 +63,7 @@ function ReportController($scope, Data, numCharFilter) {
 
 Примите во внимание: суффикс `Filter` добавлен к названию фильтра, мы получаем `numCharFilter` и это, собственно, и есть название функции, которую вы будете использовать для доступа к этому фильтру.
 Способ второй: внедряем сервис `$filter` в ваш контроллер:
+
 ```javascript
 // Inject $filter into Report Controller
 function ReportController($scope, Data, $filter) {
@@ -73,5 +76,6 @@ function ReportController($scope, Data, $filter) {
 
 }
 ```
+
 Это позволяет вам вызывать любой фильтр, но код становится немного корявым. 
 Но так или иначе, код теперь выполняется. Время подумать о том, что вы можете улучшить в своих программах, используя полученные знания. А может быть вы придумаете и еще что-нибудь поинтереснее?
