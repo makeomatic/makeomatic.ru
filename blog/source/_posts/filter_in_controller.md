@@ -6,6 +6,8 @@ tags: [Angular.JS]
 ---
 Предположим вы переработали функцию, находящуюся в `$scope` в фильтр:
 
+<!-- more -->
+
 ```javascript
 /// Counts char number excluding spaces. Three dots count as one.
 // TODO: refactor text transformation in a separate filter
