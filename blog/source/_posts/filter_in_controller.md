@@ -4,6 +4,7 @@ author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
 tags: [Angular.JS]
 ---
+![Иллюстрация блокнота](/blog/images/filter.jpg)
 Предположим вы переработали функцию, находящуюся в `$scope` в фильтр:
 
 <!-- more -->
