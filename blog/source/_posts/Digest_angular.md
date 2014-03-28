@@ -1,4 +1,4 @@
-itle: Ускоряем $digest цикл в AngularJS
+title: Ускоряем $digest цикл в AngularJS
 date: 2014-03-28
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
