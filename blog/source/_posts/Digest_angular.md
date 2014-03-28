@@ -31,7 +31,7 @@ tags: [Angular.JS, Javascript]
 Предположим у нас есть эта разметка:
 
 ```javascript
-<ul ng-controller="listCtrl">   <li ng-repeat="item in visibleList">{{lots of bindings}}</li> </ul> 
+<ul ng-controller="listCtrl">   <li ng-repeat="item in visibleList">{ {lots of bindings } }</li> </ul> 
 ```
 
 And this code:
