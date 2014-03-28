@@ -31,15 +31,54 @@ tags: [Angular.JS, Javascript]
 ```javascript
 <ul ng-controller="listCtrl">   <li ng-repeat="item in visibleList">{{lots of bindings}}</li> </ul> 
 And this code:
-app.controller('listCtrl', function ($scope, $element) {   $element.on('scroll', function (e) {     $scope.visibleList = getVisibleElements(e);     $scope.$digest();   }); });```
+```javascript
+app.controller('listCtrl', function ($scope, $element) {
+  $element.on('scroll', function (e) {
+    $scope.visibleList = getVisibleElements(e);
+    $scope.$digest();
+  });
+});```
 
 Во время `$digest` цикла вы заинтересованы только в изменениях `visibleList`, но не в изменениях индивидуальных элементов. Тем не менее, Angular будет упорно допрашивать каждого вотчера об изменениях.
 Так вот, я написал очень простую директиву:
 ```javascript
-app.directive('faSuspendable', function () {   return {     link: function (scope) {       // Heads up: this might break is suspend/resume called out of order       // or if watchers are added while suspended       var watchers;        scope.$on('suspend', function () {         watchers = scope.$$watchers;         scope.$$watchers = [];       });        scope.$on('resume', function () {         if (watchers)           scope.$$watchers = watchers;          watchers = undefined;       });     }   }; });``` 
+aapp.directive('faSuspendable', function () {
+  return {
+    link: function (scope) {
+      // Heads up: this might break is suspend/resume called out of order
+      // or if watchers are added while suspended
+      var watchers;
+
+      scope.$on('suspend', function () {
+        watchers = scope.$$watchers;
+        scope.$$watchers = [];
+      });
+
+      scope.$on('resume', function () {
+        if (watchers)
+          scope.$$watchers = watchers;
+
+        // discard our copy of the watchers
+        watchers = void 0;
+      });
+    }
+  };
+});
+;``` 
 И изменил свой код на:
-```javascript
-<ul ng-controller="listCtrl">   <li fa-suspendable ng-repeat="item in visibleList">{{lots of bindings}}</li> </ul>  app.controller('listCtrl', function ($scope, $element) {   $element.on('scroll', function (e) {     $scope.visibleList = getVisibleElements(e);      $scope.$broadcast('suspend');     $scope.$digest();     $scope.$broadcast('resume');   }); });```
+```<ul ng-controller="listCtrl">
+  <li fa-suspendable ng-repeat="item in visibleList">{{lots of bindings}}</li>
+</ul>
+
+app.controller('listCtrl', function ($scope, $element) {
+  $element.on('scroll', function (e) {
+    $scope.visibleList = getVisibleElements(e);
+
+    $scope.$broadcast('suspend');
+    $scope.$digest();
+    $scope.$broadcast('resume');
+  });
+});```
  
 Все что он делает – это временно скрывает вотчеров индивидуальных элементов. Вместо того, чтобы израсходовать сотни вотчерсов, все что сделает Angular – это проверяет если элементы были добавлены или удалены из видимого списка. Приложение мгновенно вернулось к 60fps во время прокрутки!
 А самая классная вещь в том, что все остальные события до сих пор работают как обычно. Теперь мы можем взять пирожок с полки и съесть его:  
