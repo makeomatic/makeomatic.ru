@@ -28,8 +28,11 @@ tags: [Angular.JS, Javascript]
 Вы так же можете попробовать ограничить количество `$$watchers` с [angular-once](https://github.com/tadeuszwojcik/angular-once), но по сути он вообще отключит AngularJS и вы, в общем-то, можете работать с jQuery ровно с таким же успехом.
 Моя уловка: выборочно отключать `$$watchers`
 Предположим у нас есть эта разметка:
+
 ```javascript
 <ul ng-controller="listCtrl">   <li ng-repeat="item in visibleList">{{lots of bindings}}</li> </ul> 
+```
+
 And this code:
 
 ```javascript
@@ -38,7 +41,8 @@ app.controller('listCtrl', function ($scope, $element) {
     $scope.visibleList = getVisibleElements(e);
     $scope.$digest();
   });
-});```
+});
+```
 
 Во время `$digest` цикла вы заинтересованы только в изменениях `visibleList`, но не в изменениях индивидуальных элементов. Тем не менее, Angular будет упорно допрашивать каждого вотчера об изменениях.
 Так вот, я написал очень простую директиву:
@@ -66,7 +70,8 @@ aapp.directive('faSuspendable', function () {
     }
   };
 });
-;``` 
+;
+``` 
 
 И изменил свой код на:
 
@@ -83,7 +88,8 @@ app.controller('listCtrl', function ($scope, $element) {
     $scope.$digest();
     $scope.$broadcast('resume');
   });
-});```
+});
+```
  
  
 Все что он делает – это временно скрывает вотчеров индивидуальных элементов. Вместо того, чтобы израсходовать сотни вотчерсов, все что сделает Angular – это проверяет если элементы были добавлены или удалены из видимого списка. Приложение мгновенно вернулось к 60fps во время прокрутки!
