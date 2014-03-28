@@ -31,6 +31,7 @@ tags: [Angular.JS, Javascript]
 ```javascript
 <ul ng-controller="listCtrl">   <li ng-repeat="item in visibleList">{{lots of bindings}}</li> </ul> 
 And this code:
+
 ```javascript
 app.controller('listCtrl', function ($scope, $element) {
   $element.on('scroll', function (e) {
@@ -41,6 +42,7 @@ app.controller('listCtrl', function ($scope, $element) {
 
 Во время `$digest` цикла вы заинтересованы только в изменениях `visibleList`, но не в изменениях индивидуальных элементов. Тем не менее, Angular будет упорно допрашивать каждого вотчера об изменениях.
 Так вот, я написал очень простую директиву:
+
 ```javascript
 aapp.directive('faSuspendable', function () {
   return {
@@ -65,8 +67,10 @@ aapp.directive('faSuspendable', function () {
   };
 });
 ;``` 
+
 И изменил свой код на:
-```<ul ng-controller="listCtrl">
+```javascript
+<ul ng-controller="listCtrl">
   <li fa-suspendable ng-repeat="item in visibleList">{{lots of bindings}}</li>
 </ul>
 
