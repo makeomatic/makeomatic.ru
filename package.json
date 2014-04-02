@@ -1,6 +1,6 @@
 {
   "name": "avvs.co",
-  "version": "1.9.48",
+  "version": "1.9.49",
   "description": "avvs.co marketing web-site",
   "main": "app.coffee",
   "repository": {
