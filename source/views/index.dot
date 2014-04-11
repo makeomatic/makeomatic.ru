@@ -59,7 +59,7 @@
         </section>
         <section class="section-about text-center">
             <div class='text-left'>
-            <h2 class='list-header'>{{= it.__("Мы знаем свое дело и умеем его делать хорошо") }}.</h2>
+            <h2 class='list-header'>{{= it.__("Мы знаем свое дело и умеем его делать хорошо") }}</h2>
             <ul>
                 <li>{{= it.__("Оформляем идею") }};</li>
                 <li>{{= it.__("Согласовываем дизайн сайта") }};</li>
