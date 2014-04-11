@@ -16,11 +16,11 @@ tags: [FAQ]
 
 <!-- more -->
 
-Далее запускаем ваш localhost сервер, к примеру на **Rails**, используя default WEBrick сервер:
+Далее запускаем ваш localhost сервер, к примеру на Rails, используя default WEBrick сервер:
 
 `$ rails s`
 
-Или **Python**:
+Или Python:
 
 `$ python - m SimpleHTTPServer 8000`
 
