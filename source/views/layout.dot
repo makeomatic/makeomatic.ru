@@ -5,8 +5,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>Makeomatic: {{= it.title }}</title>
-    <meta name="description" content="{{= it.description }}">
+    <title>Makeomatic: {{= it.__(it.title) }}</title>
+    <meta name="description" content="{{= it.__(it.description) }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link type="application/atom+xml" rel="alternate" href="/blog/atom.xml" />
@@ -41,12 +41,10 @@
 
 <div class="icon-up visible-desktop" id="up" title="наверх"></div>
 
-<!-- TODO: прячем, пока перевод корявы. Нечего подглядывать за исходниками
 <div class="switch-language">
 	<a href="http://makeomatic.ru{{= it.originalUrl }}" class="language-icon language-ru"></a>
 	<a href="http://en.makeomatic.ru{{= it.originalUrl }}" class="language-icon language-en"></a>
 </div>
--->
 
 {{? it.isMain }}
     <div class='angeled-stripe'></div>
