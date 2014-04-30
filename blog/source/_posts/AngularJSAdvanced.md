@@ -467,3 +467,4 @@ myModule.directive("country", function () {
 
 <div country="Россия" capital="Москва"></div>
 ```
+Читайте так же статьи по теме: [Angular VS jQuery] (http://makeomatic.ru/blog/2013/12/11/AngularJS_VS_jQuery/)
