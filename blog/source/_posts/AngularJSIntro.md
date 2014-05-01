@@ -302,4 +302,6 @@ ngRoute настраивается с помощью $routeProvider, напри�
 
 Читайте так же статьи по теме: 
 
-* [Параллакс эффект в CSS](http://makeomatic.ru/blog/2013/12/24/parallax/)
+* [Angular.JS: внедрение фильтра в контроллер](http://makeomatic.ru/blog/2014/02/27/filter_in_controller/)
+* [“Безопасный” $apply в Angular.JS](http://makeomatic.ru/blog/2014/01/30/Apply_in_AngularJS/)
+* [AngularJS: а вам нужен заголовок?](http://makeomatic.ru/blog/2013/12/02/Title/)
