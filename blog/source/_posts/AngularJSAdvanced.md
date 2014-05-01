@@ -470,5 +470,10 @@ myModule.directive("country", function () {
 
 Читайте так же статьи по теме: 
 
-* [Angular VS jQuery](http://makeomatic.ru/blog/2013/12/11/AngularJS_VS_jQuery/)
+* [Улучшение логирования в AngularJS с помощью декораторов](http://makeomatic.ru/blog/2014/01/06/AngulaJS_logging/)
+* [Ускоряем $digest цикл в AngularJS](http://makeomatic.ru/blog/2014/03/28/Digest_angular/)
+* [Последовательная асинхронная инициализация AngularJS приложений с использованием промисов](http://makeomatic.ru/blog/2014/04/04/Initialization_angularjs/)
+* [“Безопасный” $apply в Angular.JS](http://makeomatic.ru/blog/2014/01/30/Apply_in_AngularJS/)
+* [Используя сервис AngularJS, пишем динамический патчер функций для REST api](http://makeomatic.ru/blog/2013/12/27/callback_Rest-Api_AngularJS/)
+
 
