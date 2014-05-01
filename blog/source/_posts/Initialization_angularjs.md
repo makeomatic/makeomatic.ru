@@ -2,7 +2,7 @@ title: Последовательная асинхронная инициали�
 date: 2014-04-04
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [AngularJS, Javascript]
+tags: [Angular.JS, Javascript]
 ---
 
 
