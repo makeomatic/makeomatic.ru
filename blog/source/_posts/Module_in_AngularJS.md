@@ -1,4 +1,4 @@
-title: Data service для работы с API в AngularJS
+title: Data service для работы с API в Angular.JS
 date: 2014-04-22
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
