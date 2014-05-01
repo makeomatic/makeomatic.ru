@@ -220,3 +220,4 @@ channel.publish("", request.properties.replyTo, new Buffer("5"), {correlationId:
 ```javascript
 channel.publish("", "rpc", new Buffer("2 + 3"), {replyTo: "rpc-reply-1", correlationId: "calculate-1"})
 ```
+Читайте так же статьи по теме: [Последовательная асинхронная инициализация AngularJS приложений с использованием промисов] (http://en.makeomatic.ru/blog/2014/04/04/Initialization_angularjs/)
