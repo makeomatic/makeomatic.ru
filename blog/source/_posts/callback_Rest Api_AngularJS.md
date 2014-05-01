@@ -5,7 +5,6 @@ gravatarMail: annafedotovaa@gmail.com
 tags: [Angular.JS]
 ---
 
-
 ![Иллюстрация блокнота](/blog/images/callback.jpg)
 
 ## Расширение колбэков функции
