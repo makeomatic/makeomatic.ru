@@ -1,4 +1,4 @@
-title: Используя сервис AngularJS, пишем динамический патчер функций для REST api
+title: Используя сервис Angular.JS, пишем динамический патчер функций для REST api
 date: 2013-12-27
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
