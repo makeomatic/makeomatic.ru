@@ -34,5 +34,7 @@ parseInt('a', 10); // returns NaN parseInt({}, 10); // returns NaN parseInt('123
 
 Спасибо за внимание и новых вам открытий!
 
-Читайте так же статьи по теме: [Блокнот с помощью браузера с одной строчкой кода] (http://makeomatic.ru/blog/2013/11/17/Browser_notepad/)
+Читайте так же статьи по теме: 
+
+* [Блокнот с помощью браузера с одной строчкой кода](http://makeomatic.ru/blog/2013/11/17/Browser_notepad/)
 

@@ -220,4 +220,7 @@ channel.publish("", request.properties.replyTo, new Buffer("5"), {correlationId:
 ```javascript
 channel.publish("", "rpc", new Buffer("2 + 3"), {replyTo: "rpc-reply-1", correlationId: "calculate-1"})
 ```
-Читайте так же статьи по теме: [Совместное использование модулей между NodeJS и AngularJS] (http://makeomatic.ru/blog/2014/03/17/Sharing_modules/)
+
+Читайте так же статьи по теме: 
+
+* [Совместное использование модулей между NodeJS и AngularJS](http://makeomatic.ru/blog/2014/03/17/Sharing_modules/)

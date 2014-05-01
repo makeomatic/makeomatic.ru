@@ -127,4 +127,6 @@ lift-node = (f) -> (...args) ->
 
 Отличные статьи по теме включают пост James Coglan http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/ и пост Irkali http://jeditoolkit.com/2012/04/26/code-logic-not-mechanics.html#post
 
-Читайте так же статьи по теме: [Сервис "AddThis" замедляет вас?] (http://makeomatic.ru/blog/2013/12/05/AddThis/)
+Читайте так же статьи по теме: 
+
+* [Сервис "AddThis" замедляет вас?](http://makeomatic.ru/blog/2013/12/05/AddThis/)

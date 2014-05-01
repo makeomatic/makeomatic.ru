@@ -64,4 +64,6 @@ $scope.safeApply(function() {
 		}])
 ```
 		
-Читайте так же статьи по теме: [Используя сервис AngularJS, пишем динамический патчер функций для REST api] (http://en.makeomatic.ru/blog/2013/12/27/callback_Rest-Api_AngularJS/)		
+Читайте так же статьи по теме: 
+
+* [Используя сервис AngularJS, пишем динамический патчер функций для REST api](http://en.makeomatic.ru/blog/2013/12/27/callback_Rest-Api_AngularJS/)		
