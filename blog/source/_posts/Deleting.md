@@ -272,4 +272,4 @@ exports.get = function (req, res, next) { //для возможности выз
 3. Вешать обработчики событий и отправлять запросы к серверу
 4. Немного манипуляций с DOM
 
-Читайте так же статьи по теме: [Angular VS jQuery] (http://makeomatic.ru/blog/2013/12/11/AngularJS_VS_jQuery/)
+Читайте так же статьи по теме: [Angular VS jQuery](http://makeomatic.ru/blog/2013/12/11/AngularJS_VS_jQuery/)
