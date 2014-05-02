@@ -1,0 +1,15 @@
+<div class="gallery">
+  <div class="photoset">
+    {{? item.photos.length }}
+      {{~ item.photos: photo }}
+        <img src="{{= photo }}">
+      {{~}}
+    {{??}}
+      <img src="{{= item.photos }}">
+    {{?}}
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>

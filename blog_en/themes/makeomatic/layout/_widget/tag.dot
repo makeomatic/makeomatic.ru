@@ -1,0 +1,15 @@
+{{? it.site.tags.length }}
+<div class="widget tag">
+  <h3 class="title">Тэги</h3>
+  <ul class="unstyled">
+  {{ it.site.tags.sort('name').each(function(item){ }}
+    <li>
+        <span class='badge'>{{! item.posts.length }}</span>
+        <a href="{{= it.config.root }}{{= item.path }}">
+            {{! item.name }}
+        </a>
+    </li>
+  {{ }); }}
+  </ul>
+</div>
+{{?}}

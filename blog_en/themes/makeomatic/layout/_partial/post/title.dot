@@ -1,0 +1,19 @@
+{{? item.link }}
+  {{? item.title }}
+    <h1 class="title"><a href="{{= item.link }}" target="_blank">{{! item.title }}</a></h1>
+  {{??}}
+    <h1 class="title"><a href="{{= item.link }}" target="_blank">{{! item.link }}</a></h1>
+  {{?}}
+{{??}}
+  {{? index }}
+    <h2 class="title">
+        <a href="{{= it.config.root }}{{= item.path }}">
+            {{! item.title }}
+        </a>
+    </h2>
+    <p class='muted'>{{! item.subtitle }}</p>
+  {{??}}
+    <h2 class="title">{{! item.title }}</h2>
+    <p class='muted'>{{! item.subtitle }}</p>
+  {{?}}
+{{?}}

@@ -84,6 +84,13 @@ module.exports = function (grunt) {
                     stdout: true,
                     stderr: true
                 }
+            },
+            hexo_en: {
+                command: "cd blog_en && ../node_modules/.bin/hexo generate",
+                options: {
+                    stdout: true,
+                    stderr: true
+                }
             }
         },
         watch: {

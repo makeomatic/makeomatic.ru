@@ -1,0 +1,3 @@
+{{~ it.theme.widgets: widget }}
+  {{= it.__loadPartial('_widget/' + widget) }}
+{{~}}

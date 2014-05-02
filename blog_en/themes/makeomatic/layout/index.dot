@@ -1,0 +1,10 @@
+{{
+   it.page.posts.each(function(item){
+   var index = true;
+}}
+    {{#def.load('_partial/article'); }}
+{{
+    });
+}}
+
+{{#def.load('_partial/pagination'); }}

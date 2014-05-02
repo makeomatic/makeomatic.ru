@@ -1,0 +1,22 @@
+menu:
+  Home: /
+  Archives: /archives
+
+widgets:
+- category
+- tag
+
+excerpt_link: Читать дальше...
+
+twitter:
+  username:
+  show_replies: false
+  tweet_count: 5
+
+addthis:
+  enable: true
+
+fancybox: false
+
+google_analytics:
+rss:

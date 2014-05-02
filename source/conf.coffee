@@ -21,7 +21,7 @@ exports.phone = "+7 (495) 79-222-44"
 exports.email = "getstarted@makeomatic.ru"
 
 ## copyright ##
-exports.copyright = "Makeomatic, (c) 2012-2013<br/>Разработка сайтов и мобильных приложений"
+exports.copyright = "Makeomatic, (c) 2012-2014<br/>Разработка сайтов и мобильных приложений"
 
 ## address ##
 exports.address = "Россия, Москва, Ленинский пр-т, д 1, офис 314<br/>индекс: 111555"

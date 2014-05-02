@@ -40,7 +40,7 @@
                 <address>
                     {{= it.__(it.address) }}
                 </address>
-                 <div class="social">
+                <div class="social">
                   <a class="fcb fa-stack fa-lg" href="https://www.facebook.com/makeomatic"> 
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i> </a> 

@@ -8,7 +8,7 @@
                 {{~ it.employees: employee}}
                 <li class='employee' id='{{= employee.id }}'>
                    <a href="/team#{{= employee.id }}" class='team-face'
-                      title='{{= employee.name }}{{? employee.rank != null }}: {{= employee.status }}{{?}}'
+                      title='{{= it.__(employee.name) }}{{? employee.rank != null }}: {{= it.__(employee.status) }}{{?}}'
                    >
                      <img src='{{= employee.photo }}' alt='{{= it.__(employee.name) }}' />
                      {{? employee.rank != null }}

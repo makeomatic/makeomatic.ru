@@ -1,0 +1,21 @@
+<div class="modal hide fade brief" id='brief'>
+    <div class="modal-body">
+        <div class='text-center'>
+            <h2 class='brief-header outlined-caption'>Describe your project or needs</h2>
+            <p class='small'>
+              Write a short summary of your project or send us a file with your creative brief<br/>
+              Want to find out how can we help you? We will contact you in 1 day to elaborate details or to discuss the best options available.
+            </p>
+        </div>
+        <form method='POST' action='/brief' class='callback'>
+            <input type="text" name='name' placeholder="Your name?" class='span10' required />
+            <input type="text" name='phone' placeholder="Phone number?" class='span5' />
+            <input type="email" name='email' placeholder="E-mail (optional)" class='span5 pull-right' />
+            <textarea name='question' placeholder="Project summary" class='span7'></textarea>
+            <div class='dropbox pull-right' id='dropbox' ></div>
+
+            <button class="blue-plank pull-right" type='submit'>Send</button>
+        </form>
+
+    </div>
+</div>

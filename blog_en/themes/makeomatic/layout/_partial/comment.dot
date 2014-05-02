@@ -1,0 +1,8 @@
+{{? it.config.disqus_shortname && it.page.comments }}
+<section id="comment">
+  <h3 class="title">Comments</h3>
+  <div id="disqus_thread">
+    <noscript>Enable javascript to read<a href="//disqus.com/?ref_noscript">comments with Disqus.</a></noscript>
+  </div>
+</section>
+{{?}}

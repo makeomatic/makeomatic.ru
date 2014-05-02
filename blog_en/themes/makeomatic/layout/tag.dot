@@ -1,0 +1,4 @@
+{{
+    var pagination = it.config.tag;
+}}
+{{#def.load('_partial/archive') }}

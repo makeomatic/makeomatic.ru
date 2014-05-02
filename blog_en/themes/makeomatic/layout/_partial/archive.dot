@@ -1,0 +1,34 @@
+{{
+    var title = '';
+    if (it.page.category) title = it.page.category;
+    else if (it.page.tag) title = it.page.tag;
+    else if (it.page.archive){
+      if (it.page.year) title = it.page.year + (it.page.month ? '/' + it.page.month : '');
+      else title = it.__('archive_a');
+    }
+
+    var categoryClass = '';
+    if ( it.page.tag ){
+        categoryClass= "tag";
+    } else if ( it.page.category ) {
+        categoryClass = "category";
+    }
+}}
+<h2 class="archive-title {{= categoryClass}}">{{= title }}</h2>
+
+{{? it.config.archive == 2 }}
+
+  {{ it.page.posts.each(function(item){ }}
+    {{ var index = true; }}
+    {{#def.load('_partial/article'); }}
+  {{ }); }}
+
+  {{#def.load('_partial/pagination'); }}
+
+{{??}}
+  <div class="archive">
+    {{ it.page.posts.each(function(item){ }}
+      {{#def.load('_partial/article'); }}
+    {{ }); }}
+  </div>
+{{?}}

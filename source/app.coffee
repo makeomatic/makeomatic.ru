@@ -31,6 +31,8 @@ startApp = ->
     directory: "#{__dirname}/../locales"
   }
 
+  blogRU = express.static "#{root}/../blog/public"
+  blogEN = express.static "#{root}/../blog_en/public"
 
   app.configure ->
     #shared settings
@@ -57,11 +59,15 @@ startApp = ->
       next()
 
     # сервим статичные файлы для блога
-    app.use '/blog/', express.static "#{root}/../blog/public"
+    app.use '/blog/', (req, res, next) ->
+      if req.locale is "ru"
+        func = blogRU
+      else
+        func = blogEN
 
-    app.use express.methodOverride()
+      func req, res, next
+
     app.use app.router
-
 
   app.configure "production", ->
     app.set 'port', process.env.PORT || 80
