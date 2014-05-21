@@ -4,6 +4,7 @@ author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
 tags: [Angular.JS, Javascript]
 ---
+![Иллюстрация блокнота](/blog/images/ngmassage.jpg)
 
 ##Что за ngMassage?
 
