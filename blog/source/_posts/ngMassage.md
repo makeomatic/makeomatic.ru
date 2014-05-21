@@ -139,7 +139,7 @@ You did not enter your email address correctly... 	</div>
 Сообщения об ошибке могут быть повторно использованы через блок `ngMessages`, путем включения удаленного (или встроенного) шаблона используя `ng-messages-include` аттрибут. Давайте создадим общий шаблон, где необходимая, минимальная и максимальная длина сообщений об ошибке сохранена. Сначала создадим файл удаленного шаблона, который содержит наши сообщения об ошибке. 
 
 ```html
-<!-- remote file: error-messages.html →
+<!-- remote file: error-messages.html -->
 <div ng-message="required">You left the field blank...</div>
 <div ng-message="minlength">Your field is too short</div>
 <div ng-message="maxlength">Your field is too long</div>
