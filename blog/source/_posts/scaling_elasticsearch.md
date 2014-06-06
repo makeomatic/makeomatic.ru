@@ -3,7 +3,7 @@ subtitle: оптимизация реального кластера с инде
 date: 2014-05-26
 author: Виталий Аминев
 gravatarMail: v@aminev.me
-tags: [Elasticsearch]
+tags: [ElasticSearch]
 ---
 
 ![Иллюстрация блокнота](/blog/images/scaling_elasticsearch.jpg)
