@@ -200,7 +200,7 @@ console.log(expr($scope))
 $compile делает то же самое, что и $parse, но для HTML. Например
 
 ```javascript
-var template = $compile("<p>{{ name }}</p>")
+var template = $compile("<p>{ { name } }</p>")
 console.log(template({name: "Ivan"}))
 // выведет <p>Ivan</p>
 ```
@@ -216,11 +216,11 @@ console.log(template({name: "Ivan"}))
 ```javascript
 myModule.directive("greet", function () {
     return {
-        template: "<p>Привет, {{ name }}</p>",
+        template: "<p>Привет, { { name } }</p>",
         replace: true,
         scope: {},
 
-        link: function(scope, element, attributes) {
+        link: function (scope, element, attributes) {
             scope.name = "Иван"
         }
     }
@@ -309,7 +309,7 @@ myModule.directive('directiveName', function factory(injectables) {
 ```javascript
 myModule.directive("greet", function ($parse) {
     return {
-        template: "<p>Привет, {{ name }}</p>",
+        template: "<p>Привет, { { name } }</p>",
         replace: true,
         scope: {},
 
@@ -327,7 +327,7 @@ myModule.directive("greet", function ($parse) {
 ```javascript
 myModule.directive("greet", function ($parse) {
     return {
-        template: "<p>Привет, {{ greet }}</p>",
+        template: "<p>Привет, { { greet } }</p>",
         replace: true,
         scope: {
             greet: "@"
@@ -343,7 +343,7 @@ myModule.directive("greet", function ($parse) {
 Следует заметить, что если написать
 
 ```javascript
-<div greet="{{ someName }}"></div>
+<div greet="{ { someName } }"></div>
 ```
 
 И определить `someName` где-то ещё, то директива заработает как и ожидается, но только в одну сторону. Можно поступить несколько иначе:
@@ -443,7 +443,7 @@ myModule.directive("capital", function () {
         scope: {
             capital: "@"
         },
-        controller: function($scope) {
+        controller: function ($scope) {
             $scope.tell = function() {
                 console.log($scope.capital)
             }
@@ -459,7 +459,7 @@ myModule.directive("country", function () {
         },
         // имя capitalController не важно, внедрение происходит
         // через require
-        link: (scope, element, attributes, capitalController) {
+        link: function (scope, element, attributes, capitalController) {
             console.log(scope.country + " — " + capitalController.tell())
         }
     }
