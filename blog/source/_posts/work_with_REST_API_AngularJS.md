@@ -1,13 +1,14 @@
-title: Используя сервис Angular.JS, пишем динамический патчер функций для REST api
+title: Работа с REST API в AngularJS
+subtitle: расширение колбэков функций
 date: 2013-12-27
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [Angular.JS]
+tags: [AngularJS]
 ---
 
 ![Иллюстрация блокнота](/blog/images/callback.jpg)
 
-## Расширение колбэков функции
+### Расширение колбэков http запросов в AngularJS
 
 В этом примере мне хочется показать вам как я реализовываю `$rootScope.$apply()` для каждого вызова REST api. Это всего лишь пример того, как вы можете расширить колбэки функции если мы предполагаем, что колбэк при обращении к REST api всегда находится в функции на последнем месте.
 
@@ -41,7 +42,7 @@ var that = this,
     patchObjects = [ 'assets', 'user'];
 ```
 
-Api patcher расширяет колбэк и помещает `$rootScope.$apply()` в каждую колбэк функцию.
+API patcher расширяет колбэк и помещает `$rootScope.$apply()` в каждую колбэк функцию.
 
 ```javascript
 /**
@@ -99,3 +100,4 @@ myApiService.assets.one(id, function (data, error) {
            // now you don't need to call $rootScope.$apply(); on each request
 });
 ```
+Читайте статьи по теме: [Data service для работы с API в AngularJS] (http://makeomatic.ru/blog/2014/04/22/Module_in_AngularJS/#ym_playback=linkmap&ym_cid=15629977)
