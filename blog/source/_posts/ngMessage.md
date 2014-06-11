@@ -2,7 +2,7 @@ title: Как использовать ngMessages в AngularJS
 date: 2014-05-21
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [Angular.JS, Javascript]
+tags: [AngularJS, Javascript]
 ---
 ![Иллюстрация блокнота](/blog/images/ngmassage.jpg)
 
