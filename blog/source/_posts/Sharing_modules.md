@@ -2,7 +2,7 @@ title: Совместное использование модулей между
 date: 2014-03-17
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [Angular.JS, Node.js]
+tags: [AngularJS, Node.js]
 ---
 
 ![Иллюстрация блокнота](/blog/images/modules.jpg)
