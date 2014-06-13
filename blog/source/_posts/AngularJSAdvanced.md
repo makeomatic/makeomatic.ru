@@ -3,7 +3,7 @@ subtitle: концепции и практическое применение
 date: 2013-08-17
 author: Дмитрий Горбунов
 gravatarMail: atskiisotona@gmail.com
-tags: [Angular.JS]
+tags: [AngularJS]
 ---
 
 ## Подготовка
