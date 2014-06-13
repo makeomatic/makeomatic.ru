@@ -3,7 +3,7 @@ subtitle:  разбираем Angular.JS на пальцах
 date: 2013-08-14
 author: Дмитрий Горбунов
 gravatarMail: atskiisotona@gmail.com
-tags: [Angular.JS, Для новичков]
+tags: [AngularJS, Для новичков]
 ---
 
 ## Подготовка
