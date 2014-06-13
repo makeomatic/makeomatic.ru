@@ -475,5 +475,10 @@ myModule.directive("country", function () {
 * [Последовательная асинхронная инициализация AngularJS приложений с использованием промисов](http://makeomatic.ru/blog/2014/04/04/Initialization_angularjs/)
 * [“Безопасный” $apply в Angular.JS](http://makeomatic.ru/blog/2014/01/30/Apply_in_AngularJS/)
 * [Используя сервис AngularJS, пишем динамический патчер функций для REST api](http://makeomatic.ru/blog/2013/12/27/callback_Rest-Api_AngularJS/)
+* [Все о пользовательских фильтрах в AngularJS](http://makeomatic.ru/blog/2014/06/06/custom_filters_Angular/?ym_playback=linkmap&ym_cid=15629977#more)
+* [Как использовать ngMessages в AngularJS](http://makeomatic.ru/blog/2014/05/21/ngMessage/#ym_playback=linkmap&ym_cid=15629977)
+* [Data service для работы с API в AngularJS](http://makeomatic.ru/blog/2014/04/22/Module_in_AngularJS/#ym_playback=linkmap&ym_cid=15629977)
+* [Последовательная асинхронная инициализация Angular.JS приложений с использованием промисов](http://makeomatic.ru/blog/2014/04/04/Initialization_angularjs/#ym_playback=linkmap&ym_cid=15629977)
+
 
 
