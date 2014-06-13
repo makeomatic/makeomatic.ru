@@ -3,7 +3,7 @@ subtitle: AngularJS великолепен… и чертовски сложен
 date: 2013-11-24
 author: Виталий Аминев
 gravatarMail: v@aminev.me
-tags: [Angular.JS, Для новичков]
+tags: [AngularJS, Для новичков]
 ---
 
 ![Иллюстрация блокнота](/blog/images/angularjsdrupal.png)
