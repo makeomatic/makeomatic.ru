@@ -46,7 +46,7 @@ tags: [ElasticSearch]
 * `index.translog.flush_threshold_ops` - через сколько операций скидывать данные на диск
 * `index.translog.flush_threshold_size` - сколько данных должны быть добавлены в индекс перед скидыванием на диск
 
-Подробная документация [здесь]: (http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/indices-update-settings.html)
+Подробная документация [здесь](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/indices-update-settings.html):
 
 В первую очередь мы увеличили `refresh_interval` до 30 секунд, и фактически увеличили пропускную способность практически до 5000 документов в секунду. Позже поставили `flush_threshold_ops` в 5000 операций, а размер до 500 мб. Если хотите, то можно поиграться с количеством реплик, шардов и так далее, но это не будет давать настолько большой разницы.
 
