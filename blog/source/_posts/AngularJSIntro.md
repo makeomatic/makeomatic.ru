@@ -182,7 +182,7 @@ ngRoute настраивается с помощью $routeProvider, напри�
 	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
 	</head>
 	<body>
-	    <div ng-controller="defaultCtlr">
+	    <div ng-controller="defaultCtrl">
 		    <label>Имя:</label>
 		    <input type="text" ng-model="yourName">
 		    <hr>
@@ -234,7 +234,7 @@ ngRoute настраивается с помощью $routeProvider, напри�
 	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
 	</head>
 	<body>
-	    <div ng-controller="defaultCtlr as ctrl">
+	    <div ng-controller="defaultCtrl as ctrl">
 		    <label>Имя:</label>
 		    <input type="text" ng-model="yourName">
 		    <hr>
