@@ -3,7 +3,7 @@ subtitle: Обзор модуля
 date: 2014-06-25
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [Javascript]
+tags: [Javascript, AngularJS]
 ---
 ![Иллюстрация блокнота](/blog/images/crop_image.jpg)
 
