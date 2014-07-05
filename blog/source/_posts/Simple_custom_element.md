@@ -2,7 +2,7 @@ title: Создание простых кастомизированных эле
 date: 2014-02-04
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [Javascript, Angular.JS]
+tags: [Javascript, AngularJS]
 ---
 
 ![Иллюстрация блокнота](/blog/images/transformation.jpg)

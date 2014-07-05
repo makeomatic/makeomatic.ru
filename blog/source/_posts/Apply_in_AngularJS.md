@@ -1,8 +1,8 @@
-title: “Безопасный” $apply в Angular.JS
+title: “Безопасный” $apply в AngularJS
 date: 2014-01-30
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [Angular.JS, Javascript]
+tags: [AngularJS, Javascript]
 ---
 
 ![Иллюстрация блокнота](/blog/images/apply.jpg)

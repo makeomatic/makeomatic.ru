@@ -2,7 +2,7 @@ title: Ускоряем $digest цикл в AngularJS
 date: 2014-03-28
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-tags: [Angular.JS, Javascript]
+tags: [AngularJS, Javascript]
 ---
 ![Иллюстрация блокнота](/blog/images/digest.jpg)
 
