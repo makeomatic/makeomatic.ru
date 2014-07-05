@@ -1,6 +1,6 @@
 title: Nodeconfeu 2013: истории из жизни компании
 subtitle: вспоминаем 2013 год и ждем конференции в сентябре
-date: 2014-05-07
+date: 2014-07-05
 author: Виталий Аминев
 gravatarMail: getstarted@makeomatic.ru
 tags: [Жизнь компании, Node.js]
@@ -36,7 +36,7 @@ tags: [Жизнь компании, Node.js]
 постарались просто на славу. Такого мы еще нигде не видели. Одна из самых теплых встреч, несмотря на
 постоянно льющий дождь. Дальше смотрите сами:
 
-![Селимся на острове Waterford](/blog/images/nodeconfeu/accomodation_nodeconfeu.jog)
+![Селимся на острове Waterford](/blog/images/nodeconfeu/accomodation_nodeconfeu.jpg)
 
 ![Подарки в доме Nodeconfeu](/blog/images/nodeconfeu/gifts_nodeconfeu.jpg)
 
