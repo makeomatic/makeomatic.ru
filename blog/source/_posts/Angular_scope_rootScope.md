@@ -104,7 +104,7 @@ app.controller('SiblingOneCtrl',
 
 ####$rootScope.$emit против $rootScope.$broadcast
 
-Объект $rootScope имеет аналогичные методы `$emit`, `$broadcast`и `$on`, но они работают немного иначе, нежели в `$scope`. Так как `$rootScope`не имеет $parent` (родительской области видимости), использование $emit  было бы бессмысленным. Вместо этого `$rootScope.$emit` запустит событие только для слушателей, подписанных через `$rootScope.$on`. Самое интересное в том, что `$rootScope.$broadcast`уведомит как все `$rootScope.$on`, так и `$scope.$on` слушателей и это тонкое, но очень важное отличие, которое поможет избежать проблем с вашим приложением.
+Объект $rootScope имеет аналогичные методы `$emit`, `$broadcast`и `$on`, но они работают немного иначе, нежели в `$scope`. Так как `$rootScope` не имеет `$parent` (родительской области видимости), использование $emit  было бы бессмысленным. Вместо этого `$rootScope.$emit` запустит событие только для слушателей, подписанных через `$rootScope.$on`. Самое интересное в том, что `$rootScope.$broadcast`уведомит как все `$rootScope.$on`, так и `$scope.$on` слушателей и это тонкое, но очень важное отличие, которое поможет избежать проблем с вашим приложением.
 
 ####$rootScope примеры
 
@@ -135,18 +135,16 @@ app.controller('SiblingOneCtrl',
   $rootScope.$on('rootScope:emit', function (event, data) {
     console.log(data); // 'Emit!'
   });
-```
 
-```js  
+
   $scope.$on('rootScope:broadcast', function (event, data) {
     console.log(data); // 'Broadcast!'
   });
-```
-  
-``` 
+
  $rootScope.$on('rootScope:broadcast', function (event, data) {
     console.log(data); // 'Broadcast!'
   });
+
 });
 ```
 
@@ -218,13 +216,14 @@ app.controller('ParentCtrl',
   var myListener = $rootScope.$on('child', function (event, data) {
     //
   });
-```
-```js
+
   // $scope $destroy
   $scope.$on('$destroy', myListener);
 });
 ```
+
 ###Отмена событий
+
 Если вы выбрали использование `$emit`, один из слушателей событий в `$scope ` может отменить его, и предотвратить распространение события вверх по цепочке. При использовании `$broadcast`событие не может быть отменено! Отмена события, которое было отправлено через `$emit` выглядит следующим образом:
 
 ```js
@@ -232,7 +231,9 @@ $scope.$on('myCustomEvent', function (event, data) {
   event.stopPropagation();
 });
 ```
+
 ###$rootScope.$$listeners
+
 У каждого объекта AngularJS есть некоторые свойства, мы можем покопаться в них и наблюдать за тем, что случается “под капотом”. Мы можем взглянуть на `$rootScope.$$listeners`, чтобы наблюдать за жизненным циклом слушателей.
 Мы так же можем прекратить прослушку событий с его помощью (но я бы не советовал вам этого делать):
 
@@ -257,5 +258,6 @@ $scope.$on('inbox:delete', function (event, data) {...});
 $scope.$emit('inbox:save'[, data]);
 $scope.$on('inbox:save', function (event, data) {...});
 ```
+
 По мотивам [Todd Motto](http://toddmotto.com/)
 
