@@ -8,7 +8,9 @@ tags: [Elasticsearch, NodeJS]
 
 ![Иллюстрация блокнота](/blog_en/images/dist.io.png)
 
-Overburdened with paperwork, many ambitious and hard-working entrepreneurs across the Globe willing to take their growing business beyond the boundaries of their countries, face spending time and money on filling out necessary documents, obtaining customs declarations in order to ship their products on the international markets. Anyone who had to go through this costly process at least once knows well what a waste of time and effort it is.
+Overburdened with paperwork, many ambitious and hard-working entrepreneurs across the Globe willing to take their growing business beyond the boundaries of their countries, face spending time and money on filling out necessary documents, obtaining customs declarations in order to ship their products on the international markets.Anyone who had to go through this costly process at least once knows well what a waste of time and effort it is.
+
+<!-- more -->
 
 In an archaic and complicated world of international shipping, an average small business is forced to spend a lot of time navigating numberless custom rules, regulations and duties of many different countries. It cannot afford to fill out delivery slips by hand for each and every shipment. Big corporations are used to turn a blind eye to paying substantial amounts to lawyers in order to make their international shipments legally compliant. However small online business owners cannot afford to do that. They lack capital and necessary resources to drag their paperwork through the complex world of the international shipment. And therefore, they cannot as easily access the global market as the large companies. It stifles their growth and limits their expansion opportunities.  
 
