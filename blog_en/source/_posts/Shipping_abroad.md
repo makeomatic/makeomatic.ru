@@ -1,10 +1,13 @@
 title: Shipping abroad — as good as it gets!
 subtitle: International shipping without headache and numb wrists
-cover: http://en.makeomatic.ru/blog_en/images/dist.io.png
 date: 2014-18-07
 author: Anna Amineva
 gravatarMail: annafedotovaa@gmail.com
 tags: [Elasticsearch, NodeJS]
+cover: http://en.makeomatic.ru/blog_en/images/dist.io.png
+coverWidth: 1000
+coverHeight: 840
+url: http://en.makeomatic.ru/blog/2014/07/18/Shipping_abroad/
 ---
 
 ![Иллюстрация блокнота](/blog_en/images/dist.io.png)

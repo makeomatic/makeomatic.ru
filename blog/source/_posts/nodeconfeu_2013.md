@@ -4,6 +4,9 @@ date: 2014-07-05
 author: Виталий Аминев
 gravatarMail: getstarted@makeomatic.ru
 cover: http://makeomatic.ru/blog/images/nodeconfeu/attack.jpg
+coverWidth: 1296
+coverHeight: 864
+url: http://makeomatic.ru/blog/2014/07/05/nodeconfeu_2013/
 tags: [Жизнь компании, Node.js]
 ---
 
