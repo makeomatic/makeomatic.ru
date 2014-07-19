@@ -55,7 +55,6 @@
 
   {{? it.page.title }}
   <meta property="og:type" content="blog" />
-  <meta itemprop="og:headline" content="{{! it.page.title }}" />
   <meta property="og:title" content="{{! it.page.title }}" />
   {{?}}
   <meta property="og:site_name" content="{{! it.config.title }}"/>
