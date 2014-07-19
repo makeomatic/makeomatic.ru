@@ -3,6 +3,7 @@ subtitle: вспоминаем 2013 год и ждем конференции в
 date: 2014-07-05
 author: Виталий Аминев
 gravatarMail: getstarted@makeomatic.ru
+cover: http://makeomatic.ru/blog/images/nodeconfeu/attack.jpg
 tags: [Жизнь компании, Node.js]
 ---
 
