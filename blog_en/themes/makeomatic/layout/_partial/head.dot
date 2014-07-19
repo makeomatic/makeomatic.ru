@@ -54,16 +54,17 @@
 
 
   {{? it.page.title }}
-    <meta property="og:title" content="{{! it.page.title }}"/>
+  <meta property="og:title" content="{{! it.page.title }}"/>
   {{?}}
   <meta property="og:site_name" content="{{! it.config.title }}"/>
 
   {{? it.page.cover }}
-    <meta property="og:image" content="{{! it.page.cover }}" />
+  <meta property="og:image" content="{{! it.page.cover }}" />
   {{??}}
-    <meta property="og:image" content="{{! it.config.cover }}"/>
+  <meta property="og:image" content="{{! it.config.cover }}"/>
   {{?}}
 
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
   {{? this.env != 'production' }}
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/app.css">
