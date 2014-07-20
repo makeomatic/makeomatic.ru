@@ -3,6 +3,10 @@ subtitle: особенности компоновки спрайтов (sprites)
 date: 2013-11-10
 author: Виталий Аминев
 gravatarMail: v@aminev.me
+cover: http://makeomatic.ru/blog/images/serf.jpg
+coverWidth: 660
+coverHeight: 396
+url: http://makeomatic.ru/blog/2013/11/10/retina/
 tags: [FAQ]
 ---
 
