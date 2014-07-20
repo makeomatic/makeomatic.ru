@@ -3,6 +3,10 @@ subtitle: скалярные и составные данные, указате�
 date: 2013-11-09
 author: Виталий Аминев
 gravatarMail: v@aminev.me
+cover: http://makeomatic.ru/blog/images/riot.jpg
+coverWidth: 1000
+coverHeight: 652
+url: http://makeomatic.ru/blog/2013/11/09/variables/
 tags: [Javascript]
 ---
 
