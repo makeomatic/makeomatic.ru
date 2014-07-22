@@ -2,6 +2,10 @@ title: Как починить статус бар в iOS7
 date: 2013-11-21
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/status_bar.png
+coverWidth: 1060
+coverHeight: 796
+url: http://makeomatic.ru/blog/2013/11/21/Status_bar_iOS7/
 tags: [iOS7, FAQ]
 ---
 
