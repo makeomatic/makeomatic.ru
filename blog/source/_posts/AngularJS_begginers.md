@@ -3,6 +3,10 @@ subtitle: AngularJS великолепен… и чертовски сложен
 date: 2013-11-24
 author: Виталий Аминев
 gravatarMail: v@aminev.me
+cover: http://makeomatic.ru/blog/images/angularjsdrupal.png)
+coverWidth: 557
+coverHeight: 573
+url: http://makeomatic.ru/blog/2013/11/24/AngularJS_begginers/
 tags: [AngularJS, Для новичков]
 ---
 
