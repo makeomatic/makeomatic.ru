@@ -2,6 +2,10 @@ title: Удаление анонимного слушателя событий (
 date: 2013-11-20
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/cub.jpg
+coverWidth: 604
+coverHeight: 604
+url: http://makeomatic.ru/blog/2013/11/20/Delete/
 tags: [Javascript]
 ---
 
