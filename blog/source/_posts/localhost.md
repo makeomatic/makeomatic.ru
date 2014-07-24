@@ -11,6 +11,8 @@ tags: [FAQ]
 
 ![Иллюстрация локального сайта](/blog/images/localhost.jpg)
 
+### Поделитесь ссылкой
+
 Хотите узнать способ быстро поделиться локальным сайтом без необходимости его развёртывания?
 Я с радостью расскажу как на самом деле это просто делается.
 
@@ -39,8 +41,8 @@ tags: [FAQ]
    This localtunnel service is brought to you by Twilio.
    Port 8000 is now publicly accessible from http://xxxx.localtunnel.com ...
 ```
-   
-Затем просто поделитесь ссылкой http://xxxx.localtunnel.com с тем, кому нужно показать ваш результат.
+
+Затем просто поделитесь ссылкой `http://xxxx.localtunnel.com` с тем, кому нужно показать ваш результат.
 В дальнейшем вы можете использовать только `localtunnel <port>`, чтобы создавать публичный URL:
 
 `$ localtunnel 8000`
