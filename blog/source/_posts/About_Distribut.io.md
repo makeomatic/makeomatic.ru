@@ -1,6 +1,6 @@
 title: AngularJS: а вам нужен заголовок?
 subtitle: Сервис международной доставки без головных болей 
-date: 2013-12-2
+date: 2014-25-07
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
 tags: [Node.JS, AngularJS, Elasticsearch, ItProjects]
