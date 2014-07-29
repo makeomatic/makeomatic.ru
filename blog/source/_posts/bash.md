@@ -2,6 +2,10 @@ title: 10 топовых команд в консоли
 date: 2013-11-26
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/bash.jpg
+coverWidth: 623
+coverHeight: 389
+url: http://makeomatic.ru/blog/2013/11/26/bash/
 tags: [bash]
 ---
 
