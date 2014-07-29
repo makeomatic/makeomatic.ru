@@ -3,6 +3,10 @@ subtitle: Упрощаем использование параллельных �
 date: 2013-11-30
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/2013/11/30/Promises/
+coverWidth: 623
+coverHeight: 351
+url: http://makeomatic.ru/blog/2013/11/17/Browser_notepad/
 tags: [Javascript]
 ---
 
