@@ -3,9 +3,13 @@ date: 2014-30-07
 author: Anna Amineva
 gravatarMail: annafedotovaa@gmail.com
 tags: [Elasticsearch, NodeJS]
+cover: http://en.makeomatic.ru/blog_en/images/elastic_distribut.png
+coverWidth: 1000
+coverHeight: 738
+url: http://en.makeomatic.ru/blog/2014/07/30/elasticsearch_distribut/
 ---
 
-![Иллюстрация блокнота](/blog/images/elastic_distribut.png)
+![Illustration Distribut.io](/blog_en/images/elastic_distribut.png)
 
 Addressing issues and solving problems, people and businesses are facing in their everyday routine, no matter how challenging they are, has always been usual practice for us at Makeomatic. But when a client with more than 15 years of experience in international shipping turned to us asking for help, at first we were frozen with shock — we had no idea of how intricate and sometimes misleading the process of mailing something abroad could be. It took us time and effort to investigate this question in great detail and get back to the client with the solution. We proposed a technical concept using new technologies, such as elasticseach, angular.js and node.js. In the end we managed to obtain a simple search of Harmonized System codes.  
 
