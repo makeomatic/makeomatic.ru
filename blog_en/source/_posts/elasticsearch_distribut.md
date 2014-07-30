@@ -15,8 +15,15 @@ This solution created by Makeomatic is now a part of [Distribut.io](http://dev.d
 This is an HS code table in its regular format. How quickly can you find the subheading 1602 10, 1602 50 31 or 1602 50 95 in order to determine if your exported goods meet this particular HS code? 
 
 ```
-0206299132 80,07/01/96 12:00 AM,,EN,10,- - - - - - - - ,"For the manufacture of products falling within subheadings 1602 10, 1602 50 31 or 1602 50 95, not containing meat other than that of animals of the bovine species, with a collagen/protein ratio of no more than 0,45 and containing by weight at least 20% of lean meat (excluding offal and fat) with meat and jelly accounting for at least 85% of the total net weight; the products must be subjected to a heat treatment sufficient to ensure the coagulation of meat proteins in the whole of the product and which therefore shows no traces of a pinkish liquid on the cut surface when the product is cut along a line passing through its thickest part (A-products)"
-0206299134 80,07/01/96 12:00 AM,,EN,10,- - - - - - - - ,"For the manufacture of products other than those falling within subheadings ex 0210 20, 0210 99 51, 0210 99 90, 1602 50 10 and 1602 90 61 (B-products)"
+0206299132 10,07/01/96 12:00 AM,,EN,10,- - - - - ,Other								
+0206299132 20,07/01/96 12:00 AM,,EN,10,- - - - - - ,"Thin skirt, whole"								
+0206299132 30,07/01/96 12:00 AM,,EN,10,- - - - - - - ,Intended for processing								
+0206299132 80,07/01/96 12:00 AM,,EN,10,- - - - - - - - ,"For the manufacture of products falling within subheadings 1602 10, 1602 50 31 or 1602 50 95, not containing meat other than that of animals of the bovine species, with a collagen/protein ratio of no more than 0,45 and containing by weight at least 20% of lean meat (excluding offal and fat) with meat and jelly accounting for at least 85% of the total net weight	 the products must be subjected to a heat treatment sufficient to ensure the coagulation of meat proteins in the whole of the product and which therefore shows no traces of a pinkish liquid on the cut surface when the product is cut along a line passing through its thickest part (A-products)"							
+0206299134 80,07/01/96 12:00 AM,,EN,10,- - - - - - - - ,"For the manufacture of products other than those falling within subheadings ex 0210 20, 0210 99 51, 0210 99 90, 1602 50 10 and 1602 90 61 (B-products)"								
+0206299136 80,07/01/96 12:00 AM,,EN,10,- - - - - - - - ,Other								
+0206299139 80,01/01/89 12:00 AM,,EN,10,- - - - - - - ,Other								
+0206299150 10,07/01/96 12:00 AM,,EN,10,- - - - - - ,Other								
+0206299150 20,07/01/96 12:00 AM,,EN,10,- - - - - - - ,Intended for processing
 ```
 
 What if those references that had taken you such great pains to find, in turn, contain still more references, sending you on another chase? By the time you have found the correct answer in the bureaucratic maze of HS codes, you will have wasted precious time and resources that could have been spent elsewhere. 
