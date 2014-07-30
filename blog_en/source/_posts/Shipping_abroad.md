@@ -10,7 +10,7 @@ coverHeight: 840
 url: http://en.makeomatic.ru/blog/2014/07/18/Shipping_abroad/
 ---
 
-![Иллюстрация блокнота](/blog/images/dist.io.png)
+![Illustration Distribut.io](/blog_en/images/dist.io.png)
 
 Overburdened with paperwork, many ambitious and hard-working entrepreneurs across the Globe willing to take their growing business beyond the boundaries of their countries, face spending time and money on filling out necessary documents, obtaining customs declarations in order to ship their products on the international markets.Anyone who had to go through this costly process at least once knows well what a waste of time and effort it is.
 
