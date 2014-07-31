@@ -2,6 +2,10 @@ title: Сервис "AddThis" замедляет вас?
 date: 2013-12-05
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/addthis.jpg
+coverWidth: 623
+coverHeight: 416
+url: http://makeomatic.ru/blog/2013/12/05/AddThis/
 tags: [Javascript]
 ---
 
