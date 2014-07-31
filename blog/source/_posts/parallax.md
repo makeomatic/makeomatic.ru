@@ -2,6 +2,10 @@ title: Параллакс эффект в CSS
 date: 2013-12-24
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/parallax.jpg
+coverWidth: 500
+coverHeight: 638
+url: hhttp://makeomatic.ru/blog/2013/12/24/parallax/
 tags: [HTML5]
 ---
 
