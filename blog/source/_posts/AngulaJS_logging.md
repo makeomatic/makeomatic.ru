@@ -2,6 +2,10 @@ title: Улучшение логирования в AngularJS с помощью 
 date: 2014-01-06
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/logging.jpg
+coverWidth: 441
+coverHeight: 357
+url: http://makeomatic.ru/blog/2014/01/06/AngulaJS_logging/
 tags: [AngularJS, Javascript]
 ---
 
