@@ -8,7 +8,7 @@ tags: [AngularJS]
 
 ![Иллюстрация блокнота](/blog/images/callback.jpg)
 
-### Расширение колбэков http запросов в AngularJS
+#### Расширение колбэков http запросов в AngularJS
 
 В этом примере мне хочется показать вам как я реализовываю `$rootScope.$apply()` для каждого вызова REST api. Это всего лишь пример того, как вы можете расширить колбэки функции если мы предполагаем, что колбэк при обращении к REST api всегда находится в функции на последнем месте.
 
@@ -100,4 +100,4 @@ myApiService.assets.one(id, function (data, error) {
            // now you don't need to call $rootScope.$apply(); on each request
 });
 ```
-Читайте статьи по теме: [Data service для работы с API в AngularJS] (http://makeomatic.ru/blog/2014/04/22/Module_in_AngularJS/#ym_playback=linkmap&ym_cid=15629977)
+Читайте статьи по теме: [Data service для работы с API в AngularJS](http://makeomatic.ru/blog/2014/04/22/Module_in_AngularJS/#ym_playback=linkmap&ym_cid=15629977)
