@@ -3,6 +3,10 @@ subtitle: расширение колбэков функций
 date: 2013-12-27
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/callback.jpg
+coverWidth: 623
+coverHeight: 350
+url: http://makeomatic.ru/blog/2013/12/27/work_with_REST_API_AngularJS/
 tags: [AngularJS]
 ---
 
