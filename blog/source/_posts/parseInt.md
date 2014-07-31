@@ -2,6 +2,10 @@ title: Преобразование строчного типа данных в 
 date: 2013-12-17
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/parseInt.jpg
+coverWidth: 620
+coverHeight: 413
+url: http://makeomatic.ru/blog/2013/12/17/parseInt/
 tags: [Javascript]
 ---
 
