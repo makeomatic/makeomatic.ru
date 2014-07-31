@@ -2,6 +2,10 @@ title: Как удалить постоянные атрибуты сервер�
 date: 2013-12-19
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/chef.png
+coverWidth: 440
+coverHeight: 377
+url: http://makeomatic.ru/blog/2013/12/19/Chef/
 tags: [Chef]
 ---
 
