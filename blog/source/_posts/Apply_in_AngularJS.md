@@ -2,6 +2,10 @@ title: “Безопасный” $apply в AngularJS
 date: 2014-01-30
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/apply.jpg
+coverWidth: 623
+coverHeight: 350
+url: http://makeomatic.ru/blog/2014/01/30/Apply_in_AngularJS/
 tags: [AngularJS, Javascript]
 ---
 
