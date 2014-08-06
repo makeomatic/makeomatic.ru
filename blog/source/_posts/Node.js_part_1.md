@@ -2,6 +2,10 @@ title: Node.js не подходит для обычных веб-проекто
 date: 2014-16-01
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/node1.jpg
+coverWidth: 500
+coverHeight: 375
+url: http://makeomatic.ru/blog/2014/01/16/Nodejs_part_1/
 tags: [Node.js]
 ---
 
