@@ -129,7 +129,7 @@ lift-node = (f) -> (...args) ->
 
 Несомненно обратите внимание на [спецификацию](https://github.com/promises-aplus/promises-spec) и на [библиотеки](https://github.com/promises-aplus/promises-spec/blob/master/implementations.md), которые ее реализуют.
 
-Отличные статьи по теме включают пост [James Coglan](http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/) и пост [Irkali](http://jeditoolkit.com/2012/04/26/code-logic-not-mechanics.html#post)
+Отличные статьи по теме включают пост [James Coglan](http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/) и пост [Irakli](http://jeditoolkit.com/2012/04/26/code-logic-not-mechanics.html#post)
 
 Читайте так же статьи по теме: 
 
