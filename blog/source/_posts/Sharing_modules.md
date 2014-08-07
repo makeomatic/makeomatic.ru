@@ -2,6 +2,10 @@ title: Совместное использование модулей между
 date: 2014-03-17
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/modules.jpg
+coverWidth: 623
+coverHeight: 467
+url: http://makeomatic.ru/blog/2014/03/17/Sharing_modules/
 tags: [AngularJS, Node.js]
 ---
 
