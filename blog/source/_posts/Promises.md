@@ -17,7 +17,7 @@ tags: [Javascript]
 
 <!-- more -->
 
-### Промисы представляют «обещание» будущего значения
+#### Промисы представляют «обещание» будущего значения
 
 ``` javascript
 var pinky = require('pinky')
@@ -36,7 +36,7 @@ function read(filename) {
 }
 ```
 
-### Промисы можно комбинировать
+#### Промисы можно комбинировать
 
 Потому что они являются реальными значениями, точно так же как String или Array:
 
@@ -52,7 +52,7 @@ function decode(encoding, buffer) {
 var data = decode('utf-8', read('foo.txt'))
 ```
 
-### Промисы можно использовать где угодно, ведь они - это значения
+#### Промисы можно использовать где угодно, ведь они - это значения
 
 ``` javascript
 // This means we can make any function
@@ -70,7 +70,7 @@ function concat(a, b) { return a + b }
 var fooBar = lift2(data, fs.readFileSync('bar.txt', 'utf-8'), concat)
 ```
 
-### Просто создать новые комбинаторы
+#### Просто создать новые комбинаторы
 
 - Все вышеперечисленные свойства облегчают эту задачу. Бонус: структурирует ваш запутанный код.
 
@@ -104,11 +104,11 @@ parallel( read('foo.txt')
 // the values using `.then()` and the
 // promise library will figure it out :D
 ```
-### Промисы стандартизированы
+#### Промисы стандартизированы
 
 Выберите любую библиотеку реализующую промисы и вы сможете работать с асинхронным кодом. В добавок, если вы пишите комбинатор для promises, он будет работать везде, а не только в вашей библиотеке: https://github.com/killdream/pinky-combinators
 
-### Работа без колбэков в Node.js без проблем
+#### Работа без колбэков в Nodejs без проблем
 
 Если вы используете Node.js, то вы можете создать комбинатор,  который позволит отказаться от колбэков всего с помощью 5 строчек кода, но мы уже сделали это за вас: 
 
@@ -125,11 +125,11 @@ lift-node = (f) -> (...args) ->
   return promise
 ```
 
-### Ссылки и дополнительный материал
+#####Ссылки и дополнительный материал
 
 Несомненно обратите внимание на спецификацию https://github.com/promises-aplus/promises-spec и на библиотеки, которые ее реализуют https://github.com/promises-aplus/promises-spec/blob/master/implementations.md
 
-Отличные статьи по теме включают пост James Coglan http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/ и пост Irkali http://jeditoolkit.com/2012/04/26/code-logic-not-mechanics.html#post
+Отличные статьи по теме включают пост [James Coglan](http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/) и пост [Irkali](http://jeditoolkit.com/2012/04/26/code-logic-not-mechanics.html#post)
 
 Читайте так же статьи по теме: 
 
