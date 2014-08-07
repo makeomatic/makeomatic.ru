@@ -5,8 +5,8 @@ tmp
 font_src
 static/css/*.css
 reverse-engineering.js
-node_modules
 smtp.json
 static/js/app.min*
 blog/public
+blog_en/public
 .project

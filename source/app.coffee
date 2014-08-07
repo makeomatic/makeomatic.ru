@@ -9,6 +9,9 @@ conf           = require './conf'
 util           = require 'util'
 pkg            = require '../package.json'
 i18n           = require "i18n"
+bodyParser     = require "body-parser"
+errorHandler   = require "errorhandler"
+path           = require "path"
 
 app  = express()
 root = __dirname
@@ -34,68 +37,68 @@ startApp = ->
   blogRU = express.static "#{root}/../blog/public"
   blogEN = express.static "#{root}/../blog_en/public"
 
-  app.configure ->
-    #shared settings
-    app.set 'env', process.env.NODE_ENV || 'development'
-    app.engine 'dot', dot.__express
-    # view settings
-    app.set 'views'       , "#{root}/views"
-    app.set 'view engine' , 'dot'
+  #shared settings
+  app.set 'env', process.env.NODE_ENV || 'development'
+  app.engine 'dot', dot.__express
+  # view settings
+  app.set 'views'      , "#{root}/views"
+  app.set 'view engine', 'dot'
 
-    app.use express.compress()
-    app.use express.static "#{root}/../static/icons", {maxAge: 14*oneDay }
-    app.use express.static "#{root}/../static", { maxAge: 365*oneDay }
+  app.use require('compression')()
+  app.use express.static "#{root}/../static/icons", { maxAge: 14*oneDay }
 
-    app.use express.limit('10mb')
-    app.use express.bodyParser()
+  # understand which locale we are using
+  app.use i18n.init
+  app.use (req, res, next)->
+    [locale] = req.subdomains
+    unless locale == 'en'
+      locale = 'ru'
+    i18n.setLocale req, locale
+    next()
 
-    # understand which locale we are using
-    app.use i18n.init
-    app.use (req, res, next)->
-      [locale] = req.subdomains
-      unless locale == 'en'
-        locale = 'ru'
-      i18n.setLocale req, locale
-      next()
+  app.use '/robots.txt', (req, res, next) ->
+    if req.locale is 'ru'
+      res.sendFile path.resolve("#{root}/../static/robots.txt")
+    else
+      res.sendFile path.resolve("#{root}/../static/robots.en.txt")
 
-    # сервим статичные файлы для блога
-    app.use '/blog/', (req, res, next) ->
-      if req.locale is "ru"
-        func = blogRU
-      else
-        func = blogEN
+  app.use express.static "#{root}/../static", { maxAge: 365*oneDay }
 
-      func req, res, next
+  app.use bodyParser.urlencoded({ extended: true, limit: '5mb' })
+  app.use bodyParser.json()
 
-    app.use app.router
+  # сервим статичные файлы для блога
+  app.use '/blog/', (req, res, next) ->
+    if req.locale is "ru"
+      func = blogRU
+    else
+      func = blogEN
 
-  app.configure "production", ->
+    func req, res, next
+
+  ###
+    Enable routes
+  ###
+  require('./router')(app)
+
+  if process.env.NODE_ENV is 'production'
+
     app.set 'port', process.env.PORT || 80
     app.set 'host', process.env.HOST || '0.0.0.0'
-    ## error handler ##
-    app.use express.errorHandler
-      dumpExceptions: false
-      showStack: false
+
     ## all uncaught errors are processed here ##
     app.use (err,req,res,next) ->
       # custom error page
       console.error err
       res.send "Error", 500
 
-  app.configure "development", ->
+  else
+
     app.set 'port', process.env.PORT || 9100
     app.set 'host', '0.0.0.0'
-    app.use express.errorHandler
-      dumpExceptions: true
-      showStack: true
+    app.use errorHandler()
 
-  app.configure ->
-    dot.setGlobals env: app.get('env')
-
-  ###
-    Enable routes
-  ###
-  require('./router')(app)
+  dot.setGlobals env: app.get('env')
 
   ###
     Start the app
