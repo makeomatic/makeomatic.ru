@@ -2,6 +2,10 @@ title: Data service для работы с API в AngularJS
 date: 2014-04-22
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/module.jpg
+coverWidth: 500
+coverHeight: 412
+url: https://makeomatic.ru/blog/2014/04/22/Module_in_AngularJS/
 tags: [Javascript, AngularJS]
 ---
 
