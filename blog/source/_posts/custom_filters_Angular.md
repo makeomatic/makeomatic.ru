@@ -3,6 +3,10 @@ title: Все о пользовательских фильтрах в AngularJS
 date: 2014-06-06
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/custom_filters.jpg
+coverWidth: 600
+coverHeight: 421
+url: https://makeomatic.ru/blog/2014/06/06/custom_filters_Angular/
 tags: [AngularJS, Javascript]
 ---
 
