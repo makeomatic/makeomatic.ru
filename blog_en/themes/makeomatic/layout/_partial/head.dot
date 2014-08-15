@@ -61,6 +61,7 @@
 
   {{? it.page.url }}
   <meta property="og:url" content="{{! it.page.url }}" />
+  <link rel="alternate" hreflang="en" href="{{! it.page.url }}" />
   {{?}}
 
   {{? it.page.cover }}
@@ -77,6 +78,7 @@
   {{??}}
   <link rel="stylesheet" href="/css/app.min.{{= this.pkgVer}}.css">
   {{?}}
+
 
   <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
