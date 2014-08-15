@@ -3,6 +3,10 @@ subtitle: оптимизация реального кластера с инде
 date: 2014-05-26
 author: Виталий Аминев
 gravatarMail: v@aminev.me
+cover: http://makeomatic.ru/blog/images/scaling_elasticsearch.jpg
+coverWidth: 528
+coverHeight: 350
+url: hhttps://makeomatic.ru/blog/2014/05/26/scaling_elasticsearch/
 tags: [ElasticSearch]
 ---
 

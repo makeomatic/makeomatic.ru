@@ -3,6 +3,10 @@ subtitle: Концепции и практическое применение
 date: 2014-06-14
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/directives_angularjs.jpg
+coverWidth: 500
+coverHeight: 307
+url: https://makeomatic.ru/blog/2014/06/14/directives_angularjs/
 tags: [Javascript, AngularJS]
 ---
 ![Иллюстрация блокнота](/blog/images/directives_angularjs.jpg)

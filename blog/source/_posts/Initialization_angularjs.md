@@ -2,6 +2,10 @@ title: Последовательная асинхронная инициали�
 date: 2014-04-04
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/Initialization.jpg
+coverWidth: 623
+coverHeight: 467
+url: https://makeomatic.ru/blog/2014/04/04/Initialization_angularjs/
 tags: [AngularJS, Javascript]
 ---
 

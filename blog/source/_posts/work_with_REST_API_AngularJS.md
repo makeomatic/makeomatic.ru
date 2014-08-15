@@ -1,5 +1,5 @@
 title: Работа с REST API в AngularJS
-subtitle: расширение колбэков функций
+subtitle: Расширение колбэков функций
 date: 2013-12-27
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
