@@ -33,7 +33,8 @@ Distribut.io will worry about all the regulation, currency exchange rates, taxes
 Currently, Distribut.io is in beta-testing, offering b2b services between the European Union and the United States. However, in the future, it plans to expand its service to other parts of the world. There is no doubt it won’t take long and the outdated routine of international shipment will undergo a dramatic change it has been awaiting for such a long time.
 
 Continue to the next part of the story:
-*[Hacking the code of international shipping](https://en.makeomatic.ru/blog/2014/07/30/elasticsearch_distribut/)
+
+* [Hacking the code of international shipping](https://en.makeomatic.ru/blog/2014/07/30/elasticsearch_distribut/)
 
 #### Developing your idea with Makeomatic
 You can drop us an email to [getstarted@makeomatic.ru](mailto:getstarted@makeomatic.ru)
