@@ -103,7 +103,7 @@ exports.employees = employees = [
     status: "Старший в команде"
   }
   {
-    photo: "/img/employee/0012.png"
+    photo: "/img/employee/012.png"
     name: "Илья Овсянников"
     occupation: "Ученик"
     brief_description: "AngularJS виртуоз"
