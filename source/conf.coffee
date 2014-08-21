@@ -94,7 +94,7 @@ exports.employees = employees = [
     status: "Основная команда"
   }
   {
-    photo: "/img/employee/008.png"
+    photo: "/img/employee/011.png"
     name:  "Евгений Поярков"
     occupation: "Team lead"
     brief_description: "Заклинатель змей"
@@ -103,7 +103,7 @@ exports.employees = employees = [
     status: "Старший в команде"
   }
   {
-    photo: "/img/employee/006_dmitry.png"
+    photo: "/img/employee/0012.png"
     name: "Илья Овсянников"
     occupation: "Ученик"
     brief_description: "AngularJS виртуоз"
