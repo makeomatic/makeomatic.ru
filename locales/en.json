@@ -21,8 +21,12 @@
 	"Старший в команде": "Senior Developer",
 	"Mobile Guru": "Mobile Guru",
 	"Алексей Князев": "Alexey Knyazev",
+	"Евгений Поярков": "Evgeny Poyarkov",
+	"Илья Овсянников": "Ilya Ovsyannikov"
 	"Старший подмастерье": "Senior Apprentice",
 	"Python-мастер": "Python-master",
+	"Team lead": "Team lead",
+	"AngularJS виртуоз": "AngularJS pro"
 	"Владимир Горшунов": "Dmitry Shebaldin",
 	"Подмастерье": "Apprentice",
 	"Ученик": "Trainee",
@@ -168,7 +172,7 @@
 	"Обширные знания и классная смекалка": "Extensive knowledge and incredible sharpness",
 	"Опытный разработчик приложений. Наш гуру, постигший все премудрости кодинга и достигший высшего просветления в области высоконагруженных систем. Постоянно медитирует для улучшения удобоваримости приложений, способен лишь силой мысли заставлять скрипты работать быстрее и лучше. С ним создание мобильных приложений всегда приводит к идеальному результату.": "Experienced application developer and enlightened guru of coding who fathomed all mysteries and secret lore of high load system architecture design. He can improve script performance by sheer power of thought and deep meditation. Every project he works on is sentenced to succeed.",
 	"Заклинатель змей": "Serpent-Charmer",
-	"Виртуозный разработчик и заклинатель Python и C. Под движения его пальцев буквы кода выстраиваются в нужную последовательность, а сайты и программы начинают работать правильно и без багов. Укротит любую нерабочую схему, заставит сайт плясать под нужную дудку. Как заклинатель змей, он искусно играет с проблемами и всегда подбирает оптимальные решения.": "Python-charmer and C developer. With a slight wave of his hand symbols arrange into the right order and apps start to work properly. He can tame any website and make it dance to his pipe. He is able to handle any problem with an optimal solution.",
+	"Виртуозный разработчик и заклинатель NodeJS и С. Под движения его пальцев буквы кода выстраиваются в нужную последовательность, а сайты и программы начинают работать правильно и без багов. Укротит любую нерабочую схему, заставит сайт плясать под нужную дудку. Как заклинатель змей, он искусно играет с проблемами и всегда подбирает оптимальные решения.": "NodeJS and C developer. With a slight wave of his hand symbols arrange into the right order and apps start to work properly. He can tame any website and make it dance to his pipe. He is able to handle any problem with an optimal solution.",
 	"Веб-подмастерье": "Web Apprentice",
 	"Системное мышление - главное оружие Владимира. Хаос множества технологий структурируется как электроны вокруг атома. Сложнейшие проблемы он разбивает на неделимые частицы, досконально изучает их и встраивает готовый компонент в систему.": "Systems thinking is Vladimir's best weapon. He is able to eliminate technology chaos by making everything more structure and predictable. By in-depth interpretation and analysis of each element he determines best solutions for even most complex problems.",
 	"Анна Федотова": "Anna Fedotova",
@@ -196,5 +200,5 @@
 	"Создатели сервиса LIVEONE пошли на заказ сайта в студии Makeomatic с целью заинтересовать потенциальных клиентов в действенности и полезности своих разработок. В результате стильный и максимально простой сайт компании  LIVEONE Group отражает характер самого предложения – действенного, сильного и современного.": "LiveOne Group is one of the few companies that offer a completely new approach to live streaming LiveOne chose to commission a website from Makeomatic to get their potential clients interested in the effectiveness and usefulness of their products. LiveOne Group’s stylish and extremely simple website reflects the nature of the company’s offering: it is effective, powerful and modern.",
 	"Профи указаний": "Glib talker",
 	"Как главный герой сериала, Андрей всегда оказывается в нужное время в нужном месте, и пресекает все попытки сайтов работать неправильно. Сложные коды ест на завтрак, обед и ужин. Присмиряет плохое юзабилити, перевоспитывает трудные страницы. Исправляет ошибки с дотошностью учителя русского языка. Помогает клиентам создать сайт интернет магазин с отличными характеристиками.": "Like the main character in a movie, he always appears at the right time and place to prevent any site malfunction. With a solid grasp of difficult code and a zero tolerance approach to bugs, he can tame wretched usabilities or a poorly performing website. He is always ready to help our clients get a website with the best traits and features.",
-	"Системное мышление - главное оружие Дмитрия. Хаос множества технологий структурируется как электроны вокруг атома. Сложнейшие проблемы он разбивает на неделимые частицы, досконально изучает их и встраивает готовый компонент в систему.": "Systems thinking is Dmitry's best weapon. He is able to eliminate technology chaos by making everything more structure and predictable. By in-depth interpretation and analysis of each element he determines best solutions for even most complex problems."
+	"Системное мышление - главное оружие Ильи. Хаос множества технологий структурируется как электроны вокруг атома. Сложнейшие проблемы он разбивает на неделимые частицы, досконально изучает их и встраивает готовый компонент в систему.": "Systems thinking is Ilya's best weapon. He is able to eliminate technology chaos by making everything more structure and predictable. By in-depth interpretation and analysis of each element he determines best solutions for even most complex problems."
 }
