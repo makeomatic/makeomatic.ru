@@ -1,6 +1,6 @@
 title: Дебаггинг приложения на AngularJS через консоль
 subtitle: Изучение и контроль запущенного приложения через браузерную консоль в Chrome, Firefox или Internet Explorer
-date: 2014-12-08
+date: 2014-08-12
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
 cover: http://makeomatic.ru/blog/images/debugging.jpg
