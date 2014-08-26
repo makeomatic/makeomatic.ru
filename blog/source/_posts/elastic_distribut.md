@@ -3,7 +3,10 @@ subtitle: Решение, способное эффективно искать �
 date: 2014-20-08
 author: Anna Amineva
 gravatarMail: annafedotovaa@gmail.com
-tags: [Elasticsearch, NodeJS, AngularJS]
+cover: http://makeomatic.ru/blog/images/elastic_distribut.png
+coverWidth: 623
+coverhttps://makeomatic.ru/blog/2014/08/20/elastic_distribut
+tags: [Elasticsearch, Node.JS, AngularJS]
 ---
 
 ![Иллюстрация блокнота](/blog/images/elastic_distribut.png)
