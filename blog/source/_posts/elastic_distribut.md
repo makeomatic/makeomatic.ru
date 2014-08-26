@@ -5,7 +5,7 @@ author: Anna Amineva
 gravatarMail: annafedotovaa@gmail.com
 cover: http://makeomatic.ru/blog/images/elastic_distribut.png
 coverWidth: 623
-coverHeight:460
+coverHeight: 460
 coverhttps://makeomatic.ru/blog/2014/08/20/elastic_distribut
 tags: [Elasticsearch, Node.JS, AngularJS]
 ---
