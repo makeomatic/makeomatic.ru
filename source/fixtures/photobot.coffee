@@ -8,7 +8,6 @@ module.exports =
     src: "/img/projects/photobot/logo_refactored.png"
     alt: "Логотип Photobot"
   brand: "Photobot"
-  link: "https://itunes.apple.com/ru/app/photobot/id619929540?mt=8"
   noBlank: true
   type:  "Мобильное приложение<br/><a href=\"https://itunes.apple.com/ru/app/photobot/id619929540?mt=8\"><img src=\"/img/appstore.svg\" alt=\"Photobot - доступен в appstore\" /></a>"
   activity: [
