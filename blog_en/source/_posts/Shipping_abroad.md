@@ -12,7 +12,7 @@ tags: [Elasticsearch, NodeJS]
 
 ![Illustration Distribut.io](/blog_en/images/dist.io.png)
 
-Overburdened with paperwork, many ambitious and hard-working entrepreneurs across the Globe willing to take their growing business beyond the boundaries of their countries, face spending time and money on filling out necessary documents, obtaining customs declarations in order to ship their products on the international markets.Anyone who had to go through this costly process at least once knows well what a waste of time and effort it is.
+Overburdened with paperwork, many ambitious and hard-working entrepreneurs across the Globe willing to take their growing business beyond the boundaries of their countries, face spending time and money on filling out necessary documents, obtaining customs declarations in order to ship their products on the international markets. Anyone who had to go through this costly process at least once knows well what a waste of time and effort it is.
 
 <!-- more -->
 
@@ -30,7 +30,7 @@ Distribut.io provides REST API’s on a scalable and dynamic cloud platform that
 
 Distribut.io will worry about all the regulation, currency exchange rates, taxes, and duties giving a small business owner the opportunity to focus on what he or she can do best, innovating, developing their business and growing their customer base through previously-untapped markets.
 
-Currently, Distribut.io is in beta-testing, offering b2b services between the European Union and the United States. However, in the future, it plans to expand its service to other parts of the world. There is no doubt it won’t take long and the outdated routine of international shipping will undergo a dramatic change it has been awaiting for such a long time.
+Currently, Distribut.io is in beta-testing, offering b2b services between the European Union and the United States. However, in the future, it plans to expand its shipping services to other parts of the world. There is no doubt it won’t take long and the outdated routine of international shipping will undergo a dramatic change it has been awaiting for such a long time.
 
 Continue to the next part of the story:
 
