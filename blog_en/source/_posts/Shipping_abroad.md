@@ -16,7 +16,7 @@ Overburdened with paperwork, many ambitious and hard-working entrepreneurs acros
 
 <!-- more -->
 
-In an archaic and complicated world of international shipping, an average small business is forced to spend a lot of time navigating numberless custom rules, regulations and duties of many different countries. It cannot afford to fill out delivery slips by hand for each and every shipment. Big corporations are used to turn a blind eye to paying substantial amounts to lawyers in order to make their international logistics legally compliant. However small online business owners cannot afford to do that. They lack capital and necessary resources to drag their paperwork through the complex world of the international postage. And therefore, they cannot as easily access the global market as the large companies. It stifles their growth and limits their expansion opportunities.  
+In an archaic and complicated world of worldwide shipping, an average small business is forced to spend a lot of time navigating numberless custom rules, regulations and duties of many different countries. It cannot afford to fill out delivery slips by hand for each and every shipment. Big corporations are used to turn a blind eye to paying substantial amounts to lawyers in order to make their international logistics legally compliant. However small online business owners cannot afford to do that. They lack capital and necessary resources to drag their paperwork through the complex world of the international postage. And therefore, they cannot as easily access the global market as the large companies. It stifles their growth and limits their expansion opportunities.  
 
 ### This is where Distribut.io comes in
 
