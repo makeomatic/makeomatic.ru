@@ -7,12 +7,12 @@ tags: [AngularJS, Javascript]
 ---
 ![Иллюстрация блокнота](/blog/images/modelling.jpg)
 
-Когда я впервые коснулся Ангуляра, у меня уже был опыт работы с EmberJS и BackboneJS, а так же были определенные представленияожидания относительно клиентских фреймворков. На первый взгляд, порог вхождения был ниже, чем у других фреймворков. Это хорошо, так как за короткий срок вы можете добиться значительных результатов в его освоении.
+Когда я впервые коснулся Ангуляра, у меня уже был опыт работы с EmberJS и BackboneJS, а так же были определенные представления ожидания относительно клиентских фреймворков. На первый взгляд, порог вхождения был ниже, чем у других фреймворков. Это хорошо, так как за короткий срок вы можете добиться значительных результатов в его освоении.
 <!-- more -->
 
 Для меня большой дырой было моделирование данных. Ангуляр полностью оставляет это решение за тобой. С одной стороны это хорошо, потому что оно дает тебе больше свободы, но свобода всегда чего-то стоит.
 
-EmberJS и BackboneJS имеют свои их собственныеую Model/Store (по теории Ember) и Model/Collection (по теории Backbone) решенияя, итак давайте посмотрим как я справился с этой необходимостью в Angular.
+EmberJS и BackboneJS имеют их собственную Model/Store (по теории Ember) и Model/Collection (по теории Backbone) решения, итак давайте посмотрим как я справился с этой необходимостью в Angular.
 Для начала я приведу достаточно простой пример взаимодействия с API, с помощью которого мы получаем данные в виде JSON. 
 
 ```js Article.js
@@ -91,11 +91,11 @@ app.factory('Article', function($http, $q) {
 ```
 
 Сейчас вы легко можете использовать ваши данные в контроллере, выводить в шаблоне, одним словом, делать с ними все, что хотите.
-Используйте IndexController.js , чтобы загрузить все объекты из  API. Используйт Check ShowController.js, для загрузки одного объекта из API:
+Используйте IndexController.js, чтобы загрузить все объекты из API. Используйт Check ShowController.js, для загрузки одного объекта из API:
 
 ```js IndexController.js
 app.controller('IndexController', function($scope, Article) {
-  // Получаем все статьиGet all articles
+  // Получаем все статьи
  Articles.findAll().then(function(articles) {
    $scope.articles = articles;
  });
@@ -105,7 +105,7 @@ app.controller('IndexController', function($scope, Article) {
 ```js ShowController.js
 app.controller('ShowController', function($scope, Article) {
   
-  // Get one article
+  // Получаем одну статью
   var articleId = 1; // You have to get articleId from route paramters or as you want
   Article.findOne(articleId).then(function(article) {
     $scope.article = article;
