@@ -15,7 +15,7 @@ tags: [AngularJS, Javascript]
 EmberJS и BackboneJS имеют свои их собственныеую Model/Store (по теории Ember) и Model/Collection (по теории Backbone) решенияя, итак давайте посмотрим как я справился с этой необходимостью в Angular.
 Для начала я приведу достаточно простой пример взаимодействия с API, с помощью которого мы получаем данные в виде JSON. 
 
-```js
+```js Article.js
 app.factory('Article', function($http, $q) {
   // Сохраняем адресс API
  var apiUrl = 'http://api.example.local';
@@ -90,9 +90,9 @@ app.factory('Article', function($http, $q) {
 });
 ```
 Сейчас вы легко можете использовать ваши данные в контроллере, выводить в шаблоне, одним словом, делать с ними все, что хотите.
-Используйте IndexController.js , чтобы загрузить все объекты из  API. Используйт Check Show Controller.js, для загрузки одного объекта из API:
+Используйте IndexController.js , чтобы загрузить все объекты из  API. Используйт Check ShowController.js, для загрузки одного объекта из API:
 
-```js
+```js IndexController.js
 app.controller('IndexController', function($scope, Article) {
   // Получаем все статьиGet all articles
  Articles.findAll().then(function(articles) {
@@ -100,8 +100,64 @@ app.controller('IndexController', function($scope, Article) {
  });
  });
 ```
+
+```js ShowController.js
+app.controller('ShowController', function($scope, Article) {
+  
+  // Get one article
+  var articleId = 1; // You have to get articleId from route paramters or as you want
+  Article.findOne(articleId).then(function(article) {
+    $scope.article = article;
+  });
+  
+});
+
 Это только пример реализации. Существует, может быть, несколько неограниченных версий взаимодействия с API и получении данных, но с моим проектом это сработало на отлично.
 
 В следующей части, я приведу более подробные и сложные примеры обработки данных в Ангуляр.
+
+Все файлы для данного примера:
+
+```js EditController.js
+app.controller('EditController', function($scope, Article) {
+  
+  // Получаем одну статью
+  var articleId = 1; // Вы должны получить Id статьи из параметров url
+  Article.findOne(articleId).then(function(article) {
+    $scope.article = article;
+  });
+  
+  // Изменим и обновим
+  $scope.article.title = "Some title";
+  $scope.article.update();
+  
+  // Удалим
+  $scope.article.delete();
+  
+  // Новая статья (создаем пустую модель)
+  $scope.newArticle = Article.createEmpty();
+  $scope.newArticle.title = "Some new title";
+  $scope.newArticle.create();
+  
+});
+
+```js NewController.js
+app.controller('NewController', function($scope, Article) {
+  
+  // Новая статья (создаем пустую модель)
+  $scope.article = Article.createEmpty();
+  
+});
+
+```html article.edit.html
+<!-- Когда вы находитесь в шаблоне и у вас есть форма, вы можете использовать такие формовые элементы:: -->
+ 
+<form>
+  <p><input type="text" name="title" ng-model="article.title"></p>
+  <p><button type="button" ng-click="article.update()"></p>
+  <p><button type="button" ng-click="article.delete()"></p>
+</form>
+ 
+<!-- NOTE: In this case do not forget to handle the success method on delete. For eg. redirect the user to another view -->
 
 По мотивам Zoltan Radics
