@@ -160,4 +160,6 @@ app.controller('NewController', function($scope, Article) {
  
 <!-- NOTE: In this case do not forget to handle the success method on delete. For eg. redirect the user to another view -->
 
+```
+
 По мотивам Zoltan Radics
