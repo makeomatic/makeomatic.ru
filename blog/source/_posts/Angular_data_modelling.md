@@ -89,6 +89,7 @@ app.factory('Article', function($http, $q) {
  return article;
 });
 ```
+
 Сейчас вы легко можете использовать ваши данные в контроллере, выводить в шаблоне, одним словом, делать с ними все, что хотите.
 Используйте IndexController.js , чтобы загрузить все объекты из  API. Используйт Check ShowController.js, для загрузки одного объекта из API:
 
@@ -111,6 +112,7 @@ app.controller('ShowController', function($scope, Article) {
   });
   
 });
+```
 
 Это только пример реализации. Существует, может быть, несколько неограниченных версий взаимодействия с API и получении данных, но с моим проектом это сработало на отлично.
 
@@ -140,6 +142,7 @@ app.controller('EditController', function($scope, Article) {
   $scope.newArticle.create();
   
 });
+```
 
 ```js NewController.js
 app.controller('NewController', function($scope, Article) {
@@ -148,6 +151,7 @@ app.controller('NewController', function($scope, Article) {
   $scope.article = Article.createEmpty();
   
 });
+```
 
 ```html article.edit.html
 <!-- Когда вы находитесь в шаблоне и у вас есть форма, вы можете использовать такие формовые элементы:: -->
