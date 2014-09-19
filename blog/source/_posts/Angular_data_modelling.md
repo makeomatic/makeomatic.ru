@@ -95,7 +95,7 @@ app.factory('Article', function($http, $q) {
 ```
 
 Сейчас вы легко можете использовать ваши данные в контроллере, выводить в шаблоне, одним словом, делать с ними все, что хотите.
-Используйте IndexController.js, чтобы загрузить все объекты из API. Используйт Check ShowController.js, для загрузки одного объекта из API:
+Используйте IndexController.js, чтобы загрузить все объекты из API. Используйте Check ShowController.js, для загрузки одного объекта из API:
 
 ```js IndexController.js
 app.controller('IndexController', function($scope, Article) {
