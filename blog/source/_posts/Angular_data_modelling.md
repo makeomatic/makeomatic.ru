@@ -11,7 +11,7 @@ tags: [AngularJS, Javascript]
 </div>
 <br>
 
-Когда я впервые коснулся Ангуляра, у меня уже был опыт работы с EmberJS и BackboneJS, а так же были определенные представления относительно клиентских фреймворков. На первый взгляд, порог вхождения был ниже, чем у других фреймворков. Это хорошо, так как за короткий срок вы можете добиться значительных результатов в его освоении.
+Когда я впервые коснулся Ангуляра, у меня уже был опыт работы с EmberJS и BackboneJS, а так же были определенные представления ожидания относительно клиентских фреймворков. На первый взгляд, порог вхождения был ниже, чем у других фреймворков. Это хорошо, так как за короткий срок вы можете добиться значительных результатов в его освоении.
 <!-- more -->
 
 Для меня большой дырой было моделирование данных. Ангуляр полностью оставляет это решение за тобой. С одной стороны это хорошо, потому что оно дает тебе больше свободы, но свобода всегда чего-то стоит.
@@ -22,75 +22,82 @@ EmberJS и BackboneJS имеют их собственную Model/Store (по �
 ```js Article.js
 app.factory('Article', function($http, $q) {
   // Сохраняем адресс API
- var apiUrl = 'http://api.example.local';
+  var apiUrl = 'http://api.example.local';
  
- // Объявляем класс модели данных
- var ArticleModel = function(data){
-   if (data) {
-     this.setData(data);
-   }
- };
+  // Объявляем класс модели данных
+  var ArticleModel = function(data){
+    if (data) {
+      this.setData(data);
+    }
+  };
+  
   // Добавляем prototype методы каждому объекту
- ArticleModel.prototype = {
-   setData: function(data) {
-     angular.extend(this, data);
-   },
-   delete: function() {
-     $http.delete(apiUrl + '/articles/' + this._id).success(function() {
+  ArticleModel.prototype.setData = function (data) {
+    angular.extend(this, data);
+  };
+
+  ArticleModel.prototype.delete = function () {
+    $http.delete(apiUrl + '/articles/' + this._id).success(function() {
        // Как-нибудь обрабатываем успешный запрос
-     }).error(function(data, status, headers, config) {
+    }).error(function(data, status, headers, config) {
        // Что-нибудь делаем в случае ошибки
-     });
-   },
-   update: function() {
-     return $http.put(apiUrl + '/articles/' + this._id, this).success(function() {
-       // Как-нибудь обрабатываем успешный запрос
-     }).error(function(data, status, headers, config) {
-         // Что-нибудь делаем в случае ошибки
-     });
-   },
-   create: function() {
-     $http.post(apiUrl + '/articles/', this).success(function(r) {
-       // Как-нибудь обрабатываем успешный запрос
-     }).error(function(data, status, headers, config) {
-       // Что-нибудь делаем в случае ошибки 
-     });
-   }
- };
+    });
+  };
+
+  ArticleModel.prototype.update = function () {
+    return $http.put(apiUrl + '/articles/' + this._id, this).success(function() {
+      // Как-нибудь обрабатываем успешный запрос
+    }).error(function(data, status, headers, config) {
+      // Что-нибудь делаем в случае ошибки
+    });
+  };
+  
+  ArticleModel.prototype.create = function () {
+    $http.post(apiUrl + '/articles/', this).success(function(r) {
+      // Как-нибудь обрабатываем успешный запрос
+    }).error(function(data, status, headers, config) {
+      // Что-нибудь делаем в случае ошибки 
+    });
+  };
+
   // Объявляем класс, который делаем запрос к API и возвращает объект модели с промисами
- var article = {
-   findAll: function() {
-     var deferred = $q.defer();
-     var scope = this;
-     var articles = [];
-     $http.get(apiUrl + '/articles').success(function(array) {
-       array.forEach(function(data) {
-         articles.push(new ArticleModel(data)); 
-       });
-       deferred.resolve(articles);
-     }).error(function() {
-       deferred.reject();
-     });
-     return deferred.promise;
-   },
-   findOne: function(id) {
-     var deferred = $q.defer();
-     var scope = this;
-     var data = {};
-     $http.get(apiUrl + '/articles/' + id).success(function(data) {
-       deferred.resolve(new ArticleModel(data));
-     })
-     .error(function() {
-       deferred.reject();
-     });
-     return deferred.promise;
-   },
-   createEmpty: function() {
-     return new ArticleModel({});
-   }
- };
+  var article = {
+
+    findAll: function () {
+      var deferred = $q.defer();
+      var scope = this;
+      var articles = [];
+      $http.get(apiUrl + '/articles').success(function(array) {
+        array.forEach(function(data) {
+          articles.push(new ArticleModel(data)); 
+        });
+        deferred.resolve(articles);
+      }).error(function() {
+        deferred.reject();
+      });
+      return deferred.promise;
+    },
+
+    findOne: function (id) {
+      var deferred = $q.defer();
+      var scope = this;
+      var data = {};
+      $http.get(apiUrl + '/articles/' + id).success(function(data) {
+        deferred.resolve(new ArticleModel(data));
+      })
+      .error(function() {
+        deferred.reject();
+      });
+      return deferred.promise;
+    },
+
+    createEmpty: function () {
+      return new ArticleModel({});
+    }
+
+  };
  
- return article;
+  return article;
 });
 ```
 
