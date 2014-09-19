@@ -7,7 +7,7 @@ cover: http://makeomatic.ru/blog/images/dist.io.png
 coverWidth: 623
 coverHeight: 523
 url: https://makeomatic.ru/blog/2014/07/25/About_Distributio/
-tags: [Node.JS, AngularJS, Elasticsearch, ItProjects]
+tags: [Node.JS, AngularJS, ElasticSearch, ItProjects]
 ---
 
 ![Иллюстрация блокнота](/blog/images/dist.io.png)
