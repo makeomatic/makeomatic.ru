@@ -7,7 +7,7 @@ cover: https://makeomatic.ru/blog/images/elastic_distribut.png
 coverWidth: 623
 coverHeight: 460
 url: https://makeomatic.ru/blog/2014/08/20/elastic_distribut
-tags: [ElasticSearch, Node.JS, AngularJS]
+tags: [ElasticSearch, Node.js, AngularJS]
 ---
 
 ![Иллюстрация блокнота](/blog/images/elastic_distribut.png)
