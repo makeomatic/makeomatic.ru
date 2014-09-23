@@ -18,9 +18,9 @@ Addressing issues and solving problems, people and businesses are facing in thei
 
 This solution created by Makeomatic is now a part of Distribut.io, which is capable of doing many things in order to save user’s time with his or her international shipping paperwork. But there is one thing, which really does the trick — it can efficiently search through thousands of custom codes and regulations. Thanks to [Elasticsearch](http://www.elasticsearch.org/), an open source search engine that strives on analyzing data. Our technical decision doesn’t merely process data, it also possesses features of the artificial intelligence. Elasticsearch is capable of searching through millions of data entries, which is why it is used by such online giants as Foursquare, an audio distribution platform Soundcloud, a social network for developpers GitHub, a recommendation service StumbleUpon and many more. The best search engine analyzes data in real-time and offers a full text search. And this great power now works for the benefit of Distribut.io’s users.
 
-Elasticsearch is what allows Distribut.io search through the international customs tarriffs, an internationally standardized system of names and numbers to classify traded products, known as Harmonized System (HS) codes. The HS is organized into 21 sections and 96 chapters, accompanied with general rules of interpretation and explanatory notes, making a manual search a daunting task.
+Elasticsearch is what allows Distribut.io search through the international customs tarriffs, an internationally standardized system of names and numbers to classify traded products, known as Harmonized System (HS) codes. The HS code is organized into 21 sections and 96 chapters, accompanied with general rules of interpretation and explanatory notes, making a manual search a daunting task.
 
-This is an HS code table in its regular format. How quickly can you find the subheading 1602 10, 1602 50 31 or 1602 50 95 in order to determine if your exported goods meet this particular HS code? 
+This is an HS code list in its regular format. How quickly can you find the subheading 1602 10, 1602 50 31 or 1602 50 95 in order to determine if your exported goods meet this particular HS code? 
 
 ```
 0206299132 10,07/01/96 12:00 AM,,EN,10,- - - - - ,Other								
