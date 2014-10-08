@@ -36,7 +36,7 @@ angular.module("myapp", ['pascalprecht.translate'])
 Ниже вы можете увидеть использование директивы в качестве аттрибута и фильтра. В контроллере вы можете использовать сервис `$translate`.
 ```js
 <h1 translate="title"></h1>
-<h1>{{title | translate}}</h1>
+<h1>{ {title | translate} }</h1>
 ```
 
 ###Выбор языка 
