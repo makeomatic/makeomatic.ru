@@ -44,7 +44,7 @@ angular.module("myapp", ['pascalprecht.translate'])
 
 ###Выбор языка 
 
-А тут приведен код выпадающего меню для выбора языка и контроллера.
+А тут приведен код выпадающего меню для выбора языка и контроллера:
 ```js
 <!-- html код -->
 <select ng-model="selectedLanguage" ng-change="changeLanguage()">
