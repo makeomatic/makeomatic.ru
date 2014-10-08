@@ -1,8 +1,8 @@
 title: Интернационализация в AngularJS
 subtitle: Интернационализация с использованием angular-translate
 date: 2014-10-08
-author: Анна Аминева
-gravatarMail: annafedotovaa@gmail.com
+author: Илья Овсянников
+gravatarMail: webhunter1987@gmail.com
 tags: [AngularJS, Javascript]
 ---
 
