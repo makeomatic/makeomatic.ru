@@ -2,7 +2,11 @@ title: Интернационализация в AngularJS
 subtitle: Интернационализация с использованием angular-translate
 date: 2014-10-08
 author: Илья Овсянников
-gravatarMail: webhunter1987@gmail.com
+gravatarMail:  ilyoff@gmail.com
+cover: http://makeomatic.ru/blog/images/Internationalisation.jpg
+coverWidth: 623
+coverHeight: 416
+url: https://makeomatic.ru/blog/2014/10/08/internationalisation/
 tags: [AngularJS, Javascript]
 ---
 
