@@ -6,7 +6,7 @@ gravatarMail: annafedotovaa@gmail.com
 tags: [AngularJS, Javascript]
 ---
 
-![Иллюстрация локального сайта](/blog/images/internationalisation.jpg)
+![Иллюстрация локального сайта](/blog/images/Internationalisation.jpg)
 Интернационализация охватывает много вопросов. В этой небольшой статье я расскажу о том, как начать работать с angular-translate. А вот и его возможности, о которых мы с вами узнаем:
 * предоставление нескольких языков с помошью json файлов (языковая таблица)
 * асинхронная загрузка языков с помощью расширения angular-translate - StaticFilesLoader
