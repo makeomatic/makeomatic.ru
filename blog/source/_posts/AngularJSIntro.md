@@ -306,3 +306,4 @@ ngRoute настраивается с помощью $routeProvider, напри�
 * [“Безопасный” $apply в Angular.JS](http://makeomatic.ru/blog/2014/01/30/Apply_in_AngularJS/)
 * [AngularJS: а вам нужен заголовок?](http://makeomatic.ru/blog/2013/12/02/Title/)
 * [Создание модели данных в Angular.js](https://makeomatic.ru/blog/2014/09/18/Angular_data_modelling/)
+* [Интернационализация в AngularJS](https://makeomatic.ru/blog/2014/10/08/internationalisation/)
