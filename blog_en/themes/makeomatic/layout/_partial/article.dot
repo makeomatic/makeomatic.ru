@@ -15,7 +15,7 @@
         {{#def.load('_partial/post/tag') }}
 
         <span class='author'>
-            <img src='http://www.gravatar.com/avatar/{{= item.gravatar}}?s=20' />
+            <img src='//www.gravatar.com/avatar/{{= item.gravatar}}?s=20' />
             {{= item.author }}
         </span>
 
