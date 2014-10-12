@@ -11,8 +11,8 @@
 
     <link type="application/atom+xml" rel="alternate" href="/blog/atom.xml" />
 
-    <link rel="alternate" hreflang="x-default" href="http://en.makeomatic.ru{{= it.originalUrl }}" />
-    <link rel="alternate" hreflang="ru" href="http://makeomatic.ru{{= it.originalUrl }}" />
+    <link rel="alternate" hreflang="en" href="https://en.makeomatic.ru{{= it.originalUrl }}" />
+    <link rel="alternate" hreflang="x-default" href="https://makeomatic.ru{{= it.originalUrl }}" />
 
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
@@ -34,6 +34,7 @@
     {{?}}
 
     <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="150">
 <!--[if lt IE 8]>
@@ -45,8 +46,8 @@
 <div class="icon-up visible-desktop" id="up" title="наверх"></div>
 
 <div class="switch-language">
-	<a href="http://makeomatic.ru{{= it.originalUrl }}" class="language-icon language-ru"></a>
-	<a href="http://en.makeomatic.ru{{= it.originalUrl }}" class="language-icon language-en"></a>
+	<a href="https://makeomatic.ru{{= it.originalUrl }}" class="language-icon language-ru"></a>
+	<a href="https://en.makeomatic.ru{{= it.originalUrl }}" class="language-icon language-en"></a>
 </div>
 
 {{? it.isMain }}
