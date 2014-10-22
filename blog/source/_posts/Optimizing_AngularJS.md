@@ -76,8 +76,8 @@ tags: [AngularJS, Javascript]
 	<tbody>
 		<tr>
 		   <td>1</td>
-		   <td>Simple AngularJS</td>
-		   <td>With Optimizations</td>
+		   <td>1190 ms</td>
+		   <td>35 ms</td>
 		</tr>
 		<tr>
 		   <td>1</td>
