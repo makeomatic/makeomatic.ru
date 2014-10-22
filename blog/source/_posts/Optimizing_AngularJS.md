@@ -75,12 +75,12 @@ tags: [AngularJS, Javascript]
 	</thead>
 	<tbody>
 		<tr>
-		   <td>1</td>
+		   <td>Simple AngularJS</td>
 		   <td>1190 ms</td>
 		   <td>1300 ms</td>
 		</tr>
 		<tr>
-		   <td>1</td>
+		   <td>With Optimizations</td>
 		   <td>35 msS</td>
 		   <td>201 ms</td>
 		</tr>
