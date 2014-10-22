@@ -68,7 +68,7 @@ tags: [AngularJS, Javascript]
 <table>
 	<thead>
 		<tr>
-		   <th>Simple AngularJS</th>
+		   <th>&nbsp;</th>
 		   <th>Data already cached</th>
 		   <th>Data fetched from server</th>
 		</tr>
