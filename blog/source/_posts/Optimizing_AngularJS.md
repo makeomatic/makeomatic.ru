@@ -81,8 +81,8 @@ tags: [AngularJS, Javascript]
 		</tr>
 		<tr>
 		   <td>1</td>
-		   <td>2</td>
-		   <td>3</td>
+		   <td>Simple AngularJS</td>
+		   <td>With Optimizations</td>
 		</tr>
 	</tbody>
 </table>
