@@ -55,7 +55,7 @@ tags: [AngularJS, Javascript]
 Вот как выглядит код со всеми примененными оптимизациями. Наши пользовательские директивы выделены жирным шрифтом:
 
 ```js
-<span class=’logLine’ sly-repeat=’line in logLinesToShow’ sly-evaluate-only-when=’logLines’><div ng-mouseenter=”mouseHasEntered = true”><span ng-show=’!mouseHasEntered’>{{logLine | formatLine }} </span><div ng-show=’mouseHasEntered’ sly-prevent-evaluation-when-hidden><span class=’logToken’ sly-repeat=’tokens in line’>{{token | formatToken }}</span></div>
+<span class=’logLine’ sly-repeat=’line in logLinesToShow’ sly-evaluate-only-when=’logLines’><div ng-mouseenter=”mouseHasEntered = true”><span ng-show=’!mouseHasEntered’>{ {logLine | formatLine } } </span><div ng-show=’mouseHasEntered’ sly-prevent-evaluation-when-hidden><span class=’logToken’ sly-repeat=’tokens in line’>{ {token | formatToken } }</span></div>
 </div>
 <br>
 </span>
