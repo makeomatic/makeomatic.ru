@@ -1,4 +1,4 @@
-title: Оптимизация AngularJS: 1200ms к 35ms
+title: Оптимизация AngularJS: с 1200ms до 35ms
 date: 2014-10-22
 author: Илья Овсянников
 gravatarMail: webhunter1987@gmail.com
