@@ -7,6 +7,8 @@ gravatarMail: annafedotovaa@gmail.com
 
 A key activity of Makeomatic in the past year has been our involvement in Ark, the people search engine. Today, we would like to show you briefly what Ark is, and how Makeomatic have contributed to it. This is the first in a series of blog posts detailing our involvement with Ark and showcasing our solutions to their questions and problems.
 
+<!-- more -->
+
 ### Ark – the people search engine
 
 You could say that Ark is a search engine, but that would hardly do it justice, because it can do so much more than your average search engine. First of all, it’s more specialised: it’s a people search engine (and did you know that 30 percent of all Google searches are for people?), but it does so much more than just give you a list of websites where a name appears. Ark specifically searches more than 50 social networks, and it can connect the dots for you. It processes, aggregates and sorts the data it finds – so when you’re searching for your old classmate Sam, wouldn’t it be great if the search engine returned a full metaprofile, with their Facebook likes, Instagram pics, LinkedIn info and latest tweets all in one place? Of course, that’s not an easy thing to do – Ark has to figure out that this Sam Miller on Facebook is the same person as that Sam Miller on Google+, for example. This requires some nifty algorithms working for you behind the scenes, and this is  where Makeomatic enter the picture.
