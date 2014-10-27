@@ -2,6 +2,10 @@ title: Raiders of the Lost Ark
 subtitle: Makeomatic have teamed up with Ark to build the smartest people search engine ever
 date: 2014-27-10
 author: Anna Amineva
+cover: http://en.makeomatic.ru/blog_en/images/Ark.png
+coverWidth: 577
+coverHeight: 578
+url: https://en.makeomatic.ru/blog/2014/10/27/Ark
 gravatarMail: annafedotovaa@gmail.com
 ---
 
