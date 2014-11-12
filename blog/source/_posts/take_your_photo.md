@@ -17,7 +17,7 @@ tags: [GitHub]
 Создадим  `~/.gitshots` содержащий:
 `mkdir ~/.gitshots`
 
-Добавим `post-commit hook`, чтобы привязать ваше *github* хранилище:
+Добавим `post-commit hook`, чтобы привязать ваше github хранилище:
 
 ```ruby
 #!/usr/bin/env ruby
