@@ -174,7 +174,7 @@ module.exports = model;
 Он сможет просматривать список зарегистрированных пользователей и удалять их.
 
 
-``` javascript middleware/session.js
+```javascript middleware/session.js
 
 exports.adminOnly = function(req,res,next){
   if (req.session.user && req.session.user.isAdmin) return next();
