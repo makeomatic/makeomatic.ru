@@ -1,4 +1,4 @@
-title: Промисы
+title: Promises
 subtitle: Упрощаем использование параллельных потоков в Javascript
 date: 2013-11-30
 author: Анна Аминева
