@@ -1,5 +1,5 @@
-title: Nodeconfeu 2013: истории из жизни компании
-subtitle: вспоминаем 2013 год и ждем конференции в сентябре
+title: Nodeconfeu 2013
+subtitle: Путешествие компании Makeomatic
 date: 2014-07-05
 author: Виталий Аминев
 gravatarMail: getstarted@makeomatic.ru
