@@ -5,7 +5,7 @@ gravatarMail: annafedotovaa@gmail.com
 tags: [AngularJS, Javascript]
 ---
 
-![Иллюстрация блокнота](/blog/images/tips.png)
+![Иллюстрация блокнота](/blog/images/tips.jpg)
 
 ### Вступление
 
