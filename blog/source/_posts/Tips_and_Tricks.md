@@ -1,11 +1,14 @@
 title: Приёмы и хитрости для быстрой front-end разработки
 date: 2014-12-06
-author: 
+author: Anna Amineva
 gravatarMail: annafedotovaa@gmail.com
 tags: [AngularJS, Javascript]
 ---
+<<<<<<< HEAD
 
 ![Иллюстрация блокнота](/blog/images/tips.jpg)
+=======
+>>>>>>> FETCH_HEAD
 
 ### Вступление
 
