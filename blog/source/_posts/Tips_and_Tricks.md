@@ -4,11 +4,8 @@ author: Anna Amineva
 gravatarMail: annafedotovaa@gmail.com
 tags: [AngularJS, Javascript]
 ---
-<<<<<<< HEAD
 
 ![Иллюстрация блокнота](/blog/images/tips.jpg)
-=======
->>>>>>> FETCH_HEAD
 
 ### Вступление
 
