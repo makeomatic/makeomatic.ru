@@ -1,7 +1,7 @@
 title: Приёмы и хитрости для быстрой front-end разработки
 date: 2014-12-06
-author: Anna Amineva
-gravatarMail: annafedotovaa@gmail.com
+author: Evelina Pavlova
+gravatarMail: koko@reevlodge.com
 cover: http://makeomatic.ru/blog/images/tips.jpg
 coverWidth: 623
 coverHeight: 436
