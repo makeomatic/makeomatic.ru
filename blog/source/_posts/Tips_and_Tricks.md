@@ -2,6 +2,10 @@ title: Приёмы и хитрости для быстрой front-end разр
 date: 2014-12-06
 author: Anna Amineva
 gravatarMail: annafedotovaa@gmail.com
+cover: http://makeomatic.ru/blog/images/tips.jpg
+coverWidth: 623
+coverHeight: 436
+url: https://makeomatic.ru/blog/2014/12/06/Tips_and_Tricks
 tags: [AngularJS, Javascript]
 ---
 
