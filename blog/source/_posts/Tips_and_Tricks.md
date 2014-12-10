@@ -1,6 +1,6 @@
 title: Приёмы и хитрости для быстрой front-end разработки
 date: 2014-12-06
-author: Evelina Pavlova
+author: Eleonora Pavlova
 gravatarMail: koko@reevlodge.com
 cover: http://makeomatic.ru/blog/images/tips.jpg
 coverWidth: 623
