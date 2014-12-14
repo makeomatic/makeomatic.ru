@@ -40,9 +40,9 @@ tags: [AngularJS, Javascript]
 
 #### Связка Browserify-Watchify
 
-Склеивание модулей с помощью Browserify, пожалуй, наиболее времязатратный процесс в нашей сборке, занимающий около 3 секунд. К счастью, это проще всего исправить. Прежде всего, переключим нашу задачу watch на использование библиотеки [Watchify](библиотеки <Watchify> https://github.com/substack/watchify.). Она создана [тем же человеком](https://github.com/substack), что и Browserify, и в неё встроен механизм, позволяющий пересобирать только необходимые нам файлы. Для Gulp уже есть [готовый способ сборки с Watchify](https://github.com/gulpjs/gulp/blob/master/docs/recipes/fast-browserify-builds-with-watchify.md), воспользуемся им для начала.
+Склеивание модулей с помощью Browserify, пожалуй, наиболее времязатратный процесс в нашей сборке, занимающий около 3 секунд. К счастью, это проще всего исправить. Прежде всего, переключим нашу задачу watch на использование библиотеки [Watchify](библиотеки <Watchify> https://github.com/substack/watchify). Она создана [тем же человеком](https://github.com/substack), что и Browserify, и в неё встроен механизм, позволяющий пересобирать только необходимые нам файлы. Для Gulp уже есть [готовый способ сборки с Watchify](https://github.com/gulpjs/gulp/blob/master/docs/recipes/fast-browserify-builds-with-watchify.md), воспользуемся им для начала.
 
-Наш js-task будет по-прежнему использовать Browserify (чтобы компилировать Javascript без запуска команды watch) , но давайте вместо gulp-browserify, который [был внесён в чёрный список разработчиками Gulp]( https://github.com/gulpjs/plugins/blob/master/src/blackList.json#L3 ), воспользуемся Browserify напрямую. 
+Наш js-task будет по-прежнему использовать Browserify (чтобы компилировать Javascript без запуска команды watch) , но давайте вместо gulp-browserify, который [был внесён в чёрный список разработчиками Gulp]( https://github.com/gulpjs/plugins/blob/master/src/blackList.json#L3), воспользуемся Browserify напрямую. 
 
 Прим.: gulp-browserify [блокирует работу Browserify]( https://github.com/deepak1556/gulp-browserify/blob/master/package.json#L14)  в версии 3.x. Используя Browserify напрямую, мы можем работать с последней версией 5.x, в которой другие настройки конфигурации.
 
