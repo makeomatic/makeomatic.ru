@@ -2,6 +2,10 @@ title: Замена конструкции switch на объектные лит
 date: 2014-17-12
 author: Eleonora Pavlova
 gravatarMail: koko@reevlodge.com
+cover: http://makeomatic.ru/blog/images/switch.jpg
+coverWidth: 623
+coverHeight: 436
+url: https://makeomatic.ru/blog/2014/12/17/Switch_statement/
 tags: [AngularJS, Javascript]
 ---
 
