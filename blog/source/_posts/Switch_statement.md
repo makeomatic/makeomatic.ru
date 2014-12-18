@@ -1,5 +1,4 @@
 title: Замена конструкции switch на объектные литералы
-subtitle: Сервис международной доставки без головных болей 
 date: 2014-17-12
 author: Eleonora Pavlova
 gravatarMail: koko@reevlodge.com
@@ -290,4 +289,6 @@ console.log(snack); // 'Drink'
 Применение объектов даёт больший контроль над кодом, конструкция `switch` –  немного устарела, не изящна в синтаксисе и сложна в отладке ошибок. Объекты проще расширять, поддерживать и тестировать. Они привычны, поскольку являются основополагающим звеном Javascript, и мы используем их в работе каждый день для самых разных задач. Объектные литералы могут содержать функции и любые другие [типы объектов](http://toddmotto.com/understanding-javascript-types-and-reliable-type-checking/), что делает их очень гибкими. У функций в литералах есть область действия (scope), поэтому мы можем вернуть замыкание из вызываемой родительской функции (в нашем случае `getDrink` возвращает замыкание).
 
 Комментарии и фидбэк можно найти на [Reddit](http://www.reddit.com/r/javascript/comments/2b4s6r/deprecating_the_switch_statement_for_object)  
+
+По мотивам [Todd Motto](http://toddmotto.com/deprecating-the-switch-statement-for-object-literals/)
 
