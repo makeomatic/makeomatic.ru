@@ -1,9 +1,9 @@
 title: Эффективное сквозное тестирование с Protractor
 subtitle: Часть 1
 date: 2015-01-05
-author: Анна Аминева
-gravatarMail: annafedotovaa@gmail.com
-tags: [Javascript]
+author: Eleonora Pavlova
+gravatarMail: koko@reevlodge.com
+tags: [Javascript, AngularJS]
 ---
 
 ![Иллюстрация блокнота](/blog/images/Protractor_testing.png)
