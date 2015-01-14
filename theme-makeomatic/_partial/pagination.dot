@@ -1,9 +1,12 @@
 <nav id="pagination">
-  {{? it.page.prev }}
-    <a href="{{= it.config.root }}{{= it.page.prev_link }}" class="alignleft prev">{{! it.__('next') }}</a>
-  {{?}}
   {{? it.page.next }}
-    <a href="{{= it.config.root }}{{= it.page.next_link }}" class="alignright next">{{! it.__('prev') }}</a>
+    <a href="{{= it.config.root }}{{= it.page.next_link }}" class="alignright next">← {{! it.__('prev') }}</a>
+  {{?}}
+  {{? it.page.next && it.page.prev }}
+  &nbsp;&nbsp;
+  {{?}}
+  {{? it.page.prev }}
+    <a href="{{= it.config.root }}{{= it.page.prev_link }}" class="alignleft prev">{{! it.__('next') }} →</a>
   {{?}}
   <div class="clearfix"></div>
 </nav>

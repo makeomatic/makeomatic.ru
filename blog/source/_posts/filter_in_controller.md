@@ -1,5 +1,5 @@
 title: "Angular.JS: внедрение фильтра в контроллер"
-date: 2014-27-02
+date: 2014-02-27
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
 cover: http://makeomatic.ru/blog/images/filter.jpg
