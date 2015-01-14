@@ -479,7 +479,7 @@ myModule.directive("country", function () {
 * [Как использовать ngMessages в AngularJS](http://makeomatic.ru/blog/2014/05/21/ngMessage/#ym_playback=linkmap&ym_cid=15629977)
 * [Data service для работы с API в AngularJS](http://makeomatic.ru/blog/2014/04/22/Module_in_AngularJS/#ym_playback=linkmap&ym_cid=15629977)
 * [Последовательная асинхронная инициализация Angular.JS приложений с использованием промисов](http://makeomatic.ru/blog/2014/04/04/Initialization_angularjs/#ym_playback=linkmap&ym_cid=15629977)
-* [Дебаггинг приложения на AngularJS через консоль](https://makeomatic.ru/blog/2014/12/08/debugging_AngularJS_app/)
+* [Дебаггинг приложения на AngularJS через консоль](https://makeomatic.ru/blog/2014/08/12/debugging_AngularJS_app/)
 * [Разбираемся с системой событий $emit, $broadcast и $on в $scope и $rootScope Ангуляра](https://makeomatic.ru/blog/2014/07/10/Angular_scope_rootScope/)
 
 
