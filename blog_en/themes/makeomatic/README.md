@@ -1,1 +1,0 @@
-## Makeomatic Hexo theme

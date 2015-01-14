@@ -8,6 +8,7 @@
     "url": "git://github.com/AVVSDevelopment/avvs.co.git"
   },
   "scripts": {
+    "postinstall": "cd blog && npm install && cd ../blog_en && npm install",
     "start": "NODE_ENV=production HOST=127.0.0.1 PORT=5555 forever start lib/app.js",
     "start-local": "NODE_ENV=production HOST=127.0.0.1 PORT=9001 node ./lib/app.js"
   },

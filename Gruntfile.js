@@ -95,7 +95,7 @@ module.exports = function (grunt) {
         },
         watch: {
             blog: {
-                files: ['blog/themes/**','blog/scaffolds/**','blog/scripts/**', 'blog/**/*.yml', "blog/source/_posts/**"],
+                files: ['theme-makeomatic/**','blog/scaffolds/**','blog/scripts/**', 'blog/**/*.yml', "blog/source/_posts/**"],
                 tasks: ['clean:blog', 'shell:hexo'],
                 options: {
                     livereload: true
