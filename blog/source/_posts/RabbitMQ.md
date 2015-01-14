@@ -1,4 +1,4 @@
-title: RabbitMQ: Простая и эффективная очередь сообщений
+title: "RabbitMQ: Простая и эффективная очередь сообщений"
 subtitle: что такое RabbitMQ и его применение
 date: 2013-10-16
 author: Дмитрий Горбунов
@@ -221,6 +221,6 @@ channel.publish("", request.properties.replyTo, new Buffer("5"), {correlationId:
 channel.publish("", "rpc", new Buffer("2 + 3"), {replyTo: "rpc-reply-1", correlationId: "calculate-1"})
 ```
 
-Читайте так же статьи по теме: 
+Читайте так же статьи по теме:
 
 * [Совместное использование модулей между NodeJS и AngularJS](http://makeomatic.ru/blog/2014/03/17/Sharing_modules/)

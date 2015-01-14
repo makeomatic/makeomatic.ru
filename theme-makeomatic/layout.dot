@@ -1,0 +1,39 @@
+{{#def.load('_partial/head') }}
+
+<body data-spy="scroll" data-target=".navbar" data-offset="150">
+<!--[if lt IE 8]>
+<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируйте Google Chrome Frame</a>, чтобы улучшить ваши впечатления от посещения сайта.</p>
+<![endif]-->
+
+{{#def.load('_partial/header') }}
+
+<div class="icon-up visible-desktop" id="up" title="наверх"></div>
+
+<section class="container blog" id='blog'>
+    <h1 class='outlined-caption text-center'>
+        <a href='/blog'>{{= it.config.title }}</a>
+    </h1>
+
+    {{? false }}
+      <!-- Place this where you want the widget to appear -->
+      <h2>NodeSchool Moscow. 1 ноября 2014 года.</h2>
+      <p class='lead'>Принимайте участие в NodeSchool #1 в Москве. Если вам интересна разработка на Node.JS,
+      вы хотите развить свои навыки или просто познакомиться с местным комьюнити - то вы еще можете
+      успеть <a href="https://ti.to/makeomatic/nodeschool-moscow">зарегистрироваться</a> на событие.</p>
+      <tito-widget event="makeomatic/nodeschool-moscow"></tito-widget>
+    {{?}}
+
+    <div class='row'>
+        <div class='span10'>{{= it.body }}</div>
+        <aside class="span2">{{#def.load('_partial/sidebar') }}</aside>
+    </div>
+</section> <!-- /container -->
+
+
+{{#def.load('_partial/footer') }}
+{{#def.load('_partial/brief') }}
+{{#def.load('_partial/after_footer') }}
+
+
+</body>
+</html>

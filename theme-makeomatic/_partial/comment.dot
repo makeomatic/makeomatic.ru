@@ -1,0 +1,8 @@
+{{? it.config.disqus_shortname && it.page.comments }}
+<section id="comment">
+  <h3 class="title">Комментарии</h3>
+  <div id="disqus_thread">
+    <noscript>Включите Javascript, чтобы просмотреть <a href="//disqus.com/?ref_noscript">комментарии с помощью Disqus.</a></noscript>
+  </div>
+</section>
+{{?}}

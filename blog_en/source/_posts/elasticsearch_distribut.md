@@ -1,5 +1,5 @@
 title: Hacking the code of international shipping
-date: 2014-30-07
+date: 2014/07/30
 author: Anna Amineva
 gravatarMail: annafedotovaa@gmail.com
 tags: [Elasticsearch, NodeJS, AngularJS]

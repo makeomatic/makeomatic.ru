@@ -1,6 +1,6 @@
 title: Shipping abroad — as good as it gets!
 subtitle: International shipping without headache and numb wrists
-date: 2014-18-07
+date: 2014/07/18
 author: Anna Amineva
 gravatarMail: annafedotovaa@gmail.com
 cover: http://en.makeomatic.ru/blog_en/images/dist.io.png

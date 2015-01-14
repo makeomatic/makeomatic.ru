@@ -1,0 +1,61 @@
+<footer id='contacts' class='footer-main'>
+    <div class='callback'>
+        <div class='container'>
+            <div class='row'>
+                <div class='span12'>
+                    <h2 class='xlarge'>Есть вопросы или предложения?</h2>
+                    <p class='outlined-caption'>закажите обратный звонок и наш менеджер перезвонит вам</p>
+                    <form method='POST' action='/brief' id='callback'>
+                        <ul class='hidden error'></ul>
+                        <input type="text" name='name' placeholder="Как к вам обратиться?" class='span12' required />
+                        <input type="text" name='phone' placeholder="По какому номеру звонить?" class='span6' />
+                        <input type="email" name='email' placeholder="E-mail (опционально)" class='span6 pull-right' />
+                        <textarea name='question' placeholder="Ваш вопрос (опционально)" class='span12'></textarea>
+                        <button type="submit" class='blue-plank'>Заказать звонок</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='container'>
+        <div class='row'>
+            <div class='span6'>
+                <h4 class='footer-caption'>Разделы сайта</h4>
+                <ul class="nav inline">
+                    {{~ this.makeomatic_config.links: link }}
+                    <li><a href="{{= link.href }}">{{= link.name }}</a></li>
+                    {{~}}
+                    <li><a href='https://github.com/AVVSDevelopment/avvs.co'>Проект на GitHub</a></li>
+                </ul>
+                <p class='copyright'>{{= this.makeomatic_config.copyright }}</p>
+            </div>
+            <div class='span6 blue-line'>
+                <h4 class='footer-caption'>Контакты</h4>
+                <p>
+                    тел: {{= this.makeomatic_config.phone }}
+                </p>
+                <p>
+                    e-mail: <a href="mailto:{{= this.makeomatic_config.email}}">{{= this.makeomatic_config.email }}</a>
+                </p>
+                <address>
+                    {{= this.makeomatic_config.address }}
+                </address>
+                <div class="social">
+                  <a class="fcb fa-stack fa-lg" href="https://www.facebook.com/makeomatic">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i> </a>
+                  <a class="fa-stack fa-lg" href="http://vk.com/makeomatic">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-vk fa-stack-1x fa-inverse"></i> </a>
+                  <a class="twt fa-stack fa-lg" href="https://twitter.com/MakeOmatic">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i> </a>
+                    <a class="gp fa-stack fa-lg" href="https://google.com/+MakeomaticRu"> 
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

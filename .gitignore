@@ -10,5 +10,6 @@ static/js/app.min*
 blog/public
 blog_en/public
 .project
-node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-jpegtran/node_modules/jpegtran-bin/vendor
 *.log
+node_modules
+!node_modules/hexo

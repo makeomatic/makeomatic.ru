@@ -1,4 +1,4 @@
-title: Angular.JS: внедрение фильтра в контроллер
+title: "Angular.JS: внедрение фильтра в контроллер"
 date: 2014-27-02
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
@@ -20,7 +20,7 @@ editor.filter("numChar", function() {
         return theText
             .replace(/\n/g, "")
             .replace(/\.\.\./g,"\u2026")
-            .length; 
+            .length;
     };
 });
 ```
@@ -41,14 +41,14 @@ function ReportController($scope, Data) {
     // The text is valid if its length is less or equal to maxChar
     $scope.isValid = function() {
         var numCh = $scope.numChar(); // OUCH! What now?!?
-        return numCh <= Data.maxChar; 
-    }; 
+        return numCh <= Data.maxChar;
+    };
 
-}; 
-``` 
+};
+```
 
-Этот метод полагается на функцию `numChar()`, которая сейчас вне области видимости. 
-Как же исправить ошибку? 
+Этот метод полагается на функцию `numChar()`, которая сейчас вне области видимости.
+Как же исправить ошибку?
 
 Способ первый: внедряем фильтр обратно в контроллер, где находятся выполняющийся с ошибками метод:
 
@@ -81,5 +81,5 @@ function ReportController($scope, Data, $filter) {
 }
 ```
 
-Это позволяет вам вызывать любой фильтр, но код становится немного корявым. 
+Это позволяет вам вызывать любой фильтр, но код становится немного корявым.
 Но так или иначе, код теперь выполняется. Время подумать о том, что вы можете улучшить в своих программах, используя полученные знания. А может быть вы придумаете и еще что-нибудь поинтереснее?

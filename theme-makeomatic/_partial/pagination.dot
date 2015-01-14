@@ -1,0 +1,9 @@
+<nav id="pagination">
+  {{? it.page.prev }}
+    <a href="{{= it.config.root }}{{= it.page.prev_link }}" class="alignleft prev">{{! it.__('next') }}</a>
+  {{?}}
+  {{? it.page.next }}
+    <a href="{{= it.config.root }}{{= it.page.next_link }}" class="alignright next">{{! it.__('prev') }}</a>
+  {{?}}
+  <div class="clearfix"></div>
+</nav>

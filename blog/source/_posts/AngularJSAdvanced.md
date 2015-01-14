@@ -1,4 +1,4 @@
-title: Angular.JS: основы создания директив
+title: "Angular.JS: основы создания директив"
 subtitle: концепции и практическое применение
 date: 2013-08-17
 author: Дмитрий Горбунов
@@ -468,7 +468,7 @@ myModule.directive("country", function () {
 <div country="Россия" capital="Москва"></div>
 ```
 
-Читайте так же статьи по теме: 
+Читайте так же статьи по теме:
 
 * [Улучшение логирования в AngularJS с помощью декораторов](http://makeomatic.ru/blog/2014/01/06/AngulaJS_logging/)
 * [Ускоряем $digest цикл в AngularJS](http://makeomatic.ru/blog/2014/03/28/Digest_angular/)

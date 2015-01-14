@@ -1,5 +1,5 @@
-title: AngularJS: а вам нужен заголовок?
-subtitle: Меняем заголовок, основанный на пути браузерной строки 
+title: "AngularJS: а вам нужен заголовок?"
+subtitle: Меняем заголовок, основанный на пути браузерной строки
 date: 2013-12-2
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
