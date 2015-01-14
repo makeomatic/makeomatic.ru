@@ -45,5 +45,5 @@ tags: [AngularJS, Для новичков]
 
 Читайте так же статьи по теме:
 
-* [Простой способ оптимизировать сайт для работы с Retina изображениями](http://en.makeomatic.ru/blog/2013/11/10/retina/)
+* [Простой способ оптимизировать сайт для работы с Retina изображениями](https://makeomatic.ru/blog/2013/11/10/retina/)
 * [Angular VS jQuery](http://makeomatic.ru/blog/2013/12/11/AngularJS_VS_jQuery/#ym_playback=linkmap&ym_cid=15629977)

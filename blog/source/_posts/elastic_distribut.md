@@ -49,7 +49,7 @@ Elasticsearch позволяет Distribut.io производить поиск 
 
 Читайте так же статьи по теме:
 
-* [Доставка за границу - лучше, чем когда-либо!](https://makeomatic.ru/blog/2014/07/25/About_Distributio/)
+* [Доставка за границу - лучше, чем когда-либо!](https://makeomatic.ru/blog/2014/07/24/About_Distributio/)
 
 
 
