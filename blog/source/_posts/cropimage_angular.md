@@ -3,7 +3,7 @@ subtitle: Обзор модуля
 date: 2014-06-25
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/crop_image.jpg
+cover: https://makeomatic.ru/blog/images/crop_image.jpg
 coverWidth: 623
 coverHeight: 389
 url: https://makeomatic.ru/blog/2014/06/25/cropimage_angular/

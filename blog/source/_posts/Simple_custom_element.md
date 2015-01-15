@@ -2,10 +2,10 @@ title: Создание простых кастомизированных эле
 date: 2014-02-04
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/transformation.jpg
+cover: https://makeomatic.ru/blog/images/transformation.jpg
 coverWidth: 623
 coverHeight: 321
-url: http://makeomatic.ru/blog/2014/02/04/Simple_custom_element/
+url: https://makeomatic.ru/blog/2014/02/04/Simple_custom_element/
 tags: [Javascript, AngularJS]
 ---
 

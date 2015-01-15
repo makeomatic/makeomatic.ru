@@ -45,7 +45,7 @@ startApp = ->
   app.set 'view engine', 'dot'
 
   app.use require('compression')()
-  app.use express.static "#{root}/../static/icons", { maxAge: 14*oneDay }
+  app.use express.static "#{root}/../static/icons", { maxAge: 365*oneDay }
 
   # understand which locale we are using
   app.use i18n.init

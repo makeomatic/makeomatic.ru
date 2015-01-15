@@ -64,4 +64,4 @@ tags: [SEO]
 
 Читайте так же статьи по теме: 
 
-* [Тренды поисковой оптимизации](http://makeomatic.ru/blog/2013/10/25/Seo_intro2/)
+* [Тренды поисковой оптимизации](https://makeomatic.ru/blog/2013/10/25/Seo_intro2/)

@@ -2,10 +2,10 @@ title: Улучшение логирования в AngularJS с помощью 
 date: 2014-01-06
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/logging.jpg
+cover: https://makeomatic.ru/blog/images/logging.jpg
 coverWidth: 441
 coverHeight: 357
-url: http://makeomatic.ru/blog/2014/01/06/AngulaJS_logging/
+url: https://makeomatic.ru/blog/2014/01/06/AngulaJS_logging/
 tags: [AngularJS, Javascript]
 ---
 
@@ -377,7 +377,7 @@ define( dependencies, function( supplant )
 
 ##Использование каррирования внутри LogEnhancer
 
-Мы можем использовать технику каррирования, чтобы захватить конкретную лог функцию, чтобы мы могли перехватывать только определенные вызовы к `log` функции. Эта техника позволяет нам использовать общий обработчик, который частично применяется к каждому вызову функции `$log`.
+Мы можем использов��ть технику каррирования, чтобы захватить конкретную лог функцию, чтобы мы могли перехватывать только определенные вызовы к `log` функции. Эта техника позволяет нам использовать общий обработчик, который частично применяется к каждому вызову функции `$log`.
 
 ```js
 // **********************************

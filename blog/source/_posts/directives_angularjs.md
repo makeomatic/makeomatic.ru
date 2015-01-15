@@ -3,7 +3,7 @@ subtitle: Концепции и практическое применение
 date: 2014-06-14
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/directives_angularjs.jpg
+cover: https://makeomatic.ru/blog/images/directives_angularjs.jpg
 coverWidth: 500
 coverHeight: 307
 url: https://makeomatic.ru/blog/2014/06/14/directives_angularjs/
@@ -139,7 +139,7 @@ myApp.directive('fluidvids', function () {
 Error: [$interpolate:interr] http://errors.angularjs.org/undefined/$interpolate/interr?p0=%7B%7B%20src%2…%24sce%2Finsecurl%3Fp0%3D%252F%252Fplayer.vimeo.com%252Fvideo%252F23919731
 ```
 
-После быстрого поиска в Google, мне понадобилось занести в белый список домены, которые я использую внутри AngularJS, в какой-то мере умный защитный ход (даже несмотря на слегка раздражающую ошибку) команды. После некоторых исследований, я нашел, что кто-то написал следующий комментарий, в котором описан код добавления всех доменов в белый список:
+После быстрого поиска в Google, мне понадобилось занести в белый список домены, которые я использую внутри AngularJS, в какой-то мере умный защитный ход (даже несмотря на слегка раздражающую ошибку) команд��. После некоторых исследований, я нашел, что кто-то написал следующий комментарий, в котором описан код добавления всех доменов в белый список:
 
 ```js
 myApp.config(function ($sceDelegateProvider) {  

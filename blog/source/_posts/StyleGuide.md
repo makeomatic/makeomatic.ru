@@ -587,4 +587,4 @@ p {
 
 Читайте так же статьи по теме: 
 
-  * [Преобразование строчного типа данных в целое число JavaScript](http://makeomatic.ru/blog/2013/12/17/parseInt/)
+  * [Преобразование строчного типа данных в целое число JavaScript](https://makeomatic.ru/blog/2013/12/17/parseInt/)

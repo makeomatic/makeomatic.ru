@@ -303,7 +303,7 @@ ngRoute настраивается с помощью $routeProvider, напри�
 Читайте так же статьи по теме:
 
 * [Angular.JS: внедрение фильтра в контроллер](https://makeomatic.ru/blog/2014/02/26/filter_in_controller/)
-* [“Безопасный” $apply в Angular.JS](http://makeomatic.ru/blog/2014/01/30/Apply_in_AngularJS/)
+* [“Безопасный” $apply в Angular.JS](https://makeomatic.ru/blog/2014/01/30/Apply_in_AngularJS/)
 * [AngularJS: а вам нужен заголовок?](https://makeomatic.ru/blog/2013/12/01/Title/)
 * [Создание модели данных в Angular.js](https://makeomatic.ru/blog/2014/09/17/Angular_data_modelling/)
 * [Интернационализация в AngularJS](https://makeomatic.ru/blog/2014/10/08/internationalisation/)

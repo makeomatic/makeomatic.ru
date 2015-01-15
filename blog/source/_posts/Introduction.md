@@ -215,4 +215,4 @@ exports.get = function (req, res, next) { //для возможности выз
 
 Читайте так же статьи по теме: 
 
-* [Блог джуниора. CRUD операции, Mongoose ODM](http://makeomatic.ru/blog/2013/08/16/Deleting/)
+* [Блог джуниора. CRUD операции, Mongoose ODM](https://makeomatic.ru/blog/2013/08/16/Deleting/)

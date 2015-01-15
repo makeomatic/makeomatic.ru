@@ -2,10 +2,10 @@ title: Создавайте отчет о выполненной работе, �
 date: 2013-11-19
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/paper.jpg
+cover: https://makeomatic.ru/blog/images/paper.jpg
 coverWidth: 620
 coverHeight: 320
-url: http://makeomatic.ru/blog/2013/11/19/GitHub_report/
+url: https://makeomatic.ru/blog/2013/11/19/GitHub_report/
 tags: [GitHub]
 ---
 

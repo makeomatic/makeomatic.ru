@@ -223,4 +223,4 @@ channel.publish("", "rpc", new Buffer("2 + 3"), {replyTo: "rpc-reply-1", correla
 
 Читайте так же статьи по теме:
 
-* [Совместное использование модулей между NodeJS и AngularJS](http://makeomatic.ru/blog/2014/03/17/Sharing_modules/)
+* [Совместное использование модулей между NodeJS и AngularJS](https://makeomatic.ru/blog/2014/03/17/Sharing_modules/)

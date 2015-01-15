@@ -2,10 +2,10 @@ title: Фотографируй себя когда создаешь комми�
 date: 2013-11-18
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/selfie.jpg
+cover: https://makeomatic.ru/blog/images/selfie.jpg
 coverWidth: 620
 coverHeight: 434
-url: http://makeomatic.ru/blog/2014/07/05/nodeconfeu_2013/
+url: https://makeomatic.ru/blog/2014/07/05/nodeconfeu_2013/
 tags: [GitHub]
 ---
 

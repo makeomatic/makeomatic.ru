@@ -3,10 +3,10 @@ subtitle: AngularJS великолепен… и чертовски сложен
 date: 2013-11-24
 author: Виталий Аминев
 gravatarMail: v@aminev.me
-cover: http://makeomatic.ru/blog/images/angularjsdrupal.png)
+cover: https://makeomatic.ru/blog/images/angularjsdrupal.png)
 coverWidth: 557
 coverHeight: 573
-url: http://makeomatic.ru/blog/2013/11/24/AngularJS_begginers/
+url: https://makeomatic.ru/blog/2013/11/24/AngularJS_begginers/
 tags: [AngularJS, Для новичков]
 ---
 
@@ -46,4 +46,4 @@ tags: [AngularJS, Для новичков]
 Читайте так же статьи по теме:
 
 * [Простой способ оптимизировать сайт для работы с Retina изображениями](https://makeomatic.ru/blog/2013/11/10/retina/)
-* [Angular VS jQuery](http://makeomatic.ru/blog/2013/12/11/AngularJS_VS_jQuery/#ym_playback=linkmap&ym_cid=15629977)
+* [Angular VS jQuery](https://makeomatic.ru/blog/2013/12/11/AngularJS_VS_jQuery/#ym_playback=linkmap&ym_cid=15629977)

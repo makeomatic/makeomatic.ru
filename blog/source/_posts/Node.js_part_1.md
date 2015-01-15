@@ -2,10 +2,10 @@ title: Node.js не подходит для обычных веб-проекто
 date: 2014-01-16
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/node1.jpg
+cover: https://makeomatic.ru/blog/images/node1.jpg
 coverWidth: 500
 coverHeight: 375
-url: http://makeomatic.ru/blog/2014/01/16/Nodejs_part_1/
+url: https://makeomatic.ru/blog/2014/01/16/Nodejs_part_1/
 tags: [Node.js]
 ---
 
@@ -27,4 +27,4 @@ tags: [Node.js]
 
 Читайте так же статьи по теме:
 
-* [Совместное использование модулей между NodeJS и AngularJS](http://makeomatic.ru/blog/2014/03/17/Sharing_modules/)
+* [Совместное использование модулей между NodeJS и AngularJS](https://makeomatic.ru/blog/2014/03/17/Sharing_modules/)

@@ -2,7 +2,7 @@ title: "Оптимизация AngularJS: с 1200ms до 35ms"
 date: 2014-10-22
 author: Илья Овсянников
 gravatarMail: webhunter1987@gmail.com
-cover: http://makeomatic.ru/blog/images/Optimizing.png
+cover: https://makeomatic.ru/blog/images/Optimizing.png
 coverWidth: 600
 coverHeight: 600
 url: https://makeomatic.ru/blog/2014/10/22/Optimizing_AngularJS/

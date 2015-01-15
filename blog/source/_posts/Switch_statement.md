@@ -2,7 +2,7 @@ title: Замена конструкции switch на объектные лит
 date: 2014-12-17
 author: Eleonora Pavlova
 gravatarMail: koko@reevlodge.com
-cover: http://makeomatic.ru/blog/images/switch.jpg
+cover: https://makeomatic.ru/blog/images/switch.jpg
 coverWidth: 623
 coverHeight: 436
 url: https://makeomatic.ru/blog/2014/12/17/Switch_statement/
@@ -206,7 +206,7 @@ function getDrink (type) {
 
 Мы поставили операции поиска по объекту `()`, что делает их выражением. И затем вызвали результат выражения. Если `drinks [type]` не будет найден, вернётся `drinks['default']` — элементарно!
 
-Не обязательно всегда делать `return` внутри функции, можем присвоить результат любой переменной и затем вызвать её.
+Не обязат��льно всегда делать `return` внутри функции, можем присвоить результат любой переменной и затем вызвать её.
 
 ```js
 function getDrink (type) {

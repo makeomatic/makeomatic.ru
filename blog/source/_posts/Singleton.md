@@ -2,10 +2,10 @@ title: Шаблон проектирования Одиночка (Singleton) в
 date: 2014-01-13
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/singleton1.jpg
+cover: https://makeomatic.ru/blog/images/singleton1.jpg
 coverWidth: 623
 coverHeight: 467
-url: http://makeomatic.ru/blog/2014/01/13/Singleton/
+url: https://makeomatic.ru/blog/2014/01/13/Singleton/
 tags: [Objective-C]
 ---
 

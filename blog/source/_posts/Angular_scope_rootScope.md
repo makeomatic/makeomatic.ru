@@ -2,7 +2,7 @@ title: Разбираемся с системой событий $emit, $broadca
 date: 2014-10-07
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/angular_scope.png
+cover: https://makeomatic.ru/blog/images/angular_scope.png
 coverWidth: 623
 coverHeight: 416
 url: hhttps://makeomatic.ru/blog/2014/07/10/Angular_scope_rootScope/

@@ -3,14 +3,14 @@ subtitle: International shipping without headache and numb wrists
 date: 2014/07/18
 author: Anna Amineva
 gravatarMail: annafedotovaa@gmail.com
-cover: http://en.makeomatic.ru/blog_en/images/dist.io.png
+cover: https://en.makeomatic.ru/blog_en/images/dist.io.png
 coverWidth: 1000
 coverHeight: 840
-url: http://en.makeomatic.ru/blog/2014/07/18/Shipping_abroad/
+url: https://en.makeomatic.ru/blog/2014/07/18/Shipping_abroad/
 tags: [Elasticsearch, NodeJS]
 ---
 
-![Illustration Distribut.io](/blog_en/images/dist.io.png)
+![Illustration Distribut.io](/blog/images/dist.io.png)
 
 Overburdened with paperwork, many ambitious and hard-working entrepreneurs across the Globe willing to take their growing business beyond the boundaries of their countries, face spending time and money on filling out necessary documents, obtaining customs declarations in order to ship their products on the international markets. Anyone who had to go through this costly process at least once knows well what a waste of time and effort it is.
 
@@ -34,7 +34,7 @@ Currently, Distribut.io is in beta-testing, offering b2b services between the Eu
 
 Continue to the next part of the story:
 
-* [Hacking the code of international shipping](https://en.makeomatic.ru/blog/2014/07/30/elasticsearch_distribut/)
+* [Hacking the code of international shipping](//en.makeomatic.ru/blog/2014/07/30/elasticsearch_distribut/)
 
 ##### Developing your idea with Makeomatic
 You can drop us an email to [getstarted@makeomatic.ru](mailto:getstarted@makeomatic.ru)

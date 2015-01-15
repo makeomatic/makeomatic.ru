@@ -2,7 +2,7 @@ title: Работаем с запросами в ElasticSearch, содержащ
 date: 2014-03-20
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/elasticsearch.jpg
+cover: https://makeomatic.ru/blog/images/elasticsearch.jpg
 coverWidth: 620
 coverHeight: 620
 url: https://makeomatic.ru/blog/2014/03/20/query_elasticsearch/

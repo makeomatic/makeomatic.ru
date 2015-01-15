@@ -3,10 +3,10 @@ subtitle: концепции и практическое применение
 date: 2013-11-17
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/notepad.jpg
+cover: https://makeomatic.ru/blog/images/notepad.jpg
 coverWidth: 519
 coverHeight: 450
-url: http://makeomatic.ru/blog/2013/11/17/Browser_notepad/
+url: https://makeomatic.ru/blog/2013/11/17/Browser_notepad/
 tags: [Javascript, HTML5]
 ---
 
@@ -33,4 +33,4 @@ tags: [Javascript, HTML5]
 
 Читайте так же статьи по теме: 
 
-* [Промисы](http://makeomatic.ru/blog/2013/11/30/Promises/)
+* [Промисы](https://makeomatic.ru/blog/2013/11/30/Promises/)

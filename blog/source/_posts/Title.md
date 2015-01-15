@@ -3,10 +3,10 @@ subtitle: Меняем заголовок, основанный на пути б
 date: 2013-12-2
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/title.png
+cover: https://makeomatic.ru/blog/images/title.png
 coverWidth: 581
 coverHeight: 281
-url: http://makeomatic.ru/blog/2013/12/02/Title/
+url: https://makeomatic.ru/blog/2013/12/02/Title/
 tags: [AngularJS, Javascript]
 ---
 

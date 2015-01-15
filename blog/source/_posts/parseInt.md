@@ -2,10 +2,10 @@ title: Преобразование строчного типа данных в 
 date: 2013-12-17
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/parseInt.jpg
+cover: https://makeomatic.ru/blog/images/parseInt.jpg
 coverWidth: 620
 coverHeight: 413
-url: http://makeomatic.ru/blog/2013/12/17/parseInt/
+url: https://makeomatic.ru/blog/2013/12/17/parseInt/
 tags: [Javascript]
 ---
 
@@ -45,5 +45,5 @@ parseInt('a', 10); // returns NaN parseInt({}, 10); // returns NaN parseInt('123
 
 Читайте так же статьи по теме: 
 
-* [Блокнот с помощью браузера с одной строчкой кода](http://makeomatic.ru/blog/2013/11/17/Browser_notepad/)
+* [Блокнот с помощью браузера с одной строчкой кода](https://makeomatic.ru/blog/2013/11/17/Browser_notepad/)
 

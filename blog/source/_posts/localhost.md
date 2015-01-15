@@ -1,10 +1,10 @@
 title: Делитесь своим localhost с кем угодно
 date: 2013-11-22
 author: Анна Аминева
-cover: http://makeomatic.ru//blog/images/localhost.jpg
+cover: https://makeomatic.ru//blog/images/localhost.jpg
 coverWidth: 515
 coverHeight: 515
-url: http://makeomatic.ru/blog/2013/11/22/localhost/
+url: https://makeomatic.ru/blog/2013/11/22/localhost/
 gravatarMail: annafedotovaa@gmail.com
 tags: [FAQ]
 ---

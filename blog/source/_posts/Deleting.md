@@ -274,4 +274,4 @@ exports.get = function (req, res, next) { //для возможности выз
 
 Читайте так же статьи по теме: 
 
-* [Angular VS jQuery](http://makeomatic.ru/blog/2013/12/11/AngularJS_VS_jQuery/)
+* [Angular VS jQuery](https://makeomatic.ru/blog/2013/12/11/AngularJS_VS_jQuery/)

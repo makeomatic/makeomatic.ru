@@ -12,5 +12,4 @@ blog_en/public
 .project
 *.log
 node_modules
-!node_modules/hexo
 sitemap.*.xml

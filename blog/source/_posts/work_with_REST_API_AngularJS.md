@@ -3,10 +3,10 @@ subtitle: Расширение колбэков функций
 date: 2013-12-27
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/callback.jpg
+cover: https://makeomatic.ru/blog/images/callback.jpg
 coverWidth: 623
 coverHeight: 350
-url: http://makeomatic.ru/blog/2013/12/27/work_with_REST_API_AngularJS/
+url: https://makeomatic.ru/blog/2013/12/27/work_with_REST_API_AngularJS/
 tags: [AngularJS]
 ---
 
@@ -104,4 +104,4 @@ myApiService.assets.one(id, function (data, error) {
            // now you don't need to call $rootScope.$apply(); on each request
 });
 ```
-Читайте статьи по теме: [Data service для работы с API в AngularJS](http://makeomatic.ru/blog/2014/04/22/Module_in_AngularJS/#ym_playback=linkmap&ym_cid=15629977)
+Читайте статьи по теме: [Data service для работы с API в AngularJS](https://makeomatic.ru/blog/2014/04/22/Module_in_AngularJS/#ym_playback=linkmap&ym_cid=15629977)

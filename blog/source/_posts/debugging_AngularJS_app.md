@@ -3,7 +3,7 @@ subtitle: Изучение и контроль запущенного прило
 date: 2014-08-12
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/debugging.jpg
+cover: https://makeomatic.ru/blog/images/debugging.jpg
 coverWidth: 623
 coverHeight: 455
 url: https://makeomatic.ru/blog/2014/12/08/debugging_AngularJS_app/

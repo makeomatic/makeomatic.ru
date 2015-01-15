@@ -3,7 +3,7 @@ subtitle: Путешествие компании Makeomatic
 date: 2014-07-05
 author: Виталий Аминев
 gravatarMail: getstarted@makeomatic.ru
-cover: http://makeomatic.ru/blog/images/nodeconfeu/attack.jpg
+cover: https://makeomatic.ru/blog/images/nodeconfeu/attack.jpg
 coverWidth: 623
 coverHeight: 415
 url: https://makeomatic.ru/blog/2014/07/05/nodeconfeu_2013/
@@ -75,5 +75,5 @@ tags: [Жизнь компании, Node.js]
 ### Конференция Nodeconfeu в 2014 году
 
 В этом году наша команда едет расширенным составом. Поздравляем
-[Александра Кременца](http://makeomatic.ru/team#aleksandrkremenets) с честью представлять нас
+[Александра Кременца](https://makeomatic.ru/team#aleksandrkremenets) с честью представлять нас
 в этот раз. Кропотливая и усердная работа всегда поощряется!

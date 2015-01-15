@@ -2,10 +2,10 @@ title: Angular VS jQuery
 date: 2013-12-11
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/AngularVSjQuery.jpg
+cover: https://makeomatic.ru/blog/images/AngularVSjQuery.jpg
 coverWidth: 623
 coverHeight: 389
-url: http://makeomatic.ru/blog/2013/12/11/AngularJS_VS_jQuery/
+url: https://makeomatic.ru/blog/2013/12/11/AngularJS_VS_jQuery/
 tags: [AngularJS, jQuery]
 ---
 

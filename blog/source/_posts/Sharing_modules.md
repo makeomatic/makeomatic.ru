@@ -2,10 +2,10 @@ title: Совместное использование модулей между
 date: 2014-03-17
 author: Анна Аминева
 gravatarMail: annafedotovaa@gmail.com
-cover: http://makeomatic.ru/blog/images/modules.jpg
+cover: https://makeomatic.ru/blog/images/modules.jpg
 coverWidth: 623
 coverHeight: 467
-url: http://makeomatic.ru/blog/2014/03/17/Sharing_modules/
+url: https://makeomatic.ru/blog/2014/03/17/Sharing_modules/
 tags: [AngularJS, Node.js]
 ---
 
@@ -52,6 +52,6 @@ if (isAngular) {
 
 Читайте так же статьи по теме:
 
-* [Data service для работы с API в AngularJS](http://makeomatic.ru/blog/2014/04/22/Module_in_AngularJS/)
+* [Data service для работы с API в AngularJS](https://makeomatic.ru/blog/2014/04/22/Module_in_AngularJS/)
 
 

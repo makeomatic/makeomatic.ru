@@ -2,14 +2,14 @@ title: Raiders of the Lost Ark
 subtitle: Makeomatic have teamed up with Ark to build the smartest people search engine ever
 date: 2014-10-27
 author: Anna Amineva
-cover: http://en.makeomatic.ru/blog_en/images/Ark.png
+cover: https://en.makeomatic.ru/blog_en/images/Ark.png
 coverWidth: 577
 coverHeight: 578
-url: https://en.makeomatic.ru/blog/2014/10/27/Ark
+url: https://en.makeomatic.ru/blog/2014/10/27/Ark/
 gravatarMail: annafedotovaa@gmail.com
 ---
 
-![Illustration Distribut.io](/blog_en/images/Ark.png)
+![Illustration Distribut.io](/blog/images/Ark.png)
 
 A key activity of Makeomatic in the past year has been our involvement in Ark, the people search engine. Today, we would like to show you briefly what Ark is, and how Makeomatic have contributed to it. This is the first in a series of blog posts detailing our involvement with Ark and showcasing our solutions to their questions and problems.
 
