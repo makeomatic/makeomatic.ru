@@ -72,12 +72,13 @@ sitemap:
 
 # Extensions
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
-plugins:
-- hexo-renderer-dotjs
-- hexo-generator-feed
-- hexo-renderer-marked
-- hexo-renderer-less
-- hexo-generator-sitemap
+# plugins:
+# - hexo-renderer-dotjs
+# - hexo-generator-feed
+# - hexo-renderer-marked
+# - hexo-renderer-less
+# - hexo-generator-sitemap
+# - hexo-generator-index
 
 ## Themes: https://github.com/tommy351/hexo/wiki/Themes
 theme: makeomatic

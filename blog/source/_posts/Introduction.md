@@ -37,18 +37,16 @@ tags: [Для новичков, Node.js]
 #### Express.js - базовый фреймворк для вашего приложения на все времена
 
 ```
-{% codeblock app.js lang:js %}
 var express = require('express'),
     app = express();
 ```
-    
+
 Здесь конфигурируем приложение, добавляем Middleware - это различные функции, которые выполняются в процессе жизненного цикла запроса
 
-`var secret = "somesecretforcookie";`
+```var secret = "somesecretforcookie";
 
-`app.configure(function(){`
+app.configure(function(){
 
-```
         app.set('views', __dirname + "/views");
 
         app.use(express.compress()); //gzip-сжатие
@@ -60,19 +58,19 @@ var express = require('express'),
         app.use('/static', express.static(__dirname+'/static', { maxAge: oneDay*5 }));
         app.use(app.router);
 
-
         app.use(function(err,req,res,next){
           console.error(err);
           res.send("Critical error", 500);
         });
 
 });
+
+require("./routes"); // здесь подключим руты
+
+app.listen(8080);
 ```
 
-`require("./routes");` здесь подключим руты
-
-`app.listen(8080); {% endcodeblock %} <br/>`
-
+<br/>
 Так мы поднимаем веб-сервер на порту 8080, и на все запросы он будет выводить **Hello World!**
 
 ### Базовая структура проекта:
@@ -114,7 +112,8 @@ var User = new Schema({
        }
     });
 ```
-Здесь отдаем модель для дальнейшего использования, альтернативно возможно получить эту модель после инициализации через: 
+
+Здесь отдаем модель для дальнейшего использования, альтернативно возможно получить эту модель после инициализации через:
  `mongoose.model("User"); module.exports = mongoose.model("User", User);`
 <br/>
 
@@ -139,7 +138,7 @@ module.exports = function(app){
 }
 ```
 
-``` 
+```
 javascript controllers/auth.js
 var User = require("../models/User.js");
 
@@ -163,26 +162,28 @@ exports.post = function(req,res,next){
    });
 
 }
-<br/>
 ```
+<br/>
+
 
 #### 2. Добавляем генерацию пароля
 
-`javascript models/User.js`
+```javascript models/User.js
 
-`var bcrypt = require('bcrypt');` отвечает за шифрование паролей, т.к. в базе данных они хранятся зашифрованными. Дополнительно: https://github.com/ncb000gt/node.bcrypt.js/
+// отвечает за шифрование паролей, т.к. в базе данных
+// они хранятся зашифрованными. Дополнительно: https://github.com/ncb000gt/node.bcrypt.js/
+var bcrypt = require('bcrypt');
 
-```
 User.statics.genPassword = function(password, callback){
     if (!password) return callback ("Не указан пароль");`
 
     bcrypt.hash(password, 10, callback);
 };
 ```
+
 На текущий момент мы можем создавать пользователей. Добавим страничку, доступ к которой будет только у зарегистрированного пользователя:
 
-``` 
-javascript middleware/session.js
+```javascript middleware/session.js
 
 exports.userOnly = function(req,res,next){
   // если есть юзер в сессии - все хорошо
@@ -194,25 +195,23 @@ exports.userOnly = function(req,res,next){
 
 ```
 
-``` 
-javascript routes.js
+```javascript routes.js
 var sessionMiddleware = require("./middleware/session");
 ...
 
 app.get('/secretPage', sessionMiddleware.userOnly, require("./controllers/secretPage").get);
+```
 
-...
-
-javascript controllers/secretPage.js
+```javascript controllers/secretPage.js
 exports.get = function (req, res, next) { //для возможности вызова  из другого файла
     res.send("Some secret page");
 }
-<br/>
 ```
+<br/>
 
 На сегодня рабочий день подходит к концу, поэтому продолжение следует...
 Спасибо за внимание, задавайте вопросы и спрашивайте о топиках, которые интересны.
 
-Читайте так же статьи по теме: 
+Читайте так же статьи по теме:
 
 * [Блог джуниора. CRUD операции, Mongoose ODM](https://makeomatic.ru/blog/2013/08/16/Deleting/)

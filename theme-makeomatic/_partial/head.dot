@@ -37,7 +37,7 @@
   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
 
-  {{= it.open_graph({ twitter_id: it.theme.twitter, google_plus: it.theme.google_plus, fb_admins: it.theme.fb_admins, fb_app_id: it.theme.fb_app_id, photos: it.page.cover }) }}
+  {{= it.open_graph({ twitter_id: it.theme.twitter, google_plus: it.theme.google_plus, fb_admins: it.theme.fb_admins, fb_app_id: it.theme.fb_app_id, images: it.page.cover }) }}
 
   {{? it.page.url }}
   <link rel="alternate" hreflang="{{= it.config.language }}" href="{{! it.page.url }}" />

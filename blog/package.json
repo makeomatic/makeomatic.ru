@@ -3,8 +3,12 @@
   "version": "3.0.0-beta.2",
   "private": true,
   "dependencies": {
+    "hexo-generator-archive": "0.0.2",
+    "hexo-generator-category": "0.0.3",
     "hexo-generator-feed": "^1.0.0",
+    "hexo-generator-index": "0.0.2",
     "hexo-generator-sitemap": "^1.0.0",
+    "hexo-generator-tag": "0.0.3",
     "hexo-renderer-dotjs": "^0.1.5",
     "hexo-renderer-less": "^0.1.2",
     "hexo-renderer-marked": "^0.2.3"

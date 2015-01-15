@@ -1,7 +1,4 @@
 <article class="{{! item.layout }}">
-  {{? item.photos }}
-    {{#def.load('_partial/post/gallery'); }}
-  {{?}}
   <div class="post-content">
     <header class='post-header'>
       {{#def.load('_partial/post/title') }}

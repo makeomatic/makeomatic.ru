@@ -1,4 +1,7 @@
 hexo.on('ready', function(){
+
+    global.hexo = hexo;
+
     // dotJSRendered - используем для установки global variables (env, pkgVersion)
     var dotJSRenderer = require('hexo-renderer-dotjs');
 
