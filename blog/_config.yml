@@ -67,6 +67,9 @@ pagination_dir: page
 # Disqus
 disqus_shortname: makeomatic
 
+sitemap:
+  path: ../../static/sitemap.ru.xml
+
 # Extensions
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
 plugins:
@@ -74,6 +77,7 @@ plugins:
 - hexo-generator-feed
 - hexo-renderer-marked
 - hexo-renderer-less
+- hexo-generator-sitemap
 
 ## Themes: https://github.com/tommy351/hexo/wiki/Themes
 theme: makeomatic
