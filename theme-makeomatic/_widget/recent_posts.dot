@@ -1,6 +1,6 @@
 {{? it.site.posts.length }}
 <div class="widget tag">
-  <h3 class="title">{{! it.__('recent_posts') }}</h3>
+  <h3 class="title">{{! this.i18n('recent_posts') }}</h3>
   <ul class="entry">
     {{~ it.site.posts.sort('date', -1).limit(5) :post }}
       <li>

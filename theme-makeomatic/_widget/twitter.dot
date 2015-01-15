@@ -1,7 +1,7 @@
 {{? it.theme.twitter.username }}
 <div class="widget twitter">
   <h3 class="title">
-		<a href="http://twitter.com/{{! theme.twitter.username }}">@{{! it.theme.twitter.username }}</a>'s {{! it.__('tweets') }}
+		<a href="http://twitter.com/{{! theme.twitter.username }}">@{{! it.theme.twitter.username }}</a>'s {{! this.i18n('tweets') }}
 	</h3>
   <ul id="tweets"></ul>
 </div>

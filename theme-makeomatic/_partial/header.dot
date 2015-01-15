@@ -35,7 +35,7 @@
                     }}
                     <li class='{{= className }}'>
                         <a href="{{= href }}" {{= attributes }}>
-                        {{= it.__(link.name) }}
+                        {{= this.i18n(link.name) }}
                         {{? link.children }}
                         <b class='caret'></b>
                         {{?}}
@@ -52,7 +52,7 @@
                                 }
                             }}
                             <li>
-                                <a href="{{= href }}">{{= it.__(child_link.name) }}</a>
+                                <a href="{{= href }}">{{= this.i18n(child_link.name) }}</a>
                             </li>
                             {{~}}
                         </ul>

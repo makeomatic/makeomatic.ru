@@ -8,6 +8,7 @@ coverWidth: 1000
 coverHeight: 840
 url: https://en.makeomatic.ru/blog/2014/07/18/Shipping_abroad/
 tags: [Elasticsearch, NodeJS]
+lang: en
 ---
 
 ![Illustration Distribut.io](/blog/images/dist.io.png)

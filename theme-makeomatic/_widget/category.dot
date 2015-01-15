@@ -1,6 +1,6 @@
 {{? it.site.categories.length }}
 <div class="widget tag">
-  <h3 class="title">{{= it.__('categories') }}</h3>
+  <h3 class="title">{{= this.i18n('categories') }}</h3>
   <ul class="entry">
   {{ it.site.categories.sort('name').ech(function(item){ }}
     <li>

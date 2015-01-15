@@ -1,6 +1,6 @@
 {{? it.site.tags.length }}
 <div class="widget tag">
-  <h3 class="title">{{= it.__('Тэги') }}</h3>
+  <h3 class="title">{{= this.i18n('Тэги') }}</h3>
   <ul class="unstyled">
   {{ it.site.tags.sort('name').each(function(item){ }}
     <li>

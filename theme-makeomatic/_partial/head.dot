@@ -7,13 +7,13 @@
     <meta charset="utf-8">
     {{
       var title = [];
-      if (it.page.current > 1) title.push(it.__('page', it.page.current));
+      if (it.page.current > 1) title.push(this.i18n('page', it.page.current));
       if (it.page.title) title.push(it.page.title);
       if (it.page.category) title.push(it.page.category);
       if (it.page.tag) title.push(it.page.tag);
       if (it.page.archive){
-        if (it.page.year) title.push(it.__('archive_b', it.page.year + (it.page.month ? '/' + it.page.month : '')));
-        else title.push(it.__('archive_a'));
+        if (it.page.year) title.push(this.i18n('archive_b', it.page.year + (it.page.month ? '/' + it.page.month : '')));
+        else title.push(this.i18n('archive_a'));
       }
       title.push(it.config.title);
   }}

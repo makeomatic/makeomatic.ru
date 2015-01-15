@@ -2,4 +2,4 @@
    var item = it.page,
        index = false;
 }}
-{{#def.load('_partial/article') }}
+{{#def.load('_partial/article')}}

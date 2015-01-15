@@ -1,6 +1,9 @@
 hexo.on('ready', function(){
 
+    hexo.theme.i18n.set('ru', require('../../locales/ru.json'));
+
     global.hexo = hexo;
+    global.i18n = hexo.theme.i18n.__('ru');
 
     // dotJSRendered - используем для установки global variables (env, pkgVersion)
     var dotJSRenderer = require('hexo-renderer-dotjs');
@@ -17,6 +20,7 @@ hexo.on('ready', function(){
     dotJSRenderer.setGlobals({
        pkgVer: pkg.version,
        env: process.env.NODE_ENV || "production",
-       makeomatic_config: config
+       makeomatic_config: config,
+       i18n: global.i18n
     });
 });

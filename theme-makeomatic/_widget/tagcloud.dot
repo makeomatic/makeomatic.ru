@@ -1,6 +1,6 @@
 {{? it.site.tags.length }}
 <div class="widget tagcloud">
-  <h3 class="title">{{! it.__('tagcloud') }}</h3>
+  <h3 class="title">{{! this.i18n('tagcloud') }}</h3>
   <div class="entry">
     {{= tagcloud(it.site.tags, {}) }}
   </div>

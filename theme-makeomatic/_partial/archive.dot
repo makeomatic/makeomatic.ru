@@ -4,7 +4,7 @@
     else if (it.page.tag) title = it.page.tag;
     else if (it.page.archive){
       if (it.page.year) title = it.page.year + (it.page.month ? '/' + it.page.month : '');
-      else title = it.__('archive_a');
+      else title = this.i18n('archive_a');
     }
 
     var categoryClass = '';

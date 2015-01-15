@@ -7,6 +7,7 @@ cover: https://en.makeomatic.ru/blog_en/images/elastic_distribut.png
 coverWidth: 1000
 coverHeight: 738
 url: https://en.makeomatic.ru/blog/2014/07/30/elasticsearch_distribut/
+lang: en
 ---
 
 ![Illustration Distribut.io](/blog/images/elastic_distribut.png)

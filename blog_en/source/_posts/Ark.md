@@ -7,6 +7,7 @@ coverWidth: 577
 coverHeight: 578
 url: https://en.makeomatic.ru/blog/2014/10/27/Ark/
 gravatarMail: annafedotovaa@gmail.com
+lang: en
 ---
 
 ![Illustration Distribut.io](/blog/images/Ark.png)
