@@ -6,7 +6,7 @@ gravatarMail: koko@reevlodge.com
 cover: https://makeomatic.ru/blog/images/Protractor_testing.png
 coverWidth: 540
 coverHeight: 514
-url: https://makeomatic.ru/blog/2015/01/05/Protractor_testing/
+url: https://makeomatic.ru/blog/2015/01/17/Protractor_testing2/
 tags: [Javascript, AngularJS]
 ---
 
