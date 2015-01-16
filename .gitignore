@@ -13,3 +13,4 @@ blog_en/public
 *.log
 node_modules
 sitemap.*.xml
+nginx
