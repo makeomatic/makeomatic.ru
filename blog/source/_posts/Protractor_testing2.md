@@ -50,7 +50,7 @@ by.repeater('d in data');
 var elems = element.all(by.repeater('d in data'));
 ```
 
-Найдя элемент, чтобы подсчитать количество, применяем count() к объекту  element.all(), и задаём ожидаемое количество — 30 элементов:
+Найдя элемент, чтобы подсчитать количество, применяем `count()` к объекту `element.all()`, и задаём ожидаемое количество — 30 элементов:
 
 ```js
 it('should have 30 issues', function() {
