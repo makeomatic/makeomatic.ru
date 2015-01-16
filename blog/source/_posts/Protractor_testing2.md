@@ -132,7 +132,7 @@ it('includes a user gravatar per-element', function() {
 </div>
 ```
 
-Ссылка /about — второй элемент в списке `header.nav`. Наиболее просто выбрать список с помощью селектора CSS и метода `by.css()`. 
+Ссылка `/about` — второй элемент в списке `header.nav`. Наиболее просто выбрать список с помощью селектора CSS и метода `by.css()`. 
 
 ```js
 it('should navigate to the /about page when clicking', function() {
