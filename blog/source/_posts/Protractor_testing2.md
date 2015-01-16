@@ -6,7 +6,9 @@ gravatarMail: koko@reevlodge.com
 tags: [Javascript, AngularJS]
 ---
 
+<div class="text-center">
 ![Иллюстрация блокнота](/blog/images/Protractor_testing2.jpg)
+</div>
 
 ###Тестируем список issues
 
