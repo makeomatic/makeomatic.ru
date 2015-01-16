@@ -1,0 +1,17 @@
+{
+  "name": "hexo-themes-makeomatic",
+  "version": "0.1.0",
+  "description": "Makeomatic theme for corporase marketing portal",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AVVSDevelopment/hexo-theme-makeomatic.git"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "makeomatic"
+  ],
+  "author": "Vitaly Aminev <v@makeomatic.ru>",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
