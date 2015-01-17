@@ -3,7 +3,7 @@ subtitle: International shipping without headache and numb wrists
 date: 2014/07/18
 author: Anna Amineva
 gravatarMail: annafedotovaa@gmail.com
-cover: https://en.makeomatic.ru/blog_en/images/dist.io.png
+cover: https://en.makeomatic.ru/blog/images/dist.io.png
 coverWidth: 1000
 coverHeight: 840
 url: https://en.makeomatic.ru/blog/2014/07/18/Shipping_abroad/

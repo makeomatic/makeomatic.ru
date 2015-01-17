@@ -3,7 +3,7 @@ date: 2014/07/30
 author: Anna Amineva
 gravatarMail: annafedotovaa@gmail.com
 tags: [Elasticsearch, NodeJS, AngularJS]
-cover: https://en.makeomatic.ru/blog_en/images/elastic_distribut.png
+cover: https://en.makeomatic.ru/blog/images/elastic_distribut.png
 coverWidth: 1000
 coverHeight: 738
 url: https://en.makeomatic.ru/blog/2014/07/30/elasticsearch_distribut/
