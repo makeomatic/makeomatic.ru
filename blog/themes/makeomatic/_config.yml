@@ -8,10 +8,8 @@ widgets:
 
 excerpt_link: Читать дальше...
 
-twitter:
-  username:
-  show_replies: false
-  tweet_count: 5
+twitter: makeomatic
+google_plus: "https://plus.google.com/+MakeomaticRu"
 
 addthis:
   enable: true

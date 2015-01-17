@@ -1,13 +1,13 @@
 {{? it.theme.twitter.username }}
 <div class="widget twitter">
   <h3 class="title">
-		<a href="http://twitter.com/{{! theme.twitter.username }}">@{{! it.theme.twitter.username }}</a>'s {{! this.i18n('tweets') }}
+		<a href="http://twitter.com/{{! theme.twitter }}">@{{! it.theme.twitter }}</a>'s {{! this.i18n('tweets') }}
 	</h3>
   <ul id="tweets"></ul>
 </div>
 
 <script type="text/javascript">
-var twitter_stream = ['{{! it.theme.twitter.username }}', {{! it.theme.twitter.tweet_count }}, {{! it.theme.twitter.show_replies }}];
+var twitter_stream = ['{{! it.theme.twitter }}', {{! it.theme.tweet_count }}, {{! it.theme.twitter_show_replies }}];
 var moment_js_path = '{{= it.config.root }}js/moment.min.js';
 </script>
 <script src="{{= it.config.root }}js/twitter.js"></script>
