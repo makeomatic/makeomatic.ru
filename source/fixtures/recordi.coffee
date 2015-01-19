@@ -1,7 +1,7 @@
 module.exports =
   carousel: [
-    {src: "/img/projects/recordi/01.png", alt: "Сплеш картинка премии Рекорды Рынка Недвижимости"}
-    {src: "/img/projects/recordi/02.png", alt: "Сайт премии рекорды рынка недвижимости"}
+    { src: "/img/projects/recordi/01.png", alt: "Сплеш картинка премии Рекорды Рынка Недвижимости" }
+    { src: "/img/projects/recordi/02.png", alt: "Сайт премии рекорды рынка недвижимости" }
   ]
   title: "Создание сайта с нуля для престижной премии в области строительства и недвижимости"
   logo:

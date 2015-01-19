@@ -121,7 +121,7 @@ employees.forEach (employee)->
 exports.portfolio = portfolio = []
 
 ## ArkAPI ##
-portfolio.push require('./fixtures/arkapi')
+# portfolio.push require('./fixtures/arkapi')
 
 ## Рекорды рынка недвижимости ##
 portfolio.push require('./fixtures/recordi')
