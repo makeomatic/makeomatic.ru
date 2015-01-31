@@ -4,7 +4,7 @@ module.exports =
   ]
   title: "Доставка за границу - лучше, чем когда-либо!"
   logo:
-    src: "/img/projects/distribut.io/o2.png"
+    src: "/img/projects/distribut.io/02.png"
     alt: "Логотип Distribut.io"
   brand: "BrainsApp"
   link: "http://distribut.io"
