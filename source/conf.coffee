@@ -123,6 +123,9 @@ exports.portfolio = portfolio = []
 ## ArkAPI ##
 # portfolio.push require('./fixtures/arkapi')
 
+## Distribut.io ##
+portfolio.push require('./fixtures/distribut')
+
 ## Рекорды рынка недвижимости ##
 portfolio.push require('./fixtures/recordi')
 
