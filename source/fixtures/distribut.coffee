@@ -6,7 +6,7 @@ module.exports =
   logo:
     src: "/img/projects/distribut.io/02.png"
     alt: "Логотип Distribut.io"
-  brand: "BrainsApp"
+  brand: "Distribut.io"
   link: "http://distribut.io"
   type:  "Сервис доставки"
   activity: [
