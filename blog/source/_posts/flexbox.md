@@ -3,6 +3,10 @@ subtitle: Часть 1
 date: 2015-02-24
 author: Eleonora Pavlova
 gravatarMail: koko@reevlodge.com
+cover: https://makeomatic.ru/blog/images/flex.png
+coverWidth: 430
+coverHeight: 401
+url: https://makeomatic.ru/blog/2015/02/24/flexbox/
 tags: [CSS]
 ---
 
