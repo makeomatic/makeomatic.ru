@@ -3,7 +3,7 @@ subtitle: Часть 1
 date: 2015-02-24
 author: Eleonora Pavlova
 gravatarMail: koko@reevlodge.com
-tags: [CSS, Javascript]
+tags: [CSS]
 ---
 
 <div class="text-center">
