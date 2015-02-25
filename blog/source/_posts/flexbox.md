@@ -9,6 +9,7 @@ tags: [CSS, Javascript]
 <div class="text-center">
 ![Иллюстрация блокнота](/blog/images/flex.png)
 </div>
+<br/>
 
 В настоящий момент рабочая версия спецификации гибкого макета - Flexible Box Layout (сокращённо flexbox) - находится в стадии [«Last Call»](http://www.w3.org/TR/css3-flexbox/), и всё стремительнее приближает к нам «светлое будущее». 
 
