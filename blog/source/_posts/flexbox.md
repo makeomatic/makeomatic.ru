@@ -139,7 +139,7 @@ flex-flow: <‘flex-direction’> || <‘flex-wrap’> (по умолчанию 
 * baseline - элементы выравниваются по baseline;
 * stretch (по умолчанию) – элементы растягиваются, занимая всю перпендикулярную ось (значения min-width/max-width при этом сохраняются — если указаны) 
 
-#### Align-content:
+#### Align-content
 
 ![Иллюстрация блокнота](/blog/images/align-content.svg)
 
