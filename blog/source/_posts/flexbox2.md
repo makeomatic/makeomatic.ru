@@ -266,10 +266,16 @@ tags: [CSS]
 ###  Дополнительная информация (англ источники)
 
 [Flexbox in the CSS specifications](http://www.w3.org/TR/css3-flexbox/)
+
 [Flexbox at MDN](http://www.w3.org/TR/css3-flexbox/)
+
 [Flexbox at Opera](https://dev.opera.com/articles/flexbox-basics/)
+
 [Diving into Flexbox by Bocoup](http://bocoup.com/weblog/dive-into-flexbox/)
+
 [Mixing syntaxes for best browser support on CSS-Tricks](http://css-tricks.com/using-flexbox/)
+
 [Flexbox by Raphael Goetter (FR)] (http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html)
+
 [Flexplorer by Bennett Feely](http://bennettfeely.com/flexplorer/)
 
