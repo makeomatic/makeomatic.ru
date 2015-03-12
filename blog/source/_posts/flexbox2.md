@@ -12,7 +12,7 @@ tags: [CSS]
 
 #### order
 
-![картинка 8]
+![Иллюстрация блокнота](/blog/images/order2.svg)
 
 По умолчанию элементы в контейнере располагаются в порядке следования в html-документе. Однако, с помощью свойства order порядок можно изменять.
 
@@ -24,7 +24,7 @@ tags: [CSS]
 
 #### flex-grow
 
-![картинка 9]
+![Иллюстрация блокнота](/blog/images/flex-grow.svg)
 
 Это свойство позволяет элементу при необходимости увеличиваться в размерах. Принимает пропорциональное число без единиц измерения и определяет, какое количество свободного пространства в контейнере каждый элемент может занимать. Если указанное значение flex-grow для всех элементов равно 1, каждый элемент займёт одинаковое количество пространства. Если присвоить одному элементу значение 2, он займёт в два раза больше пространства, чем остальные элементы. 
 
@@ -74,7 +74,7 @@ tags: [CSS]
 
 #### align-self
 
-![картинка 10]
+![Иллюстрация блокнота](/blog/images/align-self.svg)
 
 Это свойство задаёт выравнивание по перпендикулярной оси конкретному flex-элементу — и переопределяет указанное ранее для контейнера свойство align-items (возможные значения такие же - см. в разделе «Свойства flex-контейнера»). 
 
@@ -126,7 +126,8 @@ tags: [CSS]
 
 Готово. Остальное — вопрос дизайна. Ниже вставлен пример с codepen с данным кодом. Не поленитесь, сходите на [Codepen](http://codepen.io/HugoGiraudel/full/LklCv/), и поиграйтесь с размерами вашего браузера:
 
-![вставка codepen панели 11]
+<p data-height="268" data-theme-id="0" data-slug-hash="LklCv" data-default-tab="result" data-user="HugoGiraudel" class='codepen'>See the Pen <a href='http://codepen.io/HugoGiraudel/pen/LklCv/'>Demo Flexbox 1</a> by Hugo Giraudel (<a href='http://codepen.io/HugoGiraudel'>@HugoGiraudel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Попробуем что-нибудь ещё. В верхней части нашего сайта имеется выравненная по правому краю навигация. Нам надо, чтобы на средних экранах она была выравнена по центру, а на малых экранах превращалась в одну колонку. Легко.
 
@@ -156,7 +157,8 @@ tags: [CSS]
 }
 ```
 
-![вставка codepen панели 12]
+<p data-height="268" data-theme-id="0" data-slug-hash="pkwqH" data-default-tab="result" data-user="HugoGiraudel" class='codepen'>See the Pen <a href='http://codepen.io/HugoGiraudel/pen/pkwqH/'>Demo Flexbox 2</a> by Hugo Giraudel (<a href='http://codepen.io/HugoGiraudel'>@HugoGiraudel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Поиграемся с гибкостью flex-элементов. Нам нужен макет из трёх колонок, с полноразмерным header и footer, и порядком, отличным от указанного в html-коде. Выстраиваем макет по принципу mobile-first: 
 
@@ -200,7 +202,8 @@ tags: [CSS]
 }
 ```
 
-[вставка codepen панели 13]
+<p data-height="268" data-theme-id="0" data-slug-hash="qIAwr" data-default-tab="result" data-user="HugoGiraudel" class='codepen'>See the Pen <a href='http://codepen.io/HugoGiraudel/pen/qIAwr/'>Demo Flexbox 3</a> by Hugo Giraudel (<a href='http://codepen.io/HugoGiraudel'>@HugoGiraudel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ### Префиксы для Flexbox
 
@@ -257,7 +260,7 @@ tags: [CSS]
 промежуточная (неофициальный синтаксис 2011 года — напр., display: flexbox;)
 старая (старый синтаксис 2009 года — напр., display: box;)
 
-![картинка 14]
+![Иллюстрация блокнота](/blog/images/table.png)
 
 Браузеры Blackberry 10+ поддерживают новый синтаксис.
 
