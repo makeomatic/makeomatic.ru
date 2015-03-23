@@ -6,6 +6,11 @@ gravatarMail: koko@reevlodge.com
 tags: [CSS]
 ---
 
+<div class="text-center">
+![Иллюстрация блокнота](/blog/images/flex2.jpg)
+</div>
+<br/>
+
 О flex-контейнере и его свойствах поговорили в [части 1](https://makeomatic.ru/blog/2015/02/24/flexbox/), теперь поговорим о дочерних элементах.
 
 ### Свойства flex-элементов
