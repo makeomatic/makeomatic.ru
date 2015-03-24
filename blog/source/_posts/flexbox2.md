@@ -285,7 +285,7 @@ tags: [CSS]
 
 [Mixing syntaxes for best browser support on CSS-Tricks](http://css-tricks.com/using-flexbox/)
 
-[Flexbox by Raphael Goetter (FR)] (http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html)
+[Flexbox by Raphael Goetter (FR)](http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html)
 
 [Flexplorer by Bennett Feely](http://bennettfeely.com/flexplorer/)
 
