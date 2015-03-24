@@ -1,6 +1,6 @@
 title: Flex-элементы
 subtitle: Часть 2
-date: 2015-03-11
+date: 2015-03-23
 author: Eleonora Pavlova
 gravatarMail: koko@reevlodge.com
 tags: [CSS]
