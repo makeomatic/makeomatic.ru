@@ -3,7 +3,11 @@ subtitle: Часть 1
 date: 2015-04-28
 author: Eleonora Pavlova
 gravatarMail: koko@reevlodge.com
-tags: [Nodejs, Javascript]
+cover: https://makeomatic.ru/blog/images/10-mistakes.png
+coverWidth: 538
+coverHeight: 572
+url: https://makeomatic.ru/blog/2014/01/16/Nodejs_part_1/
+tags: [Node.js, Javascript]
 ---
 
 <div class="text-center">
