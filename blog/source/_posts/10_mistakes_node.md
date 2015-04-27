@@ -178,9 +178,9 @@ require(‘a.js’) // { verifyPassword: function(user, password, done) { ... } 
 ```js
 // a.js
 module.exports = function(user, password, done) { ... }
-а могу ли я здесь написать module.exports.verifyPassword = function(...)?  //да
-```
+// а могу ли я здесь написать module.exports.verifyPassword = function(...) - да
 //module.exports является node.js расширением, которое позволяет разработчикам экспортировать не объектные значения. 
+```
 
 На самом деле,  изначально `exports` и `module.exports` всегда ссылаются на один и тот же объект: `var exports = module.exports = {};`  —  и наш модуль, по сути, всегда возвращает именно `module.exports`. Но если мы в процессе присваиваем переменной `exports` другое значение, она уже не будет ссылаться на `module.exports`, и наш модуль ничего не вернёт. Простой рецепт от возможной путаницы —  всегда используйте что-то одно; безопаснее и удобнее - `module.exports`. 
 
