@@ -1,6 +1,6 @@
 title: 10 типичных ошибок Node.js разработчиков
 subtitle: Часть 1
-date: 2014-04-19
+date: 2015-04-28
 author: Eleonora Pavlova
 gravatarMail: koko@reevlodge.com
 tags: [Nodejs, Javascript]
