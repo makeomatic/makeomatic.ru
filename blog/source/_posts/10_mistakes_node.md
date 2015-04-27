@@ -186,3 +186,5 @@ module.exports = function(user, password, done) { ... }
 
 Вторая порция ошибок и способов лечения — в нашей следующей статье :) 
 
+По мотивам [Mahmud Ridwan](http://www.toptal.com/nodejs/top-10-common-nodejs-developer-mistakes)
+
