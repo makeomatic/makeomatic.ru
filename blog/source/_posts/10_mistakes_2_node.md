@@ -6,6 +6,11 @@ gravatarMail: koko@reevlodge.com
 tags: [Node.js, Javascript]
 ---
 
+<div class="text-center">
+![Иллюстрация блокнота](/blog/images/10-mistakes_2.png)
+</div>
+<br/>
+
 ### ОШИБКА #6  Отлавливание ошибок внутри колбэков
 
 Как и в большинстве традиционных языков программирования (C++, Java), Javascript поддерживает обработку исключений и отлавливает их с помощью блока «try – catch»:
