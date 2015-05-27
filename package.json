@@ -1,6 +1,6 @@
 {
   "name": "avvs.co",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "avvs.co marketing web-site",
   "main": "app.coffee",
   "repository": {
@@ -43,6 +43,6 @@
     "grunt-release": "^0.12.0",
     "grunt-shell": "^1.1.1",
     "hexo-cli": "^0.1.6",
-    "hexo-renderer-dotjs": "^0.1.5"
+    "hexo-renderer-dotjs": "^0.2.1"
   }
 }
