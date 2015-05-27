@@ -10,7 +10,7 @@ RUN apt-get update && \
 # add node user
 RUN useradd -ms /bin/bash node
 # copy the nice dotfiles that dockerfile/ubuntu gives us:
-RUN cd && cp -R .bashrc .gitconfig .scripts /home/node
+# RUN cd && cp -R .bashrc .gitconfig .scripts /home/node
 
 ADD ./*.js ./*.json /home/node/app/
 ADD ./source /home/node/app/source/
