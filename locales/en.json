@@ -219,5 +219,6 @@
 	"Makeomatic с радостью воплотит в жизнь Ваши идеи! Создание сайтов в Москве, разработка мобильных приложений, дизайна, UX и игр являются нашей основной специализацией. Пишите нам, чтобы обсудить ваш проект.": "Makeomatic close-knit team will help you bring your ideas to life. We specialize in website and mobile application development, design, UX and game development. Write us to discuss your project",
 	"Тэги": "Tags",
 	"archive_a": "Archive",
-	"archive_b": "Archive %s"
+	"archive_b": "Archive %s",
+	"page": "Page %s"
 }

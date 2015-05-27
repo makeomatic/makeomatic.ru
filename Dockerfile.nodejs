@@ -14,7 +14,6 @@ RUN useradd -ms /bin/bash node
 
 ADD ./*.js ./*.json /home/node/app/
 ADD ./source /home/node/app/source/
-ADD ./static /home/node/app/static/
 ADD ./theme-makeomatic /home/node/app/theme-makeomatic/
 ADD ./locales /home/node/app/locales/
 ADD ./img_source /home/node/app/img_source/

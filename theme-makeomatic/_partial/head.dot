@@ -7,8 +7,8 @@
     <meta charset="utf-8">
     {{
       var title = [];
-      if (it.page.current > 1) title.push(this.i18n('page', it.page.current));
       if (it.page.title) title.push(it.page.title);
+      if (it.page.current > 1) title.push(this.i18n('page', it.page.current));
       if (it.page.category) title.push(it.page.category);
       if (it.page.tag) title.push(it.page.tag);
       if (it.page.archive){
