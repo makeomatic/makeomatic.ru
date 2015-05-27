@@ -1,5 +1,5 @@
 # nodejs application
-FROM dockerfile/nodejs
+FROM node:0.10.38
 MAINTAINER Vitaly Aminev <v@makeomatic.ru>
 
 ENV DEBIAN_FRONTEND noninteractive

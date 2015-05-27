@@ -5,11 +5,12 @@
 #
 
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM ubuntu:14.04
 MAINTAINER Vitaly Aminev <v@makeomatic.ru>
 
 # Install Nginx.
 ENV DEBIAN_FRONTEND noninteractive
+RUN apt-get install -y --no-install-recommends software-properties-common
 RUN add-apt-repository -y ppa:nginx/stable
 RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup; \
     echo "Acquire::http {No-Cache=True;};" > /etc/apt/apt.conf.d/no-cache; \
