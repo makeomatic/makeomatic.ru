@@ -11,7 +11,7 @@ tags: [Node.js, Javascript]
 ---
 
 <div class="text-center">
-![Иллюстрация блокнота](/blog/images/10-mistakes_2.png)
+![10 mistakes Node.js2](https://makeomatic.ru/blog/images/10-mistakes_2.png)
 </div>
 <br/>
 
