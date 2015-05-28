@@ -3,6 +3,10 @@ subtitle: Часть 2
 date: 2015-05-25
 author: Eleonora Pavlova
 gravatarMail: koko@reevlodge.com
+cover: https://makeomatic.ru/blog/images/10-mistakes_2.png
+coverWidth: 571
+coverHeight: 503
+url: https://makeomatic.ru/blog/2015/05/25/10_mistakes_2_node/
 tags: [Node.js, Javascript]
 ---
 
