@@ -26,6 +26,7 @@ ADD nginx/nginx.conf /etc/nginx/nginx.conf
 ADD nginx/certificates/* /etc/nginx/certificates/
 ADD nginx/sites-enabled/* /etc/nginx/sites-enabled/
 ADD nginx/env.sh /etc/nginx/_env.sh
+ADD nginx/dhparam.pem /etc/pki/nginx/dhparam.pem
 
 # Define working directory.
 WORKDIR /etc/nginx
