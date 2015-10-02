@@ -337,7 +337,7 @@ O(1)) vs O(n2)
 * [Официальная документация SQLite](https://www.sqlite.org/optoverview.html) об оптимизации запросов. Читать тоже не сложно, работают простые правила. Причем, это единственная официальная документация, которая на самом деле объясняет, как оно работает.
 * Ещё одна годная презентация о том, [как SQL Server 2005 оптимизирует запросы](https://blogs.msdn.com/cfs-filesystemfile.ashx/__key/communityserver-components-postattachments/00-08-50-84-93/QPTalk.pdf);
 * Официальное описание [оптимизации в Oracle 12с](http://www.oracle.com/technetwork/database/bi-datawarehousing/twp-optimizer-with-oracledb-12c-1963236.pdf);
-* 2 теоретических курса по оптимизации запросов от авторов книги “Системы управления БД” [здесь](codex.cs.yale.edu/avi/db-book/db6/slide-dir/PPT-dir/ch12.ppt) и [здесь](codex.cs.yale.edu/avi/db-book/db6/slide-dir/PPT-dir/ch13.ppt). Интересные материалы про оптимизацию чтения и записи на диск, но не для новичков.
+* 2 теоретических курса по оптимизации запросов от авторов книги “Системы управления БД” [здесь](http://codex.cs.yale.edu/avi/db-book/db6/slide-dir/PPT-dir/ch12.ppt) и [здесь](http://codex.cs.yale.edu/avi/db-book/db6/slide-dir/PPT-dir/ch13.ppt). Интересные материалы про оптимизацию чтения и записи на диск, но не для новичков.
 * Ещё один [теоретический курс](https://www.informatik.hu-berlin.de/de/forschung/gebiete/wbi/teaching/archive/sose05/dbs2/slides/09_joins.pdf), он попроще, но акцент только на операции объединения и ввода-вывода.
 
 #### Парсер запросов
