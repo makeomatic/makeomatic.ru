@@ -20,12 +20,14 @@ tags: [AngularJS, Javascript]
 #### 1. Доступ к областям видимости
 
 Мы можем получать доступ к любым областям видимости (даже к изолированным) на странице всего одной строчкой js кода:
+
 ```js
 > angular.element(targetNode).scope()
 -> ChildScope {$id: "005", this: ChildScope, $$listeners: Object, $$listenerCount: Object, $parent: Scope…}
 ```
 
 Или для изолированных областей видимости:
+
 ```js
 > angular.element(targetNode).isolateScope()
 -> Scope {$id: "009", $$childTail: ChildScope, $$childHead: ChildScope, $$prevSibling: ChildScope, $$nextSibling: Scope…}
@@ -40,6 +42,7 @@ tags: [AngularJS, Javascript]
 #### 3. Использование любого сервиса
 
 Мы можем получить ссылку на любой сервис, используя функцию элемента `injector`, где `ngApp` определен, или косвенно, через любой элемент с `ng-scope` классом: 
+
 ```js
 > angular.element(document.querySelector('html')).injector().get('MyService')
 -> Object {undo: function, redo: function, _pushAction: function, newDocument: function, init: function…}
@@ -51,6 +54,7 @@ tags: [AngularJS, Javascript]
 #### 4. Доступ к контроллеру директивы
 
 Некоторые директивы определяют контроллер с дополнительной (часто общей) функциональностью. Чтобы получить доступ к экземпляру контроллера для данной директивы из консоли, просто используйте функцию `controller()`:
+
 ```js
 > angular.element('my-pages').controller()
 -> Constructor {}
@@ -60,7 +64,9 @@ tags: [AngularJS, Javascript]
 #### 5. Функции Chrome консоли 
 
 У Chrome есть множество [удобных фич](https://developer.chrome.com/devtools/docs/commandline-api) для поиска ошибок браузерных приложений из консоли. Здесь несколько лучших из них для Angular разработки:
+
 $0 - $4: Доступ к 5 последним выбранным DOM элементам в окне инспектора. Это удобно для получения доступа к областям видимости выбранных элементов:  
+
 `angular.element($0).scope()`
 `$(selector) ` и `$$(selector)`: быстрая замена для `querySelector() ` и `querySelectorAll`, соответственно.
 
