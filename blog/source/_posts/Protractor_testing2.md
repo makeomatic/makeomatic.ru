@@ -14,7 +14,7 @@ tags: [Javascript, AngularJS]
 ![Тестирование с помощью Protractor](/blog/images/Protractor_testing2.jpg)
 </div>
 
-###Тестируем список issues
+### Тестируем список issues
 
 От тестов работы элемента `<input>` перейдём к тестам функционала нашего списка.
 
@@ -187,7 +187,7 @@ describe('page navigation', function() {
 expect(link.getAttribute('class')).toMatch(/active/);`
 ```
 
-###Ещё аргументы?
+### Ещё аргументы?
 
 Protractor – очень мощный инструмент для e2e тестирования, активно развивающийся на гитхабе. Вскоре он заменит Karma, став официальным фреймворком для Angular.
 
