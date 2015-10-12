@@ -3,6 +3,10 @@ subtitle: Часть 2
 date: 2015-10-12
 author: Eleonora Pavlova
 gravatarMail: koko@reevlodge.com
+cover: https://makeomatic.ru/blog/images/sql2_main.png
+coverWidth: 623
+coverHeight: 415
+url: https://makeomatic.ru/blog/2015/10/12/relational_database_2/
 tags: [SQL]
 ---
 
