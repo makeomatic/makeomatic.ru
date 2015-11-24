@@ -1,50 +1,36 @@
-# nodejs application
-FROM node:0.10.38
-MAINTAINER Vitaly Aminev <v@makeomatic.ru>
+FROM alpine:3.2
 
-ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && \
-    apt-get install libpng-dev -y --force-yes && \
-    rm -rf /var/lib/apt/lists/*
+ARG VERSION=v5.1.0
+ARG NPM_VERSION=3
 
-# add node user
-RUN useradd -ms /bin/bash node
-# copy the nice dotfiles that dockerfile/ubuntu gives us:
-# RUN cd && cp -R .bashrc .gitconfig .scripts /home/node
+RUN apk add --update curl make git gcc g++ python linux-headers paxctl libgcc libstdc++
+RUN curl -sSL https://nodejs.org/dist/${VERSION}/node-${VERSION}.tar.gz | tar -xz && \
+  cd /node-${VERSION} && \
+  ./configure --prefix=/usr ${CONFIG_FLAGS} && \
+  make -j$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) && \
+  make install && \
+  paxctl -cm /usr/bin/node && \
+  cd / && \
+  if [ -x /usr/bin/npm ]; then \
+    npm install -g npm@${NPM_VERSION} && \
+    find /usr/lib/node_modules/npm -name test -o -name .bin -type d | xargs rm -rf; \
+  fi && \
+  apk del linux-headers paxctl ${DEL_PKGS} && \
+  rm -rf /etc/ssl /node-${VERSION} ${RM_DIRS} \
+    /usr/share/man /tmp/* /var/cache/apk/* /root/.npm /root/.node-gyp \
+    /usr/lib/node_modules/npm/man /usr/lib/node_modules/npm/doc /usr/lib/node_modules/npm/html
 
-ADD ./*.js ./*.json /home/node/app/
-ADD ./source /home/node/app/source/
-ADD ./static /home/node/app/static/
-ADD ./theme-makeomatic /home/node/app/theme-makeomatic/
-ADD ./locales /home/node/app/locales/
-ADD ./img_source /home/node/app/img_source/
-ADD ./blog /home/node/app/blog/
-ADD ./blog_en /home/node/app/blog_en/
+WORKDIR /src
+ADD package.json package.json
 
-RUN chown -R node:node /home/node
-
-# switch to node user
-USER node
-ENV HOME /home/node
-
-WORKDIR /home/node/app
-
-RUN npm install
-
-# build
-RUN node /home/node/app/node_modules/.bin/grunt imagemin
-RUN node /home/node/app/node_modules/.bin/grunt production
-
-# clean up useless files for smaller image
-RUN npm prune --production
-RUN find ./blog/* | grep -v '/public' | xargs rm -rf
-RUN find ./blog_en/* | grep -v '/public' | xargs rm -rf
-RUN rm -rf img_source source theme-makeomatic
-
-ENV NODE_ENV production
+ENV NODE_ENV=production
 ENV HOST 0.0.0.0
 ENV PORT 8080
 
-EXPOSE 8080
-CMD []
-ENTRYPOINT ["/usr/local/bin/npm", "start"]
+RUN npm install
+RUN apk del curl make gcc g++ python git && \
+  rm -rf /tmp/* /var/cache/apk/* /root/.npm /root/.node-gyp src
+
+ADD . /src
+
+CMD [ "npm", "start" ]

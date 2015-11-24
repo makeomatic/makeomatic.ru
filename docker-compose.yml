@@ -1,0 +1,14 @@
+nodejs:
+  image: makeomatic/website:nodejs
+  restart: always
+  expose:
+    - "8080"
+
+nginx:
+  image: makeomatic/website:nginx
+  restart: always
+  links:
+    - "nodejs"
+  ports:
+    - "443:443"
+    - "80:80"

@@ -1,2 +1,10 @@
 .git*
 .idea
+font_src
+source
+theme-makeomatic
+node_modules
+blog/*
+blog_en/*
+!blog/public
+!blog_en/public
