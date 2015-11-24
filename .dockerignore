@@ -1,6 +1,7 @@
 .git*
 .idea
 font_src
+img_source
 source
 theme-makeomatic
 node_modules
