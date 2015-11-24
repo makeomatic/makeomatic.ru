@@ -1,5 +1,6 @@
 nodejs:
   image: makeomatic/website:nodejs
+  container_name: nodejs
   restart: always
   expose:
     - "8080"
@@ -7,6 +8,7 @@ nodejs:
 nginx:
   image: makeomatic/website:nginx
   restart: always
+  container_name: nginx
   links:
     - "nodejs"
   ports:
