@@ -1,6 +1,6 @@
 title: Как работает реляционная база данных 
 subtitle: Часть 3
-date: 2015-24-11
+date: 2015-11-24
 author: Eleonora Pavlova
 gravatarMail: koko@reevlodge.com
 tags: [SQL]
