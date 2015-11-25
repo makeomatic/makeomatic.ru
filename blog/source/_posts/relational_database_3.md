@@ -2,6 +2,10 @@ title: Как работает реляционная база данных
 subtitle: Часть 3
 date: 2015-11-24
 author: Eleonora Pavlova
+cover: https://makeomatic.ru/blog/images/relational database3_main.jpg
+coverWidth: 623
+coverHeight: 415
+url: https://makeomatic.ru/blog/2015/11/24/relational_database_3
 gravatarMail: koko@reevlodge.com
 tags: [SQL]
 ---
