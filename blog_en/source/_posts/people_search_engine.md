@@ -12,7 +12,7 @@ A key activity of Makeomatic in the past year has been our involvement in people
 
 <!-- more -->
 
-### The people search engine
+### People search engine
 
 At first glance this product is a search engine, but that would hardly do it justice, because it can do so much more than your average search engine. First of all, it’s more specialised: it’s a people search engine (and did you know that 30 percent of all Google searches are for people?), but it does so much more than just give you a list of websites where a name appears. This platform specifically searches more than 50 social networks, and it can connect the dots for you. It processes, aggregates and sorts the data it finds – so when you’re searching for your old classmate Sam, wouldn’t it be great if the search engine returned a full metaprofile, with their Facebook likes, Instagram pics, LinkedIn info and latest tweets all in one place? Of course, that’s not an easy thing to do – this engine has to figure out that this Sam Miller on Facebook is the same person as that Sam Miller on Google+, for example. This requires some nifty algorithms working for you behind the scenes, and this is  where Makeomatic enter the picture.
 
@@ -28,7 +28,7 @@ While a general browser-based search engine is not online yet, this platform has
 
 You can download Mail client, which is free, to help you organise your mail more efficiently and to link up your mail contacts with your social network contacts. In addition, there are a range of corporate customers, who have integrated the people search engine's API into their systems. Imagine you had a new customer or a potential new employee — wouldn’t it be nice to have aggregate information about them at your fingertips, rather than spending a lot of time trying to google that information? Or imagine you’re company interested in targeted advertising – with the people profiles this project builds you stand a much better chance that your message also reaches the intended recipient.
 
-###Looking forward
+### Looking forward
 
 It is clear as daylight that social networks have become a customary part of their daily routine for billions of people. Every second they are gaining more and more users, sharing their views, opinions, likes and dislikes and inevitably enriching the quality and the quantity of unprecedented amount of valuable data, and this is one of the biggest challenges of the present time. Facing it is only possible with the help of a powerful tool designed and created by the most up-to-date breakthrough technology. 
 
