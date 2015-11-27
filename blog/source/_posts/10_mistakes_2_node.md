@@ -166,7 +166,7 @@ DEBUG=app node app.js
 #### Примеры программ-диспетчеров:
 * [pm2](https://www.npmjs.com/package/pm2)
 * [forever](https://www.npmjs.com/package/forever)
-* [nodemon]((https://www.npmjs.com/package/nodemon)
+* [nodemon](https://www.npmjs.com/package/nodemon)
 * [supervisor](https://www.npmjs.com/package/supervisor)
 
 У каждой программы свои плюсы: одни хороши для управления несколькими приложениями на одной машине, другие лучше работают с логами.
