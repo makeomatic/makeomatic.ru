@@ -25,7 +25,7 @@ Therefore, when you’re searching for your old classmate Sam, wouldn’t it be 
 
 ### Distributed content analysis and Data Mining solutions
 
-In the past year, Makeomatic have provided a good deal of the physical and computational infrastructure behind the search engine, to allow the system to run as smoothly and quickly as possible. We migrated their system from AWS to in-house Data Center with more than 100 servers running day and night. We made it possible to process 100,000 parallel search requests while keeping the search speed below 500 milliseconds. We also integrated CI (Continuous Integration) into the search engine’s everyday workflow. And not to forget, we put our brains behind data mining, helping to aggregate the people data scattered across a wide range of social sites.
+In the past year, Makeomatic have provided a good deal of the physical and computational infrastructure behind the search engine, to allow the system to run as smoothly and quickly as possible. We migrated their system from AWS to in-house Data Center with more than 100 servers running day and night. Elasticsearch technology made it possible to process 100,000 parallel search requests while keeping the search speed below 500 milliseconds. We also integrated CI (Continuous Integration) into the search engine’s everyday workflow. And not to forget, we put our brains behind data mining, helping to aggregate the people data scattered across a wide range of social sites.
 
 ### Social networking tools
 
