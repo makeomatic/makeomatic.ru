@@ -3,6 +3,7 @@ subtitle: Makeomatic have teamed up with the smartest people search engine ever
 date: 2015-11-27
 author: Anna Amineva
 gravatarMail: annafedotovaa@gmail.com
+tags: [Elasticsearch, NodeJS]
 lang: en
 ---
 
