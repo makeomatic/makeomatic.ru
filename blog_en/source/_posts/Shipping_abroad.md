@@ -3,10 +3,10 @@ subtitle: International shipping without headache and numb wrists
 date: 2014/07/18
 author: Anna Amineva
 gravatarMail: annafedotovaa@gmail.com
-cover: https://en.makeomatic.ru/blog/images/search_engine.png
-coverWidth: 577
-coverHeight: 578
-url: https://en.makeomatic.ru/blog/2015/11/27/people_search_engine/
+cover: https://en.makeomatic.ru/blog/images/dist.io.png
+coverWidth: 1000
+coverHeight: 840
+url: https://en.makeomatic.ru/blog/2014/07/18/Shipping_abroad/
 tags: [Elasticsearch, NodeJS]
 lang: en
 ---
