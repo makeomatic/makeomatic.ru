@@ -37,6 +37,6 @@ You can download Mail client, which is free, to help you organise your mail more
 
 ### Looking forward
 
-It is clear as daylight that social networks have become a customary part of their daily routine for billions of people. Every second they are gaining more and more users, sharing their views, opinions, likes and dislikes and inevitably enriching the quality and the quantity of unprecedented amount of valuable data, and this is one of the biggest challenges of the present time. Facing it is only possible with the help of a powerful tool designed and created by the most up-to-date breakthrough technology. 
+It is clear as daylight that social networks have become a customary part of their daily routine for billions of people. Every second they are gaining more and more users, sharing their views, opinions, likes and dislikes and inevitably enriching the quality and the quantity of unprecedented amount of valuable data, and this is one of the biggest challenges of the present time. Facing it is only possible with the help of a powerful tool designed and created by the most up-to-date breakthrough technologies like AngularJS and NodeJS. 
 
 In today’s post we wanted to give you an idea of what the people search engine is and how we at Makeomatic contributed to making this project what it is. Later on, there will be a series of blog posts explaining in greater detail what Makeomatic have done to make this product fruitful.
