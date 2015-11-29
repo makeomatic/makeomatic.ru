@@ -13,13 +13,13 @@ lang: en
 
 ![Illustration search engine](/blog/images/search_engine.png)
 
-A key activity of Makeomatic in the past year has been our involvement in people search engine. Today, we would like to show you briefly what this product is, and how Makeomatic have contributed to it. This is the first in a series of blog posts detailing our involvement with people search engine and showcasing our solutions to their questions and problems.
+A key activity of Makeomatic in the past year has been our involvement in people search engine. Today, we would like to show you briefly what this product is, and how Makeomatic have contributed to it. This is the first in a series of blog posts detailing our involvement with peoplefinders and showcasing our solutions to their questions and problems.
 
 <!-- more -->
 
 ### People search engine
 
-At first glance this product is a search engine, but that would hardly do it justice, because it can do so much more than your average search engine. First of all, it’s more specialised: it’s a people search engine (and did you know that 30 percent of all Google searches are for people?), but it does so much more than just give you a list of websites where a name appears. This platform specifically searches more than 50 social networks, and it can connect the dots for you. It processes, aggregates and sorts the data it finds. 
+At first glance this product is a search engine, but that would hardly do it justice, because it can do so much more than your average search engine. First of all, it’s more specialised: it’s peoplefinders (and did you know that 30 percent of all Google searches are for people?), but it does so much more than just give you a list of websites where a name appears. This platform specifically searches more than 50 social networks, and it can connect the dots for you. It processes, aggregates and sorts the data it finds. 
 
 Therefore, when you’re searching for your old classmate Sam, wouldn’t it be great if the search engine returned a full metaprofile, with their Facebook likes, Instagram pics, LinkedIn info and latest tweets all in one place? Of course, that’s not an easy thing to do – this engine has to figure out that this Sam Miller on Facebook is the same person as that Sam Miller on Google+, for example. This requires some nifty algorithms working for you behind the scenes, and this is  where Makeomatic enter the picture.
 
@@ -29,7 +29,7 @@ In the past year, Makeomatic have provided a good deal of the physical and compu
 
 ### Social networking tools
 
-While a general browser-based search engine is not online yet, this platform has published several products that use its database. Makeomatic made a mail client available as an app, and we developed a browser plugin for your e-mail account. Both share one unique feature: they link your mail contacts with their social network information. Not to forget, we also contributed to API, an interface to access our database and to conduct searches, making it even more efficient.
+While a general browser-based search engine is not online yet, this platform has published several products that use its database. Makeomatic made a mail client available as an app, and we developed a browser plugin for your e-mail account. Both share one unique feature: they link your mail contacts with their social network information. Not to forget, we also contributed to REST API, an interface to access our database and to conduct searches, making it even more efficient.
 
 ### Using the people search engine
 
