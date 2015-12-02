@@ -482,7 +482,7 @@ myModule.directive("country", function () {
 * [Дебаггинг приложения на AngularJS через консоль](https://makeomatic.ru/blog/2014/08/12/debugging_AngularJS_app/)
 * [Разбираемся с системой событий $emit, $broadcast и $on в $scope и $rootScope Ангуляра](https://makeomatic.ru/blog/2014/07/10/Angular_scope_rootScope/)
 * [Эффективное сквозное тестирование с Protractor. Часть 1](https://makeomatic.ru/blog/2015/01/05/Protractor_testing/)
-* [Полезное сквозное тестирование с Protractor. Часть 2](https://makeomatic.ru/blog/2015/01/17/Protractor_testing2/)
+* [Как работает реляционная база данных. Часть 1](https://makeomatic.ru/blog/2015/10/02/relational_database_1/)
 
 
 
