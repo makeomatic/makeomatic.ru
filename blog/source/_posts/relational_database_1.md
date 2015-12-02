@@ -408,4 +408,5 @@ To be continued...
 
 Читайте так же статьи по теме:
 * [Как работает реляционная база данных. Часть 2](https://makeomatic.ru/blog/2015/10/12/relational_database_2/)
+* [Как работает реляционная база данных. Часть 3](https://makeomatic.ru/blog/2015/11/24/relational_database_3/)
 
