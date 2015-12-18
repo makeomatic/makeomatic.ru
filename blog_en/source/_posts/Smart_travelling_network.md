@@ -58,7 +58,7 @@ A social network's functionality is supposed to be intuitive. Users must not spe
 
 #### Social interactions
 
-What's a social network without social interaction? Apart from private messaging, we integrated reviews and a rating system. This lets people leave a feedback on deals with other users, filtering out unreliable travellers or customers. The algorithm forming the ratings depends on different parameters, such as  activity on the site, reviews, the amount of goods ordered and delivered.
+What's a social network without social interaction? Apart from private messaging, we integrated reviews and a rating system. This lets people leave a feedback on deals with other users, filtering out unreliable travellers or customers. The algorithm forming the ratings depends on different parameters, such as activity on the site, reviews, the amount of goods ordered and delivered.
 
 [4.jpg]
 
