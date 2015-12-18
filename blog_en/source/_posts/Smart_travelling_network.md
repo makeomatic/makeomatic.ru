@@ -25,7 +25,7 @@ In this particular case, we set on the task to build a social network for people
 
 It was decided to divide the development into three separate stages — a desktop web app, iOS and Android mobile apps.
 
-[1.jpg]
+![1](/blog/images/1.jpg)
 
 ### First steps: choosing the tools
 
@@ -53,8 +53,8 @@ Obviously, every social network starts with a profile: an avatar, last time seen
 
 A social network's functionality is supposed to be intuitive. Users must not spend  hours to reveal all features of the app. Furthermore, help or FAQ sections must be a rarely used last resort option. Eventually, we encapsulated key information within tabs in the primary content area. On large screens user profiles display this information in one view, on mobile secondary features are hidden in navigation menu.
 
-[2.jpg]
-[3.jpg]
+![2](/blog/images/2.jpg)
+![3](/blog/images/3.jpg)
 
 
 
@@ -62,14 +62,14 @@ A social network's functionality is supposed to be intuitive. Users must not spe
 
 What's a social network without social interaction? Apart from private messaging, we integrated reviews and a rating system. This lets people leave a feedback on deals with other users, filtering out unreliable travellers or customers. The algorithm forming the ratings depends on different parameters, such as activity on the site, reviews, the amount of goods ordered and delivered.
 
-[4.jpg]
+![4](/blog/images/4.jpg)
 
 
 Those who say “the devil’s in the details”, know a thing or two. After a short round of usability testing, we realized that our social profiles lacked one small but important feature — traveller’s panel. When embarking on a trip people want to spend it in good company, a natural desire that explains the proliferation of sites for searching travel mates. 
 
 So our test users were expecting to see this feature as well. Without further delay we integrated the option into profiles, increasing social engagement and prompting people to return and use the platform more often. Apart from that, we added a "travelog" tab where people who have returned from a trip (and successfully delivered orders) could share their impressions. Among other things, these small improvements are beneficial for SMO (Social Media Optimization).
 
-[5.jpg]
+![1](/blog/images/5.jpg)
 
 #### More technical aspects
 
