@@ -25,7 +25,11 @@ It was decided to divide the development into three separate stages — a deskto
 
 ### First steps: choosing the tools
 
-The success of any start-up depends on a good idea, but, as far as we are concerned, and others agree (https://sivers.org/multiply), execution is what really matters. Every small architectural decision adds to the potential of the app. At Makeomatic we use a bunch of various technologies. Certainly, we have our favourites, and Node.js is definitely among them. At NodeConf we've been told that Node.js beats most of the other programming languages in development speed and, often, performance by 2-4 times. There's no better way to prove it than to switch from the old core languages, such as Java, Ruby or PHP, and use it in a real project. From our experience we can safely claim that Node.js is the right choice for high load, data-intensive applications, and paired with a javascript framework on the frontend - (like Angular or React) it is suitable for supporting isomorphic Single-Page Applications as well. 
+The success of any start-up depends on a good idea, but, as far as we are concerned, and others agree (https://sivers.org/multiply), execution is what really matters. Every small architectural decision adds to the potential of the app. At Makeomatic we use a bunch of various technologies. Certainly, we have our favourites, and Node.js is definitely among them. 
+
+At NodeConf we've been told that Node.js beats most of the other programming languages in development speed and, often, performance by 2-4 times. There's no better way to prove it than to switch from the old core languages, such as Java, Ruby or PHP, and use it in a real project. 
+
+From our experience we can safely claim that Node.js is the right choice for high load, data-intensive applications, and paired with a javascript framework on the frontend - (like Angular or React) it is suitable for supporting isomorphic Single-Page Applications as well. 
 
 What exactly is high-load, and how to understand if your product is going to be data-intensive?  We share the opinion that there is no universal tool for all cases. You wouldn't drive a nail with a screwdriver, and you shouldn't build a simple static blog with Node.js - of course you could as a proof-of-concept, but from a practical standpoint it would be "an overkill". But if your product is a search network engine (like the one we've worked on and briefly described here [link-to-post]) or if your app will be used by thousands of people simultaneously - Node.js is your best bet. That is why the first stage of our workflow is determining (and documenting) a list of all features - it gives us an overview of what a product is going to be in the end and what technical requirements should be taken care of in case we need to scale up.
 
@@ -41,7 +45,9 @@ Predictably, as a search engine for the project we chose ElasticSearch - an open
 
 #### Intuitive UX
 
-Obviously, every social network starts with a profile: an avatar, last time seen, personal user’s information, private messages - the usual stuff. Our profiles had to include so much more: planned trips, orders, reviews and all of the associated metadata. The first challenge we faced was to group the main interface components in such a manner that would ensure easy navigation. We tried to hide less important blocks in a submenu but quickly realized it wouldn't work.  A social network's functionality is supposed to be intuitive. Users must not spend  hours to reveal all features of the app. Furthermore, help or FAQ sections must be a rarely used last resort option. Eventually, we encapsulated key information within tabs in the primary content area. On large screens user profiles display this information in one view, on mobile secondary features are hidden in navigation menu.
+Obviously, every social network starts with a profile: an avatar, last time seen, personal user’s information, private messages - the usual stuff. Our profiles had to include so much more: planned trips, orders, reviews and all of the associated metadata. The first challenge we faced was to group the main interface components in such a manner that would ensure easy navigation. We tried to hide less important blocks in a submenu but quickly realized it wouldn't work. 
+
+A social network's functionality is supposed to be intuitive. Users must not spend  hours to reveal all features of the app. Furthermore, help or FAQ sections must be a rarely used last resort option. Eventually, we encapsulated key information within tabs in the primary content area. On large screens user profiles display this information in one view, on mobile secondary features are hidden in navigation menu.
 
 [2.jpg]
 [3.jpg]
@@ -55,7 +61,9 @@ What's a social network without social interaction? Apart from private messaging
 [4.jpg]
 
 
-Those who say “the devil’s in the details”, know a thing or two. After a short round of usability testing, we realized that our social profiles lacked one small but important feature — traveller’s panel. When embarking on a trip people want to spend it in good company, a natural desire that explains the proliferation of sites for searching travel mates. So our test users were expecting to see this feature as well. Without further delay we integrated the option into profiles, increasing social engagement and prompting people to return and use the platform more often. Apart from that, we added a "travelog" tab where people who have returned from a trip (and successfully delivered orders) could share their impressions. Among other things, these small improvements are beneficial for SMO (Social Media Optimization).
+Those who say “the devil’s in the details”, know a thing or two. After a short round of usability testing, we realized that our social profiles lacked one small but important feature — traveller’s panel. When embarking on a trip people want to spend it in good company, a natural desire that explains the proliferation of sites for searching travel mates. 
+
+So our test users were expecting to see this feature as well. Without further delay we integrated the option into profiles, increasing social engagement and prompting people to return and use the platform more often. Apart from that, we added a "travelog" tab where people who have returned from a trip (and successfully delivered orders) could share their impressions. Among other things, these small improvements are beneficial for SMO (Social Media Optimization).
 
 [5.jpg]
 
