@@ -71,7 +71,9 @@ So our test users were expecting to see this feature as well. Without further de
 
 #### More technical aspects
 
-It would be unfair not to mention one more secret weapon in our toolbox . The client part of the travelling network was written with the help of the Angular.js framework. By now everyone has heard of this "magic technology" from Google. Of course, there’s more logic than magic in it — every tool becomes a powerful weapon once you master it. At the beginning of the development cycle our team briefly considered different alternatives, and the final choice was Angular.js: this framework is maintained by huge community and backed by a monster corporation (so chances are high it won't be abandoned and deprecated), it works really well with Node.js and MongoDB (our main database). To top it off, we've used the framework extensively in previous projects — and there’s no better friend than experience.
+It would be unfair not to mention one more secret weapon in our toolbox . The client part of the travelling network was written with the help of the Angular.js framework. By now everyone has heard of this "magic technology" from Google. Of course, there’s more logic than magic in it — every tool becomes a powerful weapon once you master it. 
+
+At the beginning of the development cycle our team briefly considered different alternatives, and the final choice was Angular.js: this framework is maintained by huge community and backed by a monster corporation (so chances are high it won't be abandoned and deprecated), it works really well with Node.js and MongoDB (our main database). To top it off, we've used the framework extensively in previous projects — and there’s no better friend than experience.
 
 There were also minor decisions like choosing a tool for automating our build tasks (currently - Gulp), preprocessing styles (this time it's Stylus) and a templating (Jade).
 
