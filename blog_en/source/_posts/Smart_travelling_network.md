@@ -77,7 +77,7 @@ At the beginning of the development cycle our team briefly considered different 
 
 There were also minor decisions like choosing a tool for automating our build tasks (currently - Gulp), preprocessing styles (this time it's Stylus) and a templating (Jade).
 
-If you've read this far, you are probably a fan of modern web solutions. Or may be you are only considering which technologies to choose for your next mind-blowing start-up (if you need help - drop us a line, we'll gladly consult you). But I won't overwhelm you with technical aspects any longer. Because, whatever tools you opt-in  for, most importantly is whether your start-up, product or app solves real problems. If it does, it will find its’ users, no matter what. 
+If you've read this far, you are probably a fan of modern web solutions. Or may be you are only considering which technologies to choose for your next mind-blowing start-up (if you need help - drop us a line, we'll gladly consult you). But I won't overwhelm you with technical aspects any longer. Because, whatever tools you opt-in  for, most importantly is whether your start-up, product or app solves real problems. If it does, it will find its users, no matter what. 
 
 As the e-commerce market thrives, people will get more interested in acquiring unusual things. While the government constantly plans to reduce the tax-free threshold for online purchases from abroad, we hope that the smart social network we’ve had the chance to work on will meet the need to connect those who are ready to help others, getting extra money as a bonus to their trip, and those in need of unavailable, exclusive things. 
 
