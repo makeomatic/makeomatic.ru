@@ -82,6 +82,7 @@ If you've read this far, you are probably a fan of modern web solutions. Or may 
 As the e-commerce market thrives, people will get more interested in acquiring unusual things. While the government constantly plans to reduce the tax-free threshold for online purchases from abroad, we hope that the smart social network we’ve had the chance to work on will meet the need to connect those who are ready to help others, getting extra money as a bonus to their trip, and those in need of unavailable, exclusive things. 
 
 Merry Christmas and brilliant New 2016 Year 2016! The Makeomatic team wishes you to surf on the top of the digital wave and make all your ideas come to live.
+
 [xmas picture]
 
 
