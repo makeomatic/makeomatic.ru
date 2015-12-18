@@ -9,7 +9,7 @@ Only one week left before we step into 2016. It's been a productive year for Mak
 
 <!-- more -->
 
-As digital era dictates its rules, the rise of several large e-commerce platforms such as amazon and shopify and a swarm of smaller players tested and proved that e-commerce has come here to stay. Furthermore, the way we scout for a particular thing to buy has evolved — we don't go straight to the shop. Instead, we open a search engine, find what’s needed, and more than often order it right there. It's easy, convenient and saves a lot of time. Most importantly, it allows one to order from abroad something that would never be available in a local shop. 
+As digital era dictates its rules, the rise of several large e-commerce platforms such as Amazon and Shopify and a swarm of smaller players tested and proved that e-commerce has come here to stay. Furthermore, the way we scout for a particular thing to buy has evolved — we don't go straight to the shop. Instead, we open a search engine, find what’s needed, and more than often order it right there. It's easy, convenient and saves a lot of time. Most importantly, it allows one to order from abroad something that would never be available in a local shop. 
 
 However, when seeing the final shipping cost, often all you think is "thank you, but no, thank you". This varies from country to country, but more often than not you would find that international shipping expenses are ridiculously high. Then, what we usually do  is go to our preferred social network and post a plea hoping that some of our friends will soon be on a trip and will generously help us get the desired goods. This would work at times, but it is, by far, not a bulletproof solution.
 
