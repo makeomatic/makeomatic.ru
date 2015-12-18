@@ -85,7 +85,7 @@ As the e-commerce market thrives, people will get more interested in acquiring u
 
 Merry Christmas and brilliant New 2016 Year 2016! The Makeomatic team wishes you to surf on the top of the digital wave and make all your ideas come to live.
 
-[xmas picture]
+To be continued...
 
 
 
