@@ -5,7 +5,7 @@ gravatarMail: koko@reevlodge.com
 tags: [NodeJS, Elasticsearch, AngularJS]
 ---
 
-Only one week left before we step into 2016. It's been a productive year for Makeomatic. Not breaking the established tradition, we visited NodeConf in Waterford. Throughout the year our team leaders coached two interns, one of them eventually joined and empowered the team. On a more serious side, we polished and shipped older products as well as plunged into several new challenges. We'll tell you briefly about one of those and the technical decisions we made on the way.
+Only one week left before we step into 2016. It's been a productive year for Makeomatic. Not breaking the established tradition, we visited [NodeConf](http://nodeconfeu.com/) in Waterford. Throughout the year our team leaders coached two interns, one of them eventually joined and empowered the team. On a more serious side, we polished and shipped older products as well as plunged into several new challenges. We'll tell you briefly about one of those and the technical decisions we made on the way.
 
 <!-- more -->
 
