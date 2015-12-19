@@ -69,7 +69,7 @@ Those who say “the devil’s in the details”, know a thing or two. After a s
 
 So our test users were expecting to see this feature as well. Without further delay we integrated the option into profiles, increasing social engagement and prompting people to return and use the platform more often. Apart from that, we added a "travelog" tab where people who have returned from a trip (and successfully delivered orders) could share their impressions. Among other things, these small improvements are beneficial for SMO (Social Media Optimization).
 
-![5](/blog/images/5.jpg)
+![5](/blog/images/5.png)
 
 #### More technical aspects
 
