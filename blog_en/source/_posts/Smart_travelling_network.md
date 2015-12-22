@@ -35,7 +35,7 @@ At NodeConf we've been told that Node.js beats most of the other programming lan
 
 From our experience we can safely claim that Node.js is the right choice for high load, data-intensive applications, and paired with a javascript framework on the frontend - (like Angular or React) it is suitable for supporting isomorphic Single-Page Applications as well. 
 
-What exactly is high-load, and how to understand if your product is going to be data-intensive?  We share the opinion that there is no universal tool for all cases. You wouldn't drive a nail with a screwdriver, and you shouldn't build a simple static blog with Node.js - of course you could as a proof-of-concept, but from a practical standpoint it would be "an overkill". But if your product is a search network engine (like the one we've worked on and briefly described here [link-to-post]) or if your app will be used by thousands of people simultaneously - Node.js is your best bet. That is why the first stage of our workflow is determining (and documenting) a list of all features - it gives us an overview of what a product is going to be in the end and what technical requirements should be taken care of in case we need to scale up.
+What exactly is high-load, and how to understand if your product is going to be data-intensive?  We share the opinion that there is no universal tool for all cases. You wouldn't drive a nail with a screwdriver, and you shouldn't build a simple static blog with Node.js - of course you could as a proof-of-concept, but from a practical standpoint it would be "an overkill". But if your product is a search network engine (like the one we've worked on and briefly described (here)[https://en.makeomatic.ru/blog/2015/11/27/people_search_engine]) or if your app will be used by thousands of people simultaneously - Node.js is your best bet. That is why the first stage of our workflow is determining (and documenting) a list of all features - it gives us an overview of what a product is going to be in the end and what technical requirements should be taken care of in case we need to scale up.
 
 Since our project is a social network, we knew that it was very likely to be a high-traffic application. It was also designed to be real-time: when a traveller or customer submits  information about a new trip or order, we needed to make these updates instantly available for all of our users. 
 
@@ -83,7 +83,7 @@ If you've read this far, you are probably a fan of modern web solutions. Or may 
 
 As the e-commerce market thrives, people will get more interested in acquiring unusual things. While the government constantly plans to reduce the tax-free threshold for online purchases from abroad, we hope that the smart social network we’ve had the chance to work on will meet the need to connect those who are ready to help others, getting extra money as a bonus to their trip, and those in need of unavailable, exclusive things. 
 
-Merry Christmas and brilliant New 2016 Year 2016! The Makeomatic team wishes you to surf on the top of the digital wave and make all your ideas come to live.
+Merry Christmas and brilliant New Year 2016! The Makeomatic team wishes you to surf on the top of the digital wave and make all your ideas come to live.
 
 To be continued...
 
