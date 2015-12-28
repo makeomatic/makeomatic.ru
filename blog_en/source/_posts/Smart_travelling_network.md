@@ -29,7 +29,7 @@ It was decided to divide the development into three separate stages — a deskto
 
 ### First steps: choosing the tools
 
-The success of any start-up depends on a good idea, but, as far as we are concerned, and others agree (https://sivers.org/multiply), execution is what really matters. Every small architectural decision adds to the potential of the app. At Makeomatic we use a bunch of various technologies. Certainly, we have our favourites, and Node.js is definitely among them. 
+The success of any start-up depends on a good idea, but, as far as we are concerned, and [others](https://sivers.org/multiply) agree, execution is what really matters. Every small architectural decision adds to the potential of the app. At Makeomatic we use a bunch of various technologies. Certainly, we have our favourites, and Node.js is definitely among them. 
 
 At NodeConf we've been told that Node.js beats most of the other programming languages in development speed and, often, performance by 2-4 times. There's no better way to prove it than to switch from the old core languages, such as Java, Ruby or PHP, and use it in a real project. 
 
