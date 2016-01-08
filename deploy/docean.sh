@@ -1,15 +1,17 @@
 #!/bin/bash
 
+function cleanup {
+  rm ./id_rsa ./id_rsa.insecure
+}
+trap cleanup EXIT
+
 docker login --email="$DOCKER_EMAIL" --username="$DOCKER_LOGIN" --password="$DOCKER_PWD"
 make push
 
-eval "$(ssh-agent -s)"
-chmod 400 ./id_rsa
-echo $SSH_PWD > .echo_ps && chmod 700 .echo_ps
-cat ./id_rsa | SSH_ASKPASS=.echo_ps ssh-add -
-rm .echo_ps
-scp ./docker-compose.yml $DEPLOY_USER@$DEPLOY_HOST:~/docker-compose.yml
-ssh $DEPLOY_USER@$DEPLOY_HOST "
+openssl rsa -in ./id_rsa -out ./id_rsa.insecure -passin "$SSH_PWD"
+chmod 0400 ./id_rsa.insecure
+scp -i ./id_rsa.insecure ./docker-compose.yml $DEPLOY_USER@$DEPLOY_HOST:~/docker-compose.yml
+ssh -i ./id_rsa.insecure $DEPLOY_USER@$DEPLOY_HOST "
 docker login --email=\"$DOCKER_EMAIL\" --username=\"$DOCKER_LOGIN\" --password=\"$DOCKER_PWD\"
 docker-compose pull
 docker-compose stop
