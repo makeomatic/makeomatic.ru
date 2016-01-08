@@ -1,10 +1,12 @@
 SHELL := /bin/bash
-PKG_NAME := $(shell cat ./app/package.json | ./app/node_modules/.bin/json name)
-PKG_VERSION := $(shell cat ./app/package.json | ./app/node_modules/.bin/json version)
+ROOT := ./app
 BIN := ./node_modules/.bin
+JSON = $(ROOT)/$(BIN)/json
+PKG_NAME = $(shell cat $(ROOT)/package.json | $(JSON) name)
+PKG_VERSION = $(shell cat $(ROOT)/package.json | $(JSON) version)
 
 install:
-	cd ./app; npm i; cd blog; npm install; cd ../blog_en; npm install; cd ../; $(BIN)/grunt production imagemin
+	cd $(ROOT); npm i; cd blog; npm install; cd ../blog_en; npm install; cd ../; $(BIN)/grunt production imagemin
 
 build:
 	cp -r ./app ./deploy/root/
