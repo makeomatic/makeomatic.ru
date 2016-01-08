@@ -10,8 +10,8 @@ install:
 
 build:
 	cp -r ./app ./deploy/root/
-	docker build -t makeomatc/website:latest -f ./deploy/Dockerfile ./deploy/
-	docker tag -f makeomatc/website:latest makeomatc/website:$(PKG_VERSION)
+	docker build -t makeomatic/website:latest -f ./deploy/Dockerfile ./deploy/
+	docker tag -f makeomatic/website:latest makeomatic/website:$(PKG_VERSION)
 
 push:
 	docker push makeomatic/website:latest
