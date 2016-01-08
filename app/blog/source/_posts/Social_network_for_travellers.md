@@ -3,6 +3,10 @@ subtitle: Часть 2
 date: 2015-12-28
 author: Eleonora Pavlova
 gravatarMail: koko@reevlodge.com
+cover: https://makeomatic.ru/blog/images/f4f_main.jpg
+coverWidth: 554
+coverHeight: 459
+url: https://makeomatic.ru/blog/2015/12/18/Smart_travelling_network/
 tags: [NodeJS, AngularJS, ElasticSearch]
 ---
 
@@ -63,7 +67,7 @@ tags: [NodeJS, AngularJS, ElasticSearch]
 
 Не теряя времени, мы добавили опцию поиска попутчиков в профили, повысив тем самым социальную активность, мотивируя людей возвращаться и пользоваться нашим приложением чаще. Также мы добавили вкладку "дневник", где вернувшиеся из поездки пользователи могут делиться впечатлениями и фотографиями. Таким образом, мы старались учесть все принпицы социальной медиа оптимизации (SMO). 
 
-![5](https://makeomatic.ru/blog/images/4.png)
+![5](https://makeomatic.ru/blog/images/5.png)
 
 ### Больше технических подробностей
 
