@@ -13,4 +13,6 @@ blog_en/public
 *.log
 node_modules
 sitemap.*.xml
-nginx
+deploy/root/app
+deploy/root/etc/nginx/cert/*
+deploy/root/etc/nginx/dhparam.pem

@@ -1,16 +1,15 @@
 SHELL := /bin/bash
-PKG_NAME := $(shell cat package.json | ./node_modules/.bin/json name)
-PKG_VERSION := $(shell cat package.json | ./node_modules/.bin/json version)
+PKG_NAME := $(shell cat ./app/package.json | ./app/node_modules/.bin/json name)
+PKG_VERSION := $(shell cat ./app/package.json | ./app/node_modules/.bin/json version)
+BIN := ./node_modules/.bin
 
 build:
-	npm i
-	./node_modules/.bin/grunt production
-	./node_modules/.bin/grunt imagemin
-	docker build --build-arg VERSION=v5.1.0 -t makeomatic/website:nodejs -f Dockerfile.nodejs .
-	docker build -t makeomatic/website:nginx -f Dockerfile.nginx .
+	cd ./app; npm i; cd blog; npm install; cd ../blog_en; npm install; cd ../; $(BIN)/grunt production imagemin
+	cp -r ./app ./deploy/root/
+	docker build -t makeomatc/website:latest -f ./deploy/Dockerfile ./deploy/
+	docker tag -f makeomatc/website:latest makeomatc/website:$(PKG_VERSION)
 
 push:
-	docker push makeomatic/website:nodejs
-	docker push makeomatic/website:nginx
+	docker push makeomatic/website:latest
 
 .PHONY: build push

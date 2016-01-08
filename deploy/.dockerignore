@@ -1,0 +1,10 @@
+root/app/font_src
+root/app/img_source
+root/app/source
+root/app/theme-makeomatic
+root/app/node_modules
+root/app/blog/*
+root/app/blog_en/*
+!root/app/blog/public
+!root/app/blog_en/public
+root/app/Gruntfile.js

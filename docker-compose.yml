@@ -1,16 +1,10 @@
-nodejs:
-  image: makeomatic/website:nodejs
-  container_name: nodejs
+website:
+  image: makeomatic/website:latest
   restart: always
-  expose:
-    - "8080"
-
-nginx:
-  image: makeomatic/website:nginx
-  restart: always
-  container_name: nginx
-  links:
-    - "nodejs"
+  container_name: website
   ports:
     - "443:443"
     - "80:80"
+  log_opt:
+    max-size: "50m"
+    max-file: "3"
