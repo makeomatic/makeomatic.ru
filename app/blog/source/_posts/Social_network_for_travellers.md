@@ -1,5 +1,5 @@
 title: Социальная сеть для путешественников — новый формат
-subtitle: Часть 2
+subtitle: Часть 1
 date: 2015-12-28
 author: Eleonora Pavlova
 gravatarMail: koko@reevlodge.com
