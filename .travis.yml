@@ -1,7 +1,19 @@
 sudo: required
+env:
+  global:
+  - secure: "fBquo0PZLpKQz8dgEPxvAuv5k65SRBccOWFYRjF9Wy2fNeeg4SliyOPwDyCCV34a8jQgJJcBPJrWPfn7gtgZSdTsSqwdNB33/9ez41/9T4y1S6lLPHeA7vym6nQwG/7OWlY9th1lRWgTfxJY0GN8Gr0Tcey/GeSzDPoMbWmEBr8="
+  - secure: "jZtQIukWnPNqecXZTNDnatqg3UceFvPTuckDhGRfNI9HZj/Ee7Guh0hoy7oijqV2Aw51nmlUoarWZel8tqpy/uDMvo/REpQFNDaOgf//AGNDNm6Fto/TThANOgenuXGlykrZ8HvcldbNQt27ljGDs+sXJJo3gklUSEfOUHb3pUE="
+  - secure: "aWYgrnz0PzC429VxW6HKiwgB1MXnQHuZ8393BENUgdMWotYpGNUxdWmHW4/jKSCxVZLfPybmDUIJcFsw7jZqZahhpfzQcejj6ZJsLXK3PeRde1Ag8No6vjY21Dm18aazvENQWY8wmKJoWGC4lZO6R9pZz8I539xqNT7iGWJ08uU="
+  - secure: "B7mOukRfD+TSwecebYCsoeuzR6QUoKBkL9zG8koHXb2gNiFkzuAEbsU58Mf9fa4uhWpbpHKLmvilWtKUtxBW08e/86NCFei862mTbo3VaxjwR1im25fBw81FN2g2HLqXJ3vTjPBH47gS0elzhnCvJplCMVrtHVNOehqQDublpAk="
+  - secure: "MK6bfQSTDBCAn4r3QMNJPk14AiNyQ6xZcQCjX84Y8QvBtvwgnFNKgZROk9Bg8CzOgzwIMpFuy3LdkfZDf+xxxc/uhrELy28jEPDbAz6FAZxat1+CmYSUebOtVwgsgH07gBhnkRgnWy/rpzMJahDkM7lqf9Ixy//kCcbGe6sEcAU="
+  - secure: "qS3XxEZCARR4Y2zAH2xQ+tlA1P8cqIhU9CWKIUgtViPrp8orCp9nntjp2qcUW/VN53Hy6xYi9LceNaFLwxMc/0qvmSXVVzrd+jWCC02vIWck3NKIxAe6yGrh/WwUlSwLmKX8cWRSEpu4htRscl9yC6xRNAw7LKjhvl0sppoc8QU="
 services:
 - docker
 language: node_js
+node_js:
+  - "5.3"
+addons:
+  ssh_known_hosts: makeomatic.ru
 before_install:
 - openssl aes-256-cbc -K $encrypted_23bd8dcc3242_key -iv $encrypted_23bd8dcc3242_iv
   -in ./crypto/smtp.json.enc -out ./app/smtp.json -d
@@ -13,3 +25,11 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_23bd8dcc3242_key -iv $encrypted_23bd8dcc3242_iv
   -in ./crypto/makeomatic.ru.crt.pem.enc -out ./deploy/root/etc/nginx/cert/makeomatic.ru.crt.pem
   -d
+script:
+- make -j1 install build
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: deploy/docean.sh
+  on:
+    branch: master
