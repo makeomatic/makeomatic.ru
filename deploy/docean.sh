@@ -5,7 +5,7 @@ function cleanup {
 }
 trap cleanup EXIT
 
-docker login --email="$DOCKER_EMAIL" --username="$DOCKER_LOGIN" --password="$DOCKER_PWD" || exit 1
+docker login --email="$DOCKER_EMAIL" --username="$DOCKER_LOGIN" --password="$DOCKER_PWD"
 make push || exit 1
 
 openssl rsa -in ./id_rsa -out ./id_rsa.insecure -passin pass:$SSH_PWD
