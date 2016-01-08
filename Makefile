@@ -14,7 +14,6 @@ build:
 	docker tag -f makeomatic/website:latest makeomatic/website:$(PKG_VERSION)
 
 push:
-	docker push makeomatic/website:latest
-	docker push makeomatic/website:$(PKG_VERSION)
+	docker push makeomatic/website
 
 .PHONY: build push install
