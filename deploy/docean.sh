@@ -16,5 +16,5 @@ ssh -i ./id_rsa.insecure $DEPLOY_USER@$DEPLOY_HOST "
 docker login --email=\"$DOCKER_EMAIL\" --username=\"$DOCKER_LOGIN\" --password=\"$DOCKER_PWD\"
 docker-compose pull
 docker-compose up -d
-docker rmi $$(docker images -f 'dangling=true' -q)
+docker rmi \$(docker images -f 'dangling=true' -q)
 "

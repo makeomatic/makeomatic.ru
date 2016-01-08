@@ -15,7 +15,7 @@
   "license": "Unlicense",
   "readmeFilename": "README.md",
   "dependencies": {
-    "async": "^1.5.1",
+    "async": "^1.5.2",
     "body-parser": "^1.14.2",
     "compression": "^1.5.2",
     "dot": "^1.0.3",
@@ -24,7 +24,7 @@
     "express-dot": "david-driscoll/express-dot",
     "i18n": "^0.5.0",
     "lodash": "^3.10.0",
-    "nodemailer": "^1.11.0",
+    "nodemailer": "^2.0.0-rc.2",
     "nodemailer-smtp-pool": "^2.0.0",
     "transliterate": "0.0.2"
   },
@@ -42,7 +42,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-release": "^0.13.0",
     "grunt-shell": "^1.1.1",
-    "hexo-cli": "^0.1.7",
+    "hexo-cli": "^0.2.0",
     "hexo-renderer-dotjs": "^0.2.1",
     "json": "^9.0.3"
   }

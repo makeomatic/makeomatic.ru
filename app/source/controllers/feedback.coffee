@@ -1,14 +1,19 @@
 ## Зависимости
-nodemailer       = require "nodemailer"
+nodemailer       = require 'nodemailer'
+smtpPool         = require 'nodemailer-smtp-pool'
 _                = require 'lodash'
-credentials      = require "../../smtp.json"
+credentials      = require '../../smtp.json'
 fs               = require 'fs'
 
 config  =
+  logger: true
+  maxConnections: 2
+  maxMessages: 1000
+  rateLimit: 1
   service: 'yandex'
   auth: credentials
 
-transport = nodemailer.createTransport "SMTP", config
+transport = nodemailer.createTransport smtpPool(config)
 
 mailOptions =
   from: "Feedback robot <#{credentials.user}>"
