@@ -7,7 +7,7 @@ cover: https://makeomatic.ru/blog/images/f4f_main.jpg
 coverWidth: 554
 coverHeight: 459
 url: https://makeomatic.ru/blog/2015/12/18/Smart_travelling_network/
-tags: [NodeJS, AngularJS, ElasticSearch]
+tags: [Node.js, AngularJS, ElasticSearch]
 ---
 
 ![f4f](https://makeomatic.ru/blog/images/f4f_main.jpg)
