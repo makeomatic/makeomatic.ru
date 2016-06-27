@@ -397,6 +397,7 @@ body .angeled-stripe:after {
 }
 .section-portfolio__title__main {
   font-size: 36px;
+  font-weight: bold;
 }
 .section-portfolio__title__done {
   margin: 20px auto;
@@ -418,7 +419,7 @@ body .angeled-stripe:after {
   margin: 0 10px;
 }
 .section-portfolio__text {
-  width: 960px;
+  max-width: 960px;
 }
 .section-portfolio__text__item {
   position: relative;
@@ -448,7 +449,7 @@ body .angeled-stripe:after {
   margin: 0 0 20px;
 }
 .section-portfolio__text__item__message__technologies li {
-  margin: 0 20px;
+  margin: 0 5px;
   line-height: 65px;
 }
 .section-portfolio__text__item__message__technologies img {
@@ -460,6 +461,28 @@ body .angeled-stripe:after {
 .section-portfolio__text__item__message__technologies img:hover {
   filter: none;
   -webkit-filter: grayscale(0);
+}
+@media (max-width: 767px) {
+  .section-portfolio__text__item__title {
+    padding-left: 60px;
+  }
+  .section-portfolio__text__item__message {
+    margin: 25px 60px;
+  }
+  .section-portfolio__text__item__message__technologies li {
+    margin: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .section-portfolio__text__item__title {
+    padding-left: 50px;
+  }
+  .section-portfolio__text__item__message {
+    margin: 25px 0;
+  }
+  .section-portfolio__text__item__message__technologies li {
+    margin: 15px;
+  }
 }
 .navbar-inverse .phone-desktop {
   position: absolute;

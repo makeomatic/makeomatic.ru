@@ -61,7 +61,7 @@
     /*
       Portfolio context generation
      */
-    portfoliopage: function(req, res) {
+    portfolioPage: function(req, res) {
       var data, portfolio_links;
       portfolio_links = _.clone(links, true);
       portfolio_links[2].isActive = true;

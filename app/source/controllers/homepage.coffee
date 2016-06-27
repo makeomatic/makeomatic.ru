@@ -58,7 +58,7 @@ module.exports =
   ###
     Portfolio context generation
   ###
-  portfoliopage: (req, res) ->
+  portfolioPage: (req, res) ->
     portfolio_links = _.clone links, true
     portfolio_links[2].isActive = true
     # set data
