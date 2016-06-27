@@ -14,6 +14,7 @@
      */
     app.get('/', ieEdge, homepageController.homepage);
     app.get('/team', ieEdge, homepageController.team);
+    app.get('/portfolio', ieEdge, homepageController.portfoliopage);
 
     /*
       Feedback routes
