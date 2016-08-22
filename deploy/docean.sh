@@ -13,7 +13,7 @@ scp -i ./id_rsa.insecure ./docker-compose.yml $DEPLOY_USER@$DEPLOY_HOST:~/docker
 
 echo "running ssh-exec"
 ssh -i ./id_rsa.insecure $DEPLOY_USER@$DEPLOY_HOST "
-docker login --email=\"$DOCKER_EMAIL\" --username=\"$DOCKER_LOGIN\" --password=\"$DOCKER_PWD\"
+docker login --username=\"$DOCKER_LOGIN\" --password=\"$DOCKER_PWD\"
 docker-compose pull
 docker-compose up -d
 docker rmi \$(docker images -f 'dangling=true' -q)
