@@ -9,6 +9,7 @@ tags: [Node.js, Javascript]
 ![Работа с потоками в node.js](/blog/images/Streams_node.png)
 </div>
 
+
 Данный документ является вольным переводом [stream-handbook](https://github.com/substack/stream-handbook) и охватывает основы создания [node.js](http://nodejs.org/) приложений с использованием [потоков](http://nodejs.org/docs/latest/api/stream.html). По сравнению с источником - обновлены некоторые главы с учетом 2016 года, добавлено объяснение различий между разными версиями API, убраны устаревшие модули и добавлены новые, изменена структура повествования.
 
 <!-- more -->
