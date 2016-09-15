@@ -1,9 +1,9 @@
 (function() {
-  var _, address, basic_data, copyright, description, email, employees, links, main_page_title, phone, portfolio, ref, team_description, team_page_title, tech;
+  var _, address, basic_data, copyright, description, email, employees, links, main_page_title, phone, portfolio, portfolio_description, portfolio_page_title, ref, team_description, team_page_title, tech;
 
   _ = require('lodash');
 
-  ref = require('../conf'), employees = ref.employees, main_page_title = ref.main_page_title, portfolio = ref.portfolio, links = ref.links, phone = ref.phone, email = ref.email, copyright = ref.copyright, address = ref.address, tech = ref.tech, team_page_title = ref.team_page_title, description = ref.description, team_description = ref.team_description;
+  ref = require('../conf'), employees = ref.employees, main_page_title = ref.main_page_title, portfolio = ref.portfolio, links = ref.links, phone = ref.phone, email = ref.email, copyright = ref.copyright, address = ref.address, tech = ref.tech, team_page_title = ref.team_page_title, portfolio_page_title = ref.portfolio_page_title, description = ref.description, team_description = ref.team_description, portfolio_description = ref.portfolio_description;
 
   basic_data = {
     phone: phone,
@@ -56,6 +56,27 @@
       data.originalUrl = req.originalUrl;
       data.language = req.locale;
       return res.render('team', data);
+    },
+
+    /*
+      Portfolio context generation
+     */
+    portfolioPage: function(req, res) {
+      var data, portfolio_links;
+      portfolio_links = _.clone(links, true);
+      portfolio_links[2].isActive = true;
+      data = _.extend({
+        isPortfolio: true,
+        links: portfolio_links,
+        description: portfolio_description
+      }, basic_data, {
+        title: portfolio_page_title,
+        portfolio: portfolio
+      });
+      data.__ = res.__;
+      data.originalUrl = req.originalUrl;
+      data.language = req.locale;
+      return res.render('portfolio', data);
     }
   };
 

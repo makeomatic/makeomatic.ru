@@ -34,6 +34,7 @@ exports.address = "Россия, Москва, Ленинский пр-т, д 1,
 ## Title ##
 exports.main_page_title = "Создание сайтов в Москве, разработка мобильных приложений, дизайн"
 exports.team_page_title = "Cлаженная команда для разработки веб приложений и игр"
+exports.portfolio_page_title = "Портфолио команды"
 
 
 ## Team ##
@@ -160,10 +161,11 @@ exports.links = [
   {name: "Блог",        href: "/blog", always: true }
   {name: "Команда",     href: "/team", children : push_empoyee_link(employees), isTeam: true, always: true }
   {name: "О нас",       href: "#about" }
-  {name: "Портфолио",   href: "#portfolio", children: push_portfolio_link(portfolio), isMain: true }
+  {name: "Портфолио",   href: "/portfolio", children: push_portfolio_link(portfolio), isPortfolio: true }
   {name: "Технологии",  href: "#tech"}
   {name: "Контакты",    href: "#contacts", always: true}
 ]
 
 exports.description = "Makeomatic с радостью воплотит в жизнь Ваши идеи! Создание сайтов в Москве, разработка мобильных приложений, дизайна, UX и игр являются нашей основной специализацией. Пишите нам, чтобы обсудить ваш проект."
 exports.team_description = "Команда Makeomatic включает в себя только лучших специалистов в своих областях. Мы работаем слаженно, знаем свои плюсы и минусы, работаем так, чтобы было приятно и клиентам, и нам."
+exports.portfolio_description = "Портфолио Makeomatic."

@@ -2,7 +2,22 @@
 _ = require 'lodash'
 
 ## data
-{employees, main_page_title, portfolio, links, phone, email, copyright, address, tech, team_page_title, description, team_description} = require '../conf'
+{
+  employees,
+  main_page_title,
+  portfolio,
+  links,
+  phone,
+  email,
+  copyright,
+  address,
+  tech,
+  team_page_title,
+  portfolio_page_title,
+  description,
+  team_description,
+  portfolio_description,
+} = require '../conf'
 
 basic_data = {phone, email, copyright, address}
 
@@ -39,3 +54,20 @@ module.exports =
 
     # send response
     res.render 'team', data
+
+  ###
+    Portfolio context generation
+  ###
+  portfolioPage: (req, res) ->
+    portfolio_links = _.clone links, true
+    portfolio_links[2].isActive = true
+    # set data
+    data = _.extend { isPortfolio: true, links: portfolio_links, description: portfolio_description },
+      basic_data, { title: portfolio_page_title, portfolio }
+
+    data.__ = res.__
+    data.originalUrl = req.originalUrl
+    data.language = req.locale
+
+    # send response
+    res.render 'portfolio', data
