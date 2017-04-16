@@ -1,10 +1,16 @@
-FROM smebberson/alpine-nginx-nodejs
+FROM makeomatic/node:7.9.0
 
 # we need internal modules, too
 COPY ./root /
+WORKDIR /app
 
 # install modules again if we need to rebuild them
-RUN cd /app && npm install --production
+RUN \
+  apk --no-cache add git && \
+  npm install --production && \
+  apk del git
 
 # Add image source
 ENV NODE_ENV=production HOST=127.0.0.1 PORT=8080
+
+EXPOSE 8080
