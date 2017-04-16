@@ -64,8 +64,9 @@ services:
     restart: always
     container_name: website
     environment:
-      - VIRTUAL_HOST=makeomatic.ca,www.makeomatic.ca,makeomatic.ru,www.makeomatic.ru,en.makeomatic.ru,www.makeomatic.co,makeomatic.co,makeomatik.ru,www.makeomatik.ru,www.make-o-matic.ru,make-o-matic.ru,www.make-o-matik.ru,make-o-matik.ru
-      - LETSENCRYPT_HOST=makeomatic.ca,www.makeomatic.ca,makeomatic.ru,www.makeomatic.ru,en.makeomatic.ru,www.makeomatic.co,makeomatic.co,makeomatik.ru,www.makeomatik.ru,www.make-o-matic.ru,make-o-matic.ru,www.make-o-matik.ru,make-o-matik.ru
+      - HOST=0.0.0.0
+      - VIRTUAL_HOST=makeomatic.ca,makeomatic.ru,www.makeomatic.ru,en.makeomatic.ru,makeomatic.co,makeomatik.ru,make-o-matic.ru,make-o-matik.ru
+      - LETSENCRYPT_HOST=makeomatic.ca,makeomatic.ru,www.makeomatic.ru,en.makeomatic.ru,makeomatic.co,makeomatik.ru,make-o-matic.ru,make-o-matik.ru
       - LETSENCRYPT_EMAIL=v@makeomatic.ru
     depends_on:
       - nginx-letsencrypt
