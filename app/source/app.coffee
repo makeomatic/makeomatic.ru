@@ -51,7 +51,7 @@ startApp = ->
   app.use i18n.init
   app.use (req, res, next)->
     [locale] = req.subdomains
-    if req.hostname isnt 'makeomatic.ca' and req.hostname isnt 'makeomatic.co' and local isnt 'en'
+    if req.hostname isnt 'makeomatic.ca' and req.hostname isnt 'makeomatic.co' and locale isnt 'en'
       locale = 'ru'
     i18n.setLocale req, locale
     next()
