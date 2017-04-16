@@ -63,7 +63,7 @@
     app.use(function(req, res, next) {
       var locale;
       locale = req.subdomains[0];
-      if (locale !== 'en') {
+      if (req.hostname !== 'makeomatic.ca' && req.hostname !== 'makeomatic.co' && locale !== 'en') {
         locale = 'ru';
       }
       i18n.setLocale(req, locale);
@@ -103,7 +103,7 @@
       app.set('host', process.env.HOST || '0.0.0.0');
       app.use(function(err, req, res, next) {
         console.error(err);
-        return res.send("Error", 500);
+        return res.status(500).send("Error");
       });
     } else {
       app.set('port', process.env.PORT || 9100);

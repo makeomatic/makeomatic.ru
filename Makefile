@@ -6,7 +6,7 @@ PKG_NAME = $(shell cat $(ROOT)/package.json | $(JSON) name)
 PKG_VERSION = $(shell cat $(ROOT)/package.json | $(JSON) version)
 
 install:
-	cd $(ROOT); npm i; cd blog; npm install; cd ../blog_en; npm install; cd ../; $(BIN)/grunt production imagemin
+	cd $(ROOT); yarn; cd blog; yarn; cd ../blog_en; yarn; cd ../; $(BIN)/grunt production imagemin
 
 build:
 	cp -r ./app ./deploy/root/

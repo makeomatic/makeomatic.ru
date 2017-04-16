@@ -7,7 +7,7 @@ WORKDIR /app
 # install modules again if we need to rebuild them
 RUN \
   apk --no-cache add git && \
-  npm install --production && \
+  yarn --production && \
   apk del git
 
 # Add image source

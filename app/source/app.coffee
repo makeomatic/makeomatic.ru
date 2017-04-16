@@ -90,7 +90,7 @@ startApp = ->
     app.use (err,req,res,next) ->
       # custom error page
       console.error err
-      res.send "Error", 500
+      res.status(500).send "Error"
 
   else
 
