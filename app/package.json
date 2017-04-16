@@ -1,6 +1,6 @@
 {
   "name": "makeomatic",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "makeomatic.ru marketing web-site",
   "main": "./lib/app.js",
   "repository": {
