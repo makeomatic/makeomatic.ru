@@ -35,7 +35,7 @@
                     {{= this.i18n('тел') }}: {{= this.i18n(this.makeomatic_config.phone) }}
                 </p>
                 <p>
-                    e-mail: <a href="mailto:{{= this.makeomatic_config.email}}">{{= this.makeomatic_config.email }}</a>
+                    e-mail: <a href="mailto:{{= this.i18n(this.makeomatic_config.email)}}">{{= this.i18n(this.makeomatic_config.email) }}</a>
                 </p>
                 <address>
                     {{= this.i18n(this.makeomatic_config.address) }}
