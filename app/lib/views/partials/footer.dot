@@ -25,14 +25,14 @@
                     {{~ it.links: link }}
                     <li><a href="{{= link.href }}">{{= it.__(link.name) }}</a></li>
                     {{~}}
-                    <li><a href='https://github.com/AVVSDevelopment/avvs.co'>{{= it.__('Проект на GitHub') }}</a></li>
+                    <li><a href='https://github.com/makeomatic/makeomatic.ru'>{{= it.__('Проект на GitHub') }}</a></li>
                 </ul>
                 <p class='copyright'>{{= it.__(it.copyright) }}</p>
             </div>
             <div class='span6 blue-line'>
                 <h4 class='footer-caption'>{{= it.__('Контакты') }}</h4>
                 <p>
-                    {{= it.__('тел') }}: {{= it.phone }}
+                    {{= it.__('тел') }}: {{= it.__(it.phone) }}
                 </p>
                 <p>
                     e-mail: <a href="mailto:{{= it.__(it.email)}}">{{= it.__(it.email) }}</a>

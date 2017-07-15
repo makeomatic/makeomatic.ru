@@ -25,7 +25,7 @@
                     {{~ this.makeomatic_config.links: link }}
                     <li><a href="{{= link.href }}">{{= this.i18n(link.name) }}</a></li>
                     {{~}}
-                    <li><a href='https://github.com/AVVSDevelopment/avvs.co'>{{= this.i18n('Проект на GitHub') }}</a></li>
+                    <li><a href='https://github.com/makeomatic/makeomatic.ru'>{{= this.i18n('Проект на GitHub') }}</a></li>
                 </ul>
                 <p class='copyright'>{{= this.i18n(this.makeomatic_config.copyright) }}</p>
             </div>
