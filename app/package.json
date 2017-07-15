@@ -1,6 +1,6 @@
 {
   "name": "makeomatic",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "makeomatic.ru marketing web-site",
   "main": "./lib/app.js",
   "repository": {
@@ -15,12 +15,12 @@
   "license": "Unlicense",
   "readmeFilename": "README.md",
   "dependencies": {
-    "async": "^2.3.0",
-    "body-parser": "^1.14.2",
-    "compression": "^1.5.2",
-    "dot": "^1.0.3",
+    "async": "^2.5.0",
+    "body-parser": "^1.17.2",
+    "compression": "^1.7.0",
+    "dot": "^1.1.2",
     "errorhandler": "^1.4.2",
-    "express": "^4.13.2",
+    "express": "^4.15.3",
     "express-dot": "david-driscoll/express-dot",
     "i18n": "^0.8.3",
     "lodash": "^4.17.4",
@@ -29,20 +29,20 @@
     "transliterate": "^1.0.1"
   },
   "devDependencies": {
-    "coffee-script": "^1.10.0",
+    "coffee-script": "^1.12.6",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-coffee": "^1.0.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^2.0.0",
-    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-less": "^1.0.0",
-    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-uglify": "^3.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-release": "^0.14.0",
     "grunt-shell": "^2.1.0",
-    "hexo-cli": "^1.0.2",
+    "hexo-cli": "^1.0.3",
     "hexo-renderer-dotjs": "^0.2.1",
     "json": "^9.0.3"
   }

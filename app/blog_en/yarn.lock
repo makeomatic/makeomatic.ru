@@ -697,9 +697,9 @@ hexo-generator-index@^0.2.0:
     hexo-pagination "0.0.2"
     object-assign "^4.0.1"
 
-hexo-generator-sitemap@^1.0.1:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/hexo-generator-sitemap/-/hexo-generator-sitemap-1.1.2.tgz#7a9edd7578f4a244d5be7c7d3620f9754cab165a"
+hexo-generator-sitemap@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/hexo-generator-sitemap/-/hexo-generator-sitemap-1.2.0.tgz#3018f8d7d1e2e42b3f71a65a7316ffcf583bc3f3"
   dependencies:
     minimatch "^3.0.0"
     nunjucks "^2.3.0"
@@ -757,9 +757,9 @@ hexo-util@^0.6.0:
     html-entities "^1.2.0"
     striptags "^2.1.1"
 
-hexo@^3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/hexo/-/hexo-3.3.1.tgz#6c38653b7239536a21036bfcf2e306cb24b98f63"
+hexo@^3.3.7:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/hexo/-/hexo-3.3.7.tgz#1cbf05cfd36770929fee4f89fd646fe8b477cfb9"
   dependencies:
     abbrev "^1.0.7"
     archy "^1.0.0"
