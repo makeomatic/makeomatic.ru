@@ -163,9 +163,9 @@
 	"Заказать звонок": "Request a return call",
 	"Разделы сайта": "Sitemap",
 	"Проект на GitHub": "GitHub project",
-	"Makeomatic, (c) 2012-2014<br/>Разработка сайтов и мобильных приложений": "Makeomatic, (c) 2012-2014<br/> Website development and mobile applications",
+	"Makeomatic, (c) 2012-2014<br/>Разработка сайтов и мобильных приложений": "Makeomatic, (c) 2012-2017<br/>Startup Consulting & Development",
 	"тел": "tel",
-	"Россия, Москва, Ленинский пр-т, д 1, офис 314<br/>индекс: 111555": "Russia, Moscow, Leninsky Avenue, building 30a<br/>Postal Code: 111555",
+	"Россия, Москва, Ленинский пр-т, д 1, офис 314<br/>индекс: 111555": "602 Citadel Parade, Vancouver, Canada",
 	"Расскажите нам о вашем проекте": "Describe your project or needs",
 	"Коротко опишите ваши идеи или просто прикрепите файл с готовым ТЗ.": "Write a short summary of your project or send us a file with your creative brief",
 	"Мы свяжемся с вами в течение 1 дня и подробно расскажем о том, как мы можем вам помочь.": "Want to find out how can we help you? We will contact you in 1 day to elaborate details or to discuss the best options available.",
@@ -220,5 +220,6 @@
 	"Тэги": "Tags",
 	"archive_a": "Archive",
 	"archive_b": "Archive %s",
-	"page": "Page %s"
+	"page": "Page %s",
+	"+7 (495) 79-222-44": "+1 (236) 777-4146"
 }

@@ -32,7 +32,7 @@
             <div class='span6 blue-line'>
                 <h4 class='footer-caption'>{{= this.i18n('Контакты') }}</h4>
                 <p>
-                    {{= this.i18n('тел') }}: {{= this.makeomatic_config.phone }}
+                    {{= this.i18n('тел') }}: {{= this.i18n(this.makeomatic_config.phone) }}
                 </p>
                 <p>
                     e-mail: <a href="mailto:{{= this.makeomatic_config.email}}">{{= this.makeomatic_config.email }}</a>
