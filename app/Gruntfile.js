@@ -22,7 +22,7 @@ module.exports = function (grunt) {
                 expand: true,
                 flatten: false,
                 cwd: 'source',
-                src: ['**/*.coffee'],
+                src: ['**/*.coffee', '**/*.*.coffee'],
                 dest: 'lib',
                 ext: '.js'
             }

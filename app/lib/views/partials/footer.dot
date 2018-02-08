@@ -35,7 +35,7 @@
                     {{= it.__('тел') }}: {{= it.__(it.phone) }}
                 </p>
                 <p>
-                    e-mail: <a href="mailto:{{= it.__(it.email)}}">{{= it.__(it.email) }}</a>
+                    e-mail: <a href="mailto:{{= it.email}}">{{= it.email }}</a>
                 </p>
                 <address>
                     {{= it.__(it.address) }}

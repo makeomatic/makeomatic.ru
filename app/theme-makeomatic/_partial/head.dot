@@ -51,7 +51,7 @@
 
   <link href='//fonts.googleapis.com/css?family=Roboto:300,700&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
   {{? this.env != 'production' }}
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="/css/app.css">
   {{??}}
   <link rel="stylesheet" href="/css/app.min.{{= this.pkgVer}}.css">

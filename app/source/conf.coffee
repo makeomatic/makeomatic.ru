@@ -110,7 +110,17 @@ exports.employees = employees = [
     description: "Системное мышление - главное оружие Ильи. Хаос множества технологий структурируется как электроны вокруг атома. Сложнейшие проблемы он разбивает на неделимые частицы, досконально изучает их и встраивает готовый компонент в систему."
     rank: 2
     status: "Подмастерье"
+  },
+  {
+    photo: "/img/employee/013.png"
+    name: "Anja Ishmukhametova"
+    occupation: "Secret Weapon"
+    brief_description: "Front-End engineer"
+    description: "Do what thou wilt"
+    rank: 8
+    status: "Important piece of work"
   }
+  
 ]
 
 #generating ids
@@ -120,8 +130,14 @@ employees.forEach (employee)->
 ## Portfolio ##
 exports.portfolio = portfolio = []
 
+## Cappasity ##
+portfolio.push require('./fixtures/cappasity')
+
+## ICO.Cappasity ##
+portfolio.push require('./fixtures/icocappasity')
+
 ## ArkAPI ##
-# portfolio.push require('./fixtures/arkapi')
+#portfolio.push require('./fixtures/arkapi')
 
 ## Distribut.io ##
 portfolio.push require('./fixtures/distribut')

@@ -332,6 +332,10 @@ body .angeled-stripe:after {
   right: 100%;
   top: 0;
 }
+.portfolio .carousel-inner .item a img,
+.portfolio .carousel-inner .item img {
+  margin: 0 auto;
+}
 .portfolio .carousel-control {
   -webkit-opacity: 1;
   -moz-opacity: 1;

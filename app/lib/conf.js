@@ -105,6 +105,14 @@
       description: "Системное мышление - главное оружие Ильи. Хаос множества технологий структурируется как электроны вокруг атома. Сложнейшие проблемы он разбивает на неделимые частицы, досконально изучает их и встраивает готовый компонент в систему.",
       rank: 2,
       status: "Подмастерье"
+    }, {
+      photo: "/img/employee/013.png",
+      name: "Anja Ishmukhametova",
+      occupation: "Secret Weapon",
+      brief_description: "Front-End engineer",
+      description: "Do what thou wilt",
+      rank: 8,
+      status: "Important piece of work"
     }
   ];
 
@@ -113,6 +121,10 @@
   });
 
   exports.portfolio = portfolio = [];
+
+  portfolio.push(require('./fixtures/cappasity'));
+
+  portfolio.push(require('./fixtures/icocappasity'));
 
   portfolio.push(require('./fixtures/distribut'));
 

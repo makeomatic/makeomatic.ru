@@ -1,4 +1,4 @@
-hexo.theme.i18n.set('ru', require('../../locales/ru.json'));
+hexo.theme.i18n.set('ru', require('../../locales/en.json'));
 
 global.hexo = hexo;
 global.i18n = hexo.theme.i18n.__('ru');
