@@ -7,8 +7,8 @@ static/css/*.css
 reverse-engineering.js
 smtp.json
 static/js/app.min*
-blog/public
-blog_en/public
+app/blog/public
+app/blog_en/public
 .project
 *.log
 node_modules
