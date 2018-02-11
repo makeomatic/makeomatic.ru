@@ -123,15 +123,25 @@
   exports.portfolio = portfolio = [];
 
   portfolio.push(require('./fixtures/cappasity'));
+
   portfolio.push(require('./fixtures/icocappasity'));
+
   portfolio.push(require('./fixtures/distribut'));
+
   portfolio.push(require('./fixtures/recordi'));
+
   portfolio.push(require('./fixtures/photobot'));
+
   portfolio.push(require('./fixtures/brainsapp'));
+
   portfolio.push(require('./fixtures/fabrika'));
+
   portfolio.push(require('./fixtures/speakgeo'));
+
   portfolio.push(require('./fixtures/openinclude'));
+
   portfolio.push(require('./fixtures/liveone'));
+
   portfolio.push(require('./fixtures/fitcafe'));
 
   push_empoyee_link = function(employees) {

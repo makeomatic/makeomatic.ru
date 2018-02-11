@@ -126,6 +126,6 @@ module.exports = function (grunt) {
 
     // Default task.
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('production', ['clean:production', 'copy', 'coffee', 'less', 'cssmin', 'uglify', 'shell']);
+    grunt.registerTask('production', ['clean:production', 'copy', 'coffee', 'less', 'cssmin', 'uglify', 'imagemin', 'shell']);
 
 };
