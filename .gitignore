@@ -3,7 +3,8 @@
 components
 tmp
 font_src
-app/static/css
+app/static/css/*
+!app/static/css/vendor
 app/static/img
 reverse-engineering.js
 smtp.json
