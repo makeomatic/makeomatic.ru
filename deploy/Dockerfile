@@ -1,4 +1,4 @@
-FROM makeomatic/node:8.1.4
+FROM makeomatic/node:9.5.0
 
 # we need internal modules, too
 COPY ./root /

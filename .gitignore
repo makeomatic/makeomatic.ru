@@ -18,3 +18,4 @@ deploy/root/etc/nginx/cert/*
 deploy/root/etc/nginx/dhparam.pem
 id_rsa
 secrets.tar
+app/package-lock.json
