@@ -25,8 +25,7 @@ before_install:
 install:
 - make -j1 install
 
-scripts:
-- make -j1 build
+script: make -j1 build
 
 before_deploy:
 - echo "$DOCKER_PWD" | docker login --username="$DOCKER_LOGIN" --password-stdin
