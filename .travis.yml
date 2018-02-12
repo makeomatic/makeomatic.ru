@@ -1,4 +1,3 @@
-sudo: required
 env:
   global:
   - secure: "fBquo0PZLpKQz8dgEPxvAuv5k65SRBccOWFYRjF9Wy2fNeeg4SliyOPwDyCCV34a8jQgJJcBPJrWPfn7gtgZSdTsSqwdNB33/9ez41/9T4y1S6lLPHeA7vym6nQwG/7OWlY9th1lRWgTfxJY0GN8Gr0Tcey/GeSzDPoMbWmEBr8="
