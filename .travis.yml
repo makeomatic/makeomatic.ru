@@ -7,20 +7,29 @@ env:
   - secure: "B7mOukRfD+TSwecebYCsoeuzR6QUoKBkL9zG8koHXb2gNiFkzuAEbsU58Mf9fa4uhWpbpHKLmvilWtKUtxBW08e/86NCFei862mTbo3VaxjwR1im25fBw81FN2g2HLqXJ3vTjPBH47gS0elzhnCvJplCMVrtHVNOehqQDublpAk="
   - secure: "MK6bfQSTDBCAn4r3QMNJPk14AiNyQ6xZcQCjX84Y8QvBtvwgnFNKgZROk9Bg8CzOgzwIMpFuy3LdkfZDf+xxxc/uhrELy28jEPDbAz6FAZxat1+CmYSUebOtVwgsgH07gBhnkRgnWy/rpzMJahDkM7lqf9Ixy//kCcbGe6sEcAU="
   - secure: "qS3XxEZCARR4Y2zAH2xQ+tlA1P8cqIhU9CWKIUgtViPrp8orCp9nntjp2qcUW/VN53Hy6xYi9LceNaFLwxMc/0qvmSXVVzrd+jWCC02vIWck3NKIxAe6yGrh/WwUlSwLmKX8cWRSEpu4htRscl9yC6xRNAw7LKjhvl0sppoc8QU="
+
 services:
 - docker
+
 language: node_js
+
 node_js:
-  - "5.3"
+  - "9"
+
 addons:
   ssh_known_hosts: makeomatic.ru
+
 before_install:
 - openssl aes-256-cbc -K $encrypted_23bd8dcc3242_key -iv $encrypted_23bd8dcc3242_iv -in secrets.tar.enc -out secrets.tar -d
 - tar xvf secrets.tar
-script:
+
+install:
 - make -j1 install build
-- docker login --username="$DOCKER_LOGIN" --password="$DOCKER_PWD"
-- make -j1 push
+
+before_deploy:
+- echo "$DOCKER_PWD" | docker login --username="$DOCKER_LOGIN" --password-stdin
+- make -j1 install build push
+
 deploy:
   skip_cleanup: true
   provider: script
