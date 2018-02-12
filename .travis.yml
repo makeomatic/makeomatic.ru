@@ -19,7 +19,7 @@ before_install:
 - tar xvf secrets.tar
 script:
 - make -j1 install build
-- docker login --email="$DOCKER_EMAIL" --username="$DOCKER_LOGIN" --password="$DOCKER_PWD"
+- docker login --username="$DOCKER_LOGIN" --password="$DOCKER_PWD"
 - make -j1 push
 deploy:
   skip_cleanup: true
