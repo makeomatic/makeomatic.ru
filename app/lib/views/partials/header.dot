@@ -70,7 +70,7 @@
             </div>
 
             <h4 class='phone-desktop'>
-                {{= it.__('Звоните') }}: {{= it.phone }}
+                {{= it.__('Звоните') }}: {{= it.__(it.phone) }}
             </h4>
 
         </div>

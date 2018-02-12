@@ -22,7 +22,7 @@ module.exports = function (grunt) {
                 expand: true,
                 flatten: false,
                 cwd: 'source',
-                src: ['**/*.coffee'],
+                src: ['**/*.coffee', '**/*.*.coffee'],
                 dest: 'lib',
                 ext: '.js'
             }
@@ -66,7 +66,7 @@ module.exports = function (grunt) {
               files: [{
                   expand: true,
                   cwd: 'img_source/',
-                  src: ['**/*.png'],
+                  src: ['**/*.png', '**/*.jpg', '**/*.svg'],
                   dest: 'static/img',
                   extDot: 'last'
               }]
@@ -126,6 +126,6 @@ module.exports = function (grunt) {
 
     // Default task.
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('production', ['clean:production', 'copy', 'coffee', 'less', 'cssmin', 'uglify', 'shell']);
+    grunt.registerTask('production', ['clean:production', 'copy', 'coffee', 'less', 'cssmin', 'uglify', 'imagemin', 'shell']);
 
 };

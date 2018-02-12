@@ -3,12 +3,14 @@
 components
 tmp
 font_src
-static/css/*.css
+app/static/css/*
+!app/static/css/vendor
+app/static/img
 reverse-engineering.js
 smtp.json
-static/js/app.min*
-blog/public
-blog_en/public
+app/static/js/app.min*
+app/blog/public
+app/blog_en/public
 .project
 *.log
 node_modules
@@ -18,3 +20,4 @@ deploy/root/etc/nginx/cert/*
 deploy/root/etc/nginx/dhparam.pem
 id_rsa
 secrets.tar
+app/package-lock.json
