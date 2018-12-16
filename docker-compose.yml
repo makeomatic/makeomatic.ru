@@ -50,6 +50,7 @@ services:
     container_name: nginx-letsencrypt
     environment:
       - NGINX_DOCKER_GEN_CONTAINER=nginx-gen
+      - NGINX_PROXY_CONTAINER=nginx
     depends_on:
       - nginx-gen
     volumes:
@@ -70,8 +71,8 @@ services:
     container_name: website
     environment:
       - HOST=0.0.0.0
-      - VIRTUAL_HOST=makeomatic.ca,makeomatic.ru,www.makeomatic.ru,en.makeomatic.ru,makeomatic.co,makeomatik.ru,make-o-matic.ru,make-o-matik.ru
-      - LETSENCRYPT_HOST=makeomatic.ca,makeomatic.ru,www.makeomatic.ru,en.makeomatic.ru,makeomatic.co,makeomatik.ru,make-o-matic.ru,make-o-matik.ru
+      - VIRTUAL_HOST=makeomatic.ru,www.makeomatic.ru,en.makeomatic.ru,makeomatic.co,makeomatik.ru,make-o-matic.ru,make-o-matik.ru
+      - LETSENCRYPT_HOST=makeomatic.ru,www.makeomatic.ru,en.makeomatic.ru,makeomatic.co,makeomatik.ru,make-o-matic.ru,make-o-matik.ru
       - LETSENCRYPT_EMAIL=v@makeomatic.ru
     depends_on:
       - nginx-letsencrypt
